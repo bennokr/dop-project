@@ -1,0 +1,93 @@
+\documentclass{article}
+
+\usepackage[a4paper]{geometry}
+
+
+
+\begin{document}
+
+\section{}
+Subtree $\neq$ fragment (toch?!)
+\section{Bezwaar tegen definitie van 'rank consistent estimator'}
+
+Rank constistency:
+Estimator $est$ is rank consistent if 
+$P^*(t_1)\leq P^*(t_2)\rightarrow est(TC)(t_1)\leq est(TC)(t_2)$
+ 
+Maar dat zegt nog niks over de relative frequency van die hele parse tree!
+
+One crucial constraint is that when two full parse trees appear in the treebank with the same frequency the estimator should always assign them the same probability
+
+Tegenvoorbeeld, kunstmatig:
+
+Stel, we hebben een dataset met bomen (complete parse trees) van de volgende zinnen:
+Maria houdt van Jozef
+Romeo houdt van Julia
+Marieke houdt van touwtje springen
+Julia haat Paris
+De hond maakt een koprol
+
+De zin 'de hond maakt een koprol' heeft dezelfde frequentie als 'Maria houdt van Jozef', en zelf een hogere dan 'Jozef houdt van Maria'. Maar laatstgenoemde zinnen lijken mij waarschijnlijker dan de eerste, immers: de constructie A houdt van B, komt veel vaker voor! Alleen met andere particuliere namen. Want als iemand een heel zeldzame exotische naam heeft, maakt dat de zin nog niet onwaarschijnlijk.
+
+WE MOETEN NOG DELEN DOOR DE KANS OP DE ZIN. En: hoe bepalen we die?
+
+(Misschien dat dit probleem zich met genoeg data vanzelf zou oplossen, maar het lijkt me geen goede basisvereiste. De nadruk ligt op het gelden van de eigenschap voor 'full parse trees'). Nguyen baseert zich op Laplace's principle of insufficient reason, maar er lijkt me hier sprake van sufficient reason, zodra we verder kijken dan frequenties vna full parse trees.
+
+Later schrijft hij (bij contemplation): "If we assume that the unknown tree is built up from fragments that appear in the treebank as in DOP framework, the estimator should not only preserve the ranking consistency of full parse trees but also preserve the ranking consistency of fragments that appear in the treebank"
+
+Dat is nu toch juist waar het om gaat, hoe we deze op elkaar afstemmen?!
+
+Hiermee zeg ik nog niks over hoe het moet in DOP, alleen dat probabiliteit van een zin/ parse tree volgens mij niet noodzakelijk dezelfde ranking heeft als de relatieve frequentie van die volledige zinnen/ parses in het corpus. 
+Het gaat er bij DOP om de meest waarschijnlijke parse te vinden van een gegeven zin, en niet de probabiliteit van die zin an sich (in de taal), dat is volgens mij waar het wringt. Of vergeten we gewoon te delen door $p(s)$ (blz 27)
+
+
+Misschien geeft dit zelfs een bias voor lange fragmenten?
+
+\section{}
+ Theoretically the size $n$ of a treebank $TB$ might approach infinity. However in practice, a treebank is always finite. %NB: Nguyen zegt dit zelf ook ergens, volgens mij
+As in language we can always invent new words and constructions (e.g. the linguistic phenomenom called 'open class words', or proper names), there will always be a full parse tree $t$ thinkable that is not in the treebank but does have a probability greater than zero in the language. As its frequency in the treebank is zero, according to Nguyen it should have a probability lower than any tree $t'$ that occurs only once in the treebank. However, $t$ might as well be similar to a very common structure in the treebank (and the language), but for one terminal, say a proper name. Intuitively, $t$ should get quite a higher probability than $t'$ in this case. 
+
+Can we say anything about relative frequency in the infinite case?!
+
+This leads me to believe that the true probability distribution of the language should not be viewed from the frequentist viewpoint adopted by Nguyen. We simply cannot use the relative frequency of entire trees to determine their probability.
+
+
+
+We are trying to model the 'true distribution' $P^*:\Omega\rightarrow [0,1]$, but we cannot know its nature and thus should not make assumptions about its structure. 
+
+Is it possible to estimate the distribution by means of a stochastic tree substitution grammar (STSG) without assuming the language is genereated by a (S)TSG?
+
+What Johnson does in his article is of course possible: give an example of a language with probabilities and show that this distribution is not found by an estimator. However, it is meaningless to say anything about the true distribution of fragments as well: these fragments and their weights are part of the model, not necessarily of the language we are trying to model. 
+
+
+\section{}
+What happens if an ambiguous sentence is in the treebank corpus twice, with different parses? The most interesting case would be, that they occur equally often.
+
+
+
+
+\section{}
+Inzicht: DOP$^*$ heeft al een soort intrinsieke double-DOP, omdat alleen fragments die zowel in het \emph{held-out} als in het \emph{extraction} corpus voorkomen een gewicht krijgen.
+
+
+
+
+
+
+
+DOP:
+1 Extraction: Determine Grammar Units (fragments)
+2 Estimation: Assign weights to the fragments
+
+Double-DOP: eerst *alle* fragments uit de estimation set, dan stap 2 (held-out set), dan pas stap 1: subset van fragmenten houden
+DOP*: eerst stap 1 (tree kernel: reoccuring fragments), dan stap 2
+
+
+
+
+
+
+
+
+
+\end{document}

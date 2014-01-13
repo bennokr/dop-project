@@ -1,0 +1,17 @@
+Create a map M of fragments with counts
+For each tree tH \in HC:
+	Create a map M' of fragments of tH with booleans
+	While some fragment in M' has value 'false':
+		For each tree tE \n EC:
+			if a fragment in M occurs in tE: set its boolean on true
+			*
+	Construct the shortest possible derivation of tH, using only fragments in M' with value 'true'
+	Add/ increment the fragments used in M
+
+* efficientie: op de eenofandere manier nagaan welke fragmenten we 'nog zoeken':
+Set bijhouden van fragmenten die we nog zoeken, die steeds korter wordt (en stoppen als die leeg is), overzetten naar set gevonden fragmenten voor derivatie
+kortst mogelijke derivation tot nu toe bijhouden?
+
+NB: wat te doen bij gelijke lengte derivatie? Gewicht verdelen?
+
+NB: Double-DOP houdt ook *alle* PCFG-producties (depth-1 fragments) in de grammatica
