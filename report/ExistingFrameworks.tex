@@ -2,7 +2,7 @@
 \section{Existing Frameworks: Double-DOP and DOP$^*$}
 %A description and comparison of Double-DOP and DOP*
 
-A PTSG consists of the symbolic grammmar, i.e. a set of fragments, and the corresponding weights. In the general case of DOP, all fragments are extracted from all the trees in the treebank. The number of fragments is exponential in the length of the sentences, thus the total number of fragments extracted would be far too large for efficient computation. Later models have therefore restricted the set of fragments in the grammar. 
+A PTSG consists of the symbolic grammmar, i.e. a set of fragments, and the corresponding weights. In the general case of DOP, all fragments are extracted from all the trees in the treebank. The number of fragments is exponential in the length of the sentences, thus the total number of fragments extracted would be far too large for efficient computation. Later models have therefore restricted the set of fragments in the grammar, thus improving computational efficiency. However, determining a proper subset of fragments to use is not trivial and this choice may negatively influence the performance of the grammar.
 
 %Iets met Goodman? Die behoudt alleen kleine stukjes en speciale regels, maar daardoor geen expliciete representatie van 'productive units' (Sangati, einde van sectie 2)
 
@@ -32,9 +32,14 @@ Both \dops{} and \ddop{} restrict the symbolic grammar based on some notion of r
 In \ddop{} this is evident, it is explicit in the algorithm how (largest) reoccuring fragments are added to the grammar. From a computational point of view, this approach is very intuitive and can be implemented rather efficiently. However, the threshold (two) on the number of reoccurences might seem rather trivial. Indeed, \cite{sangati2011} reports experiments varying this threshold that show how performance drops for higher thresholds, with on the other hand a great reduction of the size of the grammar. A proper setting might well depend on the size and nature of the treebank used, and the computational costs one is willing to pay. In short, \ddop{} is computationally attractive but its theoretical foundation is not convincing us.
 %wel performance maar competence raadsel
 
-Theoretically,\dops{} is more appealing: we decide on the symbolic grammar by assessing which fragments are actually used in derivations. The main assumption is that shortest derivations 
+Theoretically,\dops{} is more appealing: we decide on the symbolic grammar by assessing which fragments are actually used in derivations. The main assumption is that shortest derivations are preferred. The splitting of the treebank makes this possible (otherwise the grammar would be terribly overfitted).
 
-\dops{} theoretically more appealing, \ddop{} computationally: lend properties of \ddop{} to implement \dops{}
+
+
+\subsection{Preview}
+\dops{} is proven to be consistent and theoretically appealing. The computational problem of \dops{} is that, at first, the entire set of possible fragments is extracted from $EC$ and this set is reduced in a later phase. This comes with the need for huge storage and computation. In the next section, we investigate the possibility of reformulating the \dops{} approach with insights from the \ddop{} model to maintain the best of both worlds. 
+
+%\dops{} theoretically more appealing, \ddop{} computationally: lend properties of \ddop{} to implement \dops{}
 
 
 

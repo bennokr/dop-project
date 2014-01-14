@@ -1,2 +1,39 @@
 \section{A new implementation}
 %Description of our implementation, how does it resemble Double-DOP and DOP*? What are the differences? What are the theoretical capabilities? 
+
+
+We propose the following algorithm to perform a \dops{}-like estimation using the efficient tree-kernel approach from \ddop{}.
+
+\begin{algorithm}[H]
+{\bf Data}: non-overlapping treebanks $EC$ and $HC$\\
+{\bf Result}: a PTSG, i.e. a map of tree fragments and corresponding weights\\
+\begin{algorithmic}[1]
+\State{Initialize $M$, a map from fragments to weights, empty}
+\For {$t_H\in HC$}
+	\State $Q\gets frag(t_H)$
+	\State $F \gets \emptyset$
+	\While{$Q$ not empty}% or a smarter constraint
+		\For{$t_E \in EC$}
+			\For{$f \in Q\cap frag(t_E)$}
+				\State $Q\gets Q/\{f\}$	
+				\State $F\gets Q\cup\{f\}$	
+			\EndFor
+		\EndFor
+	\EndWhile
+	\State{$D\gets$ the shortest derivation of $t_H$ using fragments in $F$}		
+	\For{$f\in D$}
+		\State $M[f]\gets M[f]+1$
+	\EndFor
+\EndFor
+\For{$n \in V_N$}
+	\State{Add the counts of all fragments rooted at $n$}
+	\State{Normalize the weights of these fragments}
+\EndFor	
+\end{algorithmic}
+\end{algorithm}
+
+In words:
+Iterate over the trees in $HC$ (lines 2-17): create a list $F$ of all of its fragments that occur in $EC$ (lines 3-12). 
+Create the shortest derivation $D$ from fragments in $F$ (NB: this is not always possible, in which case $D=\emptyset$). Increment the counts of these fragments in the map $M$
+
+In \ddop, we would iterate over pairs of trees. With treebank size $n$, that would require $n!$ comparisons. In our proposed algorithm, we need to iterate over each combination of a tree in $HC$ with (worst case\footnote{The condition in line $5$ avoids unnecessary search for fragments. We might be able to pose a smarter constraint here, such that we only continue if we can possibly find fragments that lead to a shorter derivation}) all trees in $EC$. This requires $n/2 \times n/2$ comparisons. Furthermore, we immediately store the counts, so we don't need to iterate over the data again to assess the weights. We do however need to normalize the weights, such that the sum of weights of all fragment sharing the same root equals 1.
