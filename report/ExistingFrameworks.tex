@@ -2,7 +2,9 @@
 \section{Existing Frameworks: Double-DOP and DOP$^*$}
 %A description and comparison of Double-DOP and DOP*
 
-A PTSG consists of the symbolic grammmar, i.e. a set of fragments, and the corresponding weights. In the general case of DOP, all fragments are extracted from all the trees in the treebank. The number of fragments is exponential in the length of the sentences, thus the total number of fragments extracted would be far too large for efficient computation. Later models have therefore restricted the set of fragments in the grammar, thus improving computational efficiency. However, determining a proper subset of fragments to use is not trivial and this choice may negatively influence the performance of the grammar.
+A PTSG consists of the symbolic grammmar, i.e. a set of fragments, and the corresponding weights. In the general case of DOP, all fragments are extracted from all the trees in the treebank. The number of fragments is exponential in the length of the sentences, thus the total number of fragments extracted would be far too large for efficient computation. 
+%DOP1: sample
+Later models have therefore restricted the set of fragments in the grammar, thus improving computational efficiency. However, determining a proper subset of fragments to use is not trivial and this choice may negatively influence the performance of the grammar.
 
 %Iets met Goodman? Die behoudt alleen kleine stukjes en speciale regels, maar daardoor geen expliciete representatie van 'productive units' (Sangati, einde van sectie 2)
 
@@ -24,25 +26,42 @@ In \dops \cite{zollmann2005}, a rather different approach is taken called held-o
 \dops is claimed to be the first consistent (non-trivial) DOP-estimator, \cite{zollmann2005} provides a consistency proof. On the other hand \dops{} is  biased, but Zollmann shows how bias actually arises from generalization: no non-overfitting DOP estimator could be unbiased. Bias is therefore not prohibited but on the contrary a desirable property of an estimator.
 
 In \cite{zuidema2006} it is argued that there is a problem with the consistency proof given for \dops{}, as well as the non-consistency proof for other DOP-estimators by \cite{johnson2002}. Zuidema points out that these proofs use a frequency-distribution test, whereas for DOP a weight-distribution test would be more appropriate. 
+%Wat hiermee?
+
+%
+%\subsection{Comparison}
+%Both \dops{} and \ddop{} restrict the symbolic grammar based on some notion of reoccurence of fragments. 
+%
+%In \ddop{} this is evident, it is explicit in the algorithm how (largest) reoccuring fragments are added to the grammar. From a computational point of view, this approach is very intuitive and can be implemented rather efficiently. However, the threshold (two) on the number of reoccurences might seem rather trivial. Indeed, \cite{sangati2011} reports experiments varying this threshold that show how performance drops for higher thresholds, with on the other hand a great reduction of the size of the grammar. A proper setting might well depend on the size and nature of the treebank used, and the computational costs one is willing to pay. In short, \ddop{} is computationally attractive but its theoretical foundation is not convincing us.
+%%wel performance maar competence raadsel
+%
+%Theoretically,\dops{} is more appealing: we decide on the symbolic grammar by assessing which fragments are actually used in derivations. The main assumption is that shortest derivations are preferred. The splitting of the treebank makes this possible (otherwise the grammar would be terribly overfitted).
+%
+%
+%
+%\subsection{Preview}
+%\dops{} is proven to be consistent and theoretically appealing. The computational problem of \dops{} is that, at first, the entire set of possible fragments is extracted from $EC$ and this set is reduced in a later phase. This comes with the need for huge storage and computation. In the next section, we investigate the possibility of reformulating the \dops{} approach with insights from the \ddop{} model to maintain the best of both worlds. 
+%
+%%\dops{} theoretically more appealing, \ddop{} computationally: lend properties of \ddop{} to implement \dops{}
+
+
+
+
 
 
 \subsection{Comparison}
-Both \dops{} and \ddop{} restrict the symbolic grammar based on some notion of reoccurence of fragments. 
+\dops{} and \ddop{} differ both in the set of fragments they extract and their estimation of the weights. To investigate the exact differences, we will view both steps separately.
 
-In \ddop{} this is evident, it is explicit in the algorithm how (largest) reoccuring fragments are added to the grammar. From a computational point of view, this approach is very intuitive and can be implemented rather efficiently. However, the threshold (two) on the number of reoccurences might seem rather trivial. Indeed, \cite{sangati2011} reports experiments varying this threshold that show how performance drops for higher thresholds, with on the other hand a great reduction of the size of the grammar. A proper setting might well depend on the size and nature of the treebank used, and the computational costs one is willing to pay. In short, \ddop{} is computationally attractive but its theoretical foundation is not convincing us.
-%wel performance maar competence raadsel
+Note that the \dops{} extraction needs another decision: in many cases, there are several shortest derivations possible. We can choose to add all fragments that occur in these derivations to the symbolic grammar. If we do so, we might need to adjust the weights (e.g. divide the frequency counts by the number of derivations) so that no full tree gets a higher impact on the PTSG.
+We will keep to the original formulation of \dops{} in case no derivation is possible, i.e. not including any fragments for this tree.
 
-Theoretically,\dops{} is more appealing: we decide on the symbolic grammar by assessing which fragments are actually used in derivations. The main assumption is that shortest derivations are preferred. The splitting of the treebank makes this possible (otherwise the grammar would be terribly overfitted).
+\paragraph{Extraction}
+It is easy to see that the \dops{} extraction method does not depend on the corpus split: we can also try to find the shortest possble derivation using fragments from all the other trees. %The following example shows that the set of extracted fragments is indeed different from the maximal overlapping fragments \ddop{} extracts.
+Therefore, we will implement both extraction methods in a 1 vs the rest manner and possibly also the split-based extraction.
+In this way, we can analyse how the resulting symbolic grammars differ. The analysis will comprise the size of the resulting symbolic grammar and the relative number of fragments of certain depth. Furthermore, we might be able to find interesting patterns by manually looking at the fragments that were extracted by one of the systems only.s
 
-
-
-\subsection{Preview}
-\dops{} is proven to be consistent and theoretically appealing. The computational problem of \dops{} is that, at first, the entire set of possible fragments is extracted from $EC$ and this set is reduced in a later phase. This comes with the need for huge storage and computation. In the next section, we investigate the possibility of reformulating the \dops{} approach with insights from the \ddop{} model to maintain the best of both worlds. 
-
-%\dops{} theoretically more appealing, \ddop{} computationally: lend properties of \ddop{} to implement \dops{}
-
-
-
+\paragraph{Estimation}
+If we have enough time, we can also compare the estimation methods: use either a split or the whole set of trees for both estimators. The comparison would involve a performance measure in this case, such as the F1-score for correctly predicted parses.
 
 
 

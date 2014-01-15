@@ -1,0 +1,8 @@
+Uitgekleed voorbeeld:
+
+HC is één boom
+
+EC is 'de rest'
+
+DOP*: kortste derivatie
+Double-DOP: maximale overlap
