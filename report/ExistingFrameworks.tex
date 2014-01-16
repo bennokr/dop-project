@@ -17,13 +17,15 @@ The symbolic grammar that is the output of this algorithmis not guaranteed to de
 
 After the extraction of the symbolic grammar, the weights are obtained. This is done in a second pass over the treebank, assessing the relative frequencies. 
 
-The \ddop model has its main focus on determining the symbolic grammar. However, it was implemented with different estimators and maximizing objectives. Empirical results show that %
-
-\subsection{\dops}
-In \dops \cite{zollmann2005}, a rather different approach is taken called held-out estimation. The treebank is split in two parts, the extraction corpus ($EC$) and a held-out corpus ($HC$). An initial set of fragments is extracted from the $EC$, containing all the fragments from its trees. The weights are then determined so as to to maximize the likelihood of $HC$, under the assumption that this is equivalent to maximizing the joint probability of the \emph{shortest derivations} of the trees in $HC$. All fragments that do not occur in such a derivation are removed from the symbolic grammar. Note that some trees in $HC$ may not be derivable at all. 
+The \ddop{} model has its main focus on determining the symbolic grammar. However, it was implemented with different estimators and maximizing objectives. Empirical results show that %
 
 \paragraph{Consistency and bias}
-\dops is claimed to be the first consistent (non-trivial) DOP-estimator, \cite{zollmann2005} provides a consistency proof. On the other hand \dops{} is  biased, but Zollmann shows how bias actually arises from generalization: no non-overfitting DOP estimator could be unbiased. Bias is therefore not prohibited but on the contrary a desirable property of an estimator.
+
+\subsection{\dops}
+In \dops{} \cite{zollmann2005}, a rather different approach is taken called held-out estimation. The treebank is split in two parts, the extraction corpus ($EC$) and a held-out corpus ($HC$). An initial set of fragments is extracted from the $EC$, containing all the fragments from its trees. The weights are then determined so as to to maximize the likelihood of $HC$, under the assumption that this is equivalent to maximizing the joint probability of the \emph{shortest derivations} of the trees in $HC$. All fragments that do not occur in such a derivation are removed from the symbolic grammar. Note that some trees in $HC$ may not be derivable at all. 
+
+\paragraph{Consistency and bias}
+\dops{} was claimed to be the first consistent (non-trivial) DOP-estimator, \cite{zollmann2005} provides a consistency proof. On the other hand \dops{} is  biased, but Zollmann shows how bias actually arises from generalization: no non-overfitting DOP estimator could be unbiased. Bias is therefore not prohibited but on the contrary a desirable property of an estimator.
 
 In \cite{zuidema2006} it is argued that there is a problem with the consistency proof given for \dops{}, as well as the non-consistency proof for other DOP-estimators by \cite{johnson2002}. Zuidema points out that these proofs use a frequency-distribution test, whereas for DOP a weight-distribution test would be more appropriate. 
 %Wat hiermee?
@@ -50,18 +52,28 @@ In \cite{zuidema2006} it is argued that there is a problem with the consistency 
 
 
 \subsection{Comparison}
+%The theoretical properties of \dops{} and \ddop{} differ:  
 \dops{} and \ddop{} differ both in the set of fragments they extract and their estimation of the weights. To investigate the exact differences, we will view both steps separately.
 
-Note that the \dops{} extraction needs another decision: in many cases, there are several shortest derivations possible. We can choose to add all fragments that occur in these derivations to the symbolic grammar. If we do so, we might need to adjust the weights (e.g. divide the frequency counts by the number of derivations) so that no full tree gets a higher impact on the PTSG.
-We will keep to the original formulation of \dops{} in case no derivation is possible, i.e. not including any fragments for this tree.
+Note that the \dops{} extraction needs another decision: in many cases, there are several shortest derivations possible. From now on, we add all fragments that occur in one of these shortest derivations to the symbolic grammar. Of course we need to adjust the weights (e.g. divide the frequency counts by the number of shortest derivations) so that no full tree gets a higher impact on the PTSG. We will keep to the original formulation of \dops{} in case no derivation is possible, i.e. not including any fragments for this tree.
 
 \paragraph{Extraction}
-It is easy to see that the \dops{} extraction method does not depend on the corpus split: we can also try to find the shortest possble derivation using fragments from all the other trees. %The following example shows that the set of extracted fragments is indeed different from the maximal overlapping fragments \ddop{} extracts.
-Therefore, we will implement both extraction methods in a 1 vs the rest manner and possibly also the split-based extraction.
-In this way, we can analyse how the resulting symbolic grammars differ. The analysis will comprise the size of the resulting symbolic grammar and the relative number of fragments of certain depth. Furthermore, we might be able to find interesting patterns by manually looking at the fragments that were extracted by one of the systems only.s
+\ddop{} uses tree kernels to find the maximal overlapping fragments of pairs of trees, which are added to the symbolic grammar. We will call this the \emph{maximal-overlap} method. \dops{} iteratively finds the shortest derivation of one tree given all the fragments of a set of trees, herafter the \emph{shortest-derivation} method. The example in figure \ref{f:differentSets} shows that the sets of extracted fragments from these methods does indeed differ.
+
+\begin{figure}
+\input{figureDifferentSets}
+\caption{The fragment sets resulting from \emph{maximal-overlap} and \emph{shortest-derivation} extraction}
+\label{f:differentSets}
+\end{figure}
+
+It is easy to see that the \dops{} extraction method does not depend on the corpus split: we can also try to find the shortest possble derivation using fragments from all the other trees. Likewise \ddop{} could be implemented using a split, comparing pairs that consist of a tree from each part of the corpus. Whether the corpus is split in two does only influence the size of the symbolic grammar and not its constitution.
+
+Therefore, we will implement both extraction methods in a 1 vs the rest manner. In this way, we can analyse how the resulting symbolic grammars differ. The analysis will comprise the size of the resulting symbolic grammar and the relative number of fragments of certain depth. Furthermore, we might be able to find interesting patterns by manually looking at the fragments that were extracted by one of the systems only.s
 
 \paragraph{Estimation}
-If we have enough time, we can also compare the estimation methods: use either a split or the whole set of trees for both estimators. The comparison would involve a performance measure in this case, such as the F1-score for correctly predicted parses.
+The next step would be to compare the estimation methods: use either a split or the whole set of trees for both estimators. \ddop{} counts the occurences of fragments in the symbolic grammar, whereas \dops{} counts the occurrences in shortest derivations. Therefore, the extraction and estimation are best done simultaneously in the latter case. This comparison would involve a performance measure, such as the F1-score for correctly predicted parses.
+
+
 
 
 

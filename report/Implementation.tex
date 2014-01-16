@@ -1,40 +1,91 @@
-\section{A new implementation}
+\section{Implementation}
 %Description of our implementation, how does it resemble Double-DOP and DOP*? What are the differences? What are the theoretical capabilities? 
 
+\subsection{Extraction}
+Algorithm \ref{a:dops2} performs shortest-derivation extraction (as in \dops{}) in an efficient way, resembling the tree kernel approach in the iterative comparison of one tree with others. Namely, we iterate over the trees in $HC$ (lines 2-8): create a list $F$ of all of its fragments that occur in the rest of the treebank (line 3) and increment the count of the fragments in $F$ that occur in the shortest derivation(s). In this way, we do not need to store all fragments in $EC$ as in the initial step of the original \dops{} algorithm. 
 
-We propose the following algorithm to perform a \dops{}-like estimation using the efficient tree-kernel approach from \ddop{}.
+Algorithm \ref{a:ddop1} performs the maximal-overlap extraction (as in \ddop{}). For the comparison of trees to find the maximal overlap (line 4), the tree kernel approach from \cite{sangati2011} is used. 
 
-\begin{algorithm}[H]
-{\bf Data}: non-overlapping treebanks $EC$ and $HC$\\
-{\bf Result}: a PTSG, i.e. a map of tree fragments and corresponding weights\\
+\begin{algorithm}
+{\bf Data}: a treebank $TB$\\
+{\bf Result}: a map of tree fragments and corresponding counts in shortest derivations\\
 \begin{algorithmic}[1]
-\State{Initialize $M$, a map from fragments to weights, empty}
-\For {$t_H\in HC$}
-%	\State $Q\gets frag(t_H)$
-%	\State $F \gets \emptyset$
-%	\While{$Q$ not empty}% or a smarter constraint
-%		\For{$t_E \in EC$}
-%			\For{$f \in Q\cap frag(t_E)$}
-%				\State $Q\gets Q/\{f\}$	
-%				\State $F\gets F\cup\{f\}$	
-%			\EndFor
-%		\EndFor
-%	\EndWhile
-	\State $F \gets Frag(t_H)\cap \bigcup\limits_{t_E\in EC} frag(t_E)$
-	\State{$D\gets$ the shortest derivation of $t_H$ using fragments in $F$}		
+\State{Initialize $M$, a map from fragments to counts, empty}
+\For {$t\in TB$}
+	\State $F \gets Frag(t)\cap \bigcup\limits_{t'\in TB/\{t\}} frag(t')$
+	\State{$D\gets$ the shortest derivation(s) of $t$ using fragments in $F$}		
 	\For{$f\in D$}
-		\State $M[f]\gets M[f]+1$
+		\State add $f$ to $M$ {\bf if} $f\not\in M$
+		\State $M[f]\gets M[f]+1$ \Comment{Anticipating the estimation step}
 	\EndFor
 \EndFor
-\For{$n \in V_N$}
-	\State{Add the counts of all fragments rooted at $n$}
-	\State{Normalize the weights of these fragments}
-\EndFor	
+%\For{$n \in V_N$}
+%	\State{Add the counts of all fragments rooted at $n$}
+%	\State{Normalize the weights of these fragments}
+%\EndFor	
 \end{algorithmic}
+\caption{Shortest derivation extraction in a one vs the rest manner}
+\label{a:dops2}
 \end{algorithm}
 
-In words:
-Iterate over the trees in $HC$ (lines 2-17): create a list $F$ of all of its fragments that occur in $EC$ (lines 3-12). This procedure resembles the treekernels from \ddop.
-Create the shortest derivation $D$ from fragments in $F$ (NB: this is not always possible, in which case $D=\emptyset$). Increment the counts of these fragments in the map $M$
 
-In \ddop, we would iterate over pairs of trees. With treebank size $n$, that would require $n!$ comparisons. In our proposed algorithm, we need to iterate over each combination of a tree in $HC$ with (worst case\footnote{The condition in line $5$ avoids unnecessary search for fragments. We might be able to pose a smarter constraint here, such that we only continue if we can possibly find fragments that lead to a shorter derivation}) all trees in $EC$. This requires $n/2 \times n/2$ comparisons. Furthermore, we immediately store the counts, so we don't need to iterate over the data again to assess the weights. We do however need to normalize the weights, such that the sum of weights of all fragment sharing the same root equals 1.
+\begin{algorithm}
+{\bf Data}: a treebank $TB$\\
+{\bf Result}: a set of tree fragments\\
+\begin{algorithmic}[1]
+\State{Initialize $M$, a map from fragments to weights, empty}
+\For{$t\in TB$}
+	\For{$t'\in TB/\{t\}$}
+		\State $f\gets$ maximal overlapping fragment(s) of $t$ and $t'$
+		\State add $f$ to $M$ {\bf if} $f\not\in M$
+	\EndFor
+\EndFor
+\end{algorithmic}
+
+
+
+\caption{Maximal overlap extraction in a one vs the rest manner}
+\label{a:ddop1}
+\end{algorithm}
+
+\subsection{Estimation}
+Now for estimation, we use the output of the extraction algorithm. In the case of shortest-derivation extraction (algorithm \ref{a:dops2}), we only need to normalize the counts in $M$ to their relative frequency as compared to fragments that have the same root. In the case of maximal-overlap extraction (algorithm \ref{a:ddop1}), we need to iterate over the dataset once more to count the occurences of the fragments in the output and then compute their relative frequencies.
+
+%In \ddop, we would iterate over pairs of trees. With treebank size $n$, that would require $n!$ comparisons. In our proposed algorithm, we need to iterate over each combination of a tree in $HC$ with (worst case\footnote{The condition in line $5$ avoids unnecessary search for fragments. We might be able to pose a smarter constraint here, such that we only continue if we can possibly find fragments that lead to a shorter derivation}) all trees in $EC$. This requires $n/2 \times n/2$ comparisons. Furthermore, we immediately store the counts, so we don't need to iterate over the data again to assess the weights. We do however need to normalize the weights, such that the sum of weights of all fragment sharing the same root equals 1.
+
+
+
+
+%In words: Iterate over the trees in $HC$ (lines 2-17): create a list $F$ of all of its fragments that occur in $EC$ (lines 3-12). This procedure resembles the treekernels from \ddop. Create the shortest derivation $D$ from fragments in $F$ (NB: this is not always possible, in which case $D=\emptyset$). Increment the counts of these fragments in the map $M$
+
+%\begin{algorithm}[H]
+%{\bf Data}: non-overlapping treebanks $EC$ and $HC$\\
+%{\bf Result}: a PTSG, i.e. a map of tree fragments and corresponding weights\\
+%\begin{algorithmic}[1]
+%\State{Initialize $M$, a map from fragments to weights, empty}
+%\For {$t_H\in HC$}
+%%	\State $Q\gets frag(t_H)$
+%%	\State $F \gets \emptyset$
+%%	\While{$Q$ not empty}% or a smarter constraint
+%%		\For{$t_E \in EC$}
+%%			\For{$f \in Q\cap frag(t_E)$}
+%%				\State $Q\gets Q/\{f\}$	
+%%				\State $F\gets F\cup\{f\}$	
+%%			\EndFor
+%%		\EndFor
+%%	\EndWhile
+%	\State $F \gets Frag(t_H)\cap \bigcup\limits_{t_E\in EC} frag(t_E)$
+%	\State{$D\gets$ the shortest derivation of $t_H$ using fragments in $F$}		
+%	\For{$f\in D$}
+%		\State add $f$ to $M$ {\bf if} $f\not\in M$
+%		\State $M[f]\gets M[f]+1$
+%	\EndFor
+%\EndFor
+%\For{$n \in V_N$}
+%	\State{Add the counts of all fragments rooted at $n$}
+%	\State{Normalize the weights of these fragments}
+%\EndFor	
+%\end{algorithmic}
+%\caption{\dops{} extraction and estimation}
+%\label{a:dops1}
+%\end{algorithm}
