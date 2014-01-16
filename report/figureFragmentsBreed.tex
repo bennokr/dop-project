@@ -1,0 +1,85 @@
+
+\begin{tikzpicture}
+[node distance = 0 pt, sibling distance=18pt, level distance=20pt,level 2/.style={sibling distance=9pt},level 3/.style={sibling distance=9pt}]
+
+\draw[black,dashed,join=round, inner frame sep=2cm and 2cm, rounded corners ] (0,6) rectangle (14.8,10);
+%\node[fill = white, rectangle, draw] (treebank) at(3.5,10) {Fragments with non-zero weights};
+
+
+\node (f1) at(0.8,9){f1:}
+node [ below =of f1] {S}
+child {node {A} 		}
+child {node {B}		}
+;
+
+
+\node (f2) at(2.0,9){f2:}
+node [ below =of f2] {S}
+child {node {A} 	child {node {a}}
+	}
+child {node {B}	}
+;
+
+\node (f3)  at(3.2,9){f3:}
+node [ below =of f3] {S}
+child {node {A} 	}
+child {node {B}	child{node {b}}
+	}
+;
+
+\node (f4) at(4.4,9) {f4:}
+node [ below =of f4] {S}
+child {node {A} 	child{node {A}	child{node {a}}}
+			child{node {B}	child{node {b}}}
+	}
+child {node {B}		}
+;
+
+\node (f5) at(5.6,9) {f5:}
+node [ below =of f5] {S}
+child {node {A} 		}
+child {node {B}	child{node {X}	child{node {x}}}
+			child{node {Y}	child{node {y}}}
+	}
+;
+
+
+\node(f6) at(6.8,9) {f6:}
+node [ below =of f6] {A}	
+	child {node {a}}
+;
+
+\node(f7) at(8,9) {f7:}
+node [ below =of f7]  {A} 	
+	child{node {A}	child{node {a}}}
+	child{node {B}	child{node {b}}}
+;
+
+
+\node(f8) at(9.2,9) {f8:}
+node [ below =of f8] {B}	
+	child {node {b}}
+;
+
+\node(f9) at(10.4,9) {f9:}
+node [ below =of f9]  {B} 	
+	child{node {X}	child{node {x}}}
+	child{node {Y}	child{node {y}}}
+;
+
+\node(f10) at(11.6,9) {f10:}
+node [ below =of f10]  {B} 	
+	child{node {X}	}
+	child{node {Y}	}
+;
+
+\node(f11) at(12.8,9) {f11:}
+node [ below =of f11] {X}	
+	child {node {x}}
+;
+
+\node(f12) at(14,9) {f12:}
+node [ below =of f12] {Y}	
+	child {node {y}}
+;
+\end{tikzpicture}
