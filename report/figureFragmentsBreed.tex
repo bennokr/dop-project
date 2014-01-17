@@ -6,28 +6,28 @@
 %\node[fill = white, rectangle, draw] (treebank) at(3.5,10) {Fragments with non-zero weights};
 
 
-\node (f1) at(0.8,9){f1:}
+\node (f1) at(0.6,9){f1:}
 node [ below =of f1] {S}
 child {node {A} 		}
 child {node {B}		}
 ;
 
 
-\node (f2) at(2.0,9){f2:}
+\node (f2) at(1.7,9){f2:}
 node [ below =of f2] {S}
 child {node {A} 	child {node {a}}
 	}
 child {node {B}	}
 ;
 
-\node (f3)  at(3.2,9){f3:}
+\node (f3)  at(2.8,9){f3:}
 node [ below =of f3] {S}
 child {node {A} 	}
 child {node {B}	child{node {b}}
 	}
 ;
 
-\node (f4) at(4.4,9) {f4:}
+\node (f4) at(3.9,9) {f4:}
 node [ below =of f4] {S}
 child {node {A} 	child{node {A}	child{node {a}}}
 			child{node {B}	child{node {b}}}
@@ -35,7 +35,7 @@ child {node {A} 	child{node {A}	child{node {a}}}
 child {node {B}		}
 ;
 
-\node (f5) at(5.6,9) {f5:}
+\node (f5) at(5.0,9) {f5:}
 node [ below =of f5] {S}
 child {node {A} 		}
 child {node {B}	child{node {X}	child{node {x}}}
@@ -43,43 +43,47 @@ child {node {B}	child{node {X}	child{node {x}}}
 	}
 ;
 
-
-\node(f6) at(6.8,9) {f6:}
+\node(f6) at(6.1,9) {f6:}
 node [ below =of f6] {A}	
 	child {node {a}}
 ;
 
-\node(f7) at(8,9) {f7:}
+\node(f7) at(7.2,9) {f7:}
 node [ below =of f7]  {A} 	
 	child{node {A}	child{node {a}}}
 	child{node {B}	child{node {b}}}
 ;
 
+\node(f8) at(8.3,9){f8:}
+node [ below =of f8]  {A} 	
+	child{node {A}	}
+	child{node {B}	}
+;
 
-\node(f8) at(9.2,9) {f8:}
-node [ below =of f8] {B}	
+\node(f9) at(9.4,9) {f9:}
+node [ below =of f9] {B}	
 	child {node {b}}
 ;
 
-\node(f9) at(10.4,9) {f9:}
-node [ below =of f9]  {B} 	
+\node(f10) at(10.5,9) {f10:}
+node [ below =of f10]  {B} 	
 	child{node {X}	child{node {x}}}
 	child{node {Y}	child{node {y}}}
 ;
 
-\node(f10) at(11.6,9) {f10:}
-node [ below =of f10]  {B} 	
+\node(f11) at(11.6,9) {f11:}
+node [ below =of f11]  {B} 	
 	child{node {X}	}
 	child{node {Y}	}
 ;
 
-\node(f11) at(12.8,9) {f11:}
-node [ below =of f11] {X}	
+\node(f12) at(12.8,9) {f12:}
+node [ below =of f12] {X}	
 	child {node {x}}
 ;
 
-\node(f12) at(14,9) {f12:}
-node [ below =of f12] {Y}	
+\node(f13) at(14,9) {f13:}
+node [ below =of f13] {Y}	
 	child {node {y}}
 ;
 \end{tikzpicture}

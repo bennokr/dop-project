@@ -1,0 +1,15 @@
+Features of a fragment:
+
+A - Depth
+B - Root node
+C - Number of nodes (internal, external)
+D - Occurrence of terminals
+E - Weight according to Max-overlap
+F - Weight according to shortest-der
+G - Difference between E and F (is this predictable from the features? i.e. usable for regression?)
+
+
+Visualization: Sort by difference in assigned weight? 
+Scatterplot with E and F along the axes (possibly also: depth color, shape root)
+
+NB binarization: when? And transformation to PCFG rules for parser?

@@ -15,14 +15,21 @@ In the following, we discuss \ddop{} as it was presented in \cite{sangati2011}. 
 
 The symbolic grammar that is the output of this algorithmis not guaranteed to derive each tree in the training corpus. Therefore all one-level fragments, consitutuing the set of PCFG-productions, are also added.
 
-After the extraction of the symbolic grammar, the weights are obtained. This is done in a second pass over the treebank, assessing the relative frequencies. 
+The \ddop{} model describes an extraction method for determining the symbolic grammar. However, it was also implemented with different estimators. The estimation is done in a second pass over the treebank, gathering frequency counts for the fragments in the gramar. 
 
-The \ddop{} model has its main focus on determining the symbolic grammar. However, it was implemented with different estimators and maximizing objectives. Empirical results show that %
+The best maximizing objective appears to be MCP (max consituent parse), which maximizes a weighted average of expected labeled recall and precision. The latter cannot be maximized directly, but is approximated by minimizing the mistake rate. 
+Parameter $\lambda$ that rules the linear interpolation was empirically found to be optimal at 1.15. Efficient calculation of MPC is possible with dynamic programming, but it can also be approximated with a list of $k$-best derivations.
+
+In addition, empirical results show that the relative frequency estimate outperforms the other estimates tested, i.e. Equal Weights Estimate (first adjust counts proportional to the size of the symbolic grammar, this value proportional to fragments with the same root), adn Maximum Likelihood ( optimizing to maximum likelihood for the training data with an Inside-Outside algorithm). 
+%NB in contrast to earlier findings
+%NB: unknown words approach: rare words, frequency <5, get a general tag based on morphological features
+
 
 \paragraph{Consistency and bias}
 
 \subsection{\dops}
-In \dops{} \cite{zollmann2005}, a rather different approach is taken called held-out estimation. The treebank is split in two parts, the extraction corpus ($EC$) and a held-out corpus ($HC$). An initial set of fragments is extracted from the $EC$, containing all the fragments from its trees. The weights are then determined so as to to maximize the likelihood of $HC$, under the assumption that this is equivalent to maximizing the joint probability of the \emph{shortest derivations} of the trees in $HC$. All fragments that do not occur in such a derivation are removed from the symbolic grammar. Note that some trees in $HC$ may not be derivable at all. 
+In \dops{} \cite{zollmann2005}, a rather different approach is taken called held-out estimation. The treebank is split in two parts, the extraction corpus ($EC$) and a held-out corpus ($HC$). An initial set of fragments is extracted from the $EC$, containing all the fragments from its trees. The weights are then determined so as to to maximize the likelihood of $HC$, under the assumption that this is equivalent to maximizing the joint probability of the \emph{shortest derivations} of the trees in $HC$. All fragments that do not occur in such a derivation are removed from the symbolic grammar. 
+Note that some trees in $HC$ may not be derivable at all. Furthermore, a tree could have several shortest derivations. 
 
 \paragraph{Consistency and bias}
 \dops{} was claimed to be the first consistent (non-trivial) DOP-estimator, \cite{zollmann2005} provides a consistency proof. On the other hand \dops{} is  biased, but Zollmann shows how bias actually arises from generalization: no non-overfitting DOP estimator could be unbiased. Bias is therefore not prohibited but on the contrary a desirable property of an estimator.
@@ -60,7 +67,8 @@ Note that the \dops{} extraction needs another decision: in many cases, there ar
 \paragraph{Extraction}
 \ddop{} uses tree kernels to find the maximal overlapping fragments of pairs of trees, which are added to the symbolic grammar. We will call this the \emph{maximal-overlap} method. \dops{} iteratively finds the shortest derivation of one tree given all the fragments of a set of trees, herafter the \emph{shortest-derivation} method. 
 
-It is easy to see that the \dops{} extraction method does not depend on the corpus split: we can also try to find the shortest possble derivation using fragments from all the other trees. Likewise \ddop{} could be implemented using a split, comparing pairs that consist of a tree from each part of the corpus. Whether the corpus is split in two does only influence the size of the symbolic grammar and not its constitution.
+It is easy to see that the \dops{} extraction method does not depend on the corpus split: we can also try to find the shortest possble derivation using fragments from all the other trees. Likewise \ddop{} could be implemented using a split, comparing pairs that consist of a tree from each part of the corpus. 
+%Whether the corpus is split in two does only influence the size of the symbolic grammar and
 
 Therefore, we will implement both extraction methods in a 1 vs the rest manner. In this way, we can analyse how the resulting symbolic grammars differ. The analysis will comprise the size of the resulting symbolic grammar and the relative number of fragments of certain depth. Furthermore, we might be able to find interesting patterns by manually looking at the fragments that were extracted by one of the systems only.s
 
@@ -82,26 +90,27 @@ Note the remarkable differences in the weight distributions. For example, f1 get
 
 \begin{figure}[h!]
 \center \input{figureFragmentsBreed}
-\caption{The fragments that get a non-zero weight in\emph{maximal-overlap} or \emph{shortest-derivation} extraction}
+\caption{The fragments that get a non-zero weight in \emph{maximal-overlap} or \emph{shortest-derivation} extraction}
 \label{f:fragments}
 \end{figure}
 
 \begin{table}[h!]
 \center
-\begin{tabular}{c|p{.21\textwidth}c|p{.21\textwidth}c|}
+\begin{tabular}{c|p{.26\textwidth}c|p{.21\textwidth}c|}
 &Maximal overlap&Weight&Shortest derivation\footnotemark&Weight\\\hline
-f1&(t1,t3),(t2,t4)&6/12&-&0\\
-f2&-&0&1b,2a&1/4\\
-f3&(2,3)&2/12&2b, 3b&1/4\\
-f4&(3,4)&2/12&3a, 4b&1/4\\
-f5&(1,4)&2/12&1a, 4a&1/4\\
-f6&(1,3),(1,4),(2,3),(2,4)&4/4&1a, 2b&1/2\\
+f1&(t1,t3),(t2,t4)&4/12&-&0\\
+f2&(t1,t2)&2/12&1b, 2a&1/4\\
+f3&(t2,t3)&2/12&2b, 3b&1/4\\
+f4&(t3,t4)&2/12&3a, 4b&1/4\\
+f5&(t1,t4)&2/12&1a, 4a&1/4\\
+f6&(t1,t3),(t1,t4),(t2,t3),(t2,t4)&4/6&1a, 2b&1/2\\
 f7&-&0&3b, 4a&1/2\\
-f8&(2,3),(2,4),(3,4)&4/6&2a, 3a&1/2\\
-f9&-&0&1b, 4b&1/2\\
-f10&-  PCFG rule&2/6&-&0\\
-f11&- PCFG rule&2/2&-&0\\
+f8&- PCFG rule&2/6&-&0\\
+f9&(t2,t3),(t2,t4),(t3,t4)&4/6&2a, 3a&1/2\\
+f10&-&0&1b, 4b&1/2\\
+f11&-  PCFG rule&2/6&-&0\\
 f12&- PCFG rule&2/2&-&0\\
+f13&- PCFG rule&2/2&-&0\\
 \end{tabular}
 \caption{The weights assignment according to both methods in a one vs. the rest manner}
 \label{t:weights}
