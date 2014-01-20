@@ -8,10 +8,10 @@ Later models have therefore restricted the set of fragments in the grammar, thus
 
 %Iets met Goodman? Die behoudt alleen kleine stukjes en speciale regels, maar daardoor geen expliciete representatie van 'productive units' (Sangati, einde van sectie 2)
 
-In this section, we outline two approaches to constrain the extraction of fragments: \ddop and \dops. Furthermore, we discuss the similarities and dissimilarities for these two approaches. 
+In this section, we outline two approaches to constrain the extraction of fragments: \ddop{} and \dops{}. Furthermore, we discuss the similarities and dissimilarities for these two approaches. 
 
 \subsection{\ddop}
-In the following, we discuss \ddop{} as it was presented in \cite{sangati2011}. In this model, no unique fragments are extracted from the dataset: if a construction occurs in one tree only, it is probably not representative for the language. This is carried out by a dynamic algorithm using tree-kernels. It iterates over pairs of trees in the treebank, looking for fragments they have in common. In addition, only the largest shared fragment is stored. 
+In the following, we discuss \ddop{} as it was presented in \cite{sangati2011}. In this model, no unique fragments are extracted from the dataset: if a construction occurs in one tree only, it is probably not representative for the language. This is carried out by a dynamic algorithm using tree-kernels. It iterates over pairs of trees in the treebank, looking for fragments they have in common. In fact, only the largest shared fragment is stored. 
 
 The symbolic grammar that is the output of this algorithmis not guaranteed to derive each tree in the training corpus. Therefore all one-level fragments, consitutuing the set of PCFG-productions, are also added.
 
@@ -20,7 +20,7 @@ The \ddop{} model describes an extraction method for determining the symbolic gr
 The best maximizing objective appears to be MCP (max consituent parse), which maximizes a weighted average of expected labeled recall and precision. The latter cannot be maximized directly, but is approximated by minimizing the mistake rate. 
 Parameter $\lambda$ that rules the linear interpolation was empirically found to be optimal at 1.15. Efficient calculation of MPC is possible with dynamic programming, but it can also be approximated with a list of $k$-best derivations.
 
-In addition, empirical results show that the relative frequency estimate outperforms the other estimates tested, i.e. Equal Weights Estimate (first adjust counts proportional to the size of the symbolic grammar, this value proportional to fragments with the same root), adn Maximum Likelihood ( optimizing to maximum likelihood for the training data with an Inside-Outside algorithm). 
+In addition, empirical results show that the relative frequency estimate outperforms the other estimates tested, i.e. Equal Weights Estimate (first adjust counts proportional to the size of the symbolic grammar, this value proportional to fragments with the same root), and Maximum Likelihood (optimizing to maximum likelihood for the training data with an Inside-Outside algorithm). 
 %NB in contrast to earlier findings
 %NB: unknown words approach: rare words, frequency <5, get a general tag based on morphological features
 

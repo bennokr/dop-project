@@ -5,10 +5,16 @@
 %NB: introduce term 'fragment' for usage throughout this document
 
 
+%Je hebt de introductie en terminologie helemaal uit elkaar getrokken. Wat op zich wel helder is, maar niet zo compact.. Aangezien we maar 9 pagina's mogen schrijven kunnen we dat denk ik beter samenvoegen.
+
 - Why DOP (pragmatic)
-In most theories of natural language syntax, parse trees are built up from small, simple rules. When building an empirical model of observed parse trees, these rules are extended with probabilities. This gives the trees that are `generated' by these rules their own probability, which makes it a statistical model of a distribution over natural language syntax.
-An alternative approach to these small rules is using larger chunks of parse trees and connecting those together to build the syntactic structures. Just like the simple rules, the chucks have probabilities as well, and connecting them creates probabilities for trees to model the statistical language distribution.
-The Data-Oriented Parsing approach is the most radical step away from just using small rules. It takes the trees apart in all possible ways and estimates the probabilities of the parts by counting how often they occur compared to the others. The probability of a tree built in a certain way is the product of the probability of the used parts, and the probability of that tree itself is the sum of the probabilities of all the ways it can be put together.
+In most theories of natural language syntax, parse trees are built up from small, simple rules. 
+%=CFG (noemen)
+When building an empirical model of observed parse trees, these rules are extended with probabilities. This gives the trees that are `generated' by these rules their own probability, which makes it a statistical model of a distribution over natural language syntax.
+An alternative approach to these small rules is using larger chunks of parse trees and connecting those together to build the syntactic structures. 
+%Maybe introduce the term 'fragment' here right away?
+Just like the simple rules, the chunks have probabilities as well, and connecting them creates probabilities for trees to model the statistical language distribution.
+The Data-Oriented Parsing approach is the most radical step away from just using small rules. It takes the trees apart in all possible ways and estimates the probabilities of the parts by counting how often they occur compared to the others. The probability of a tree built in a certain way is the product of the probability of the used parts, and the probability of that tree itself is the sum of the probabilities of all the ways it can be put together. %term 'derivations's
 
 $$$$
 
@@ -17,11 +23,11 @@ However, this takes too long to calculate, so it's better to only look at the wa
 - Terminology
 
 \emph{Tree-adjoining grammar} (?)
-Connecting parts of trees together is called \emph{composing}, and building a tree from those pieces is called \emph{deriving} the tree.
+Connecting parts of trees is called \emph{composing}, and building a tree from those pieces is called \emph{deriving} the tree.
 \emph{fragments}
 \emph{subtrees}
 
-- Why not DOP? (some sampling & stuff)
+- Why not DOP? (some sampling \& stuff)
 Distribution, sampling, estimation, corpus.
 
 In theory, an estimator should make exactly the right estimations of probabilities if it's given an infinite amount of data. That is to say, it should \emph{converge} to the true distribution. If an estimator converges in the limit, that estimator is \emph{consistent}.
