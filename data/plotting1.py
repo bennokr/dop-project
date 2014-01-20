@@ -6,6 +6,7 @@ class Fragment:
     def __init__(self, flat):
         self.ddopWeight = 0
         self.dopsWeight = 0
+        #Depth of the fragment:
         depth = 0
         maxDepth = 0
         for c in flat:
@@ -15,9 +16,10 @@ class Fragment:
                depth = depth -1
             if depth>maxDepth:
                maxDepth = depth
-       # print flat, maxDepth
         self.depth = maxDepth
-#        self.root =
+        #Root of the fragment:
+        self.root = flat.split()[0][1:]
+
 
     def setDops(self,weight):
         self.dopsWeight = weight
@@ -37,45 +39,55 @@ def simplePlot(fragments):
         dops[i] = frag.dopsWeight
         color[i] = frag.depth
         i = i+1
+    plt.xlabel('Weight assigned by Double-Dop')
+    plt.ylabel('Weight assigned by DOP*')
 
-#    toPlot = [frag.ddopWeight,frag.dopsWeight,frag.depth) for flat,frag in fragments.iteritems()]
-#    plt.scatter(toPlot
     plt.scatter(ddop,dops,c=color,edgecolors='None')
+    plt.ylim([-0.01,1])
+    plt.xlim([-0.01,1])
     plt.show()
     print toPlot
 
-fragments = dict()
-count = 0
-
-f = open('tiny-dopstar-frags.txt', 'r')
-for line in f:
-    count = count + 1
-  #  print line
-    [flatFragment,weight] = line.split("\t")
-    flatFragment = flatFragment.translate(None, '@')
-    weight = float(weight)
-    if flatFragment not in fragments:
-        fragments[flatFragment] = Fragment(flatFragment)
-    fragments[flatFragment].setDops(weight)
-f.close()
-
-f = open('tiny-ddop-frags.txt', 'r')
-for line in f:
-    count = count + 1
-  #  print line
-    [flatFragment,weight] = line.split("\t")
-
-    [numerator,denominator] = weight.split("/")
-    weight = float(numerator)/float(denominator)
-    if flatFragment not in fragments:
-        fragments[flatFragment] = Fragment(flatFragment)
-    fragments[flatFragment].setDdop(weight)
-f.close()
 
 
-#print fragments
-print len(fragments)
-print count
+
+def getFragments(ddopFile, dopsFile):
+    fragments = dict()
+    f = open(dopsFile, 'r')
+    nDops = 0
+    for line in f:
+        nDops += 1
+        [flatFragment,weight] = line.split("\t")
+        flatFragment = flatFragment.translate(None, '@')
+        weight = float(weight)
+        if flatFragment not in fragments:
+            fragments[flatFragment] = Fragment(flatFragment)
+        fragments[flatFragment].setDops(weight)
+    f.close()
+
+    f = open(ddopFile, 'r')
+    nDdop = 0
+    for line in f:
+        nDdop += 1
+        [flatFragment,weight] = line.split("\t")
+        [numerator,denominator] = weight.split("/")
+        weight = float(numerator)/float(denominator)
+        if flatFragment not in fragments:
+            fragments[flatFragment] = Fragment(flatFragment)
+        fragments[flatFragment].setDdop(weight)
+    f.close()
+
+    overlap = nDops + nDdop - len(fragments)
+    print 'Dop* has ', nDops,' fragments'
+    print 'Double-DOP has ', nDdop,' fragments'
+    print 'There are ',overlap,' shared fragments'
+
+    return fragments
+
+
+dopsFile = "dopstarfrags.txt"
+ddopFile = "ddopfrags.txt"
+fragments = getFragments(ddopFile, dopsFile)
 simplePlot(fragments)
 
 
