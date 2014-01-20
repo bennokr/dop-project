@@ -1,0 +1,4 @@
+(TOP (S (NP (DT The) (NN mouse)) (VP (VBP saw) (NP (DT the) (NP|<JJ> (JJ yellow) (NN cat))))))
+(TOP (S (NP (DT The) (NP|<JJ> (JJ little) (NN mouse))) (VP (VBP saw) (NP (DT the) (NN cat)))))
+(TOP (S (NP (DT The) (NN cat)) (VP (VBP ate) (NP (DT the) (NN dog)))))
+(TOP (S (NP (DT The) (NN mouse)) (VP (VBP ate) (NP (DT the) (NN cat)))))
