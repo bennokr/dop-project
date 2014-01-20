@@ -2,4 +2,43 @@
 \section{Introduction}
 %Introduction to the paper
 %General introduction to the DOP framework, terminology 
-%NB: introduce term 'fragment' for usage troughout this document
+%NB: introduce term 'fragment' for usage throughout this document
+
+
+- Why DOP (pragmatic)
+In most theories of natural language syntax, parse trees are built up from small, simple rules. When building an empirical model of observed parse trees, these rules are extended with probabilities. This gives the trees that are `generated' by these rules their own probability, which makes it a statistical model of a distribution over natural language syntax.
+An alternative approach to these small rules is using larger chunks of parse trees and connecting those together to build the syntactic structures. Just like the simple rules, the chucks have probabilities as well, and connecting them creates probabilities for trees to model the statistical language distribution.
+The Data-Oriented Parsing approach is the most radical step away from just using small rules. It takes the trees apart in all possible ways and estimates the probabilities of the parts by counting how often they occur compared to the others. The probability of a tree built in a certain way is the product of the probability of the used parts, and the probability of that tree itself is the sum of the probabilities of all the ways it can be put together.
+
+$$$$
+
+However, this takes too long to calculate, so it's better to only look at the ways a tree can be put together in the smallest number of steps (the shortest derivation).
+
+- Terminology
+
+\emph{Tree-adjoining grammar} (?)
+Connecting parts of trees together is called \emph{composing}, and building a tree from those pieces is called \emph{deriving} the tree.
+\emph{fragments}
+\emph{subtrees}
+
+- Why not DOP? (some sampling & stuff)
+Distribution, sampling, estimation, corpus.
+
+In theory, an estimator should make exactly the right estimations of probabilities if it's given an infinite amount of data. That is to say, it should \emph{converge} to the true distribution. If an estimator converges in the limit, that estimator is \emph{consistent}.
+
+\emph{relative frequency}
+
+Expectation given a distribution, Loss, risk, mean squared difference, error.
+
+Other estimators:
+EWE, MLE
+
+
+
+- Why DOP*?
+
+
+
+- How do we prevent overfitting?
+
+bias is good.
