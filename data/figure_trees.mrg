@@ -1,0 +1,4 @@
+(S (A a) (B (X x) (Y y)))
+(S (A a) (B b))
+(S (A (A a) (B b)) (B b))
+(S (A (A a) (B b)) (B (X x) (Y y)))

@@ -1,0 +1,35 @@
+(TOP (S (NP ) (VP (VBP saw) (NP (DT the) (NN cat)))))	2/59
+(TOP (S (NP (DT The) (NN mouse)) (VP (VBP saw) (NP ))))	2/59
+(NP (DT ) (NN ))	11/23
+(TOP (S (NP (DT The) (NN )) (VP (VBP ) (NP ))))	6/59
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	3/23
+(NP|<JJ> (JJ ) (NN ))	3/3
+(JJ little)	1/3
+(VP (VBP ) (NP ))	7/7
+(TOP (S (NP (DT The) (NN )) (VP (VBP saw) (NP (DT the) (NN )))))	2/59
+(S (NP ) (VP ))	7/7
+(VBP saw)	5/7
+(TOP (S (NP (DT The) (NN mouse)) (VP (VBP ) (NP ))))	3/59
+(NN cat)	7/14
+(TOP (S (NP (DT The) (NN cat)) (VP (VBP ) (NP (DT the) (NN dog)))))	2/59
+(NP (DT ) (NN cat))	6/23
+(TOP (S (NP (DT The) (NN )) (VP (VBP ate) (NP (DT the) (NN )))))	2/59
+(TOP (S (NP (DT The) (NN cat)) (VP (VBP saw) (NP ))))	2/59
+(TOP (S (NP ) (VP (VBP ) (NP (DT the) (NN )))))	5/59
+(TOP (S (NP (DT The) (NN )) (VP (VBP saw) (NP (DT the) (NP|<JJ> (JJ ) (NN ))))))	2/59
+(NN dog)	3/14
+(TOP (S (NP (DT The) (NN )) (VP (VBP saw) (NP ))))	4/59
+(NP (DT ) (NP|<JJ> ))	3/23
+(DT The)	7/14
+(JJ hungry)	1/3
+(NN mouse)	4/14
+(TOP (S (NP ) (VP (VBP ) (NP (DT the) (NN cat)))))	3/59
+(TOP (S (NP (DT The) (NN )) (VP (VBP ) (NP (DT the) (NN )))))	4/59
+(TOP (S (NP ) (VP (VBP saw) (NP (DT the) (NN )))))	3/59
+(TOP (S (NP ) (VP (VBP saw) (NP ))))	5/59
+(VBP ate)	2/7
+(TOP (S ))	7/59
+(TOP (S (NP (DT The) (NN mouse)) (VP (VBP ) (NP (DT the) (NN cat)))))	2/59
+(TOP (S (NP (DT The) (NN cat)) (VP (VBP ) (NP ))))	3/59
+(DT the)	7/14
+(JJ yellow)	1/3

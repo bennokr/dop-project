@@ -1,3 +1,0 @@
-(TOP (S (NP (DT The) (NN cat)) (VP (VBP saw) (NP (DT the) (NP|<JJ> (JJ hungry) (NN dog))))))
-(TOP (S (NP (DT The) (NN cat)) (VP (VBP saw) (NP (DT the) (NN dog)))))
-(TOP (S (NP (DT The) (NN mouse)) (VP (VBP saw) (NP (DT the) (NN cat)))))
