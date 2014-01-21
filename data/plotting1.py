@@ -67,6 +67,29 @@ def plotDopsVsDdop(fragments):
         i = i+1
     onlyPlot(ddop, 'Weights assigned by Double-DOP', dops,'Weights assigned by DOP*',color)
 
+def readFragments(fragments, fragsFile, description):
+    #fragments: a dictionary of Strings (flat fragments) to Fragment objects
+    #fragsFile: a path to a file with fragments and corresponding weights
+    #description: a String that describes the run
+    f = open(fragsFile, 'r')
+    nFrags = 0
+    for line in f:
+        nFrags += 1
+        [flatFragment,weight] = line.split("\t")
+        flatFragment = flatFragment.translate(None, '@')
+        
+        if "/" in weight:
+            [numerator,denominator] = weight.split("/")# temporary: DDOP
+            weight = float(numerator)/float(denominator) # temporary: DDOP
+        else:
+            weight = float(weight)
+
+
+        if flatFragment not in fragments:
+            fragments[flatFragment] = Fragment(flatFragment)  #create a new Fragment object
+        fragments[flatFragment].addRun(weight,description)
+    f.close()
+
 
 def getFragments(ddopFile, dopsFile):
     fragments = dict()
