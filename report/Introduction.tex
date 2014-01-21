@@ -4,41 +4,54 @@
 %General introduction to the DOP framework, terminology 
 %NB: introduce term 'fragment' for usage throughout this document
 
-
-- Why DOP (pragmatic)
 In most theories of natural language syntax, parse trees are built up from small, simple rules. When building an empirical model of observed parse trees, these rules are extended with probabilities. This gives the trees that are `generated' by these rules their own probability, which makes it a statistical model of a distribution over natural language syntax.
-An alternative approach to these small rules is using larger chunks of parse trees and connecting those together to build the syntactic structures. Just like the simple rules, the chucks have probabilities as well, and connecting them creates probabilities for trees to model the statistical language distribution.
+An alternative approach to these small rules is using larger chunks of parse trees and connecting those together to build the syntactic structures. Just like the simple rules, the chucks have probabilities. Connecting them creates probabilities for trees to model the statistical language distribution.
 The Data-Oriented Parsing approach is the most radical step away from just using small rules. It takes the trees apart in all possible ways and estimates the probabilities of the parts by counting how often they occur compared to the others. The probability of a tree built in a certain way is the product of the probability of the used parts, and the probability of that tree itself is the sum of the probabilities of all the ways it can be put together.
 
 $$$$
 
 However, this takes too long to calculate, so it's better to only look at the ways a tree can be put together in the smallest number of steps (the shortest derivation).
 
-- Terminology
+\subsection{The DOP model}
 
-\emph{Tree-adjoining grammar} (?)
+% \emph{Tree-adjoining grammar} (?)
 Connecting parts of trees together is called \emph{composing}, and building a tree from those pieces is called \emph{deriving} the tree.
 \emph{fragments}
 \emph{subtrees}
 
-- Why not DOP? (some sampling & stuff)
-Distribution, sampling, estimation, corpus.
+\subsection{Statistics}
+% Distribution, sampling, estimation, corpus.
+In contrast to \emph{competence} models that are the subject of most linguistic study, a \emph{performance} model of language is an estimate of the probability of observing a parse tree. It treats language as a statistical distribution over syntactic structures.
 
+$$\Omega = $$
+
+Using parse tree samples from the language, an estimator builds a statistical model. A parser then uses that statistical model to predict the correct parse tree of sentences.
+A collection of parse tree samples is called a \emph{corpus} or \emph{treebank}.
+
+$$  $$
+
+% Expectation given a distribution, Loss, risk, mean squared difference, error.
 In theory, an estimator should make exactly the right estimations of probabilities if it's given an infinite amount of data. That is to say, it should \emph{converge} to the true distribution. If an estimator converges in the limit, that estimator is \emph{consistent}.
+However, given a finite amount of data, the estimator will probably not generate the correct probabilities. The distance between the true distribution and an estimate is called the \emph{loss} of that estimate. The loss can be defined in different ways, but the most popular is the \emph{mean squared difference}:
 
-\emph{relative frequency}
+$$ \mathcal{L} $$
 
-Expectation given a distribution, Loss, risk, mean squared difference, error.
+From a true distribution, it's possible to calculate the expected loss of an estimator trained on a treebank of a certain size. This is the \emph{risk} of that estimator given a sample size and a distribution.
 
-Other estimators:
-EWE, MLE
+$$ \mathcal{E} $$
+
+%Other estimators:
+
+%\emph{relative frequency}
+
+%EWE, MLE
 
 
 
-- Why DOP*?
+%- Why DOP*?
 
 
 
-- How do we prevent overfitting?
+%- How do we prevent overfitting?
 
-bias is good.
+Bias is good.
