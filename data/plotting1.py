@@ -26,6 +26,10 @@ class Fragment:
 
     def setDdop(self,weight):
         self.ddopWeight = weight
+        
+    def updateDops(self, weight):
+        self.dopsRun = self.dopsRun + 1
+        self.dopsWeight = ((self.run -1)/self.run) * self.dopsWeight    + (1/self.run)*weight
 
 def simplePlot(fragments):
     plt.figure()
