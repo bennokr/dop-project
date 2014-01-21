@@ -36,6 +36,7 @@ class Fragment:
 
 
 def plotTwo(N, NDescription, M, MDescription, log):
+    # Getting the data to plot:
     number = len(fragments)
     X = [0]*number
     Y = [0]*number
@@ -46,23 +47,22 @@ def plotTwo(N, NDescription, M, MDescription, log):
         Y[i] = frag.weights[M]
         color[i] = frag.depth
         i = i+1
-    fig = plt.figure()
-    plt.scatter(X,Y,c=color,edgecolors='None')
 
-    a = plt.gca()
-    a.set_xlabel(NDescription)
-    a.set_ylabel(MDescription)
+    fig = plt.figure()
 
     if log:
-        #NB: zero values will not be displayed, and raise a warning
-        a.set_xlim([0.001,1])
-        a.set_xscale('log')
-        a.set_ylim([0.001,1])
-        a.set_yscale('log')
-    else:
-        a.set_xlim([-0.1,1])
-        a.set_ylim([-0.1,1])
+        plt.xscale('symlog',linthreshx=0.001)#, nonposx='clip')
+        plt.xlim([0,1])
+        plt.yscale('symlog',linthreshy=0.001)#, nonposx='clip')
+        plt.ylim([0,1])
 
+    else:
+        plt.xlim([-0.1,1])
+        plt.ylim([-0.1,1])
+
+    plt.scatter(X,Y,c=color,edgecolors='None')
+    plt.xlabel(NDescription)
+    plt.ylabel(NDescription)
     plt.show()
 
 def readFragments(fragsFile, N):
@@ -97,18 +97,19 @@ def tinyPlots():
     readFragments("tiny/tiny_dops_1vall_7_1.txt",3)
     readFragments("tiny/tiny_dops_split_3_4_1.txt",4)
     plotTwo(1,"Double-DOP 1vsAll: 7",2,"Double-DOP split: 3/4", 0)
-    plotTwo(1,"Double-DOP 1vsAll: 7",3,"DOP* 1vsAll: 7", 0)
-    plotTwo(2,"Double-DOP split: 3/4",4,"DOP* split: 3/4", 0)
-    plotTwo(3,"DOP* 1vsAll: 7",4,"DOP* split: 3/4", 0)
+#    plotTwo(1,"Double-DOP 1vsAll: 7",3,"DOP* 1vsAll: 7", 0)
+#    plotTwo(2,"Double-DOP split: 3/4",4,"DOP* split: 3/4", 0)
+#    plotTwo(3,"DOP* 1vsAll: 7",4,"DOP* split: 3/4", 0)
 
 def WSJPlots():
     readFragments("wsj/wsj_ddop_split_20000_50_1.txt",1)
     d1 = "Double-DOP split: 50/20000"
     readFragments("wsj/wsj_dops_split_20000_50_1.txt",2)
     d2 = "DOP* split: 50/20000"
-    readFragments("wsj/wsj_ddop_1vall_20050_1.txt",3)
-    d3 = "Double-DOP 1 vs all: 20050"
+#    readFragments("wsj/wsj_ddop_1vall_20050_1.txt",3)
+#    d3 = "Double-DOP 1 vs all: 20050"
     plotTwo(1,d1,2,d2,1)
-    plotTwo(1,d1,3,d3,1)
+#    plotTwo(1,d1,3,d3,1)
 
+#tinyPlots()
 WSJPlots()
