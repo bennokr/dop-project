@@ -1,7 +1,0 @@
-(S (NP (DT The) (NN cat)) (VP (VBP saw) (NP (DT the) (JJ hungry) (NN dog))))
-(S (NP (DT The) (NN cat)) (VP (VBP saw) (NP (DT the) (NN dog))))
-(S (NP (DT The) (NN mouse)) (VP (VBP saw) (NP (DT the) (NN cat))))
-(S (NP (DT The) (NN mouse)) (VP (VBP saw) (NP (DT the) (JJ yellow) (NN cat))))
-(S (NP (DT The) (JJ little) (NN mouse)) (VP (VBP saw) (NP (DT the) (NN cat))))
-(S (NP (DT The) (NN cat)) (VP (VBP ate) (NP (DT the) (NN dog))))
-(S (NP (DT The) (NN mouse)) (VP (VBP ate) (NP (DT the) (NN cat))))
