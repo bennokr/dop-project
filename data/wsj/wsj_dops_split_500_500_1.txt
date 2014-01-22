@@ -1,0 +1,2548 @@
+(NP (NP ) (NP|<CC> (CC ) (NP (DT ) (NP|<NNP> (NNP ) (NP|<NNP> and)))))	8.81527e-05
+(NP|<CC> (CC ) (NP|<NN> ))	0.00353228
+(VP (VBD ) (VP|<,> ))	0.0113901
+(ADJP (JJ ) (PP ))	0.0655272
+(VP|<NP> (NP ) (S (VP (TO ) (VP (VB ) (VP|<NP> )))))	0.158629
+(VP (VB ))	9.13032e-05
+(PP (IN ) (NP (PRP$ ) (NP|<JJ> (JJ ) (NN ))))	9.029e-05
+(NP (DT ))	7.75992e-05
+(S (NP (PRP )) (VP (VBD ) (NP )))	0.00126746
+(VP|<PP> (PP ) (VP|<PP> ))	0.000678793
+(TOP (S (NP ) (S|<,> (, ) (S|<PP> (PP ,) (S|<,> )))))	0.00766459
+(SBAR (IN ) (S ))	0.00451515
+(VP (MD ) (VP|<RB> (RB ) (VP )))	0.0113901
+(TOP (S (NP (NNP ) (NP|<NNP> (NNP ) (NP|<NNPS> (NNPS ) (NNP Inc.)))) (S|<VP> (VP ) (. ))))	0.00266594
+(NP|<NNS> (NNS ) (NN ))	0.00609308
+(NP (DT ) (NN the))	0.000132361
+(NP|<JJ> (JJ ) (NN ))	0.0329674
+(S|<VP> (VP (VP ) (VP|<CC> (CC ) (VP ))) (. ))	0.000879485
+(PP (IN ) (S (VP (VBG ) (NP (NP (JJ ) (NNS )) (PP )))))	0.045145
+(NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<CC> (CC ) (NP )))))	0.0015913
+(ADVP (RB ))	0.333735
+(NP|<NNP> (NNP ) (NNP ))	0.000960416
+(TOP (S (CC But) (S|<NP> (NP (PRP he)) (S|<VP> (VP ) (. )))))	0.000122756
+(VP|<PP> (PP ) (VP|<,> (, ) (SBAR )))	0.000678114
+(VP (VBZ ) (ADJP ))	0.000364482
+(NP (NP (DT ) (NP|<CD> (CD ) (NNS ))) (VP ))	0.000183651
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> )))))))	0.00127743
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP ))	6.61807e-05
+(VP|<NP> (NP ) (SBAR (IN ) (S (NP (PRP )) (VP ))))	0.158629
+(VP (VB ) (VP|<NP> (NP (PRP$ ) (NNS )) (PP )))	0.0227802
+(NP (NP (DT ) (NP|<NNP> (NNP ) (POS ))) (NN ))	0.00141044
+(NP (NNP ) (NP|<NNP> (NNP ) (NNP )))	0.000176305
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (NN ) (NNS )) (NP|<CC> (CC ) (NP (NN ))))))	0.000638788
+(NP (NP (DT ) (NN )) (VP ))	4.41205e-05
+(S|<NP> (NP ) (S|<,> ))	0.00285283
+(TOP (S (ADVP ) (S|<,> (, ,) (S|<NP> (NP (DT the) (NN )) (S|<VP> )))))	0.000123622
+(VP|<PP> (PP ) (S (VP (TO ) (VP ))))	0.00135759
+(S|<NP> (NP (PRP )) (S|<VP> (VP (VP ) (VP|<,> (, ) (VP|<CC> (CC ) (VP )))) (. )))	0.00133646
+(NP (NN ) (NP|<CC> (CC ) (NNS )))	0.000176482
+(PP (IN ) (NP (CD ) (NNS )))	5.28012e-05
+(ADJP (RB ) (JJ ))	0.0890316
+(PP (IN ) (NP (NP ) (SBAR )))	0.00072232
+(SBAR (WHPP (IN ) (WHNP (WDT ))) (S ))	0.00903934
+(S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (MD ) (VP (VB ,) (VP|<NP> ))) (. ))))	0.0353639
+(NP (DT ) (NN ))	4.40763e-05
+(NP (NNP ) (NN ))	2.20382e-05
+(NP|<,> (, ) (NP|<NP> (NP (CD )) (NP|<,> )))	0.00427743
+(NP (NP ) (NP|<PP> (PP (IN ) (NP )) (SBAR )))	0.000176482
+(VP|<ADJP> (ADJP (JJ )) (PP (IN ) (NP )))	0.536315
+(SBAR (WHNP (WDT )) (S (VP (VBP ) (NP (NP ) (PP (IN ) (NP ))))))	0.00564394
+(TOP (S (S ) (S|<,> (, ) (S|<CC> (CC ) (S|<S> (S (NP ) (VP )) (. ))))))	3.06891e-05
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP ) (PP (IN ) (NP ))) (. ))))))))	4.79037e-05
+(S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP ) (. ,))))	0.00316691
+(PP (IN ) (NP (JJ ) (NNS )))	0.0225725
+(VP (VBZ ) (VP|<ADVP> 's))	0.00569504
+(PP (IN ) (NP (PRP$ ) (NP|<NNS> )))	0.000269121
+(S (NP (DT ) (NN )) (VP ))	0.000659475
+(NP (NP (RB )) (PP ))	0.00629662
+(PP (IN ) (NP (QP ) (NNS )))	0.00018058
+(TOP (S (NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> (, ,) (NP|<NP> (NP ) (, )))) (S|<VP> (VP (VBD ) (VP (VBN ) (S (NP )))) (. ))))	0.0038323
+(NP (DT The) (NP|<NNP> (NNP ) (NNP )))	8.82409e-05
+(TOP (S (ADVP (RB ) (PP )) (S|<,> )))	0.00875953
+(NP|<,> (, ) (NP|<VP> (VP (VBN ) (PP ,)) (, based)))	0.00427743
+(VP|<S> (S (NP )) (VP|<,> ))	0.0175182
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NN ))))	9.029e-05
+(VP (VBD ) (VP|<RB> (RB ) (VP (VB did) (VP|<PP> n't))))	0.000182424
+(VP|<S> (S (VP (VBG ) (NP ))) (PP (IN ) (NP )))	0.547445
+(NP|<PP> (PP ) (VP ))	0.0359132
+(VP|<NP> (NP (NNP ) (NNP )) (NP ))	0.0054078
+(VP|<,> (, ) (S (VP (VBG ) (NP (NP (DT ) (NN )) (PP )))))	0.0226885
+(NP (NN ))	0.0220382
+(PP (IN ) (NP (DT ) (NN )))	4.5145e-05
+(NP (NNP ) (NP|<NNP> (NNP ) (NP|<NNPS> (NNPS ) (NNP Inc.))))	7.65214e-05
+(NP (NNP ))	0.000275477
+(NP|<,> (, ) (NP|<NP> (NP (CD )) (, )))	0.0334174
+(TOP (S (`` ``) (S|<S> (S ) (S|<,> ))))	6.13167e-05
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT )) (S )) (, )))) (S|<VP> (VP ) (. ))))	3.06584e-05
+(NP (DT ) (NP|<NN> (NN ) (NN )))	4.40763e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NNS )))	0.00734606
+(TOP (SINV (S ) (SINV|<,> (, ) (SINV|<VP> ))))	6.13167e-05
+(NP (DT ) (NN ))	0.000176482
+(NP|<JJ> (JJ ) (NP|<NN> ))	0.00824184
+(S|<VP> (VP (VP (VBZ ) (VP|<NP> )) (VP|<CC> )) (. ))	0.000684044
+(NP (NP (DT ) (NN )) (PP (IN ) (NP (NP a) (NP|<,> ))))	0.00550954
+(VP|<ADVP> (ADVP (RB )) (PP ))	0.00912783
+(NP|<,> (, ) (SBAR (WHNP (WDT )) (S (VP (VBP ) (VP )))))	0.000536287
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (VP|<NP> )) (S|<.> (. ) ('' )))))	0.000490534
+(TOP (S (NP (NP (NNP ) (NNP )) (NP|<,> (, ,) (NP|<NP> (NP ) (, )))) (S|<VP> )))	3.06584e-05
+(ADJP (JJ ) (S (VP (TO ) (VP (VB ) (PP (IN ) (NP ))))))	0.00204773
+(ADJP (RB ) (JJ ))	0.0189604
+(NP (NP (NNS )) (PP ))	4.41647e-05
+(NP (NP ) (PP (IN ) (NP (DT ) (NN ))))	0.000220382
+(NP (CD ) (NN ))	9.79474e-05
+(TOP (S (NP (PRP He)) (S|<VP> (VP ) (S|<.> (. ) ('' )))))	0.0153292
+(SBAR (WHNP (WDT )) (S (VP (VBP ) (NP ))))	0.00564394
+(TOP (S (PP (IN Under) (NP )) (S|<,> (, ) (S|<NP> (NP ,) (S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP (MD ) (VP ))))) (. ))))))	0.000245267
+(NP (NP ) (VP (VBG ) (NP (NNS ))))	0.0220382
+(S|<,> (, ) (S|<VP> (VP ) (. )))	0.000471518
+(NP (NP (DT ) (NN )) (SBAR (WHNP (WDT )) (S (ADVP (RB )) (VP ))))	0.000176305
+(S|<VP> (VP (MD ) (VP (VB ) (VP (VBN ) (PP )))) (. ))	9.86009e-05
+(S (NP (NNS )) (VP (VBP )))	0.00398173
+(TOP (S (NP (NN ) (NNS )) (S|<VP> )))	0.00197796
+(NP (NN ))	8.82409e-05
+(NP|<,> (, ) (NP|<NP> (NP (CD )) (, )))	0.0334174
+(PP (IN ) (NP (QP ($ ) (QP|<CD> (CD ) (CD )))))	0.000271141
+(NP (NP ) (NP|<,> (, ) (NP|<CC> (CC ) (NP ))))	4.40763e-05
+(PP (TO ) (NP (JJ ) (NNS )))	0.000843832
+(PP (TO ) (NP (NP (DT ) (NN )) (PP (IN ) (NP ))))	0.00036116
+(VP (TO ) (VP (VB ) (NP (NNP ) (NNS ))))	9.11206e-05
+(TOP (S (NP (NP (DT Some)) (PP )) (S|<VP> )))	0.00255486
+(NP (JJ ) (NNS other))	4.41647e-05
+(S|<VP> (VP (MD ) (VP (VB ) (NP ))) (. ))	0.000394404
+(VP|<NP> (NP (NN )) (SBAR (IN ) (S (NP (PRP )) (VP ))))	0.00761419
+(PP (IN ) (NP (JJ ) (NP|<JJ> (JJ ) (NNS ))))	0.00282156
+(TOP (SINV (S ) (SINV|<,> (, ) (SINV|<VP> ))))	0.000174195
+(WHNP (WDT ))	0.500125
+(TOP (S (S (VP )) (S|<,> (, ) (S|<NP> (NP (DT ,) (NN )) (S|<VP> )))))	0.000122633
+(VP|<NP> (NP (DT ) (NP|<JJ> )) (PP ))	0.000952726
+(VP (VBP ) (VP (VBN ) (PP )))	9.13948e-05
+(NP (DT ) (NP|<NNP> (NNP ) (NP|<NN> )))	8.82409e-05
+(NP (NP (NNP ) (POS )) (NP|<ADJP> ))	0.0110191
+(PP (IN ) (NP (DT ) (NP|<NNP> (NNP ) (NP|<NN> ))))	0.000181123
+(SBAR (WHNP (WP )) (S (VP (VBD ) (VP|<NP> ))))	0.0180606
+(VP|<,> (, ) (VP ))	0.0302513
+(PP (IN ) (S (VP (VBG of) (NP ))))	0.000180761
+(S|<VP> (VP (VP ) (VP|<CC> (CC ) (VP ))) (. ))	0.000205213
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NP|<NN> (NN ) (POS )))) (NN ))	0.000918257
+(VP (VBG ) (NP ))	0.000364482
+(PP (IN ) (NP (NN ) (NN )))	4.51902e-05
+(S (NP (PRP )) (VP (VBZ ) (NP (NP ) (PP ))))	0.00506477
+(VP|<PP> (PP ) (VP|<PP> ))	0.339057
+(NP (DT ) (NN ))	8.81527e-05
+(NP (NP (DT ) (NN )) (NP|<,> (, ) (SBAR (WHNP (WDT )) (S (VP )))))	0.000688693
+(NP (CD ) (NP|<ADJP> ))	4.40763e-05
+(VP|<,> (, ) (PP (ADVP (RB )) (PP|<IN> )))	0.0292754
+(VP|<PP> (PP (IN ) (NP (NP ) (PP (IN ) (NP by)))) (PP ))	0.000678114
+(S (NP ) (VP (MD ) (VP|<ADVP> )))	0.00126619
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT )) (S )) (, )))) (S|<VP> (VP ) (. ))))	3.06584e-05
+(VP (VB ) (VP|<NP> (NP ) (NP (NP ) (PP ))))	0.000728965
+(PP (IN ) (NP (NN )))	0.000945445
+(VP (VB ) (VP (VBN ) (VP|<PP> )))	0.000949173
+(NP|<,> (, ) (NP|<VP> (VP ) (, )))	0.00972142
+(PP (IN ) (NP (NP ) (ADVP (RB ))))	4.5145e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<NN> (NN ) (NN ))))	0.000176305
+(TOP (FRAG (NP ) (. )))	0.00766459
+(VP|<ADVP> (ADVP (RB )) (NP ))	0.00456391
+(S|<ADVP> (ADVP (RB )) (VP (VBD ) (NP )))	0.259226
+(NP|<,> (, ) (NP|<NN> (NN ) (NP|<CC> )))	0.00107043
+(NP|<PP> (PP ) (NP|<,> (, ) (VP )))	0.0181197
+(S|<,> (, ) (S|<PP> (PP ) (S|<,> (, ) (S|<NP> (NP (DT ) (NP|<JJ> (JJ ) (NP|<NNP> ))) (S|<VP> )))))	0.00111091
+(TOP (S (NP (PRP He)) (S|<VP> (VP ) (S|<.> (. ) ('' )))))	0.0153292
+(NP (NN ) (S ))	0.000209887
+(VP (TO ) (VP (VB ) (PP )))	0.000517731
+(VP (VBD ))	0.0455603
+(VP (TO ) (VP (VB ) (NP )))	0.000364482
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ) (NP (NN ) (NNS )))) (, ,)))	0.00213871
+(NP (PRP ))	4.40763e-05
+(TOP (S (NP (PRP )) (S|<VP> (VP (VBD ) (PP )) (. ))))	0.0306584
+(S|<,> (, ) (S|<NP> ))	0.000212396
+(VP (VBN ) (PP (IN ) (NP )))	0.000194702
+(PP (IN ) (NP (PRP$ ) (NP|<JJ> (JJ ) (NNS ))))	0.000128253
+(S (VP ))	0.00219825
+(PP (IN ) (NP (JJ ) (NP|<JJ> (JJ ) (NNS ))))	0.000376208
+(NP (NNP ))	0.000176305
+(S (NP (PRP$ ) (NN his)) (VP ))	0.00591678
+(NP|<JJ> (JJ ) (NP|<NNP> ))	0.00290113
+(NP (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP )))))	0.000705221
+(NP|<CC> (CC ) (NP (JJ ) (NN )))	0.026733
+(NP (JJ ) (NP|<NNS> ))	0.0146921
+(NP (NNP ))	0.000176482
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP ) (PP (IN ) (NP ))) (. ))))))))	4.79037e-05
+(PP (IN ) (NP (NP (DT ) (NP|<NNP> )) (PP (IN ) (NP ))))	0.045145
+(TOP (S (`` ) (S|<S> (S (NP (PRP )) (VP )) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	0.00127743
+(TOP (S (NP (NNP Mr.) (NNP )) (S|<VP> )))	6.13781e-05
+(PRN|<S> (S (NP (PRP )) (VP (VBZ ))) (, he))	0.291486
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	2.20382e-05
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<CC> (CC ) (NP ))))))))	2.20823e-05
+(NP (NP (NN ) (POS 's)) (NN ))	0.000250434
+(TOP (S (`` ``) (S|<NP> (NP ) (S|<VP> (VP (VBZ ) (ADJP )) (. )))))	0.000255486
+(NP|<,> (, ) (NP|<NP> (NP (NNP )) (, )))	0.13367
+(TOP (SINV (`` ``) (SINV|<S> (S (NP (PRP I)) (VP )) (SINV|<,> (, ) (SINV|<''> )))))	0.000122633
+(NP|<NN> (NN ) (NNS ))	0.000487191
+(VP|<NP> (NP ) (NP ))	0.00380709
+(PP (IN ) (NP (DT in) (NNP the)))	4.52808e-05
+(ADJP (RB ) (JJ ))	0.0853219
+(NP|<JJ> (JJ ) (NP|<JJ> ))	0.00145493
+(ADJP (JJ ))	0.00437548
+(NP (NP (NN )) (PP (IN ) (NP (JJ ) (NNS ))))	0.00734606
+(NP (CD ) (JJR ))	0.00146921
+(PP (IN ) (NP (NP (DT ) (NN )) (NP|<,> )))	0.00018058
+(NP|<NN> (NN ) (NN ))	0.000171491
+(TOP (S (S ) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (VBD )) (. ))))))	5.80651e-05
+(VP|<ADVP> (ADVP (RB )) (PP (IN ) (NP )))	0.0182922
+(NP (NNP ))	0.000667823
+(TOP (S (PP (IN In) (NP )) (S|<,> )))	0.00204389
+(VP (VBD ) (S (NP ) (VP )))	9.11206e-05
+(S (NP (PRP )) (VP ))	0.000316548
+(VP|<,> (, ) (ADVP (RB ) (NP (CD ) (NNS ))))	0.226885
+(VP (VB ) (NP (NP (NNS )) (PP )))	0.000182241
+(NP|<NN> (NN ) (NP|<CC> (CC ) (NP|<NN> )))	0.000343326
+(SBAR (IN ) (S (NP (NNP )) (VP )))	0.0180606
+(NP (NP ) (NP|<CC> (CC ) (NP (DT and) (NP|<NNP> the))))	0.00110191
+(PP (IN ) (NP (PRP$ ) (NN )))	9.22268e-05
+(S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP )))) (. said))	0.0246256
+(PP (IN ) (NP (NNS )))	9.029e-05
+(S (NP ) (VP (VBZ ) (NP )))	0.000316865
+(NP (NNP ) (NNP ))	0.000176305
+(ADJP (JJ ) (PP (IN ) (NP )))	0.00819091
+(NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP )))	0.000833695
+(NP (NP (NNS )) (ADJP (JJ ) (PP )))	4.40763e-05
+(S|<VP> (VP (VBP ) (VP|<NP> )) (. ))	0.00206287
+(VP (VB ) (NP ))	9.12118e-05
+(NP|<NNS> (NNS ) (NN ))	0.380437
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (VP|<NP> (NP (DT ) (NN the)) (PP ))) (. ))))	0.00278712
+(TOP (S (`` ``) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(S|<NP> (NP ) (VP ))	0.0013378
+(PP (IN ) (NP (JJ ) (CD )))	9.029e-05
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (VP|<ADVP> (ADVP (RB )) (PP ))) (. ))))	0.000306584
+(NP|<NNP> (NNP ) (NNP ))	0.000245254
+(VP (VBD ) (SBAR (S )))	9.11206e-05
+(VP (VB ) (S ))	9.49173e-05
+(VP|<PP> (PP ) (SBAR ))	0.000678793
+(QP|<CD> (CD ) (CD ))	0.707486
+(NP (PRP$ ) (NN its))	0.000176305
+(VP|<,> (, ) (PP (VBG ) (PP (TO ) (NP ))))	0.00950302
+(NP|<JJ> (JJ ) (NN ))	0.00145347
+(TOP (S (`` ) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP they)))) (. ))))	0.00340649
+(VP|<RB> (RB ) (VP ))	0.0512896
+(TOP (SINV (`` ``) (SINV|<S> (S (NP (PRP I)) (VP )) (SINV|<,> (, ) (SINV|<''> )))))	0.000122633
+(PP (IN ) (S (VP )))	0.00107488
+(TOP (S (NP (NNP ) (NNPS )) (S|<VP> )))	0.000567748
+(S|<VP> (VP (VBP ) (NP )) (. ))	0.000394799
+(PP (IN ) (NP (NNS )))	9.029e-05
+(NP (NP (NN )) (PP (IN ) (NP (NP (DT ) (NP|<NNP> )) (PP (IN ) (NP )))))	4.60087e-05
+(NP (DT ) (NN ))	4.41205e-05
+(NP|<NN> (NN ) (NN ))	0.171491
+(NP (NP (NNP ) (POS )) (NP|<NN> ))	0.000196769
+(TOP (S (NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> (, ) (NP|<NP> (NP ) (, )))) (S|<VP> (VP (VBD ) (VP (VBN ) (S (NP )))) (. ))))	0.0038323
+(NP (JJR ) (NP|<JJ> ))	0.00275477
+(S (RB ) (S|<,> ))	0.0452211
+(VP|<CC> (CC ) (VP (VB ) (VP|<NP> (NP ) (ADVP ))))	0.131387
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<JJ> (JJ ) (NN ))))	4.40763e-05
+(S (NP ) (S|<ADVP> (ADVP (RB )) (VP )))	0.000370231
+(SBAR (S (NP (NNP )) (VP )))	0.00282197
+(NP (NNP ))	4.40763e-05
+(NP (NP (JJ ) (NNS )) (NP|<,> (, ) (SBAR )))	0.000638788
+(VP|<PP> (PP ) (VP|<,> (, ) (S (VP ))))	0.00542491
+(VP|<S> (S (NP )) (VP|<,> (, ) (S (VP (VBG ) (NP )))))	0.0175182
+(VP (VB ) (VP|<NP> (NP ) (NP (DT ) (NN ))))	0.00759338
+(TOP (S (NP (PRP He)) (S|<VP> (VP ) (. ))))	0.00117917
+(VP|<NP> (NP (JJ ) (NN )) (PP ))	0.00264381
+(ADVP (RB ))	0.000668138
+(PP (IN ) (NP (NP (NNP )) (NP|<,> (, ) (NP ))))	9.03804e-05
+(NP (NN ))	0.00734606
+(NP (NP ) (NP|<CC> (CC ) (NP (DT and) (NP|<NNP> the))))	4.41205e-05
+(TOP (S (CC And) (S|<NP> )))	0.000170324
+(VP|<PP> (PP (TO ) (NP )) (PP ))	0.00135759
+(VP|<ADVP> (ADVP ) (PP (IN ) (NP )))	0.146045
+(NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NP|<JJ> ))	8.81527e-05
+(TOP (S (`` ``) (S|<S> (S (NP (PRP )) (VP )) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	0.00127743
+(VP (VBP ) (VP|<RB> (RB 'm) (VP not)))	9.41329e-05
+(S (NP ) (PP ))	0.00381383
+(NP (NP ) (NP|<NNP> ))	0.000229564
+(VP|<PP> (PP (TO ) (NP )) (VP|<PP> (PP ) (VP|<,> )))	0.00271246
+(NP (DT ) (NP|<JJ> (JJ ) (NNS major)))	4.40763e-05
+(PP (IN ) (S (VP )))	0.045145
+(VP (VBD ) (VP|<NP> ))	9.12118e-05
+(VP (VBG ))	9.11206e-05
+(NP (NNP ) (NNP ))	4.40763e-05
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ) (NP ))) (, )))	0.00213871
+(NP|<NNP> (NNP ) (NNS ))	0.000480208
+(S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (MD ) (VP (VB ) (VP|<NP> ))) (. ))))	0.0353639
+(NP|<NNP> (NNP ) (NNP ))	0.000480208
+(S (NP ) (VP (VBZ ) (S (NP ) (VP (TO ) (VP )))))	0.00111461
+(PP (IN ) (NP (PRP$ ) (NNS )))	9.029e-05
+(NP (NP (NN )) (PP (IN ) (NP (PRP$ ) (NP|<JJ> ))))	4.41647e-05
+(NP|<,> (, ) (NP|<NP> (NP ) (, )))	0.00214085
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBZ )) (SINV|<NP> (NP ) (. ))))))))	3.99197e-05
+(S|<VP> (VP (VBD ) (SBAR (S (NP ) (S|<``> (`` ) (VP ))))) (S|<.> (. ) ('' )))	0.000197005
+(NP (NP (JJ ) (NP|<NN> (NN ) (POS ))) (NN ))	0.000176659
+(VP (TO ) (VP (VB ) (VP|<NP> )))	9.11206e-05
+(TOP (S (NP (PRP He)) (S|<VP> (VP ) (. ))))	0.00235834
+(NP (JJ ) (NNS ))	8.81527e-05
+(NP (CD ))	0.00026552
+(VP|<,> (, ) (PP (VBG ) (PP )))	0.00181508
+(PP (IN ) (NP (NNP ) (NNP )))	9.04709e-05
+(VP|<NP> (NP (NN )) (VP|<PP> (PP ) (PP )))	0.00118972
+(NP (QP ($ ) (QP|<CD> (CD ) (CD ))))	7.75992e-05
+(PP (IN ) (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (NP|<PP> )))	4.51902e-05
+(NP (DT The) (NN index))	2.20602e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NNS )))	2.20382e-05
+(PP (VBG ) (NP (NP ) (PP )))	0.000135571
+(TOP (S (NP ) (S|<ADVP> (ADVP (RB )) (S|<VP> ))))	0.000245267
+(NP (NP (DT ) (NNS )) (PP (IN ) (NP (DT ) (NN ))))	0.00141044
+(VP (VBZ ) (VP|<NP> (NP ) (VP|<NP> )))	4.56059e-05
+(NP (NN ))	8.81527e-05
+(SINV|<NP> (NP (NP (NNP ) (NNP )) (NP|<,> (, ) (NP (NP ) (PP (IN ) (NP (NP ) (NP|<,> (, ) (NP (NP ) (SBAR (WHNP (WDT )) (S (VP (VBZ ) (NP ))))))))))) (. ))	0.00416915
+(TOP (S (NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> )) (S|<VP> (VP (VBD ) (VP (VBN ) (VP|<S> ))) (. ))))	0.000490534
+(TOP (S (S ) (S|<,> (, ) (S|<CC> (CC ) (S|<S> (S (NP ) (VP (VBZ ) (NP ))) (. ))))))	5.3976e-05
+(TOP (S (NP (NP ) (ADVP )) (S|<VP> )))	0.00030968
+(NP (DT ) (NN ))	8.81527e-05
+(PP (IN ) (NP (NN )))	0.0225725
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NNS ))) (PP (IN ) (NP )))	0.000282541
+(VP|<VBN> (VBN ) (PP (IN ) (NP )))	0.0552123
+(NP|<NN> (NN ) (NP|<CC> (CC ) (NP|<NN> (NN ) (NN and))))	0.00173223
+(NP (CD ) (NNS ))	0.000306086
+(S (NP (PRP )) (VP (VBD ) (NP )))	0.00253492
+(NP (CD ))	0.000122434
+(VP|<ADVP> (ADVP (RBR )) (PP ))	0.00239701
+(VP (TO ) (VP (VB )))	0.000182241
+(TOP (S (PP (IN ) (NP )) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (VBZ ) (NP )) (. ))))))	3.06584e-05
+(VP|<,> (, ) (PP (VBG ) (PP )))	0.00181508
+(VP (MD ) (VP (VB ) (VP )))	9.13032e-05
+(PP (IN ) (NP (JJ ) (NNS )))	0.00107488
+(VP|<NP> (NP ) (S (VP (TO ) (VP (VB ) (NP )))))	0.00610111
+(VP (VBZ ) (VP|<RB> (RB ) (ADJP )))	0.000728965
+(NP (NP (DT ) (NN )) (NP|<,> (, ) (SBAR (WHNP (WDT )) (S (VP )))))	0.000688693
+(NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NNS ))	2.20382e-05
+(VP|<RB> (RB ) (VP (VB ) (S (VP ))))	0.0390778
+(NP (JJ ) (NN ))	0.00734606
+(VP (VBG ) (NP (DT ) (NNS )))	0.0455603
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (, ))))	2.20602e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<,> (, ) (NP|<JJ> ))))	0.000333912
+(VP (VB ) (VP|<PP> ))	0.000182241
+(TOP (S (S ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD )) (. ))))))	0.0038323
+(VP (VBD ) (ADJP ))	9.16706e-05
+(NP (NP ) (NP|<,> (, ) (NP|<CC> (CC ) (NP ))))	4.40763e-05
+(VP|<ADJP> (ADJP (JJ ) (S (VP ))) (SBAR (IN ) (S )))	0.154613
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	8.81527e-05
+(S (NP (NNP )) (VP (VBZ ) (NP )))	0.00140688
+(VP|<PP> (PP (TO ) (NP )) (PP ))	0.0161456
+(PP (TO ) (NP (NP ) (NP|<CC> )))	0.00136803
+(VP (TO ) (VP (VB ) (VP|<PP> (PP ) (NP ))))	4.55603e-05
+(NP (PRP$ ) (NNS ))	4.41205e-05
+(NP (DT ) (NP|<VBG> ))	0.000220382
+(VP (TO ) (VP (VB ) (VP|<NP> (NP ) (PP ))))	0.000182424
+(NP (DT ) (NP|<JJS> (JJS ) (NN )))	4.40763e-05
+(PP (IN ) (NP (NN )))	9.029e-05
+(PP (PP ) (PP|<CC> (CC ) (PP )))	9.029e-05
+(NP|<NN> (NN ) (NNS ))	0.171491
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (VP|<PP> (PP (IN ) (NP )) (VP|<,> ))) (. ))))	0.00153292
+(NP (NP ) (VP ))	0.00367303
+(NP (NP ) (VP (ADVP (RB )) (VP|<VBN> )))	4.41205e-05
+(NP|<NNP> (NNP ) (NNP ))	0.000480689
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (VP (VBG ) (NP )))	0.00979474
+(PP (IN ) (NP (NP ) (NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT in)) (S )) (, )))))	4.5145e-05
+(NP (NN ) (NP|<NN> (NN ) (NP|<NNP> (NNP ) (NNP ))))	0.000229564
+(NP|<NNS> (NNS ) (POS ))	0.000760873
+(NP (QP ($ ) (QP|<CD> (CD ) (CD ))))	2.20602e-05
+(S|<NP> (NP ) (S|<VP> (VP (VP ) (VP|<CC> (CC ) (VP|<VP> ))) (. )))	0.00189649
+(NP (DT ) (NN ))	2.57756e-05
+(PP (IN ) (NP (PRP$ ) (NN )))	0.0045145
+(NP (CD ) (NP|<NNP> ))	4.40763e-05
+(VP (TO ) (VP (VB ) (VP|<ADVP> )))	0.000182241
+(SINV|<VP> (VP (VBD )) (SINV|<NP> (NP ) (. )))	0.260355
+(NP (NP (DT ) (NN )) (VP ))	4.40763e-05
+(NP (DT ) (NP|<ADJP> (ADJP ) (NP|<JJ> (JJ ) (NN ))))	8.82409e-05
+(NP (CD ) (NNS ))	4.44766e-05
+(NP (NNP ) (NP|<NNP> (NNP F.) (NNP )))	0.0220382
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<JJ> )))	7.65214e-05
+(VP (VBN ) (PP (IN ) (NP )))	0.0455603
+(VP (VBP ) (VP (VBG ) (NP )))	0.0151868
+(PP (IN ) (NP (NNP in)))	0.00145629
+(ADJP (QP ($ ) (QP|<CD> (CD ) (CD ))))	0.00409955
+(VP|<NP> (NP (NN )) (PP (IN ) (NP (CD ))))	0.158629
+(NP (NP (JJ ) (NP|<JJ> )) (PP (IN ) (NP )))	4.41205e-05
+(NP (DT ) (NN ))	0.00026552
+(TOP (S (NP (DT ) (NP|<NNP> (NNP ) (NN ))) (S|<VP> )))	0.00766459
+(VP|<ADJP> (ADJP (JJ ) (S (VP (TO ) (VP )))) (SBAR (IN ) (S )))	0.154613
+(PP (IN ) (NP (NN )))	9.04709e-05
+(TOP (S (`` ) (S|<NP> (NP (PRP I)) (S|<VP> (VP ) (S|<.> (. ) ('' ))))))	0.000122633
+(VP (VBG ) (VP|<NP> (NP (DT ) (NN )) (PP )))	0.000364482
+(VP|<NP> (NP (PRP )) (PP ))	0.0198286
+(S|<,> (, ) (S|<NP> (NP (NNP ) (NNP Mr.)) (S|<VP> )))	0.000212822
+(PP (IN ) (NP (NNP )))	9.03804e-05
+(TOP (S (`` ``) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(TOP (S (NP (NNP )) (S|<VP> )))	6.13167e-05
+(S|<VP> (VP (VBZ ) (VP|<NP> (NP ) (VP|<,> ))) (. ))	0.000437788
+(NP (NP (CD )) (PP (IN ) (NP (NP (DT ) (NP|<JJ> (JJ ) (NNS ))) (PP ))))	4.40763e-05
+(NP (NP (CD ) (NNS )) (NP (DT ) (NN )))	8.81527e-05
+(S|<VP> (VP (VBD ) (SBAR (S (NP ) (S|<``> (`` ) (VP ))))) (S|<.> (. ) ('' )))	0.000197005
+(VP (MD ) (VP (VB ) (VP|<NP> (NP (DT ) (NN )) (PP ))))	0.0455603
+(NP (NP (NNP ) (NP|<NNP> (NNP ) (POS ))) (NN ))	0.00314831
+(TOP (S (S ) (S|<,> (, ) (S|<CC> (CC ) (S|<S> (S (NP ) (VP (VBZ ) (NP ))) (. ))))))	5.3976e-05
+(NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NN ))	4.41647e-05
+(VP (VBN ) (VP (VBN )))	0.00189835
+(NP|<,> (, ) (NP|<NP> (NP (DT ) (NN )) (, )))	0.0222783
+(VP (ADVP (RB )) (VP|<VB> (VB ) (NP (DT ) (NN ))))	9.11206e-05
+(NP|<NNP> (NNP ) (NNS ))	0.000500217
+(NP (DT ) (NN ))	0.00142182
+(VP|<PP> (PP (IN ) (NP )) (SBAR ))	0.000678793
+(NP (NP (NNP ) (NP|<NNP> )) (NN ))	8.82409e-05
+(NP|<,> (, ) (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP )))	0.00607589
+(NP|<JJ> (JJ ) (NP|<CD> (CD ) (NN )))	0.00145202
+(VP (VBN ) (NP (JJ ) (NP|<JJ> )))	4.55603e-05
+(VP|<NP> (NP (DT ) (NN )) (PP (IN ) (S (VP (VBG ) (NP a)))))	0.000475887
+(NP (NP ) (NP|<CC> (CC ) (NP )))	2.20602e-05
+(VP (VBG ))	9.12118e-05
+(S (NP (PRP )) (VP (VBD ) (NP (NP ) (PP ))))	0.000633096
+(PP (IN ) (NP (NP (NN )) (PP )))	9.029e-05
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBZ )) (SINV|<NP> (NP ) (. ))))))))	3.99197e-05
+(S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (VBD ) (VP|<NP> (NP ) (S (VP (TO ) (VP (VB ) (PP )))))) (. ))))	0.000212183
+(NP|<NN> (NN ) (NNS ))	0.0149123
+(S (NP (PRP )) (VP (VBZ ) (PP )))	0.00395685
+(NP (NP (DT ) (NN )) (NP|<PP> (PP (IN ) (NP )) (PP )))	0.000411928
+(S (NP ) (VP (MD ) (VP (VB ) (VP|<NP> ))))	0.00506477
+(VP (VBD ) (NP (DT ) (NP|<NN> )))	0.000364482
+(ADJP (JJ ) (S (VP (TO ) (VP (VB ) (VP|<NP> )))))	0.042661
+(TOP (S (PP ) (S|<,> (, ) (S|<NP> (NP (NNP ) (NNPS )) (S|<VP> (VP (VBD ) (NP )) (. ))))))	0.000851621
+(S|<VP> (VP (VBZ ) (VP (VBN ) (NP ))) (. ))	0.0985023
+(PP (IN ) (NP (NN ) (NNS )))	0.000180942
+(ADJP|<JJ> (JJ ) (PP ))	1
+(NP|<,> (, ) (NP|<NP> (NP ) (NP|<CC> (CC ,) (NP (NNP ) (NNP )))))	0.000534678
+(NP (DT ) (NP|<NN> (NN ) (NP|<NN> (NN ) (NNS ))))	0.000352611
+(NP (NN ) (NP|<NNS> (NNS ) (NP|<CC> (CC ) (NNS ))))	4.41647e-05
+(PP (IN ) (NP (JJ ) (NP|<NN> )))	0.00072232
+(VP (VB ) (VP|<NP> (NP (PRP )) (SBAR )))	0.00108477
+(PP (IN ) (NP (NP (DT ) (NN )) (PP (TO ) (NP ))))	0.000361884
+(NP (NN ))	0.0220382
+(NP (JJ ) (NN ))	0.000147413
+(VP (TO ) (VP (VB ) (PP (IN ) (NP ))))	0.00264118
+(PP (IN ) (NP (DT ) (NP|<NN> (NN ) (NN ))))	0.00136803
+(TOP (S (`` ) (S|<S> (S (NP (PRP )) (VP )) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	0.00127743
+(TOP (S (NP (NNP ) (NNP Corp.)) (S|<VP> )))	7.86112e-05
+(NP (DT ) (NNPS ))	0.000352611
+(PP (IN ) (NP (NP (NNP ) (POS )) (NP|<JJ> (JJ ) (NNS ))))	0.000361521
+(TOP (S (NP ) (S|<,> (, ) (S|<ADVP> (ADVP (RB )) (S|<,> (, ) (S|<VP> ))))))	3.06891e-05
+(NP (NNP ))	0.000550954
+(VP (VBG ) (VP|<ADVP> (ADVP (RB )) (PP (IN ) (NP ))))	9.11206e-05
+(S (NP (NP (DT ) (NP|<JJ> )) (PP (IN ) (NP (NP ) (PP )))) (VP ))	0.000646676
+(S (VP (VB ) (NP )))	0.000316548
+(TOP (S (PP (IN For) (NP )) (S|<,> (, ) (S|<NP> (NP (NNS ,)) (S|<VP> (VP ) (. ))))))	0.000184134
+(PP (IN ) (NP (NNP ) (CD )))	0.000543916
+(VP (TO ) (VP (VB ) (VP|<PP> )))	0.000690308
+(VP (VBZ ) (ADJP (JJ )))	0.020249
+(TOP (S (ADVP (RB )) (S|<,> (, ,) (S|<NP> (NP (DT the) (NN )) (S|<VP> )))))	0.0153292
+(NP|<JJ> (JJ ) (NP|<``> (`` ) (NP|<JJ> )))	0.00290113
+(NP (DT ) (NP|<NN> (NN government) (POS 's)))	2.20602e-05
+(SBAR (IN ) (S (NP (DT ) (NN )) (VP )))	0.0022712
+(NP|<NNP> (NNP ) (NNS ))	0.000909485
+(TOP (S (PP (IN In) (NP )) (S|<,> (, ) (S|<NP> (NP (NNP )) (S|<VP> )))))	0.000696781
+(PP (TO ))	0.000112862
+(S|<,> (, ) (S|<NP> (NP (NNP )) (S|<VP> )))	0.106092
+(PP (IN ) (NP (NNP ) (NNP )))	0.00018058
+(VP (VBP ) (VP|<RB> (RB ) (VP (VB do) (S n't))))	0.000728965
+(NP (NP (DT ) (NP|<JJ> )) (NP|<,> (, ) (NP )))	8.81527e-05
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<CC> (CC ) (NP ))))))))	2.20823e-05
+(SBAR (S (NP (DT ) (NN )) (VP (MD ) (VP ))))	0.00451515
+(S|<NP> (NP ) (S|<VP> (VP (VBP ) (VP )) (. )))	0.00556302
+(NP|<JJ> (JJ ) (NN ))	0.00580225
+(VP (VBP ) (NP (DT ) (NP|<JJ> (JJ ) (NN ))))	0.00020249
+(PP (IN ) (NP (NNP ) (NP|<NNP> )))	0.000250806
+(S|<VP> (VP (VBD ) (VP|<NP> (NP ) (VP|<,> ))) (. ))	0.000394009
+(VP (VBD ) (VP (VBG ) (PP )))	9.11206e-05
+(S (NP (DT ) (NN )) (VP ))	0.000646676
+(NP (NP ) (NP|<,> (, ) (VP (VBN ) (PP (IN ) (NP )))))	2.20602e-05
+(VP (VB ) (NP ))	0.000364482
+(TOP (S (S ) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (VBD )) (. ))))))	5.80651e-05
+(VP (MD ) (VP (VB ) (VP )))	0.0130172
+(NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP ) (S (VP (VBZ ) (NP )))) (, )))	0.000534678
+(TOP (S (ADVP (RB Still)) (S|<,> )))	0.000567748
+(NP (NN ) (NN ))	0.000408114
+(TOP (S (NP (PRP We)) (S|<VP> (VP ) (. ))))	0.00218988
+(PP (IN ) (NP (NP (DT ) (NN )) (PP (IN ) (NP (NNS )))))	0.00047026
+(S|<VP> (VP (VBD ) (S (VP (TO ) (VP )))) (. ))	0.0492511
+(VP (MD ) (VP (VB ) (VP )))	0.00506226
+(NP (DT ) (NNP ))	0.000176305
+(S|<,> (, ) (S|<NP> (NP (NNP )) (S|<VP> (VP ) (. ))))	0.000848733
+(TOP (S (`` ) (S|<NP> (NP ) (S|<VP> (VP (VBZ ) (ADJP )) (. )))))	0.000255486
+(NP (DT ) (NNPS ))	2.2673e-05
+(NP|<NP> (NP (NN )) (NP|<CC> ))	0.0310078
+(SBAR (WHPP (TO ) (WHNP (WDT ))) (S ))	0.00225983
+(TOP (NP ))	0.0919751
+(NP (NNS Sales))	0.000881527
+(SBAR (WHNP (WDT )) (S (VP (VBD ) (VP (VBN ) (VP (VBN ) (PP ))))))	0.00451515
+(NP (NP ) (PP (IN ) (NP (VBG ) (NNS ))))	8.81527e-05
+(NP (NNP ) (NP|<,> ))	0.000352611
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (NN ) (NNS )) (NP|<CC> (CC ) (NP (NN ))))))	0.000638788
+(S (S ) (S|<,> (, ) (S|<NP> (NP ) (S|<ADVP> ))))	0.000633096
+(VP (VBP ) (VP|<RB> ))	9.49173e-05
+(VP|<,> (, ) (S (ADVP (RB )) (VP )))	0.00363015
+(NP (NP (NNP ) (NP|<NNP> (NNP ) (POS ))) (NN ))	0.000524718
+(ADJP (RB ))	0.00102386
+(VP (VP (VBN ) (PP (IN ) (NP ))) (VP|<,> (, ) (VP|<VP> (VP ) (VP|<CC> (CC ) (VP )))))	9.73511e-05
+(NP (JJ ) (NNS ))	0.000667823
+(VP|<,> (, ) (VP|<ADVP> (ADVP (RB )) (VP|<,> )))	0.00181689
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NN ))))	0.00328327
+(TOP (S (S (VP )) (S|<,> (, ) (S|<NP> (NP (DT ) (NN )) (S|<VP> )))))	0.000122633
+(S|<VP> (VP (VBD ) (VP|<,> (, ) (SBAR (IN ) (S )))) (. ))	0.0492511
+(NP (NP ) (ADVP (RB ) (PP )))	0.000408114
+(TOP (S (PP (IN In) (NP (DT ) (NP|<NN> (NN ) (NN )))) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> )))))	0.0153292
+(TOP (S (ADVP (RB Still)) (S|<,> )))	0.00064206
+(NP|<NN> (NN ) (NNS ))	0.000686651
+(NP|<``> (`` ) (NP ))	0.5
+(TOP (S (NP (NP (NNP )) (NP|<,> (, ) (NP|<SBAR> (SBAR ) (, )))) (S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP )))) (. ))))	6.13781e-05
+(VP|<NP> (NP ) (PP (IN ) (NP )))	0.000951773
+(NP (NNS ))	0.00141044
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBZ )) (SINV|<NP> (NP ) (. ))))))))	3.99197e-05
+(ADVP (RB Back) (PP ))	0.0215313
+(VP (VBG ) (VP|<NP> (NP ) (PP )))	0.0130172
+(NP (NP ) (NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP ) (S (VP (VBZ ) (NP (NP (DT ) (NN )) (PP ))))) (, ))))	8.82409e-05
+(VP (VBP ) (VP|<RB> (RB ) (VP (VB ) (S ))))	9.30752e-05
+(TOP (SINV (S ) (SINV|<,> (, ) (SINV|<VP> (VP (VBZ )) (SINV|<NP> )))))	0.000122756
+(TOP (S (SBAR ) (S|<,> )))	3.06891e-05
+(NP (DT ) (NP|<NN> (NN ) (NN )))	4.41205e-05
+(TOP (S (NP (NNP )) (S|<VP> (VP (VBZ is) (NP )) (. ))))	0.0306584
+(TOP (S (NP (NP ) (NP|<,> )) (S|<VP> (VP (VBD ) (VP|<NP> )) (S|<.> (. ) ('' )))))	0.000490534
+(TOP (S (RB ) (S|<NP> )))	0.0306584
+(NP (NP ) (NP|<,> (, ) (NP (NP (DT ) (NN )) (VP (VBN ) (PP )))))	0.000958181
+(NP (NP (JJ ) (NNS )) (NP|<,> (, ) (SBAR )))	0.00100173
+(WHNP (WP ))	0.124906
+(VP (MD ) (VP (VB ) (VP )))	0.000364482
+(NP (NP (DT ) (NN )) (PP (IN ) (NP )))	4.40763e-05
+(TOP (S (NP (DT The) (NN )) (S|<VP> (VP ) (. ))))	0.000159679
+(VP (VB ) (VP|<NP> ))	0.000129433
+(NP (NNP ))	0.000352611
+(TOP (S (SBAR ) (S|<,> )))	6.13167e-05
+(TOP (S (S (NP ) (VP )) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> )))))	3.06584e-05
+(S|<VP> (VP (VBP ) (VP|<NP> (NP ) (VP|<ADVP> (ADVP (RB )) (VP|<,> )))) (. ))	0.00635499
+(NP (DT ) (NP|<NN> (NN ) (S )))	0.000147413
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NP|<NNP> ))))	0.000156753
+(SBAR (S (NP (PRP )) (VP (MD ) (VP (VB )))))	0.0752525
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (PP )) (. ))))	3.06891e-05
+(NP (NP (QP (RB ) (QP|<JJ> (JJ ) (QP|<IN> (IN ) (CD )))) (NN )) (PP (IN ) (NP )))	2.20602e-05
+(S (RB ) (VP ))	0.00150737
+(PP (IN ) (PP (IN ) (NP )))	0.00072232
+(TOP (S (NP (NNP )) (S|<VP> )))	6.18736e-05
+(NP (NP (CD )) (PP (IN ) (NP (NP (DT ) (NP|<CD> (CD ) (NNS ))) (SBAR ))))	5.50954e-05
+(TOP (S (S (VP )) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> )))))	3.07198e-05
+(PP (TO ) (NP ))	0.0112862
+(NP (PRP$ ) (NP|<JJ> ))	2.20602e-05
+(SBAR (IN ) (S (SBAR ) (S|<,> (, ) (S|<NP> (NP (DT ) (NP|<JJ> that)) (VP (MD ) (VP (VB ) (NP )))))))	0.00225757
+(VP (VBN ) (PP (IN ) (NP (PRP$ ) (NP|<NN> ))))	0.00126556
+(NP (JJ ) (NP|<NN> (NN ) (NN )))	0.000176305
+(NP (PRP$ ) (NP|<JJ> (JJ ) (NN )))	0.00550954
+(NP (NP (DT ) (NN )) (PP (IN ) (NP )))	8.81527e-05
+(TOP (S (NP (PRP They)) (S|<VP> )))	3.15415e-05
+(TOP (S (ADVP (RB )) (S|<PRN> (PRN (, ) (PRN|<S> (S (NP ) (VP (VBD ))) (, ))) (S|<NP> (NP ) (S|<VP> (VP ) (. ))))))	6.13167e-05
+(VP (VBG ) (VP|<PP> ))	0.0227802
+(NP|<NNP> (NNP ) (NP|<NNP> ))	0.0208786
+(NP (DT ) (NP|<NNP> (NNP ) (NN )))	4.41205e-05
+(NP|<,> (, ) (SBAR (WHNP (WDT )) (S )))	0.000537906
+(VP (VB ) (NP (DT ) (NN )))	0.000414185
+(NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NN ))	8.81527e-05
+(VP|<NP> (NP ) (S (VP (TO ) (VP ))))	0.000951773
+(NP (NP (NNS )) (PP (IN ) (NP )))	8.83293e-05
+(S|<VP> (VP (VBD ) (NP )) (. ))	0.00025257
+(NP (RB ) (NN ))	0.00550954
+(NP|<JJ> (JJ ) (NN ))	0.00251834
+(NP|<,> (, ) (NP|<PP> (PP (VBG ) (NP )) (, )))	0.000840689
+(TOP (S (RB ) (S|<NP> (NP (PRP )) (S|<VP> ))))	3.06891e-05
+(NP|<,> (, ) (NP|<NP> (NP (CD )) (, ,)))	0.0334174
+(NP|<,> (, ) (NP|<PP> (PP (VBG ) (NP )) (, )))	0.0074855
+(NP|<CC> (CC ) (NNS ))	0.00352875
+(VP (VBG ) (S ))	0.00108477
+(S|<VP> (VP (VBZ ) (S )) (. ))	0.000938117
+(NP (NP ) (NP ))	4.41205e-05
+(NP (NN ) (NN ))	2.20382e-05
+(NP|<,> (, ) (NP (NP (DT ) (NP|<NN> )) (PP (IN ) (NP (NNP )))))	0.0668348
+(VP (TO ) (VP (VB ) (VP|<NP> (NP ) (PP (IN ) (NP to)))))	0.000182606
+(NP (NN ) (NP|<CC> (CC ) (NN )))	8.82409e-05
+(S (NP (PRP )) (VP (MD ) (VP )))	0.00753686
+(S (NP ) (VP (VBD ) (VP (VBN ) (SBAR ))))	0.0211032
+(S|<,> (, ) (S|<NP> (NP (PRP )) (VP (VBZ ) (NP ))))	0.000212183
+(NP (JJ ) (NNPS ))	0.00110191
+(PP|<IN> (IN ) (NP (NP (NN )) (PP (IN ) (NP ))))	0.0882353
+(TOP (S (`` ) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(NP (NP ) (PP (IN ) (NP (JJ ) (NNS ))))	0.000787077
+(NP|<JJ> (JJ ) (NN ))	0.00145347
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (, ))))	2.20602e-05
+(VP (VB ) (VP|<NP> (NP ) (SBAR (IN ) (S (NP (PRP )) (VP )))))	9.11206e-05
+(S|<,> (, ) (S|<NP> (NP ) (S|<VP> )))	0.000212183
+(S|<VP> (VP (MD ) (VP (VB ) (S (NP ) (VP )))) (. ))	0.00205213
+(VP (MD ) (VP|<ADVP> will))	0.00108477
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<,> (, ) (NP|<JJ> ))))	0.000333912
+(S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD )) (. ))))	0.000424367
+(ADVP (NP (CD ) (NNS )) (RB ))	0.00266988
+(NP (NP ) (PP (IN ) (NP (NNP ) (NNP ))))	0.00142182
+(VP|<RB> (RB ) (VP (VBN )))	0.0328253
+(TOP (S (ADVP ) (S|<,> (, ) (S|<NP> (NP (DT the) (NN )) (S|<VP> )))))	0.000123622
+(S|<VP> (VP (VBZ ) (NP )) (. ))	0.000879485
+(S|<VP> (VP (VBD ) (PP )) (. ))	0.000197005
+(PP (IN ) (NP (JJ ) (NP|<NNP> )))	0.000171004
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP )) (, )))	0.00213871
+(S (NP (NN )))	0.052758
+(NP (NP (DT ) (NP|<NN> )) (PP (IN ) (NP )))	0.000196769
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	4.40763e-05
+(VP|<ADVP> (ADVP ) (SBAR ))	0.0814985
+(TOP (S (NP (DT The) (NP|<NNP> )) (S|<VP> )))	6.13167e-05
+(SBAR (DT ) (S (NP ) (VP (VBD ) (VP|<NP> ))))	0.00225757
+(VP (VBZ ) (VP|<ADVP> ))	9.11206e-05
+(S|<,> (, ) (S|<NP> (NP (DT ) (NN )) (S|<ADVP> )))	0.0151559
+(VP (VBD ) (VP|<PP> (PP (IN ) (NP (NN ))) (S (VP (TO ) (VP )))))	0.00198088
+(TOP (S (S (VP )) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> )))))	3.07198e-05
+(NP (NNP ) (NNP ))	0.0110191
+(VP|<NP> (NP (DT ) (NN )) (PP ))	0.00190355
+(PP (IN ) (NP (NP ) (NN )))	0.000180761
+(PP (IN ) (NP (NP (DT ) (NP|<NN> (NN ) (NN ))) (NP|<PP> )))	0.00018058
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<CD> (CD ) (NNS ))))	0.000367303
+(NP|<NNP> (NNP ) (POS ))	0.000961378
+(TOP (S (NP (NP (DT The) (NP|<JJ> (JJ ) (NP|<NNP> ))) (NP|<,> )) (S|<VP> (VP ) (. ))))	0.0022297
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ,) (NP (NNP )))) (, ))))	4.40763e-05
+(PP (TO ) (NP (NNS )))	0.000313507
+(NP (NP (NNP ) (NNP )) (NP|<CC> (CC ) (NP (NNP ) (NNP ))))	8.82409e-05
+(VP (VBG ) (NP ))	0.000406788
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ) (NP (NNP )))) (, ))))	4.40763e-05
+(NP|<NN> (NN ) (NP|<JJ> ))	0.000342982
+(VP (TO ) (VP (VB ) (VP|<NP> (NP ) (VP|<ADVP> ))))	4.55603e-05
+(TOP (S (NP ) (S|<VP> (VP (VBP ) (VP )) (. ))))	3.06584e-05
+(NP (JJ ) (NN ))	0.0110191
+(NP|<NN> (NN ) (SBAR (IN ) (S )))	0.000171663
+(NP|<,> (, ) (NP|<VP> (VP (VBN ) (PP ,)) (, based)))	0.00641614
+(PP (TO ) (NP (PRP )))	0.00288928
+(PP (IN ) (NP (NNP ) (NNP )))	0.00018058
+(NP|<NN> (NN ) (NN ))	0.171491
+(PP (IN ) (NP (DT ) (NN )))	0.00072232
+(NP (NP ) (NN ))	4.40763e-05
+(PP (TO ) (NP (CD ) (NNS )))	0.000250806
+(NP (DT ) (NP|<NNP> (NNP ) (NNP )))	2.20382e-05
+(PP (IN ) (NP (NP (DT ) (NP|<NN> )) (PP (IN ) (NP in))))	0.00188104
+(VP|<S> (S (VP (TO ) (VP ))) (VP|<,> (, ) (SBAR (IN ) (S ))))	0.00875912
+(VP (VBD ) (VP|<RB> ))	0.000182241
+(VP (VBG ) (VP|<NP> ))	0.0151868
+(NP|<,> (, ) (SBAR (WHNP (WDT )) (S (VP ))))	0.000536287
+(VP|<NP> (NP (NN )) (VP|<PP> ))	0.000951773
+(NP (NP (CD ) (NN )) (PP (IN ) (NP )))	4.40763e-05
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> )))))))	0.00127743
+(S (NP (PRP )) (VP (MD ) (VP|<RB> (RB wo) (VP n't))))	0.00301474
+(NP (`` ) (NP|<NP> (NP ) (NP|<''> ('' ) (PP (IN ) (NP )))))	4.40763e-05
+(TOP (S (S (NP (NP ) (NP|<JJ> (JJ ) (NP|<JJ> (JJ ) (NN )))) (VP (VBD ) (VP|<NP> ))) (S|<,> rose)))	3.06891e-05
+(NP (NP ) (PP (TO ) (NP )))	4.40763e-05
+(S|<VP> (VP (VBD ) (NP (NP (DT ) (NP|<JJ> )) (NP|<PP> (PP a) (PP )))) (. ))	9.85023e-05
+(NP|<NNP> (NNP ) (NNP ))	0.0150065
+(NP (NP (NN ) (NN )) (NP|<,> (, ) (NP|<NP> (NP ) (, ))))	0.00367303
+(VP (VBD ) (PP (IN ) (NP )))	0.000364482
+(VP (TO ) (VP (VB ) (PP (IN ) (NP ))))	0.000460205
+(NP (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP ))))	8.81527e-05
+(NP (NNP ) (NNS ))	4.41205e-05
+(NP (NP (CD One)) (PP ))	0.000176305
+(VP (VBN ) (VP|<ADVP> (ADVP (RB )) (PP )))	0.0455603
+(PP (IN ) (NP (NNP )))	9.03804e-05
+(VP (VP ) (VP|<CC> (CC ) (VP (VB ) (NP (NP ) (PP )))))	0.000728965
+(TOP (S (NP ) (S|<VP> (VP (VBZ ) (VP (VBN is) (S (VP (TO ) (VP to))))) (. ))))	0.000122879
+(NP|<NNP> (NNP ) (NNS ))	0.00502836
+(NP (NP (CD )) (NP|<,> ))	0.000524718
+(NP (NP (DT ) (NN )) (SBAR (S (VP (TO to) (VP (VB ) (NP ))))))	0.000787077
+(NP (RB ) (NP|<NP> ))	0.0110191
+(S|<VP> (VP (VBZ ) (VP (VBN is) (VP|<PP> ))) (. ))	9.85023e-05
+(PP (IN ) (NP (JJ ) (NNS )))	0.000180942
+(TOP (S (NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> (, ) (NP|<ADJP> ))) (S|<VP> (VP (VBD ) (VP (VBN ) (VP|<S> ))) (. was))))	0.000122633
+(TOP (S (NP (PRP It)) (S|<VP> )))	6.13474e-05
+(VP (VBN ) (VP|<,> ))	9.11206e-05
+(NP|<NNP> (NNP ) (NNP ))	0.0208786
+(TOP (S (`` ``) (S|<S> (S (NP (PRP )) (VP )) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	0.00127743
+(VP (VBG ) (NP ))	9.11206e-05
+(TOP (S (S ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD )) (. ))))))	3.07198e-05
+(NP|<NN> (NN ) (NN ))	0.00714547
+(TOP (S (`` ) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(NP (NP ) (NP|<PP> (PP ) (PP (IN ) (NP (NP (NN )) (PP )))))	0.000153043
+(S|<VP> (VP (VBD ) (VP|<PP> )) (. ))	0.000197005
+(NP (PRP I))	2.20382e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<NN> )))	8.82409e-05
+(TOP (S (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (S|<VP> )))	0.000766459
+(ADVP (RP ))	0.000701124
+(NP (NP (CD )) (PP (IN ) (NP (NP ) (SBAR ))))	4.46569e-05
+(NP (NP (NN )) (PP ))	2.20382e-05
+(NP (NP (NNP Sony) (NNP Corp.)) (NP|<,> ))	4.40763e-05
+(NP (NP ) (VP (VBN ) (PP (IN ) (NP (DT ) (NN )))))	4.40763e-05
+(TOP (S (`` ) (S|<S> (S (NP (PRP It)) (VP )) (S|<,> (, ) (S|<''> )))))	0.000958074
+(NP (NP (NNS )) (PP (IN of) (NP (NNS ))))	0.000344346
+(VP (VBZ ) (VP (VBG ) (VP|<PP> (PP is) (PP ))))	0.000690308
+(VP (VBN ))	0.000316391
+(NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NP|<JJ> (JJ ) (NP|<NN> )))	0.00142182
+(NP (ADJP (RB ) (JJ )) (NNS ))	2.21045e-05
+(NP (DT ) (NN ))	4.40763e-05
+(VP|<,> (, ) (VP|<PP> (PP ) (VP|<,> (, ) (VP|<PP> ))))	0.0567212
+(NP|<,> (, ) (NP (NP ) (VP )))	0.002143
+(PP (IN ) (NP (NNP )))	0.000543916
+(NP (QP ($ ) (QP|<CD> (CD ) (CD ))))	0.000132361
+(NP (NP (DT ) (NN )) (NP|<PP> (PP (IN ) (NP )) (PP )))	4.41205e-05
+(TOP (S (S ) (S|<,> (, ) (S|<NP> ))))	0.000521192
+(TOP (S (NP (NNP Mr.) (NNP )) (S|<VP> (VP (VBD was) (NP (NP ) (PP (IN ) (NP (NP (DT of) (NP|<NN> the)) (PP (IN ) (NP )))))) (. ))))	0.00266594
+(NP (CD ) (NN ))	4.50218e-05
+(S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> )))	0.00196466
+(NP (DT ) (NN ))	8.81527e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<NN> )))	5.65081e-05
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (NNP ) (NNP )) (, )))) (S|<VP> )))	6.13167e-05
+(NP (DT ))	0.000352611
+(NP (NP (NN )) (VP (VBN ) (PP )))	8.82409e-05
+(TOP (S (NP (NP ) (NP|<NNPS> )) (S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP )))) (. said))))	3.06584e-05
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (PP (IN ) (NP ))) (. ))))	0.0102195
+(NP (PRP$ ) (NP|<JJ> (JJ ) (NN )))	0.000847622
+(TOP (S (NP (DT The) (NN )) (S|<ADVP> (ADVP (RB also)) (S|<VP> ))))	0.000273735
+(S|<VP> (VP (VBD ) (VP|<NP> )) (. ))	0.000794373
+(NP|<NNP> (NNP ) (POS ))	0.000480208
+(PP (IN ) (NP (NNP )))	4.51902e-05
+(PP (IN ) (NP (NNP )))	4.51902e-05
+(NP (QP ($ ) (QP|<CD> (CD ) (CD ))))	0.000352611
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ) (NP (NNP )))) (, ))))	4.40763e-05
+(VP (ADVP (RB )) (VP|<VBN> (VBN ) (PP (IN ) (NP ))))	0.000379669
+(NP (NP (JJR )) (PP (IN more) (NP (DT than) (NN a))))	4.41647e-05
+(NP|<,> (, ) (NP (NP (NN )) (PP (IN ) (NP ))))	0.0381913
+(NP (DT ) (NP|<JJ> (JJ ) (NN a)))	0.0220382
+(S|<,> (, ) (S|<NP> (NP (NNP ,)) (S|<VP> (VP ) (. ))))	0.000848733
+(VP (VBZ ) (SBAR (S (NP (PRP )) (VP says))))	0.000237293
+(PP (JJ ) (PP|<IN> (IN ) (NP )))	0.0150483
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP ))	4.41205e-05
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<VP> (VP (ADVP (RB )) (VP|<VBN> (VBN ) (PP ))) (, )))) (S|<VP> )))	0.0038323
+(NP (PRP$ ) (NN ))	0.00157415
+(PP (IN ) (NP (DT ) (NNS )))	4.51902e-05
+(VP|<NP> (NP ) (PP (IN ) (NP )))	0.00793144
+(VP (VBG ) (VP|<ADVP> ))	4.56059e-05
+(PP (IN ) (NP (CD ) (NNS )))	9.029e-05
+(VP|<,> (, ) (PP (ADVP (RB )) (PP|<IN> )))	0.0292754
+(NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (POS )))	0.000240104
+(SBAR (IN ) (S (NP ) (VP (MD ) (VP ))))	0.0011613
+(NP|<,> (, ) (NP|<NP> (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP (IN ) (NP ))) (, )))	0.00278478
+(VP (VBG ) (PP (IN ) (NP (NNS ))))	0.000364482
+(NP (DT ) (NP|<NN> (NN ) (NN )))	4.40763e-05
+(TOP (S (ADVP ) (S|<,> )))	6.40049e-05
+(NP (PRP$ ) (NNS ))	0.000222608
+(NP|<,> (, ) (NP|<''> ('' ) (NP )))	0.00213871
+(TOP (S (CC But) (S|<NP> (NP ) (S|<VP> ))))	0.000393056
+(NP|<JJ> (JJ ) (NP|<JJ> (JJ ) (NNS )))	0.00206046
+(NP (CD ) (NNS ))	0.00200347
+(S (NP (PRP )) (VP (VBP ) (VP|<RB> )))	0.00301474
+(VP (VBZ ) (NP (DT ) (NP|<JJ> (JJ ) (NN an))))	0.00569504
+(NP (DT ) (NN ))	8.82409e-05
+(NP (DT ) (NN ))	0.000176482
+(NP (NNP ) (NNP ))	4.41647e-05
+(TOP (S (S ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD )) (. ))))))	3.07198e-05
+(PP (IN ) (NP (NNP )))	0.00376208
+(VP (VBD ) (VP (ADVP (RB )) (VP|<VBN> were)))	9.11206e-05
+(PP (IN ) (NP (DT ) (NN )))	9.04709e-05
+(S (S ) (S|<CC> (CC ) (S )))	0.00126619
+(NP|<ADJP> (ADJP (NP (CD ) (NNS )) (JJ )) (, ))	0.00526316
+(NP|<NNPS> (NNPS ) (NNP ))	0.0127001
+(S|<ADVP> (ADVP (RB )) (VP (VBD ) (NP )))	0.00725834
+(NP (PRP$ ) (NP|<JJ> (JJ ) (NN )))	0.00146921
+(S (NP (NNP )) (VP ))	0.000633096
+(VP|<NP> (NP ) (SBAR (IN ) (S )))	0.000952726
+(S|<CC> (CC ) (S|<S> (S (NP ) (VP (VBP ) (VP ))) (. )))	1
+(NP (NP ) (VP (VBN ) (VP|<PP> )))	8.81527e-05
+(S|<,> (, ) (S|<PP> (PP ,) (S|<,> (, ) (S|<NP> (NP (DT ) (NP|<JJ> (JJ ,) (NP|<NNP> ))) (S|<VP> )))))	0.00111091
+(VP (TO ) (VP (VB ) (VP|<ADVP> )))	0.000216954
+(SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP (NNP ) (NNP )) (NP|<,> (, ) (NP (NP (NN )) (PP (IN ) (NP ))))) (. ))))	0.25
+(VP|<,> (, ) (ADVP ))	0.00181508
+(NP (DT ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> ))))	0.00550954
+(PP (IN ) (ADJP (JJ )))	0.00112862
+(NP (NP (JJ ) (NNS )) (NP|<,> (, ) (SBAR (WHNP (WDT )) (S (VP )))))	0.00734606
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	0.000550954
+(PP (IN ) (NP (NP (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP )))) (PP (IN ) (NP (NNP )))))	0.00018058
+(NP|<,> (, ) (NP|<VP> (VP ) (, )))	0.00972142
+(S (NP ) (S|<ADVP> (ADVP (RB )) (VP (VBP ) (NP ))))	0.00063373
+(NP (DT ) (NNS ))	0.000138605
+(TOP (S (NP (NP (CD )) (PP )) (S|<VP> )))	0.000638716
+(PP (IN ) (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP )))	9.03804e-05
+(PP (IN ) (S (VP (VBG ) (PP ))))	0.00145629
+(NP (NNP ) (NP|<NNP> (NNP ) (POS )))	2.20382e-05
+(NP|<NNP> (NNP ) (NNP ))	0.240104
+(SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP (NNP ) (NNP )) (NP|<,> )) (. )))	0.739645
+(PP (IN ) (NP (DT of) (NNS the)))	0.00376208
+(NP (NP (CD ) (NNS )) (NP (DT ) (NN )))	0.0220382
+(VP (VBD ) (VP|<NP> ))	9.12118e-05
+(S|<VP> (VP (MD ) (VP (VB ) (S (NP ) (VP (TO ) (VP ))))) (. ))	0.00205213
+(TOP (S (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (S|<VP> (VP ) (. ))))	0.00191615
+(VP|<ADVP> (ADVP (RB )) (PP ))	0.00228424
+(S (NP (JJS )) (VP ))	0.000370231
+(PP (IN ) (NP (NN ) (S (VP ))))	0.0112862
+(NP (NP (NNP ) (NP|<NNP> (NNP ) (POS ))) (NN ))	0.000209887
+(VP|<,> (, ) (PP (VBG ) (PP (TO ) (NP ))))	0.00950302
+(VP (VBN ) (VP|<ADVP> (ADVP (RB )) (PP )))	0.00379669
+(VP (VBN ) (ADVP (RB )))	0.000182241
+(PP (IN ) (NP (DT ) (NN )))	0.00188104
+(NP (NP (DT ) (NN )) (PP (IN ) (NP )))	2.20602e-05
+(VP (VBZ ) (VP|<ADJP> ))	0.000364847
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP ) (PP (IN ) (NP ))) (. ))))))))	4.79037e-05
+(NP (QP (JJR ) (QP|<IN> (IN ) (QP|<$> ($ ) (QP|<CD> (CD ) (CD ))))))	0.000749298
+(PP (IN ))	9.0835e-05
+(S|<,> (, ) (S|<NP> (NP (NP ) (PP )) (S|<VP> (VP (VBZ ) (VP ,)) (. ))))	0.000453383
+(S (NP ) (VP (VBZ ) (VP )))	0.00063373
+(S|<VP> (VP (VBD ) (NP (NP ) (NP|<,> ))) (. ))	0.000197005
+(VP|<RB> (RB ) (VP (VB ) (ADVP (RB ))))	0.136772
+(ADVP (NP (DT ) (NN year)) (RB earlier))	0.00133494
+(NP|<NN> (NN ) (NP|<NN> ))	0.000603842
+(NP (DT ) (NN ))	0.000172173
+(ADVP (RB ))	0.333735
+(NP (NP (DT ) (NNS )) (VP ))	8.81527e-05
+(SBAR (WHADVP (WRB )) (S ))	0.00225757
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP )) (, )))	0.00213871
+(TOP (S (NP (NP (CD )) (PP (IN of) (NP ))) (S|<VP> )))	0.00127743
+(TOP (S (ADVP (RB )) (S|<PRN> (PRN (, ,) (PRN|<S> )) (S|<NP> ))))	0.000127743
+(NP|<NN> (NN ) (S (VP (TO ) (VP (VB ) (VP|<NP> )))))	0.00137193
+(NP (NP (CD One)) (PP ))	0.000176305
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBZ )) (SINV|<NP> (NP ) (. ))))))))	3.99197e-05
+(PP (IN ) (NP (PRP$ ) (NN )))	0.00107488
+(NP|<,> (, ) (NP (NP (DT ) (NP|<NN> )) (PP (IN ) (NP (NNP )))))	0.0668348
+(TOP (S (`` ) (S|<S> (S (NP (PRP It)) (VP )) (S|<,> (, ) (S|<''> )))))	0.000958074
+(PP (IN ) (S (VP )))	0.00188104
+(VP (VBD ) (VP|<PP> (PP ) (VP|<,> (, ) (S ))))	9.11206e-05
+(NP|<CC> (CC ) (NP (JJ ) (NP|<JJ> )))	0.0100249
+(TOP (S (NP (DT The) (NN )) (S|<ADVP> )))	0.0017773
+(NP (NP ) (NP|<CC> (CC ) (NP (JJ ) (NNS and))))	0.000344346
+(TOP (S (S ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD )) (. ))))))	0.0038323
+(VP|<PP> (PP (IN ) (NP (CD ))) (SBAR ))	0.000678114
+(TOP (S (NP (NNP )) (S|<VP> )))	0.000851621
+(VP|<ADVP> (ADVP (RB )) (VP ))	0.0543323
+(S|<NP> (NP ) (S|<VP> (VP (VBZ ) (NP )) (. )))	0.000669572
+(VP (VB ) (NP (PRP )))	0.000433908
+(VP|<PP> (PP ) (SBAR (IN ) (S )))	0.000678793
+(TOP (S (PP (IN On) (NP )) (S|<,> (, ) (S|<NP> ,))))	3.07198e-05
+(S|<VP> (VP (VBD ) (VP (VBN ) (S (NP (NP (NP was) (PP (IN ) (NP ))) (NP|<,> (, ) (NP )))))) (. ))	9.85023e-05
+(NP (NNP ))	0.000176305
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (VP ))	2.20602e-05
+(S|<VP> (VP (VBP ) (NP )) (. ))	0.0123128
+(VP (VBN ) (VP|<NP> (NP (NN )) (PP )))	0.0455603
+(VP (VBD ) (VP|<RB> (RB ) (VP (VB did) (NP n't))))	0.000182424
+(QP|<TO> (TO ) (CD ))	1
+(SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP (NNP ) (NNP )) (NP|<,> (, ) (NP (NP (NN )) (PP (IN ) (NP ))))) (. ))))	0.25
+(PP (IN ) (NP (NNS )))	0.000945445
+(NP|<NNP> (NNP ) (NNP ))	0.000961378
+(S|<NP> (NP (PRP )) (S|<VP> ))	0.00133513
+(WHNP (WDT ))	0.124906
+(NP|<ADJP> (ADJP (CD ) (NN )) (NN ))	0.657895
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (JJ ) (NNS )) (NP|<CC> (CC ) (NP )))))	0.000204057
+(PP (IN ) (NP (NP (NNS )) (PP )))	0.000112862
+(NP (PRP$ ) (NP|<NNS> ))	0.00100173
+(NP (PRP ))	0.000137739
+(NP (DT This) (NN ))	0.00183651
+(PP (IN ) (NP (NP (DT ) (NN )) (VP )))	9.029e-05
+(TOP (S (NP (NP ) (NP|<,> )) (S|<VP> (VP (VBD ) (VP|<NP> )) (S|<.> (. ) ('' )))))	0.000490534
+(NP (DT ) (NP|<NN> ))	4.41205e-05
+(S (NP (NP (NNP ) (NNP )) (NP|<,> )) (VP ))	0.0107626
+(SBAR (WHNP (WP )) (S (VP )))	0.0722424
+(NP ($ ) (CD ))	0.000176482
+(VP (VBD ) (VP|<ADJP> (ADJP (JJ )) (PP (IN ) (NP in))))	0.00350464
+(NP (DT The) (NP|<NNP> ))	0.00367303
+(VP|<PP> (PP ) (S (VP )))	0.00135759
+(S (NP (DT The) (NN )) (VP ))	0.000633096
+(PP (IN ) (NP (NNP )))	0.000112862
+(NP (ADJP ) (NP|<NNP> ))	0.00191636
+(VP (VBD ) (VP|<PRT> (PRT (RP )) (VP|<NP> )))	9.11206e-05
+(NP (DT ) (NN figure))	0.0220382
+(TOP (S (S ) (S|<,> (, ) (S|<S> ))))	0.000184689
+(VP (VBD ) (VP ))	0.000190629
+(NP (NP ) (SBAR (WHNP (WDT )) (S (VP (MD ) (VP (VB ) (PP ))))))	7.65214e-05
+(PP (IN ) (NP (NN ) (NP|<CC> (CC ) (NN ))))	0.000200644
+(S|<VP> (VP (VBD ) (SBAR (S (NP ) (S|<``> (`` ) (VP ))))) (S|<.> (. ) ('' )))	0.000197005
+(NP|<NN> (NN ) (NN ))	0.000686651
+(PP (IN ) (NP (DT ) (NP|<NN> (NN ) (NN ))))	4.51902e-05
+(NP (DT ) (NP|<NN> ))	4.40763e-05
+(NP|<,> (, ) (NP|<PP> (PP (VBG ) (NP )) (, )))	0.000840689
+(NP (DT ) (NN ))	8.81527e-05
+(TOP (S (`` ``) (S|<S> (S (NP (PRP )) (VP )) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	0.00127743
+(NP|<JJ> (JJ ) (NP|<NNP> (NNP ) (NP|<NNP> )))	0.00290113
+(VP|<VBN> (VBN ) (VP|<PP> (PP ) (PP )))	0.889631
+(TOP (S (S ) (S|<CC> (CC ) (S|<S> (S ) (. )))))	3.58577e-05
+(TOP (NP ))	0.00510973
+(PP (IN ) (NP (DT ) (NP|<NNS> )))	0.000361521
+(NP|<NN> (NN ) (NP|<VBG> (VBG ) (NN )))	0.0428728
+(SBAR (IN ) (S (NP ) (VP (VBD ) (S (VP (TO ) (VP to))))))	0.00225757
+(NP (DT The) (NP|<JJ> (JJ average) (NN yield)))	0.0110191
+(NP (NNS ))	4.41205e-05
+(NP (JJ ) (NP|<NN> ))	8.82409e-05
+(VP|<CC> (CC ) (VP (VBZ ) (VP|<NP> (NP ) (PP (TO ) (NP )))))	0.868613
+(NP (NP (CD ) (NNS )) (NP (DT ) (NN )))	4.40763e-05
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> )))))))	0.00127743
+(VP (VBD ) (VP|<ADVP> (ADVP (RB )) (VP )))	9.13948e-05
+(TOP (S (NP (NNP ) (NNP )) (S|<VP> (VP (VBZ is) (NP )) (. ))))	0.00766459
+(S|<S> (S (NP (PRP )) (VP )) (. ))	0.969347
+(NP ($ ) (CD ))	8.81527e-05
+(NP (DT ) (NP|<NN> (NN ) (NN )))	0.0220382
+(PP (IN ) (SBAR ))	0.00288928
+(VP (VBN ) (VP|<ADVP> ))	0.00162715
+(NP (PRP ))	0.000367303
+(NP (DT ) (NP|<NNP> (NNP ) (NN )))	0.000667823
+(TOP (S (S (NP ) (VP )) (S|<,> (, ) (S|<NP> (NP (DT ) (NP|<NNP> )) (S|<VP> (VP ) (. ))))))	0.0153292
+(PRN|<S> (S (NP (PRP )) (VP (VBZ ))) (, he))	0.291486
+(TOP (S (NP ) (S|<,> (, ) (S|<ADVP> (ADVP (RB )) (S|<,> (, ,) (S|<VP> ))))))	3.06891e-05
+(NP (NNP ) (NP|<NNP> (NNP ) (NP|<CC> (CC ) (NNP ))))	0.000176482
+(ADJP (QP ($ ) (QP|<CD> (CD ) (CD ))))	0.255966
+(PP (IN ) (NP (NP (NNS )) (VP )))	0.0128986
+(VP (VBP ) (VP|<RB> ))	0.000759338
+(S|<,> (, ) (S|<NP> (NP (NNP )) (S|<VP> )))	0.0530458
+(NP (NP (DT ) (NN )) (SBAR (S )))	8.82409e-05
+(VP (VB ) (VP|<ADVP> ))	0.000216954
+(S|<VP> (VP (VBD ) (VP|<PP> (PP (IN ) (NP )) (VP|<PP> ))) (. ))	0.00246256
+(NP (NNP ) (NNP ))	0.000459129
+(NP (DT ))	0.000122434
+(TOP (S (NP (JJ ) (NNS )) (S|<VP> )))	0.0325745
+(NP (NP (DT ) (NP|<NN> (NN ) (NN ))) (PP (IN ) (NP (NP (NNP )) (NP|<,> ))))	4.41205e-05
+(ADJP (ADJP ) (ADJP|<CC> (CC ) (ADJP )))	0.00819091
+(S (NP (DT ) (NN the)) (VP (VBD )))	0.0211032
+(S|<VP> (VP (MD ) (VP (VB ) (NP (NP ) (PP )))) (. ))	0.000394404
+(S|<VP> (VP (VBZ ) (VP (VBN ) (VP|<NP> (NP ) (PP )))) (. ))	0.000394009
+(NP (NNP ) (NP|<NN> (NN ) (NP|<NNP> )))	2.20602e-05
+(TOP (S (PP (IN In) (NP )) (S|<,> (, ,) (S|<NP> (NP (NNP )) (S|<VP> )))))	0.000696781
+(NP (NP (NN ) (NN )) (NP|<,> (, ) (NP|<NP> (NP ) (, ))))	0.00367303
+(TOP (S (S ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD )) (. ))))))	6.13167e-05
+(NP|<NN> (NN ) (NP|<JJ> ))	0.00137193
+(VP (VBN ) (VP|<ADVP> ))	4.56059e-05
+(VP (VBD ) (VP|<NP> (NP ) (NP )))	0.000364847
+(NP|<JJ> (JJ ) (NN ))	0.00580225
+(PP (IN ) (NP (NN ) (NP|<CC> (CC ) (NP|<NN> ))))	4.51902e-05
+(TOP (S (CC But) (S|<SBAR> (SBAR (WHADVP (WRB when)) (S )) (S|<,> ))))	6.13167e-05
+(S (NP (PRP )) (VP (VBD ) (S (VP ))))	0.000316548
+(S|<VP> (VP (VBD ) (VP|<NP> (NP ) (VP|<,> ))) (. ))	0.000788018
+(NP (DT ) (NP|<NN> (NN ) (NP|<NN> (NN ) (NN ))))	0.00110191
+(PP (IN ) (NP (NP (DT ) (NN )) (PP (IN ) (NP ))))	0.00112862
+(VP|<S> (S ) (VP|<,> (, ) (S (VP (VBG ) (NP (NP (NNP ) (NNP )) (NP|<,> (, ) (SBAR (WHNP (WP )) (S (VP )))))))))	0.182482
+(TOP (S (NP (DT The) (NP|<JJ> )) (S|<VP> (VP ) (. ))))	3.06891e-05
+(PP (IN ) (NP (PRP$ of) (NP|<JJ> its)))	0.00036116
+(PP (IN ) (NP (JJ ) (NN )))	9.03804e-05
+(VP (VB ) (VP|<NP> (NP ) (PP (TO ) (NP ))))	0.00198088
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<VP> (VP (ADVP (RB )) (VP|<VBN> (VBN ) (PP ))) (, )))) (S|<VP> )))	0.0038323
+(NP (NP (DT ) (NP|<ADJP> (ADJP (CD ) (NN )) (NN ))) (NP|<PP> a))	4.44766e-05
+(VP (VBD ) (SBAR (IN ) (S (NP ) (VP ))))	9.30752e-05
+(TOP (S (ADVP ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> )))))	0.00049449
+(NP (NP (NNP )) (NP|<,> (, ) (NP (NNP ))))	0.00550954
+(VP (VB ) (NP (NP (NNS )) (PP (IN ) (NP ))))	4.56059e-05
+(NP (DT ) (NNPS ))	0.00200347
+(NP (NP ) (PP (IN ) (NP (JJ ) (NNS ))))	0.000352611
+(S (NP (DT )) (VP ))	0.000633096
+(TOP (S (NP ) (S|<,> (, ) (S|<ADVP> (ADVP (RB )) (S|<,> (, ) (S|<VP> ))))))	3.06891e-05
+(TOP (S (NP ) (S|<VP> (VP (VBD rose) (VP|<PP> (PP (TO to) (NP )) (PP (IN ) (NP )))) (. from))))	0.00122633
+(VP (VB ) (NP (DT ) (NNS )))	0.000182424
+(SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP (NNP ) (NNP )) (NP|<,> (, ) (NP (NP (NN )) (PP (IN ) (NP ))))) (. ))))	0.25
+(TOP (S (PP ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBZ ) (NP ,)) (. it))))))	0.000127743
+(NP (NP (DT ) (NN a)) (PP (IN result) (NP of)))	0.000176482
+(VP|<RB> (RB ) (VP (VB ) (S (VP (TO ) (VP )))))	0.0390778
+(TOP (S (SBAR (IN As) (S )) (S|<,> (, ,) (S|<NP> (NP (DT the) (NN )) (S|<VP> )))))	0.000106453
+(VP (VBD ) (ADVP (RB )))	4.56059e-05
+(NP (JJ ) (NNP ))	0.00026552
+(S|<VP> (VP (VBZ ) (NP )) (. is))	0.000127925
+(TOP (S (S ) (S|<CC> )))	6.13167e-05
+(TOP (S (ADVP ) (S|<NP> )))	3.07506e-05
+(SBAR (IN ) (S (SBAR ) (S|<,> (, ) (S|<NP> (NP (DT ) (NP|<JJ> that)) (VP (MD ) (VP (VB ) (NP )))))))	0.00225757
+(TOP (S (NP (NNP ) (NP|<NNP> )) (S|<VP> (VP ) (. ))))	6.16869e-05
+(ADVP (NP (CD ) (NNS years)) (RB ago))	0.00139347
+(S|<,> (, ) (S|<NP> ))	0.000212396
+(NP (DT ) (NNP ))	0.000352611
+(TOP (S (`` ``) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(VP (VBD ) (ADVP (RB )))	0.000406788
+(S|<,> (, ) (S|<VP> (VP ) (. )))	0.000471518
+(S|<VP> (VP (VBP ) (NP )) (. ))	0.00205213
+(NP (JJR ) (NNS ))	0.0146921
+(SINV|<NP> (NP (NP (NNP ) (NNP )) (NP|<,> )) (. ))	0.297499
+(PP (IN ) (NP (JJ ) (NP|<JJ> (JJ ) (NN ))))	0.000301973
+(NP (NP ) (VP (VBG ) (VP )))	0.000282541
+(PP (IN ) (NP (JJ ) (NP|<NN> (NN ) (NNS ))))	0.000180761
+(VP (VP ) (VP|<CC> (CC ) (VP )))	9.11206e-05
+(NP|<JJS> (JJS ) (NNS ))	1
+(S|<,> (, ) (S|<NP> (NP (DT ) (NP|<NNP> )) (S|<VP> )))	0.0303119
+(PP (IN ) (NP (NP (DT ) (NN )) (PP )))	0.00018058
+(ADVP (RBR ) (RB ))	0.0278113
+(S|<S> (S (PP ) (S|<,> (, ) (S|<NP> (NP (PRP )) (VP )))) (. ))	0.00218759
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ) (NP ,))) (, )))	0.00213871
+(NP (NN ) (NN ))	0.000176305
+(S|<VP> (VP (VBD ) (VP )) (. ))	0.000394404
+(PP (IN ) (NP (QP ) (NNS )))	0.00018058
+(S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP (MD ) (VP ))))) (. ))))	0.000212183
+(PP (TO ) (NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> )))	0.000940521
+(SBAR (IN ) (S (NP ) (VP (MD ) (VP (VB ) (VP|<NP> )))))	0.00225983
+(NP|<,> (, ) (SBAR (WHNP ) (S (VP (VBZ ) (VP )))))	0.000535213
+(VP|<ADVP> (ADVP (RB )) (VP|<PP> ))	0.00228196
+(NP (PRP$ ) (NN ))	0.000918257
+(TOP (S (ADVP (RB Meanwhile)) (S|<,> )))	6.2632e-05
+(S (NP ) (VP (VBD ) (ADJP )))	0.00126746
+(NP (NP (NN ) (NN )) (NP|<,> (, ) (NP|<NP> (NP ) (, ))))	0.00367303
+(VP (TO ) (VP (VB ) (VP (VBN ) (PP ))))	0.000182424
+(TOP (S (PP (IN On) (NP )) (S|<,> (, ) (S|<NP> ))))	3.07198e-05
+(TOP (S (NP (DT The) (NN )) (S|<VP> )))	3.06584e-05
+(VP (VB ) (VP|<PP> ))	0.00108477
+(PP (TO ) (VP ))	4.5145e-05
+(NP (NP ) (NP|<NNPS> (NNPS ) (NP|<NNP> (NNP ) (NNP ))))	2.20382e-05
+(NP (DT The) (NN ))	0.000131375
+(NP|<NN> (NN ) (NP|<NNS> ))	0.00317576
+(TOP (S (NP (NNPS )) (S|<VP> )))	0.0459875
+(NP (NN ))	0.000408114
+(ADVP (RB ) (RB far))	0.000668138
+(NP|<JJ> (JJ ) (NN ))	0.00145202
+(VP (VB ) (SBAR (IN ) (S )))	0.0113901
+(NP (PRP$ ) (NN ))	0.00734606
+(VP (TO ) (VP (VB ) (VP|<PP> )))	0.00154905
+(NP (JJ ) (NP|<NNS> ))	0.00146921
+(NP|<,> (, ) (SBAR (WHNP ) (S (VP (VBZ ) (VP )))))	0.000535213
+(NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT )) (S (ADVP (RB )) (VP ,))) (, which)))	0.00213871
+(TOP (S (NP (NP (DT The) (NN )) (PP (IN of) (NP ))) (S|<,> )))	6.13781e-05
+(PP (IN ) (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP (IN ) (NP ))))	0.00188104
+(PP (IN ) (NP (NNP ) (NNP )))	0.000180761
+(PP (PP ) (PP|<CC> (CC ) (PP )))	9.029e-05
+(NP|<JJ> (JJ ) (NN ))	0.00145202
+(NP (NP (PRP$ ) (NN )) (PP ))	4.41647e-05
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NP|<JJ> (JJ ) (NNS with)))))	0.0225725
+(NP|<PP> (PP (IN ) (NP )) (NP|<,> (, ) (PP )))	0.0179566
+(TOP (S (PP ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBZ ) (NP )) (. it))))))	0.000127743
+(VP|<NP> (NP (PRP )) (ADVP ))	0.0198286
+(NP|<NNP> (NNP ) (NP|<NN> (NN ) (NN )))	0.00187581
+(NP (DT ) (NNP ))	8.81527e-05
+(PP (IN ) (NP (QP ) (NNS )))	0.00225725
+(NP (VBG ) (NNS ))	0.0146921
+(NP (NP (CD ) (NN )) (PP ))	8.82409e-05
+(NP (DT ) (NP|<NNP> (NNP ) (NNP )))	2.20382e-05
+(S|<,> (, ) (S|<S> (S ) (S|<,> )))	0.000471518
+(VP (VBG ) (NP (NP ) (NP|<CC> (CC ) (NP ))))	9.11206e-05
+(VP (VBZ ) (NP (NP (NNS )) (PP (IN ) (NP (NP (NN )) (NP|<,> (, ) (NP|<NP> ))))))	0.000364482
+(VP|<NP> (NP (JJ ) (NP|<NN> )) (PP ))	0.000952726
+(NP|<ADJP> (ADJP (NP (CD ) (NNS )) (JJ )) (, ))	0.00526316
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<CC> (CC ) (NP ))))))))	2.20823e-05
+(NP|<NN> (NN ) (NN ))	0.000171663
+(VP (VBD ) (VP|<NP> (NP ) (ADVP )))	4.55603e-05
+(NP|<NNS> (NNS ) (NNS ))	0.0507249
+(TOP (S (NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> )) (S|<VP> (VP (VBD ) (VP (VBN ) (VP|<S> ))) (. ))))	0.00510973
+(SBAR (IN ) (S (NP (NNP )) (VP )))	0.00225983
+(ADVP (RB ) (RB far))	0.00133494
+(NP (DT ) (NN yield))	0.000229564
+(NP (NP ) (NP|<NNP> (NNP ) (NNP )))	4.40763e-05
+(PP (IN ) (S (VP (VBG ) (S (VP (TO ) (VP (VB ) (NP )))))))	0.00410409
+(TOP (S (NP (DT The) (NN )) (S|<VP> )))	0.000638716
+(NP (DT ) (NNP ))	2.2673e-05
+(NP (DT ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NN ))))	4.41205e-05
+(VP|<PP> (PP (TO ) (NP )) (PP ))	0.00135895
+(PP (IN ) (SBAR ))	0.00136803
+(NP (DT ) (NP|<NN> (NN ) (POS )))	2.20382e-05
+(NP (DT ) (NP|<NNP> (NNP ) (NNP )))	0.0220382
+(S|<''> ('' ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBZ )) (. ))))	0.5
+(TOP (S (PP (IN ) (NP )) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (VBZ ) (NP )) (. ))))))	3.06584e-05
+(PP (IN ) (NP (NNS )))	0.00188104
+(VP (VBN ) (VP|<ADJP> (ADJP ) (SBAR )))	9.12118e-05
+(SBAR|<IN> (IN ) (S ))	1
+(NP (NP (NNS )) (NP|<PP> ))	4.40763e-05
+(VP (VBZ ) (VP|<NP> (NP ) (S (VP (TO ) (VP )))))	0.000414185
+(VP|<PP> (PP ) (PP (IN ) (NP (CD ))))	0.00136031
+(PP (IN ) (NP (NNP ) (NNS )))	9.029e-05
+(S (NP ) (VP (MD ) (VP|<ADVP> )))	0.000633096
+(TOP (S (NP (PRP He)) (S|<VP> (VP ) (. ))))	6.14396e-05
+(S|<,> (, ) (S|<NP> (NP (NNP ) (NNP )) (S|<VP> )))	0.00707278
+(NP (DT ) (NN ))	2.20382e-05
+(VP (VBG ) (PP ))	4.55603e-05
+(PP (PP ) (PP ))	0.000200644
+(S|<VP> (VP (VBZ ) (VP|<NP> (NP ) (VP|<,> (, is) (VP )))) (. ))	0.000619511
+(PP (IN ) (NP (DT ) (NNP )))	9.029e-05
+(VP|<NP> (NP ) (VP|<PP> (PP (IN ) (NP (NNP ))) (PP (IN ) (NP (DT ) (NP|<JJ> )))))	0.0216312
+(TOP (S (SBAR (IN As) (S )) (S|<,> (, ) (S|<NP> (NP (DT the) (NN )) (S|<VP> )))))	0.000106453
+(NP|<JJ> (JJ ) (NP|<NNS> ))	0.00145347
+(PP (IN ) (NP (NP (DT ) (NNS )) (PP )))	0.045145
+(VP (VB ) (VP (VBN ) (S (VP (TO ) (VP )))))	0.000160424
+(PP (TO ) (NP (CD ) (NN )))	0.0479666
+(NP (JJ ) (NP|<JJ> (JJ ) (NNS )))	2.20602e-05
+(NP (NP (DT ) (NN )) (PP (IN ) (NP (JJ ) (NN a))))	0.00979474
+(NP (JJ ) (NNS ))	4.40763e-05
+(NP (PRP$ ) (NP|<NN> (NN ) (NP|<NN> )))	2.20602e-05
+(NP (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> )))	4.40763e-05
+(VP (VB ) (SBAR ))	4.68727e-05
+(PP (IN ) (NP (NP ) (NP|<CC> (CC ) (NP ))))	0.000567862
+(PP (IN ) (NP (NP (DT ) (NP|<JJ> (JJ ) (NP|<JJ> (JJ ) (NN )))) (PP )))	0.00225725
+(VP|<S> (S ) (VP|<,> (, ) (S (VP (VBG ) (NP (NP (NNP ) (NNP )) (NP|<,> (, ) (SBAR (WHNP (WP )) (S (VP )))))))))	0.182482
+(PP (IN ) (NP (NP (NNP ) (NP|<NNP> )) (PP (IN ) (NP (NNP )))))	0.000513011
+(S|<ADVP> (ADVP (RB )) (VP ))	0.604862
+(NP|<NNP> (NNP ) (NNS House))	0.000483107
+(S|<VP> (VP (VBP ) (SBAR (S (NP ) (VP (MD ) (VP (VB ) (VP|<NP> )))))) (. ))	0.00126285
+(NP (NP ) (NP|<CC> (CC ) (NP )))	2.20602e-05
+(S (PP ) (S|<,> (, ) (S|<NP> (NP (PRP )) (VP ))))	0.000635001
+(ADVP (RB ) (PP ))	0.00674212
+(NP|<JJ> (JJ ) (NNS ))	0.00580225
+(TOP (S (NP (NP (NNP )) (NP|<,> (, ,) (NP|<SBAR> (SBAR ) (, )))) (S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP )))) (. ))))	6.13781e-05
+(S|<,> (, ) (S|<PP> (PP ) (S|<,> (, ) (S|<NP> (NP (DT ) (NP|<JJ> (JJ ,) (NP|<NNP> ))) (S|<VP> )))))	0.00111091
+(S|<,> (, ) (S|<NP> (NP (NP ) (PP )) (S|<VP> )))	0.000212396
+(SBAR (WHNP (WP )) (S ))	0.0752525
+(PP (IN ) (S (VP (VBG ) (PP ))))	0.00136803
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NP|<NN> (NN ) (NN )))) (PP (IN ) (NP )))	4.41205e-05
+(S|<,> (, ) (S|<NP> (NP (PRP )) (VP )))	0.00252599
+(NP (PRP$ ) (NP|<JJ> (JJ new) (NN )))	0.0146921
+(NP (NP (DT ) (NP|<JJ> )) (PP (IN ) (NP (CD ))))	4.40763e-05
+(S|<,> (, ) (S|<PP> (PP ,) (S|<,> (, ) (S|<NP> (NP (DT ) (NP|<JJ> (JJ ) (NP|<NNP> ))) (S|<VP> )))))	0.00111091
+(NP (NP ) (NP|<NNP> (NNP ) (NP|<NNP> )))	8.82409e-05
+(ADJP (JJ ) (S (VP (TO ) (VP ))))	0.00102386
+(NP|<NNP> (NNP ) (NP|<CC> (CC ) (NP|<NNP> )))	0.000961378
+(TOP (S (PP (IN ) (NP )) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> )))))	0.000122756
+(PP (IN ) (NP (JJ ) (NNS )))	0.0225725
+(NP|<NNP> (NNP ) (NP|<NNPS> (NNPS ) (NP|<NN> )))	0.000240344
+(SBAR (S ))	0.00112992
+(NP (NP ) (PP (IN ) (NP (DT ) (NP|<NNS> ))))	0.0110191
+(PP (IN ) (NP (DT ) (NN )))	0.0225725
+(VP|<NP> (NP (DT ) (NN )) (PP (IN ) (S (VP ))))	0.00424899
+(VP (TO ) (VP (VB ) (VP|<PRT> (PRT (RP )) (PP (IN ) (NP )))))	9.12118e-05
+(NP|<JJ> (JJ ) (NNS ))	0.00580225
+(TOP (S (ADVP ) (S|<,> )))	0.000122756
+(S (NP ) (VP (VBZ ) (VP|<NP> )))	0.00359714
+(NP|<JJ> (JJ ) (NN ))	0.0219782
+(VP (VBP ) (VP|<NP> ))	4.55603e-05
+(VP (VBP ) (NP ))	5.32869e-05
+(SBAR (IN ) (S (NP ) (VP (MD that) (VP ))))	0.0011613
+(NP (NP (NNS )) (PP (IN ) (NP (NP (NNS )) (PP ))))	8.83293e-05
+(S|<,> (, ) (S|<NP> (NP (NNS )) (S|<VP> (VP ) (. ))))	0.000424367
+(TOP (S (ADVP ) (S|<,> (, ) (S|<NP> (NP (DT ) (NN )) (S|<VP> (VP (VBZ ) (VP )) (. ))))))	3.06891e-05
+(NP (DT ) (NN ))	4.43424e-05
+(VP|<NP> (NP (NN ) (NNS )) (PP (IN ) (NP )))	0.00330477
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	0.000183651
+(TOP (S (NP (NNP )) (S|<VP> (VP (VBD ) (VP )) (. ))))	0.000425811
+(NP|<JJ> (JJ ) (NN ))	0.00290113
+(NP (DT ) (NP|<ADJP> (ADJP ) (NP|<NN> (NN ) (NN ))))	4.40763e-05
+(NP|<NN> (NN ) (NP|<,> ))	0.000686651
+(S|<VP> (VP (VBD ) (VP (VBN ) (S (NP (NP was) (NP|<,> (, ) (NP )))))) (. ))	9.85023e-05
+(VP (TO ) (VP (VB ) (VP|<PP> )))	0.000182241
+(ADVP (RP ))	0.0427181
+(PP (IN ) (NP (PRP$ ) (NNS )))	0.0112862
+(NP (NP ) (NP|<ADVP> (ADVP ) (PP )))	0.0110191
+(PP (IN ) (NP (NNP ) (NNP )))	9.029e-05
+(NP (DT ) (NN ))	0.000110191
+(VP|<PP> (PP ) (PP (IN ) (NP (NP ) (NP|<CC> (CC ) (NP )))))	0.0141274
+(NP (DT ) (NNS ))	0.00550954
+(VP|<ADVP> (ADVP ) (PP (IN ) (NP )))	0.00456391
+(VP|<S> (S (VP )) (VP|<,> (, ) (SBAR (IN ) (S ))))	0.00875912
+(S|<VP> (VP (MD ) (VP (VB ) (VP|<NP> ))) (. ))	0.000788018
+(S|<,> (, ) (S|<NP> (NP (NNP )) (S|<VP> )))	0.106092
+(NP (NNP ) (NP|<,> ))	8.81527e-05
+(S|<VP> (VP (VBD ) (NP )) (S|<.> (. ) ('' )))	0.000197005
+(NP|<JJ> (JJ ) (NN ))	0.000726008
+(PRN|<S> (S (NP (PRP )) (VP (VBP ))) (, ))	0.208514
+(NP (PRP$ ) (NP|<JJ> (JJ ) (NNS )))	4.40763e-05
+(VP|<ADVP> (ADVP (RB )) (VP|<,> (, ) (SBAR )))	0.0182557
+(VP|<,> (, ) (PP (IN ) (NP (NP (JJ ) (NN )) (PP ))))	0.0137506
+(VP|<,> (, ) (SBAR (IN ) (S )))	0.00201675
+(ADJP (JJ ))	0.127983
+(TOP (S (PP (IN In) (NP )) (S|<,> (, ) (S|<NP> (NP (DT ,) (NP|<NN> the)) (S|<VP> )))))	0.000122633
+(VP (MD ) (VP (VB ) (VP|<NP> (NP ) (PP ))))	0.00331348
+(TOP (S (S (NP ) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S|<S> )))))	0.00340649
+(NP (NN ) (NNS ))	2.20602e-05
+(NP|<NN> (NN ) (NP|<CC> (CC ) (NP|<NN> )))	0.00274386
+(NP (NP ) (VP (VBN ) (PP (IN ) (NP (NN ) (NNS )))))	0.00146921
+(S|<VP> (VP (VBD ) (VP (VBN ) (S (NP (NP (NP was) (PP (IN ) (NP ))) (NP|<,> (, ) (NP )))))) (. ))	9.85023e-05
+(NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NP|<NNPS> )))	0.000960416
+(NP (DT ) (NP|<NN> (NN ) (NN )))	4.40763e-05
+(TOP (S (PP (IN Under) (NP )) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP (MD ) (VP ))))) (. ))))))	0.000245267
+(NP (QP (CD ) (CD )) (NNS ))	0.00122434
+(NP (NNS ) (NP|<CC> (CC ) (NN )))	0.00027721
+(VP|<,> (, ) (VP ))	0.00181689
+(NP (NP (PRP$ ) (NNS )) (PP ))	4.41647e-05
+(TOP (S (NP ) (S|<VP> (VP (MD ) (VP (VB ) (VP ))) (. ))))	3.06584e-05
+(NP (NP (JJ ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> ))	8.82409e-05
+(NP (NNP ) (NNP ))	0.000196769
+(VP|<NP> (NP (CD ) (NN )) (PP ))	0.00190355
+(S (NP (NP (NN )) (PP )) (VP (VBZ ) (ADJP )))	0.00126746
+(QP (CD ) (CD ))	0.0366596
+(NP (NP ) (PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NNS )))))	0.000847622
+(PP (IN ) (NP (NNS )))	0.045145
+(VP (VBD ) (VP|<PP> (PP ) (PP )))	0.00291586
+(S (NP (DT ) (NN )) (VP the))	0.000633096
+(VP (VBG ) (S ))	0.00303735
+(NP (NP ) (NP|<,> (, ) (NP|<PP> (PP ) (, ))))	0.00734606
+(NP (QP (CD ) (CD )) (NNS ))	0.00367303
+(VP (VBG ) (VP|<PRT> (PRT (RP )) (VP|<NP> (NP ) (S (VP )))))	0.00303735
+(NP (NP (DT ) (NP|<JJ> )) (PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NN the)))))	4.55334e-05
+(TOP (S (`` ``) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(S|<NP> (NP (NNP ) (NNP )) (S|<VP> (VP (VBD ) (SBAR (S (NP ) (VP Mr.)))) (. )))	0.0013378
+(NP|<CD> (CD ) (NP|<NNP> ))	0.0437117
+(VP|<,> (, ) (S (VP (VBG ) (NP ))))	0.000908447
+(PP (IN ) (NP (DT ) (NN )))	9.029e-05
+(QP|<CD> (CD ) (CD ))	0.211507
+(VP (VB ) (VP|<NP> (NP ) (VP|<ADVP> )))	4.55603e-05
+(NP (NN ) (NN ))	0.00191636
+(NP (DT ) (NP|<NNP> (NNP ) (NN )))	0.000176305
+(WHNP (WDT ))	0.250063
+(NP (DT ) (NN the))	8.81527e-05
+(NP (NNP ))	0.000461532
+(NP|<NNP> (NNP ) (NNP ))	0.240104
+(SBAR (WHNP (WP )) (S (VP (VBZ ) (NP ))))	0.00228731
+(VP (VBG ) (PP (TO ) (NP )))	9.41329e-05
+(S (S ) (S|<CC> (CC ) (S )))	0.000316548
+(NP|<,> (, ) (NP|<VP> (VP (VBN ) (PP )) (, based)))	0.00534678
+(NP (JJ ) (NP|<NN> (NN ) (NNS )))	8.83293e-05
+(S|<VP> (VP (VBD ) (VP|<PP> (PP (IN ) (NP ($ ) (CD ))) (VP|<,> ))) (. ))	0.0492511
+(SBAR (WHNP ) (S (ADVP (RB )) (VP )))	0.00112879
+(NP (CD ) (NNS ))	0.000153043
+(NP (DT ) (NNS ))	4.40763e-05
+(VP (VB ) (VP|<ADVP> ))	4.78575e-05
+(ADJP (ADJP ) (PP ))	0.0163818
+(NP|<NN> (NN ) (NN ))	0.171491
+(VP (VBZ ) (VP (VBN ) (NP )))	0.000113901
+(VP|<PP> (PP ) (PP (IN ) (NP (NP ) (NP|<CC> ))))	0.00706369
+(VP|<PP> (PP ) (ADVP ))	0.339057
+(NP (JJ ) (NN ))	0.000667823
+(S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (VBD ) (VP|<NP> (NP ) (S (VP (TO ) (VP (VB ) (PP )))))) (. ))))	0.000212183
+(S|<VP> (VP (VBZ ) (SBAR (IN ) (S ))) (. ))	0.000197399
+(TOP (S (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP )) (S|<VP> (VP (VBZ ) (VP )) (. ))))	0.000122633
+(TOP (S (PP (IN At) (NP (DT the) (NP|<JJ> (JJ same) (NN time)))) (S|<,> )))	6.13781e-05
+(TOP (S (NP ) (S|<ADVP> (ADVP (RB also)) (S|<VP> ))))	0.000123002
+(TOP (S (`` ) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(VP|<ADVP> (ADVP (RB )) (VP ))	0.00912783
+(NP|<NNS> (NNS ) (NNS ))	0.507249
+(NP (PRP$ ) (NP|<JJ> ))	0.000114782
+(S (NP (JJ ) (NN )) (VP ))	0.00506477
+(NP (NNP ) (CD ))	0.000459129
+(ADVP (RB ) (PP ))	0.000668138
+(TOP (S (NP (NP ) (PP )) (S|<VP> (VP (VBD ) (VP|<NP> (NP ) (VP|<PP> ))) (. ))))	3.06891e-05
+(S (NP ) (VP (VBD ) (S (VP (TO ) (VP (VB ))))))	0.00126619
+(NP|<NNPS> (NNPS ) (NNPS ))	0.0326574
+(PP (TO ) (NP (NP (NN )) (PP )))	4.51902e-05
+(VP|<NP> (NP (NP (DT ) (NP|<JJS> )) (PP )) (VP|<,> ))	0.00996621
+(NP|<NN> (NN ) (NN ))	0.000603842
+(S|<VP> (VP (VBD ) (VP (VBN had) (VP been))) (. ))	0.0492511
+(NP (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP ))))	0.000352611
+(VP (VBN ) (S (VP (TO ) (VP ))))	0.000364847
+(VP|<PP> (PP ) (PP ))	0.0205489
+(NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NN )))	0.000480208
+(VP (VBD ) (NP (NP ) (NP|<CC> (CC ) (NP (NP ) (PP )))))	0.00136001
+(SBAR (WHADVP (WRB )) (S (NP (PRP )) (VP )))	0.00112992
+(PP (IN ) (NP (DT of) (NP|<JJ> (JJ the) (NN first))))	0.000543916
+(S (NP (PRP )) (VP (VBP ) (VP|<RB> (RB ) (ADJP ))))	0.0131895
+(VP (VBD ) (NP ))	9.23208e-05
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> )))))))	0.00127743
+(S|<VP> (VP (VBZ ) (VP|<RB> (RB has) (VP n't))) (. ))	0.00273617
+(VP|<S> (S (NP )) (VP|<,> (, ) (S (VP (VBG ) (NP )))))	0.0175182
+(NP (JJ ) (NP|<NN> ))	8.83293e-05
+(NP (NP (NN ) (NP|<NN> (NN ) (NN ))) (NP|<CC> (CC ) (NP (JJ ) (NP|<VBG> (VBG ) (NN )))))	0.000352611
+(NP (DT ) (NNP ))	2.31493e-05
+(ADJP (RBR ) (JJ ))	0.00355508
+(NP (NNS ) (NP|<CC> ))	2.20382e-05
+(PP (TO ) (NP (NNP ) (NNP )))	9.029e-05
+(NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<CC> (CC ) (NP )))))	0.0015913
+(NP|<JJ> (JJ ) (NP|<NN> (NN ) (NN )))	0.000726008
+(PP (IN ) (PP|<IN> (IN ) (NP )))	4.5145e-05
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (JJ ) (NNS )) (NP|<CC> (CC ) (NP )))))	0.000204057
+(NP (NNP ) (NNPS ))	0.0220382
+(VP (VBG ) (VP|<NP> (NP ) (S (VP (TO ) (VP (VB ) (PP ))))))	0.0455603
+(NP (NNP ) (CD ))	0.000459129
+(VP (TO ) (VP (VB ) (PP )))	9.30752e-05
+(PP (IN ) (S (VP )))	0.0150483
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (, ))))	2.20602e-05
+(NP|<,> (, ) (NP|<PP> (PP (VBG ) (NP )) (, )))	0.00106936
+(VP (VBD ) (VP (VBN ) (VP|<PP> )))	9.13948e-05
+(NP (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> )))	0.000176482
+(TOP (S (`` ``) (S|<NP> (NP (PRP I)) (S|<VP> (VP ) (S|<.> (. ) ('' ))))))	0.000122633
+(NP|<JJ> (JJ ) (NP|<NN> ))	0.00485138
+(NP (JJ ) (NP|<NNP> ))	4.40763e-05
+(VP|<NP> (NP (NN )) (PP (TO ) (NP )))	0.000475887
+(NP (CD ) (NNS ))	4.40763e-05
+(NP|<JJ> (JJ ) (NNS ))	0.00145056
+(NP (DT ) (NP|<CD> (CD ) (NNS )))	8.82409e-05
+(S|<VP> (VP (VBD ) (PP (PP ) (PP ))) (. ))	0.104659
+(PRN|<S> (S (NP (PRP )) (VP (VBP ))) (, ))	0.208514
+(NP (NNP ) (NNP ))	8.81527e-05
+(NP|<,> (, ) (NP (NP ) (VP )))	0.002143
+(NP (NN ))	4.4209e-05
+(ADVP (IN ) (PP ))	0.00674212
+(TOP (S (NP (PRP He)) (S|<VP> (VP (VBZ ) (NP )) (. ))))	0.000729961
+(NP (DT ) (NN ))	2.20602e-05
+(S|<VP> (VP (VBD ) (VP|<NP> )) (S|<.> (. ) ('' )))	0.000197005
+(VP|<PP> (PP ) (VP|<,> (, ) (SBAR )))	0.000678114
+(NP (NNP ) (NP|<NNP> (NNP ) (NP|<CC> (CC ) (NP|<NNP> ))))	2.20382e-05
+(VP|<PP> (PP ) (ADVP ))	0.000678114
+(NP (NP (DT ) (NNS )) (VP (VBN ) (PP )))	8.81527e-05
+(TOP (S (NP ) (S|<,> (, ) (S|<PP> (PP ) (S|<,> )))))	0.00766459
+(NP|<JJ> (JJ ) (NP|<NN> (NN ) (NN )))	0.00149852
+(NP (NNP ))	2.20602e-05
+(TOP (S (NP (PRP We)) (S|<VP> )))	3.06584e-05
+(S|<,> (, ) (S|<NP> (NP (NP (DT ) (NP|<NNP> the)) (PP )) (S|<VP> )))	0.000433469
+(VP|<NP> (NP (DT ) (NP|<NN> (NN ) (NN ))) (VP|<PP> ))	0.00190355
+(NP|<NNP> (NNP ) (NNP ))	0.000480689
+(S (SBAR (RB ) (SBAR|<IN> (IN ) (S (NP ) (VP (VBP ) (NP (NNS )))))) (S|<,> ))	0.00753686
+(NP (DT ) (NP|<NN> (NN ) (NNS )))	2.20382e-05
+(NP|<NNPS> (NNPS ) (NN ))	0.0292611
+(NP (NP (JJ ) (NNS )) (PP ))	8.83293e-05
+(NP (NP ) (NP|<,> (, ) (VP (VBN ) (PP (IN ) (NP )))))	2.20602e-05
+(PP (TO ) (NP (DT ) (NP|<JJ> (JJ ) (NN ))))	0.00018058
+(NP (NP ) (ADJP (JJ )))	4.40763e-05
+(TOP (S (PP (IN ) (NP (JJ ) (NNS ))) (S|<,> )))	0.000915175
+(S|<,> (, ) (S|<NP> (NP (NNP )) (S|<VP> )))	0.0530458
+(NP (NNP ) (NNS ))	4.40763e-05
+(NP (PRP ))	0.000183651
+(ADVP (NP (CD ) (NNS )) (RB ))	0.00066747
+(NP (NNP ))	8.84179e-05
+(NP|<JJ> (JJ ) (NN ))	0.00145493
+(NP|<CC> (CC ) (NP (NP (NN )) (PP )))	0.441094
+(VP (VP ) (VP|<,> (, ) (VP|<VP> (VP ) (VP|<CC> (CC ) (VP )))))	4.55603e-05
+(S (NP ) (VP (VBD ) (ADJP )))	0.005862
+(NP (NN ))	2.2673e-05
+(NP (DT The) (NNP ))	3.67303e-05
+(NP|<JJ> (JJ ) (NP|<QP> (QP ) (NNS )))	0.00189369
+(TOP (S (NP (NP (NNP ) (NP|<NN> (NN A.) (NNP ))) (NP|<,> )) (S|<VP> )))	0.000490534
+(TOP (S (NP (DT A) (NP|<NN> (NN ) (NN ))) (S|<VP> (VP ) (. ))))	0.00437977
+(S|<VP> (VP (VBD ) (VP|<ADVP> )) (. ))	9.85023e-05
+(TOP (S (NP (DT The) (NN )) (S|<VP> )))	0.00255486
+(NP|<NNP> (NNP ) (NN ))	0.0686012
+(S|<ADVP> (ADVP (RB )) (S|<VP> ))	0.0162017
+(VP|<,> (, ) (VP|<ADVP> (ADVP (RB )) (VP|<,> )))	0.00181689
+(WHADVP (WRB ))	1
+(NP (NP (NN )) (VP ))	0.00157415
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<JJ> (JJ ) (NN ))))	0.000352611
+(S|<,> (, ) (S|<PP> (PP (IN ) (NP )) (S|<,> )))	0.0151559
+(NP|<NN> (NN ) (NP|<NN> (NN ) (POS )))	0.000342982
+(PP (IN ) (NP (NP (DT ) (NN )) (PP (IN ) (NP (CD )))))	0.00153493
+(S|<,> (, ) (S|<NP> (NP (EX )) (S|<VP> (VP ) (. ))))	0.0141456
+(NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (PP (IN ) (NP )))	0.0110191
+(PP (IN ) (NP (PRP$ ) (NP|<NN> (NN ) (NN ))))	4.5145e-05
+(ADVP (RB ) (RB ))	0.0741634
+(NP (PRP$ ) (NP|<JJ> (JJ ) (NP|<NN> )))	0.000222608
+(NP|<JJ> (JJ ) (NP|<''> ('' ) (NN )))	0.00290113
+(NP|<JJ> (JJ ) (NN ))	0.725282
+(PP (IN ) (NP (JJ ) (NNS )))	0.00145629
+(NP|<JJ> (JJ ) (NN ))	0.000725282
+(VP (TO ) (VP (VB ) (VP|<CC> (CC ) (VP|<VB> ))))	7.59338e-05
+(SBAR (S (NP ) (VP (MD ) (VP (VB ) (PP )))))	0.00451967
+(TOP (S (ADVP ) (S|<NP> )))	0.000131019
+(VP|<,> (, ) (VP ))	0.0302513
+(ADVP (RB ))	0.0238382
+(NP (DT ) (NN ))	0.000262359
+(VP|<S> (S (VP )) (VP|<,> (, ) (SBAR (IN ) (S ))))	0.00875912
+(VP|<ADVP> (ADVP ) (SBAR (IN ) (S )))	0.00913697
+(NP (QP (CD ) (CD )) (NNS ))	4.40763e-05
+(S (NP (NNP )) (VP ))	0.000633096
+(NP (JJ ) (NNS ))	0.00367303
+(NP (NNS ))	0.00734606
+(NP (NP ) (VP (VBN ) (PP (IN ) (NP (NP (DT )) (PP (IN ) (NP ))))))	4.41647e-05
+(NP (CD ) (NNS ))	4.50218e-05
+(ADVP (RB ) (RB ))	0.00834338
+(TOP (S (NP (DT The) (NN )) (S|<ADVP> (ADVP (RB )) (S|<VP> ))))	0.000122633
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (VP (VBN ) (VP ))) (. ))))	3.06891e-05
+(NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WP )) (S (VP ))) (, )))	0.00855485
+(S|<VP> (VP (VBD ) (VP|<PP> (PP ) (VP|<PP> ))) (. ))	0.000197005
+(S|<VP> (VP (VBD ) (SBAR (IN ) (S (PP (IN ) (NP said)) (S|<,> (, that) (S|<NP> (NP (NP (DT ) (NN )) (PP )) (VP )))))) (. ))	9.85023e-05
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP ) (PP (IN ) (NP ))) (. ))))))))	4.79037e-05
+(PP (IN ) (NP (NP (DT ) (NN )) (PP (IN ) (NP ))))	0.0300967
+(VP (VBN ) (NP (NP ) (PP (IN ) (NP ))))	0.0455603
+(NP (NP (NNP ) (NP|<NNPS> )) (NP|<CC> ))	7.65214e-05
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (PP (TO ) (NP (DT contributed) (NN to)))) (. this))))	0.0306584
+(S|<''> ('' ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBZ )) (. ))))	0.5
+(TOP (S (S (NP ) (S|<ADVP> (ADVP (RB )) (VP (VBD ) (NP )))) (S|<,> )))	0.000205073
+(NP (DT ) (NP|<NN> (NN ) (SBAR )))	2.20602e-05
+(NP|<NN> (NN ) (NN ))	0.000686651
+(NP (NP (DT ) (NN )) (PP (IN ) (NP (DT ) (NP|<NNP> (NNP ) (NN )))))	4.41205e-05
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NP|<NNP> (NNP ) (NP|<NNP> )))))	0.000156753
+(NP (DT The) (NN ))	8.81527e-05
+(NP (NP (NNP ) (NNP )) (NP|<CC> (CC ) (NP )))	2.20602e-05
+(NP (NNP ) (NP|<NNP> (NNP ) (NNP )))	4.60087e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<JJ> (JJ ) (NN ))))	8.81527e-05
+(NP|<PP> (PP ) (PP (IN ) (NP (NP ) (PP ))))	0.0179566
+(VP (VBN ) (ADJP ))	0.000364482
+(NP (NNP ))	4.44766e-05
+(NP|<CC> (CC ) (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))))	0.00306315
+(NP (RB ) (NP|<JJ> ))	0.000352611
+(NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NN ))	0.000176305
+(QP (RB ) (QP|<TO> ))	0.0561625
+(TOP (S (NP (DT ) (NNS )) (S|<NP> (NP (PRP he)) (S|<VP> ))))	0.00306584
+(NP (CD ) (NN ))	8.82409e-05
+(NP (DT ) (NNP ))	4.41205e-05
+(PP (IN ) (NP (VBG ) (NNS )))	0.000192927
+(TOP (S (NP (NP (NNP ) (NNP )) (NP|<,> (, ,) (NP|<NP> (NP ) (, )))) (S|<VP> )))	3.06584e-05
+(PP (IN ) (NP (DT ) (NN )))	0.000836018
+(S|<S> (S (PP ) (S|<,> (, ) (S|<NP> (NP (PRP )) (VP )))) (. ))	0.00218759
+(NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WP )) (S (VP ))) (, )))	0.00855485
+(NP (NP (DT ) (NN )) (SBAR ))	4.41205e-05
+(VP (VBG ) (NP (DT ) (NN )))	0.0151868
+(NP (NP ) (NP ))	8.81527e-05
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP )) (NP|<,> (, ) (NP|<CC> (CC ) (NP )))))	0.0015913
+(VP|<NP> (NP (PRP$ ) (NP|<JJ> )) (VP|<PP> ))	0.00190355
+(NP|<NN> (NN ) (NP|<CC> (CC ) (NN )))	0.000687339
+(VP|<,> (, ) (SBAR (IN ) (S )))	0.00201675
+(S|<VP> (VP (VBD ) (S (VP (TO ) (VP (VB ) (PP to))))) (. ))	9.86009e-05
+(NP|<VBG> (VBG ) (NN ))	1
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP )) (, )))	0.00213871
+(TOP (S (CC And) (S|<NP> (NP (NP ) (PP )) (S|<VP> ))))	0.00127743
+(VP (ADVP ) (VP|<VBG> (VBG ) (NP )))	0.00189835
+(NP (DT ) (NP|<ADJP> (ADJP (RB ) (JJ )) (NN a)))	0.00146921
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	2.20602e-05
+(VP (TO ) (VP (VB )))	0.0130172
+(NP (DT ) (NP|<VBN> (VBN ) (NNS )))	0.00367303
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	2.20382e-05
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (VP|<NP> )) (S|<.> (. ) ('' )))))	0.000490534
+(PP (TO ) (NP ))	0.000200644
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NP|<CD> (CD ) (NNS )))))	7.52417e-05
+(NP|<NNP> (NNP ) (NNP ))	0.000480208
+(TOP (S (S ) (S|<,> (, ) (S|<CC> (CC ) (S|<S> (S ) (. ))))))	0.000122756
+(VP (TO ) (VP (VB ) (NP (DT ) (NN ))))	0.000414185
+(NP (NP (JJ ) (NP|<JJ> (JJ ) (NNS ))) (NP|<CC> (CC ) (NP )))	6.26084e-05
+(NP|<,> (, ) (NP|<PP> (PP (VBG ) (NP )) (, )))	0.00641614
+(NP|<NNP> (NNP ) (NNP ))	0.000480208
+(NP (DT ) (NN ))	0.00141044
+(NP|<JJ> (JJ ) (NN ))	0.000725282
+(S (NP (DT ) (NN )) (VP ))	0.0183506
+(TOP (S (`` ``) (S|<NP> (NP (PRP I)) (S|<VP> (VP ) (S|<.> (. ) ('' ))))))	0.000122633
+(NP ($ ) (CD ))	0.00160278
+(NP (NP (JJ ) (NNS )) (NP|<,> (, ) (SBAR )))	0.000638788
+(PP (IN ) (NP (VBG ) (NNS of)))	4.51902e-05
+(VP|<PP> (PP (TO ) (NP )) (S ))	0.00136031
+(VP (VBZ ) (VP|<NP> (NP ) (S (VP ))))	0.000414185
+(S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBZ ) (NP )) (. ))))	0.00198302
+(PP (IN ) (NP (NNP )))	0.00045145
+(VP (TO ) (VP (VB ) (NP (JJ ) (NN ))))	0.00650862
+(NP (PRP$ ) (NP|<NN> ))	0.00191636
+(NP (DT ) (NNP ))	2.20602e-05
+(VP (VB ) (VP|<PP> ))	0.000690308
+(NP (NP ) (NP|<,> (, ) (NP (NP (DT ) (NN )) (VP (VBN ) (PP )))))	0.000958181
+(S (S ) (S|<,> (, ,) (S|<NP> (NP ) (S|<ADVP> ))))	0.000633096
+(VP (VBZ ) (S (VP (TO ) (VP wants))))	4.55603e-05
+(TOP (S (NP (PRP )) (S|<ADVP> (ADVP (RB also)) (S|<VP> ))))	0.00038564
+(ADJP (JJ ) (ADJP|<CC> (CC ) (JJ )))	0.00204773
+(ADJP (JJ ) (S (VP (TO ) (VP (VB ) (NP )))))	0.00204978
+(NP (DT ) (NP|<NAC> ))	4.41205e-05
+(S|<VP> (VP (VBP ) (VP|<RB> (RB ) (VP|<ADVP> (ADVP (RB )) (VP )))) (. ))	0.00410426
+(NP (JJR ) (NNS ))	4.40763e-05
+(SBAR (RB ) (SBAR|<IN> ))	0.00225757
+(TOP (S (-LRB- -LRB-) (S|<NP> )))	0.000510973
+(NP|<,> (, ) (NP (NP (NN )) (PP (IN ) (NP ))))	0.0381913
+(NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WP )) (S (VP ))) (, )))	0.00855485
+(VP (VBZ ) (VP|<PRT> ))	4.55603e-05
+(NP (NN ))	0.00169524
+(NP (DT ) (NN ))	0.00734606
+(VP|<S> (S (VP (TO ) (VP ))) (VP|<,> (, ) (SBAR (IN ) (S ))))	0.00875912
+(SBAR (WHNP (WDT )) (S (VP (VBP ) (ADJP ))))	0.102617
+(VP (VBG ) (VP|<NP> (NP ) (PP )))	0.000573086
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	0.000612171
+(S|<,> (, ) (S|<NP> (NP (DT ) (NN )) (S|<ADVP> )))	0.0151559
+(TOP (S (`` ``) (S|<S> (S (NP (PRP )) (VP )) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	0.00127743
+(NP (NP (DT ) (NP|<JJ> )) (NP|<,> (, ) (NP )))	8.81527e-05
+(VP (VB ) (VP|<ADVP> ))	9.12118e-05
+(NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT )) (S (ADVP (RB )) (VP ))) (, which)))	0.00213871
+(PP (IN ) (NP (NNPS )))	9.22268e-05
+(ADVP (RB Back) (PP ))	0.000669479
+(NP (NP (NP ) (NP|<JJ> (JJ ) (NNS ))) (PP (IN ) (NP )))	2.20382e-05
+(NP (PRP$ ) (NP|<JJ> (JJ ) (NN )))	2.20602e-05
+(VP (VBN ))	0.000675501
+(NP (DT ) (NNP ))	4.4209e-05
+(S (NP (NNP )) (VP (VBZ ) (PP )))	0.000633096
+(NP (NP (DT ) (NP|<CD> )) (NP|<PP> the))	0.000918257
+(VP (VB ) (NP ))	0.00108477
+(S (ADJP (JJ )))	0.00126619
+(TOP (SINV (`` ) (SINV|<S> (S (NP (PRP I)) (VP )) (SINV|<,> (, ) (SINV|<''> )))))	0.000122633
+(TOP (S (RB ) (S|<NP> )))	8.70976e-05
+(NP (DT ) (NP|<NNS> ))	2.20382e-05
+(S|<NP> (NP ) (S|<ADVP> (ADVP (RB )) (S|<VP> (VP ) (. ))))	0.011126
+(PP (RB ) (PP|<IN> (IN ) (NP )))	0.00018058
+(TOP (S (NP (NNP Mr.) (NNP )) (S|<VP> (VP (VBD said) (SBAR (S ))) (. ))))	0.000729961
+(PP (IN ) (NP (NP ) (NP|<,> (, ) (VP ))))	9.03804e-05
+(TOP (S (NP (NN )) (S|<VP> )))	3.06584e-05
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (, ))))	2.20602e-05
+(NP (NP (DT )) (PP ))	0.000918257
+(S (NP ) (VP (VBP ) (VP (VBN ) (VP ))))	0.000633096
+(NP (NP (CD ) (NNS )) (NP (DT ) (NN )))	0.000132361
+(TOP (S (NP (PRP He)) (S|<VP> )))	3.06584e-05
+(S|<VP> (VP (VBD ) (SBAR (S (NP ) (S|<``> (`` ) (VP ))))) (S|<.> (. ) ('' )))	0.000197005
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NP|<,> ))) (PP ))	0.00550954
+(S|<VP> (VP (VBP ) (SBAR )) (. ))	0.00010134
+(NP|<NNPS> (NNPS ) (NNP ))	0.914408
+(TOP (S (SBAR (WHNP (WP What)) (S )) (S|<VP> )))	0.000291984
+(S (NP ) (VP (MD ) (VP (VB ) (VP|<S> ))))	0.00506477
+(QP (JJR ) (QP|<IN> (IN ) (CD )))	0.702031
+(TOP (S (NP (NNP ) (NNP )) (S|<VP> )))	0.000510973
+(VP|<ADVP> (ADVP (RB )) (VP|<,> (, ) (SBAR )))	0.0182557
+(VP (VBN ) (PP (TO ) (NP )))	0.00189835
+(NP (NP (NNP ) (NP|<NNP> (NNP ) (POS ))) (NP|<JJ> (JJ ) (NP|<NN> (NN ) (NN ))))	0.00314831
+(VP|<RB> (RB ) (VP (VBN )))	0.683861
+(VP (VBZ ) (NP (NP (DT ) (NN )) (PP (IN ) (NP ))))	0.0113901
+(S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (VBP ) (SBAR )) (. ))))	0.000212396
+(NP (NP (DT ) (NN )) (PP (IN ) (NP )))	2.20602e-05
+(S (NP (PRP )) (VP ))	0.000633096
+(S|<,> (, ) (S|<ADVP> (ADVP (RB )) (S|<,> )))	0.106092
+(NP (NNP ) (NP|<NNP> ))	4.40763e-05
+(NP (NP (NNP ) (NP|<CC> (CC &) (NNP ))) (NP|<,> ))	0.000352611
+(PP (IN ) (S (VP (VBG ) (VP|<NP> (NP ) (ADVP (RB ))))))	9.05617e-05
+(TOP (S (PP (IN For) (NP )) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> )))))	3.07198e-05
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP ) (PP (IN ) (NP ))) (. ))))))))	4.79037e-05
+(PP (TO ) (NP (JJ ) (NN )))	9.03804e-05
+(VP (VBN ) (VP|<PP> (PP ) (VP|<PP> (PP ) (PP (IN ) (NP )))))	0.000190629
+(NP (DT ) (NP|<CD> (CD ) (NNS )))	8.81527e-05
+(TOP (S (NP ) (S|<VP> (VP (VBZ ) (VP (VBN is) (S (VP )))) (. ))))	0.000122879
+(TOP (S (NP ) (S|<VP> (VP (VBZ ) (NP (NP ) (PP (IN ) (NP (NP ) (NP|<,> (, ) (SBAR )))))) (. ))))	0.000245267
+(NP (DT ) (NP|<NN> ))	0.000408114
+(PP (TO ) (NP (CD )))	0.00112862
+(VP (VB ) (ADVP ))	4.68727e-05
+(NP (JJ ) (NP|<JJ> (JJ ) (NN )))	0.00550954
+(NP|<NNP> (NNP ) (NNP ))	0.00192276
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBZ )) (SINV|<NP> (NP ) (. ))))))))	3.99197e-05
+(NP (PRP$ ) (NP|<JJ> ))	6.26084e-05
+(NP (NNP ) (NP|<NN> (NN ) (NP|<NNP> )))	4.40763e-05
+(VP (VBD ) (NP ))	0.000304751
+(NP (NNP ) (POS 's))	2.20382e-05
+(NP (PRP$ ) (NP|<JJ> ))	4.4209e-05
+(ADJP (JJ ) (PP (TO ) (NP (NP (NN )) (PP (IN ) (NP )))))	0.00819091
+(SBAR (WHNP (WDT )) (S (VP (VBP ) (NP ))))	0.0654369
+(VP (VBD ) (VP (VBN ) (S (VP (TO ) (VP (VB ) (PP ))))))	4.55603e-05
+(NP (NP (DT ) (NP|<ADJP> (ADJP (CD ) (NN )) (NN ))) (NP|<PP> (PP (IN ) (NP )) (PP (IN a) (NP (NNP )))))	0.000657856
+(PP (IN ) (NP (NP ) (VP (VBG ) (NP ))))	9.029e-05
+(PP (IN ) (NP (DT ) (NN )))	9.029e-05
+(TOP (S (NP (NNP ) (NP|<NNP> (NNP ) (NNP Corp.))) (S|<VP> (VP (VBD said) (SBAR (S (NP (PRP it)) (VP )))) (. ))))	0.00766459
+(S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP (MD ) (VP ))))) (. ))))	0.000212183
+(NP (CD ) (NN ))	4.40763e-05
+(TOP (S (S (NP ) (VP (MD ) (VP ))) (S|<,> (, ) (S|<CC> (CC ) (S|<S> )))))	0.00340649
+(NP (DT The) (NNP ))	0.000147413
+(S (NP (PRP )) (VP (VBZ )))	0.000316865
+(NP (DT ) (NP|<ADJP> (ADJP ) (NN )))	8.81527e-05
+(NP (QP ($ ) (QP|<CD> (CD ) (CD ))))	4.40763e-05
+(S|<VP> (VP (VBD ) (VP|<ADVP> (ADVP was) (VP|<PP> ))) (. ))	9.86009e-05
+(S|<,> (, ) (S|<PP> (PP (IN ,) (NP )) (S|<,> )))	0.0151559
+(PP (IN ) (NP (NN )))	0.00045601
+(VP (TO ) (VP (VB ) (NP )))	0.0113901
+(NP (NP (NNP ) (POS 's)) (NNS ))	0.0110191
+(TOP (S (NP (DT ) (NN )) (S|<VP> (VP (VBD said) (SBAR )) (. ))))	7.66459e-05
+(ADVP (IN ) (PP (IN ) (NP )))	0.00189622
+(NP|<CC> (CC ) (NNP ))	0.00176969
+(TOP (SINV (S ) (SINV|<,> (, ) (SINV|<VP> (VP (VBZ )) (SINV|<NP> )))))	0.00218988
+(TOP (S (NP (NP (DT The) (NN )) (PP (IN of) (NP (NP ) (NP|<,> )))) (S|<VP> (VP ) (. ))))	0.00019282
+(VP|<,> (, ) (VP|<``> (`` ) (S )))	0.0145206
+(PP (IN ) (NP (PRP$ ) (NN at)))	0.045145
+(VP|<NP> (NP (NP ) (PP )) (VP|<PP> ))	0.000951773
+(VP (VBD ) (VP|<ADVP> ))	0.000365213
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (NP (NP ) (NP|<PP> ))) (. ))))	6.13167e-05
+(PP (IN ) (NP (DT ) (NNS )))	9.029e-05
+(NP (DT ) (NP|<ADJP> (ADJP (RB ) (JJ )) (NN )))	9.22099e-05
+(S|<VP> (VP (VBD ) (VP (VBN ) (VP|<S> (S (NP )) (PP )))) (. ))	0.000205641
+(NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT )) (S (ADVP (RB )) (VP ,))) (, which)))	0.00213871
+(NP ($ ) (CD ))	8.82409e-05
+(PP (IN ) (NP (PRP )))	9.04709e-05
+(S|<,> (, ) (S|<CC> (CC ) (S|<S> (S (NP (PRP )) (VP )) (. ))))	0.000709643
+(S (VP (VBD ) (VP )))	0.00126619
+(NP|<,> (, ) (NP|<NNP> (NNP ) (NP|<CC> )))	0.00106936
+(ADJP (JJ ) (PP ))	0.0170644
+(S (VP (VBG ) (PP )))	0.00140688
+(NP (NN ))	0.0110191
+(NP (NP (DT ) (NNP )) (PP ))	8.82409e-05
+(NP (NP ) (ADJP (JJ )))	2.20602e-05
+(PP (IN ) (NP (NP ) (NP|<CC> (CC ) (NP ))))	0.00136803
+(S (NP (PRP$ ) (NN )) (VP ))	0.000316548
+(S (NP (PRP )) (VP (VBZ ) (VP|<RB> )))	0.00197842
+(VP|<ADVP> (ADVP ) (SBAR (IN ) (S )))	0.00456848
+(VP (VBD ) (NP (NP ) (PP (IN ) (NP ))))	0.00759338
+(VP (VB ) (NP (JJ ) (NN )))	0.000284752
+(NP (NP (NNS )) (VP (VBG ) (NP (QP ($ $) (QP|<CD> )))))	0.000192473
+(VP (VBN ) (PP (IN ) (NP )))	0.00291586
+(NP (NN ) (S (VP )))	2.23284e-05
+(S|<VP> (VP (VBD ) (VP|<NP> (NP ) (S (VP )))) (. ))	0.000394009
+(NP (NP ) (PP (IN ) (NP (DT ) (NP|<NNP> (NNP ) (NP|<NNP> )))))	4.41205e-05
+(ADVP (RBR ) (PP ))	0.000780667
+(TOP (S (S ) (S|<,> (, ) (S|<CC> (CC ) (S|<S> (S (NP ) (VP )) (. ))))))	3.06891e-05
+(PP (IN ) (NP (NP (DT ) (NN )) (PP (IN ) (NP (DT ) (NN )))))	0.045145
+(S|<ADVP> (ADVP (RB )) (VP also))	0.00362917
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP ))	4.40763e-05
+(VP|<NP> (NP (PRP$ ) (NP|<JJ> )) (PP ))	0.00380709
+(S|<VP> (VP (VBD ) (VP|<ADVP> (ADVP ) (VP|<,> ))) (. ))	0.00656682
+(NP (NNP ) (NP|<NNP> (NNP ) (NNS )))	0.000196769
+(VP (VP (VBP ) (NP )) (VP|<CC> (CC ) (VP (VBP ) (VP|<NP> ))))	0.0303735
+(VP|<PP> (PP (TO ) (NP )) (PP ))	0.169529
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<CD> (CD ) (NN %))))	2.31493e-05
+(VP (MD ) (VP (VB ) (NP (DT ) (NP|<NNP> ))))	0.0101245
+(NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<CC> (CC ,) (NP )))))	0.0015913
+(PP (IN ) (NP (NNP ) (NNP )))	0.00392565
+(VP|<NP> (NP (DT ) (NP|<JJ> )) (PP (IN ) (NP )))	0.00380709
+(NP (NNS ))	0.000550954
+(S|<NP> (NP ) (S|<,> ))	0.00133513
+(S|<VP> (VP (VBZ ) (VP )) (. ))	0.0985023
+(S (NP (PRP )) (VP (VBP ) (SBAR )))	0.00329737
+(TOP (S (`` ``) (S|<S> (S (NP (PRP It)) (VP )) (S|<,> (, ) (S|<''> )))))	0.000958074
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP ))	0.00550954
+(VP (VB ) (PP (IN ) (NP )))	4.55603e-05
+(PP (IN ) (UCP ))	9.22268e-05
+(TOP (S (`` ) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(NP (JJ ) (NN ))	0.00127758
+(VP|<PP> (PP ) (NP ))	0.00543034
+(S (NP (PRP )) (VP (VBD ) (VP|<NP> (NP (PRP )) (VP|<PP> ))))	0.000316548
+(VP (MD ) (VP|<ADVP> (ADVP (RB )) (VP )))	0.00108477
+(VP (VBD ) (NP ))	0.00759338
+(PP (IN ) (NP (NNP )))	0.000564312
+(PP (IN ) (NP (NP (NNP )) (NP|<,> (, ) (NP (NNP )))))	0.00108348
+(NP (DT ) (NP|<NN> (NN ) (POS )))	8.82409e-05
+(S|<,> (, ) (S|<NP> (NP (NNP ) (NNP )) (S|<VP> )))	0.00707278
+(TOP (S (NP (DT The) (NN )) (S|<VP> )))	6.13167e-05
+(S (NP ) (VP (VBD ) (VP )))	0.00211738
+(TOP (S (NP (NN )) (S|<,> )))	0.000245267
+(NP (DT ) (NN ))	0.000918257
+(NP (PRP$ ) (NP|<NNP> ))	4.40763e-05
+(TOP (S (SBAR (IN While) (S )) (S|<,> )))	0.000573054
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NP|<JJ> ))) (NP|<,> ))	0.000176659
+(VP|<RB> (RB ) (VP (VB ) (NP )))	0.0170965
+(NP (DT ) (NN ))	4.41205e-05
+(NP (NNP ) (NNPS ))	0.0220382
+(PP (IN ) (NP (NP ) (PP (IN ) (NP (DT ) (NN )))))	0.000752417
+(NP (NN ) (NP|<CC> (CC ) (NN )))	9.79474e-05
+(NP (PRP ))	0.000367303
+(SBAR (IN ) (S (NP ) (VP (MD ) (VP (VB ) (VP|<NP> (NP ) (ADVP (ADVP (RB ) (RB )) (SBAR )))))))	0.0011613
+(TOP (S (NP (DT The) (NN )) (S|<ADVP> (ADVP (RB also)) (S|<VP> ))))	0.000557425
+(NP|<,> (, ) (PP ))	0.002143
+(VP (VP ) (VP|<CC> (CC ) (VP )))	0.00303735
+(NP (PRP$ ) (NN ))	4.40763e-05
+(VP (VB ) (NP (NNS )))	0.000182241
+(TOP (S (NP ) (S|<VP> (VP (MD ) (VP (VB ) (PP ))) (. be))))	0.0204389
+(VP (VBG ) (PP (IN ) (NP (NNS ))))	9.23208e-05
+(TOP (S (ADVP (RB )) (S|<,> (, ) (S|<NP> (NP (DT the) (NN )) (S|<VP> )))))	0.0153292
+(PP (IN ) (PP|<IN> (IN ) (NP )))	9.04709e-05
+(SBAR (IN ) (S (NP (NP (DT ) (NP|<JJ> )) (PP (IN ) (NP ))) (VP )))	0.00112992
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<CC> (CC ) (NP ))))))))	2.20823e-05
+(VP (VBD ) (VP|<ADJP> (ADJP ) (PP (IN ) (NP ))))	0.000194702
+(VP (NN ) (PP ))	4.55603e-05
+(PP (IN ) (NP (NNP ) (NP|<CC> )))	0.000513011
+(NP (NP ) (NP|<,> (, ) (NP|<CC> (CC ) (NP|<NP> (NP ) (, )))))	4.41205e-05
+(VP (VB ) (NP ))	4.55603e-05
+(PP (IN ) (NP (DT ) (NP|<JJ> )))	0.000112862
+(TOP (S (PP (IN For) (NP )) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP ) (. ))))))	3.06584e-05
+(NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NN ))	0.000408114
+(PP (IN ) (NP (NP ) (NNS )))	4.5145e-05
+(QP (CD ) (CD ))	0.0366596
+(NP (PRP$ ) (NN ))	0.000344346
+(NP (NP ) (NP|<,> (, ) (SBAR (WHNP (WDT )) (S (VP (VBZ ) (VP ))))))	8.82409e-05
+(NP (NP ) (PRN (-LRB- ) (PRN|<NP> (NP (NNP ) (NNP -LRB-)) (-RRB- ))))	8.81527e-05
+(PP (IN ) (NP (DT ) (NP|<NN> (NN ) (NN ))))	9.04709e-05
+(TOP (NP ))	0.0613167
+(VP (VBG ) (NP (NN )))	0.00303735
+(TOP (S (NP ) (S|<VP> (VP ) (. ))))	0.000267759
+(NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP )))	0.000480689
+(NP (DT ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP )))))	0.000282541
+(S|<VP> (VP (VBD ) (PP )) (. ))	0.0426843
+(TOP (S (NP (DT ) (NN )) (S|<VP> (VP ) (. ))))	0.000464521
+(VP (VBZ ) (ADJP (JJ ) (S )))	0.000237293
+(VP (VBG ) (VP|<NP> (NP ) (VP|<PP> )))	4.55603e-05
+(NP|<NNS> (NNS ) (NP|<CC> ))	0.0345851
+(ADJP (RB ) (ADJP|<JJ> ))	0.00610351
+(NP (QP ($ ) (QP|<CD> (CD ) (CD ))))	0.000176482
+(VP|<VBN> (VBN ) (PP ))	0.0551571
+(PP (IN ) (NP (PRP of)))	0.00036116
+(NP|<NNPS> (NNPS ) (NP|<NNP> (NNP ) (NNP )))	0.00365763
+(TOP (S (NP (DT The) (NN )) (S|<VP> (VP (VBZ is) (VP (VBN ) (PP ))) (. ))))	0.0153292
+(VP|<,> (, ) (VP|<PP> (PP ) (VP|<,> (, ) (VP|<PP> ))))	0.0567212
+(PP (IN ) (NP (JJ ) (NNS )))	0.000180761
+(VP|<ADVP> (ADVP (RB )) (ADJP ))	0.285245
+(PP (IN ) (NP (NNS )))	9.40521e-05
+(S|<VP> (VP (VBD ) (S )) (. ))	0.00182412
+(NP (DT ) (NP|<NN> (NN ) (NP|<NN> )))	4.40763e-05
+(PP (IN ) (NP (CD )))	0.0112862
+(S (NP (PRP )) (VP (VBD ) (NP )))	0.000633096
+(NP (DT ) (NNPS ))	0.00244869
+(VP|<NP> (NP (PRP )) (PP (IN ) (NP )))	0.000952726
+(NP|<JJ> (JJ ) (NN ))	0.000726008
+(S|<VP> (VP (VBZ ) (SBAR )) (. ))	0.0281435
+(S|<VP> (VP (VBZ ) (VP|<ADVP> (ADVP (RB )) (VP ))) (. ))	0.0985023
+(NP (NNP ) (NNS ))	8.81527e-05
+(S|<VP> (VP (VBD ) (NP )) (. ))	0.000938117
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP )) (NP|<,> (, ,) (NP|<CC> (CC ) (NP )))))	0.0015913
+(VP|<PP> (PP (IN ) (NP (NNP ))) (PP ))	0.0169529
+(S (NP (NNP )) (VP (MD will) (VP )))	0.079137
+(S|<,> (, ) (S|<NP> (NP (NNP ) (NNP )) (S|<VP> )))	0.000221486
+(PP (IN ) (NP (NP (NNP ) (NNP )) (NP|<,> )))	0.0112862
+(VP (VBD ) (NP ))	0.000182241
+(NP (NP (DT ) (NN )) (PP (IN ) (NP (DT ) (NP|<JJ> ))))	4.41205e-05
+(VP (VB ) (VP|<CC> (CC ) (VP|<VB> (VB ) (NP ))))	0.000160424
+(VP (MD ) (VP (VB ) (VP|<ADVP> )))	0.000728965
+(NP (DT ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP ))))	8.82409e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	6.61807e-05
+(NP|<,> (, ) (NP|<VP> (VP ) (, )))	0.00972142
+(NP (NP ) (VP (VBN ) (VP|<PP> (PP ) (PP ))))	0.000550954
+(NP (DT ) (NN ))	0.000352611
+(PP (IN ) (NP (DT ) (NN )))	0.0150483
+(PP (JJ ) (PP|<IN> (IN ) (NP (NP ) (NP|<CC> (CC ) (NP )))))	9.029e-05
+(S (VP (TO ) (VP (VB ) (VP|<NP> (NP (JJ ) (NNS )) (PP (IN ) (NP ))))))	0.000635001
+(PP (IN ) (NP (NNP )))	0.0128986
+(VP (VBN ) (VP|<ADVP> (ADVP (RB )) (PP )))	0.000304751
+(PP (IN ) (NP (NN )))	0.00188104
+(PP (TO ) (NP (NP ) (NP|<,> (, ) (SBAR to))))	4.5145e-05
+(NP|<JJ> (JJ ) (NP|<``> (`` ) (NP|<JJ> )))	0.00290113
+(ADVP (RB ))	0.00066747
+(NP (NN ))	4.50218e-05
+(S|<,> (, ) (S|<NP> (NP (NNP ) (NNP )) (S|<VP> ,)))	0.000221486
+(TOP (S (NP (DT )) (S|<VP> )))	0.000122879
+(ADJP (JJ ))	0.00409955
+(TOP (S (S (NP ) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S|<S> (S ) (. ))))))	6.13167e-05
+(NP (NP (DT ) (NP|<JJ> )) (NP ))	2.57756e-05
+(PP (IN ) (NP (NP ) (PP (JJ ) (PP|<IN> (IN ) (NP (NN ))))))	9.029e-05
+(NP (DT ) (NNS ))	2.20382e-05
+(NP|<NN> (NN ) (NN ))	0.000171663
+(SBAR (WHNP (WP )) (S ))	0.0117582
+(NP|<JJR> (JJR ) (NN ))	1
+(NP (CD ) (NNS ))	9.41802e-05
+(TOP (S (S ) (S|<:> (: ) (S|<S> (S ) (. )))))	6.13167e-05
+(TOP (S (NP (DT The) (NP|<NNP> )) (S|<VP> )))	6.38716e-05
+(NP|<CC> (CC ) (NP (NNP ) (NP|<NNP> (NNP ) (NP|<CC> (CC ) (NNP )))))	0.00918946
+(NP (CD ) (NNS ))	2.20602e-05
+(S|<VP> (VP (VBD )) (. ))	0.000410426
+(PP (IN ) (NP (DT ) (NN )))	4.51902e-05
+(VP (VBZ ) (SBAR (IN ) (S )))	0.000569504
+(ADJP (RB ) (JJ ))	0.0930785
+(PP (IN ) (NP (NP ) (NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT in)) (S )) (, )))))	4.5145e-05
+(S (NP (PRP )) (S|<ADVP> (ADVP (RB probably)) (VP )))	0.00126746
+(PP (IN ) (NP (NP (DT ) (NN )) (PP (IN ) (NP (CD )))))	9.03804e-05
+(TOP (S (SBAR ) (S|<,> (, ) (S|<NP> (NP (DT ) (NN )) (S|<VP> )))))	0.000122633
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NN ))))	9.111e-05
+(S|<VP> (VP (VBD ) (SBAR (IN ) (S (NP ) (VP (MD ) (VP (VB ) (S )))))) (. ))	0.00157604
+(NP|<NNP> (NNP ) (NNP ))	0.000240344
+(VP|<,> (, ) (VP|<ADVP> ))	0.00726031
+(NP (NP (DT ) (NNS )) (VP (VBN ) (PP )))	0.000176305
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP (IN ) (NP (NP (NN )) (PP ))))	4.40763e-05
+(TOP (S (NP ) (S|<VP> (VP (VBZ ) (NP (NP ) (PP (IN ) (NP (NP ) (NP|<,> (, ) (SBAR )))))) (. ))))	0.000245267
+(NP|<,> (, ) (NP|<NP> (NP ) (NP|<CC> )))	0.00053575
+(NP (NP ) (PP (IN ) (NP (NP (NNP )) (NP|<,> (, ) (NP (NNP ))))))	4.41205e-05
+(NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP ))))	0.000833695
+(PP (IN ) (NP (NP (NP ) (PP (IN ) (NP (NNP )))) (NP|<CC> )))	0.0225725
+(SINV|<NP> (NP (NP (NNP ) (NNP )) (NP|<,> (, ) (NP (NP ) (PP (IN ) (NP (NP ) (NP|<,> (, ) (NP (NP ) (SBAR (WHNP (WDT )) (S (VP (VBZ ) (NP ))))))))))) (. ))	0.00416915
+(PP (TO ) (NP (DT ) (NP|<JJ> (JJ ) (NN ))))	9.029e-05
+(NP|<JJ> (JJ ) (NN ))	0.000725282
+(NP|<NAC> (NAC (NNP ) (PP )) (NP|<NNP> (NNP ) (NNP )))	1
+(NP (NP ) (PP (IN ) (NP (NP (DT ) (NN )) (PP ))))	0.000524718
+(VP (VP ) (VP|<CC> (CC ) (VP )))	0.000364847
+(TOP (S (ADVP (RB )) (S|<PRN> (PRN (, ) (PRN|<S> (S (NP ) (VP (VBD ))) (, ))) (S|<NP> (NP ) (S|<VP> (VP ) (. ))))))	6.13167e-05
+(VP|<ADVP> (ADVP (RB )) (VP ))	0.00456391
+(S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD he) (NP )) (. ))))	0.106092
+(VP (VBZ ) (S (NP ) (VP (TO ) (VP ))))	4.56059e-05
+(NP|<NNP> (NNP ) (NP|<CD> ))	0.000480208
+(SBAR (WHADVP (WRB )) (S ))	0.0141986
+(TOP (S (S ) (S|<,> (, ) (S|<NP> ))))	0.000521192
+(NP (NNP ) (NNP ))	0.000918257
+(TOP (S (ADVP ) (S|<NP> )))	6.13167e-05
+(NP (PRP$ ) (NNS ))	2.20382e-05
+(NP (NP (DT ) (NP|<NN> (NN ) (NN the))) (NP|<,> ))	2.20382e-05
+(ADVP (RB ) (ADVP|<NP> (NP (CD ) (NN )) (PP (IN ) (NP ))))	0.00133494
+(TOP (S (S (NP ) (VP (VBD ) (VP|<NP> ))) (S|<,> )))	3.06891e-05
+(PP (IN ) (NP (NNP )))	9.03804e-05
+(VP (VBD ) (NP ))	9.12118e-05
+(TOP (S (NP (NNP ) (NP|<NNP> )) (S|<VP> (VP (VBD ) (SBAR said)) (. ))))	0.000122633
+(NP (NP ) (PP (IN ) (NP (NP ) (NNS ))))	2.20382e-05
+(PP (TO ) (NP ))	0.00036116
+(VP (VB ) (VP|<NP> (NP ) (PP (IN ) (NP ))))	0.000182606
+(NP (QP ($ ) (QP|<CD> (CD ) (CD ))))	8.81527e-05
+(SBAR (IN ) (S (NP ) (VP (VBZ ) (VP ))))	0.00451515
+(S (NP (PRP )) (VP (VBP ) (SBAR (WHADVP (WRB )) (S (VP (TO ) (VP (VB )))))))	0.00329737
+(SBAR (S (NP ) (VP (MD ) (VP (VB ) (VP )))))	0.00112879
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (NNP ) (NNP )) (, )))) (S|<VP> )))	6.13167e-05
+(VP (VB ) (VP|<PRT> (PRT (RP )) (NP )))	9.11206e-05
+(TOP (S (PP (IN For) (NP )) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> )))))	3.07198e-05
+(TOP (S (NP ) (S|<VP> (VP (VBZ ) (NP (CD ) (NN ))) (. ))))	0.0153292
+(NP (NN ) (NP|<NN> ))	4.40763e-05
+(PP (IN ) (NP (DT ) (NN )))	9.03804e-05
+(VP|<NP> (NP ) (S ))	0.00297429
+(NP|<JJ> (JJ ) (NN ))	0.00377751
+(NP|<NN> (NN ) (NP|<NN> ))	0.171491
+(NP|<JJ> (JJ ) (NP|<JJ> ))	0.00145202
+(TOP (S (NP (NP (CD )) (PP )) (S|<VP> (VP ) (. ))))	0.000128278
+(NP (NP (DT The) (NN )) (PP (IN of) (NP )))	8.81527e-05
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NP|<NN> (NN ) (NN )))))	0.00145629
+(VP (ADVP (RB )) (VP|<VBD> (VBD ) (NP )))	0.000406788
+(NP ($ ) (CD ))	4.40763e-05
+(VP (VP ) (VP|<CC> (CC ) (VP (VBZ ) (PP ))))	0.000113901
+(VP (VB ) (PP (TO ) (NP )))	0.000237293
+(NP (NP (DT ) (NN )) (NP|<,> ))	0.000176659
+(S|<VP> (VP (MD ) (VP (VB ) (NP ))) (. ))	0.000342022
+(NP|<NNP> (NNP ) (NNP ))	0.000501261
+(VP|<ADVP> (ADVP (RB )) (PP (RB ) (PP|<IN> (IN ) (NP ))))	0.162997
+(NP|<JJ> (JJ ) (NN ))	0.0116045
+(NP (PRP$ ) (NN ))	0.000524718
+(VP|<ADJP> (ADJP ) (PP (IN ) (NP (NNP ))))	0.154459
+(NP|<JJ> (JJ ) (NNS ))	0.0906602
+(PP (IN ) (NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NP|<CD> )))	9.42484e-05
+(S (NP (DT ) (NNS )) (VP (VBP ) (VP (VBN ))))	0.0131895
+(S|<VP> (VP (VBD ) (SBAR )) (. ))	0.000394404
+(VP|<PRT> (PRT (RP )) (VP|<NP> ))	0.888889
+(TOP (S (PP (IN In) (NP (DT the) (NP|<JJ> (JJ ) (NN )))) (S|<,> )))	0.000122633
+(TOP (S (ADVP ) (S|<NP> )))	6.13167e-05
+(S|<VP> (VP (VBD ) (NP )) (S|<.> (. ) ('' )))	0.000197005
+(VP (VBZ ) (VP|<NP> (NP (DT ) (NP|<JJ> )) (PP )))	0.000728965
+(TOP (S (PP (IN ) (NP )) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> )))))	0.000122756
+(TOP (S (NP (DT ) (NP|<NNP> (NNP ) (NN ))) (S|<VP> )))	0.000291984
+(VP (VBZ ) (VP|<RB> (RB ) (VP )))	9.12118e-05
+(VP (VBN ) (S (VP (TO ) (VP (VB ) (VP|<NP> (NP ) (PP (IN ) (NP (NN ))))))))	9.11206e-05
+(S|<VP> (VP (VBD ) (VP|<NP> )) (S|<.> (. ) ('' )))	0.000197005
+(S (NP (PRP )) (VP (MD ) (VP|<RB> (RB ) (VP ))))	0.000634365
+(NP (NP (JJ ) (NP|<JJ> (JJ ) (NNS ))) (NP|<,> ))	8.84179e-05
+(NP (JJ ) (NP|<JJ> (JJ ) (NN )))	2.21045e-05
+(VP (VBZ ) (NP (NP (NNS )) (PP (IN ) (NP (NP (NN )) (NP|<,> (, ) (NP|<NP> ))))))	0.000364482
+(NP (DT ) (NNS ))	4.59129e-05
+(S|<VP> (VP (VBD ) (SBAR (IN ) (S ))) (. ))	0.00447738
+(NP|<PP> (PP (IN ) (NP (NN ))) (SBAR ))	0.0179746
+(PP (IN ) (NP (NNP ) (NNPS )))	0.000188891
+(TOP (S (NP ) (S|<VP> (VP (MD ) (VP (VB will) (VP ))) (. ))))	5.10973e-05
+(S (NP (NP (DT ) (NN )) (SBAR (S ))) (VP ))	0.00395685
+(NP (DT ))	4.40763e-05
+(NP (PRP$ ) (NN ))	5.75409e-05
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NN ))))	4.5145e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	7.75992e-05
+(SBAR (IN ) (S (NP ) (VP (VBD ) (NP ))))	0.00225757
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ) (NP (NN ) (NNS )))) (, )))	0.00213871
+(SBAR (RB ) (S ))	0.0268759
+(NP (PRP ))	0.000524718
+(VP (VBZ ) (VP (VBN ) (VP|<PP> (PP ) (PP (IN ) (NP )))))	9.16706e-05
+(VP|<NP> (NP (NP (NNS )) (PP )) (PP ))	0.000793144
+(NP|<,> (, ) (NP|<NP> (NP ) (NP|<CC> (CC ) (NP (NNP ) (NNP )))))	0.000534678
+(VP (VBD ) (VP ))	0.00291586
+(VP (VBN ) (VP|<ADJP> ))	0.000632782
+(TOP (S (RB ) (S|<,> )))	0.0306584
+(NP (NP (DT ) (NP|<JJ> )) (NP|<PP> the))	4.41647e-05
+(VP|<NP> (NP ) (NP ))	0.000960417
+(TOP (S (NP (DT The) (NNS )) (S|<VP> (VP ) (. ))))	6.13167e-05
+(NP|<NN> (NN ) (NNS ))	0.00274386
+(VP (VBZ ) (S (VP )))	4.55603e-05
+(TOP (S (`` ) (S|<NP> (NP (PRP I)) (S|<VP> (VP ) (S|<.> (. ) ('' ))))))	0.000122633
+(VP (VBN ) (VP (VBN ) (PP )))	0.000379669
+(NP|<,> (, ) (PP ))	0.002143
+(VP (VBN ) (NP ))	0.0455603
+(NP|<ADJP> (ADJP (RB ) (VBN )) (NNS ))	0.00263158
+(NP (NNS ))	0.000352611
+(S (SBAR (WHADVP (WRB )) (S )) (S|<,> ))	0.000633096
+(NP (NN ))	7.65214e-05
+(VP|<,> (, ) (S (VP (VBG ) (NP ))))	0.00363015
+(NP|<CC> (CC ) (NNS ))	0.0400995
+(NP|<NNP> (NNP ) (NP|<NNP> ))	0.00187581
+(VP (VBN ) (ADVP ))	0.00506226
+(VP (MD ) (VP (VB ) (ADJP (JJ ))))	0.000851594
+(TOP (S (NP ) (S|<VP> (VP (VBZ ) (VP (VBN is) (VP|<PP> ))) (. ))))	0.000319358
+(NP (NP (PRP$ ) (NN )) (PP ))	0.0220382
+(ADVP (NP (CD ) (NNS years)) (RB ago))	0.00267255
+(NP (NP ) (NP|<,> (, ) (SBAR (WHNP (WDT )) (S (VP )))))	0.000176305
+(PP (PP ) (PP ))	0.0112862
+(TOP (SINV (S ) (SINV|<,> (, ) (SINV|<VP> ))))	6.13167e-05
+(NP|<CC> (CC ) (NP (PRP$ ) (NNS )))	0.0031063
+(NP (NP (DT ) (NP|<NN> (NN ) (NN ))) (NP|<,> ))	4.43424e-05
+(VP (VBZ ) (VP (VBN ) (VP (VBN ))))	9.11206e-05
+(NP (NN ))	0.000524718
+(VP (VBD ) (VP|<PP> (PP (IN ) (NP (NN ))) (S (VP ))))	0.00198088
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBZ )) (SINV|<NP> (NP ) (. ))))))))	3.99197e-05
+(VP (TO ) (VP (VB ) (VP (VBN ))))	0.000949173
+(S|<VP> (VP (VBZ ) (NP (NP ) (PP (IN is) (NP (NP ) (PP (IN ) (NP )))))) (. ))	0.00182412
+(VP (VB ) (VP|<NP> (NP ) (PP (TO ) (NP ))))	0.000182241
+(S|<NP> (NP ) (S|<VP> (VP (VBZ ) (VP|<NP> )) (. )))	0.00370868
+(TOP (S (`` ``) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (VP|<NP> told)) (. ))))	0.000191615
+(NP (DT ) (NN ))	0.000176659
+(TOP (S (NP ) (S|<,> )))	0.000136259
+(NP (NP (DT ) (NN )) (PP (IN ) (NP )))	2.21045e-05
+(VP|<PP> (PP ) (ADVP ))	0.00271246
+(PP (IN ) (NP (NP (NN )) (VP )))	4.5145e-05
+(PP (IN ) (NP (NP (JJ ) (NP|<JJ> )) (NP|<,> )))	9.04709e-05
+(S (NP (PRP )) (VP ))	0.00395685
+(NP|<NNS> (NNS ) (S (VP (TO ) (VP (VB ) (NP )))))	0.0015248
+(PP (IN ) (NP (NP ) (NP|<CC> (CC ) (NP ))))	4.5145e-05
+(VP|<,> (, ) (S (VP (VBG ) (NP (NP (DT ) (NN )) (PP )))))	0.0226885
+(NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NP|<JJ> (JJ the) (NN )))	0.00314831
+(NP (DT The) (NP|<JJ> (JJ ) (NP|<NNP> )))	0.000172173
+(S|<NP> (NP (PRP )) (S|<VP> (VP (VBZ it) (VP|<NP> )) (. )))	0.0202292
+(NP|<NN> (NN ) (NN ))	0.000171663
+(PP (IN ) (NP (NNP )))	0.00134761
+(VP|<NP> (NP ) (VP|<,> ))	0.0304567
+(NP|<NNP> (NNP ) (NNP ))	0.000245254
+(NP (NP (JJ ) (NNS )) (PP (IN ) (NP )))	8.83293e-05
+(VP|<PP> (PP ) (VP|<PP> ))	0.000678114
+(PP (IN ) (SBAR ))	0.000567862
+(NP|<,> (, ) (NP|<NP> (NP (DT ) (NN )) (, )))	0.0222783
+(NP (NP (NN )) (NP|<CC> (CC ) (NP (JJ ) (NP|<VBG> (VBG ) (NN president)))))	4.40763e-05
+(S (NP (DT ) (NNP )) (VP ))	0.000633096
+(NP (NN ))	0.00100173
+(NP (DT ) (NN ))	0.000352611
+(VP|<PP> (PP ) (PP (IN ) (NP (DT ) (NP|<JJ> ))))	0.00177053
+(NP|<,> (, ) (NP|<NP> (NP ) (NP|<CC> )))	0.00053575
+(TOP (S (`` ``) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(NP (JJ ) (NNS ))	0.000153043
+(PP (IN ) (NP (CD )))	9.05617e-05
+(TOP (S (NP (NP (NNP ) (NNP )) (NP|<,> (, ) (NP|<NP> (NP ) (, )))) (S|<VP> )))	3.06584e-05
+(S|<NP> (NP (DT ) (NN )) (S|<VP> (VP (VBD ) (VP|<ADVP> )) (. )))	0.0278151
+(NP (NP (DT ) (NN )) (VP ))	0.000250434
+(TOP (S (NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> (, ,) (NP|<ADJP> ))) (S|<VP> (VP (VBD ) (VP (VBN ) (VP|<S> ))) (. was))))	0.000122633
+(S|<,> (, ) (S|<NP> (NP (NP ) (PP )) (S|<VP> (VP (VBZ ) (VP )) (. ))))	0.000453383
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<NN> (NN ) (NNS ))))	0.000282541
+(VP (VBG ) (NP (DT ) (NP|<JJ> (JJ ) (NN ))))	9.13032e-05
+(NP (DT ) (NP|<JJS> (JJS the) (NN )))	4.41647e-05
+(S|<VP> (VP (VBP ) (ADJP )) (. ))	0.00820852
+(S (RB ) (VP (TO ) (VP )))	0.00150737
+(VP (TO ) (VP (VB ) (VP|<NP> (NP ) (VP|<ADVP> ))))	0.00291586
+(NP|<NN> (NN ) (NN ))	0.000686651
+(VP (VB ) (VP ))	0.000759338
+(VP (TO ) (VP (VB ) (PP (IN ) (NP to))))	4.55603e-05
+(VP (VB ) (ADJP (JJ ) (PP be)))	0.00189835
+(NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ,) (NP (NNP )))) (, ))))	4.40763e-05
+(NP|<JJ> (JJ ) (NP|<NN> ))	0.00290113
+(VP (TO ) (VP (VB ) (NP (DT ) (NNS ))))	0.000182424
+(NP (DT ) (NN ))	0.000657856
+(VP|<PP> (PP (TO ) (NP )) (PP ))	0.0230559
+(VP (VBD ) (VP|<NP> (NP ) (PP (IN ) (NP ))))	0.000364847
+(NP|<JJ> (JJ ) (NNP ))	0.00290113
+(S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP )))) (. said))	0.00179095
+(TOP (S (PP (IN For) (NP )) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP ) (. ))))))	3.06584e-05
+(NP (NP (NN )) (PP (IN ) (NP (NN ))))	2.20382e-05
+(S|<VP> (VP (VBD ) (VP (VBN ) (VP (VBG had) (VP|<ADVP> been)))) (. ))	0.000197202
+(NP (JJR ) (NP|<NN> ))	4.40763e-05
+(VP|<,> (, ) (PP ))	0.00363015
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBZ )) (SINV|<NP> (NP ) (. ))))))))	3.99197e-05
+(NP (NP (NNS )) (NP|<PP> ))	2.20382e-05
+(VP (VBZ ) (NP (NP ) (VP )))	0.000182241
+(PP (IN ) (NP (NP ) (NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT in)) (S )) (, )))))	4.5145e-05
+(TOP (S (`` ) (S|<S> (S ) (S|<,> ))))	6.13167e-05
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT )) (S )) (, )))) (S|<VP> (VP ) (. ))))	3.06584e-05
+(S|<,> (, ) (S|<NP> (NP (PRP )) (VP (VBZ ) (NP ))))	0.000212183
+(NP|<CD> (CD ) (NNS ))	0.0456281
+(NP|<NN> (NN ) (NNS ))	0.000343326
+(S|<VP> (VP (VBZ ) (VP|<ADVP> (ADVP ) (VP ))) (. ))	0.000994972
+(VP (VBD ) (NP (NP ) (PP )))	0.000273635
+(VP (VB ) (VP (VBN )))	0.000949173
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	0.000749298
+(TOP (S (`` ) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(PP|<IN> (IN ) (NP ))	0.911765
+(NP|<NN> (NN ) (NN ))	0.000342982
+(PP (IN ) (NP (DT of) (NNS the)))	0.000940521
+(NP (PRP ))	2.20602e-05
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT )) (S )) (, )))) (S|<VP> (VP ) (. ))))	3.06584e-05
+(S|<VP> (VP (VBD ) (SBAR said)) (. ))	9.85023e-05
+(NP (PRP$ ) (NP|<NN> (NN ) (S (VP (TO ) (VP (VB ) (VP|<NP> ))))))	8.82409e-05
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (SBAR (S (NP ) (VP (MD ) (VP said))))) (. ))))	3.22042e-05
+(PP (IN ) (NP (NP (NNP ) (POS )) (NP|<JJ> (JJ ) (NNS ))))	0.00072232
+(NP (NN ) (S (VP )))	0.00157415
+(NP|<NN> (NN ) (SBAR (IN ) (S (NP ) (VP ))))	0.00476364
+(S|<VP> (VP (VBP ) (S )) (. ))	0.000197005
+(NP (NP (JJ ) (NNS )) (PP ))	0.00027721
+(PP (IN ) (NP (DT ) (NNP )))	0.00011726
+(ADVP (RB ))	0.0139056
+(NP (DT ) (NN ))	8.81527e-05
+(NP (DT ) (NP|<CD> (CD ) (NNS )))	0.000176305
+(VP (VBD ) (SBAR (S (NP (DT ) (NN )) (VP ))))	9.12118e-05
+(NP|<JJ> (JJ ) (NP|<NNP> (NNP ) (NP|<NNP> )))	0.00145056
+(NP (NP (CD )) (PP (IN ) (NP )))	8.82409e-05
+(S|<,> (, ) (S|<NP> (NP (NNS )) (S|<VP> (VP ) (. ))))	0.000424367
+(NP|<CC> (CC ) (NP (JJ ) (NP|<JJ> (JJ ) (NN ))))	0.441094
+(VP|<PRT> (PRT (RP )) (VP|<NP> ))	0.111111
+(PP (TO ) (NP (DT ) (NP|<JJ> )))	4.51902e-05
+(VP (VBD ) (NP ))	0.00303735
+(S (NP (NP (PRP$ ) (NNS )) (PP )) (VP ))	0.0107626
+(NP|<NN> (NN ) (S (VP (TO ) (VP (VB ) (VP|<NP> )))))	0.00153117
+(NP|<CC> (CC ) (NP (NP (DT ) (NN )) (PP (IN ) (NP ))))	0.00176791
+(VP|<,> (, ) (ADVP (RB ) (NP (CD ) (NNS ))))	0.226885
+(VP (VBD ) (NP ))	9.11206e-05
+(NP|<,> (, ) (NP|<NP> (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP (IN ) (NP ))) (, )))	0.00278478
+(VP (TO ) (VP (VB ) (ADJP (JJ ))))	0.000216954
+(PP (IN ) (NP (JJ ) (NNS )))	9.03804e-05
+(NP (DT ) (NP|<NNP> (NNP ) (NN )))	4.40763e-05
+(S (NP (CD ) (NNS )) (VP ))	0.316548
+(NP ($ ) (CD ))	4.41205e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	4.40763e-05
+(NP (NP (NNP ) (POS )) (NP|<NNP> (NNP ) (NNP )))	0.0110191
+(VP (VP ) (VP|<,> (, ) (VP|<VP> (VP ) (VP|<CC> (CC ) (VP )))))	4.55603e-05
+(NP|<,> (, ) (NP|<NP> (NP (CD )) (, ,)))	0.0334174
+(VP (VB ) (VP ))	0.00303735
+(VP (VBD ) (NP (NP (DT ) (NN )) (PP )))	0.0151868
+(TOP (SINV (S ) (SINV|<,> (, ) (SINV|<VP> ))))	0.000174195
+(TOP (S (S ) (S|<:> (: ) (S|<S> ))))	6.15012e-05
+(PP (IN ) (NP (NNP ) (NNP )))	0.000188891
+(TOP (S (NP (PRP )) (S|<VP> (VP ) (. ))))	6.13167e-05
+(TOP (S (`` ) (S|<NP> )))	6.13167e-05
+(PP (IN ) (NP (NP ) (NP|<,> (, ) (VP ))))	9.03804e-05
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (VP had)) (. ))))	0.00255486
+(NP (JJ ) (NN ))	8.81527e-05
+(NP (JJ ) (NP|<JJ> ))	0.000147413
+(SBAR (WHADVP (WRB )) (S (NP ) (VP (VBD ) (VP|<NP> ))))	0.00451515
+(TOP (S (NP (NP (DT The) (NN )) (PP (IN of) (NP ))) (S|<VP> )))	0.000766459
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> )))))))	0.00127743
+(NP (JJ ) (NN ))	0.00027721
+(NP|<NN> (NN ) (S (VP )))	0.0109754
+(NP (DT ) (NP|<JJR> ))	2.2673e-05
+(NP (CD ) (NP|<JJ> ))	0.0220382
+(VP (VBN ) (NP (DT ) (NN )))	0.00331348
+(NP (DT ) (JJ ))	2.20602e-05
+(TOP (S (ADVP (RB )) (S|<PRN> (PRN (, ) (PRN|<S> )) (S|<NP> ))))	0.000127743
+(NP|<,> (, ) (NP|<NP> (NP (DT ) (NN )) (, )))	0.0222783
+(PP (IN ) (NP (DT ) (NN )))	4.5145e-05
+(TOP (S (NP (DT The) (NN )) (S|<VP> (VP (MD ) (VP )) (. ))))	0.00510973
+(S|<,> (, ) (S|<NP> (NP (NNP ,) (NNP Mr.)) (S|<VP> )))	0.000212822
+(S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD ) (VP|<NP> )) (. he))))	0.000849583
+(VP|<VP> (VP ) (VP|<CC> (CC ) (VP (VBD ) (PP (IN ) (NP )))))	1
+(SBAR (WHADVP (WRB )) (S (VP (TO ) (VP ))))	0.0171028
+(VP (VBP ) (VP|<NP> ))	0.00189835
+(VP (VB ) (VP (VBN ) (PP )))	9.11206e-05
+(S|<VP> (VP (VP ) (VP|<CC> (CC ) (VP ))) (. ))	9.85023e-05
+(VP (MD ) (VP (VB ) (VP should)))	9.12118e-05
+(VP (VB ))	0.00108477
+(PP (IN ) (S (VP )))	4.51902e-05
+(NP (NP (NNP ) (POS )) (NP|<NNP> ))	4.40763e-05
+(NP|<NNP> (NNP ) (NNP ))	0.00272846
+(NP|<CD> (CD ) (NNS ))	0.91066
+(ADVP (RBR ))	0.00267255
+(VP (VBG ) (VP|<PP> (PP ) (PP )))	0.000690308
+(PP (TO ) (NP (CD )))	0.000376208
+(S (NP (DT ) (NN The)) (S|<ADVP> ))	0.105516
+(S (NP (DT The) (NN )) (VP (MD ) (VP (VB ) (NP ))))	0.00119905
+(NP (JJS Most) (NNS ))	2.57756e-05
+(S (NP (NNS )) (S|<ADVP> ))	0.000633096
+(NP (NNP ) (NNP ))	0.000275477
+(NP (DT ) (NN ))	8.34779e-05
+(S (NP (DT ) (NP|<NNP> (NNP ) (NN ))) (VP ))	0.00126619
+(VP (MD ) (VP (VB ) (VP )))	0.000182241
+(PP (IN ) (NP (DT ) (NN )))	0.000752417
+(TOP (S (NP (NN ) (NNS )) (S|<VP> )))	0.0038323
+(VP|<NP> (NP (DT ) (NP|<NN> (NN ) (NN ))) (VP|<PP> ))	0.00190545
+(S|<VP> (VP (VBD ) (VP )) (. was))	9.85023e-05
+(NP (QP (IN ) (QP|<$> ($ ) (QP|<CD> ))))	2.20382e-05
+(VP (TO ) (VP (VP ) (VP|<CC> )))	4.78575e-05
+(NP (DT ) (NP|<ADJP> (ADJP (CD ) (NN )) (NN )))	0.000657856
+(NP|<,> (, ) (NP|<NP> (NP (CD )) (NP|<,> )))	0.00427743
+(NP (NP (DT )) (PP (IN ) (NP )))	8.82409e-05
+(PP (IN ) (S (VP )))	4.5145e-05
+(TOP (S (NP (NNP )) (S|<VP> (VP (MD ) (VP )) (. ))))	0.00127743
+(NP (JJR ) (NN ))	0.000282541
+(NP|<NNS> (NNS ) (NN ))	0.0140902
+(S|<,> (, ) (S|<NP> (NP (PRP ,)) (S|<VP> (VP (VBD he) (NP )) (. ))))	0.106092
+(NP (DT ) (NN ))	4.40763e-05
+(VP (VBN ) (VP|<PP> (PP (IN ) (NP )) (PP by)))	0.000253113
+(NP (DT ) (NN ))	0.000367303
+(S (NP (NNP )) (S|<ADVP> ))	0.000633096
+(NP (NP (JJ ) (NNS )) (NP|<CC> ))	7.75992e-05
+(TOP (S (NP (DT The) (NN )) (S|<VP> (VP (MD ) (VP (VB be) (VP (VBN ) (PP )))) (. ))))	0.0306584
+(S|<VP> (VP (VBD ) (VP (VBN ) (VP|<PP> ))) (. ))	0.000197597
+(NP (JJ ) (NP|<NN> (NN ) (NN )))	0.0110191
+(NP|<NN> (NN ) (NNS ))	0.000171663
+(TOP (S (ADVP ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> ,)))))	0.00049449
+(VP (MD ) (VP (VB ) (VP|<CC> (CC ) (VP|<VB> (VB will) (NP )))))	0.00284752
+(NP (NNP ) (NNP ))	0.0440763
+(NP (CD ) (NNS ))	0.000400694
+(NP (NNP ) (NP|<NNP> (NNP ) (NNP )))	0.000176305
+(VP (VBG ) (VP ))	4.55603e-05
+(NP (DT ) (NNS ))	0.000918257
+(S|<S> (S ) (S|<CC> (CC ) (S|<S> (S (NP ) (PP )) (. ))))	0.0262775
+(PP (IN ) (NP (JJ ) (NNS )))	0.000180761
+(NP|<NN> (NN ) (NNS ))	0.000343326
+(NP (NN ) (NNS ))	0.000408114
+(PP (IN ) (NP (DT ) (NP|<NNP> (NNP ) (NP|<NN> ))))	0.045145
+(NP|<NNP> (NNP ) (NNP ))	0.000480208
+(TOP (S (NP (DT The) (NN )) (S|<ADVP> (ADVP (RB )) (S|<VP> ))))	0.0102195
+(S|<VP> (VP (VBZ ) (NP (NP ) (PP is))) (. ))	0.000127925
+(NP (DT ) (NNP House))	0.000176659
+(NP|<NNP> (NNP ) (NNS House))	0.000960416
+(VP (MD ) (VP (VB ) (VP|<NP> (NP (DT ) (NP|<NNP> )) (PP ))))	0.00284752
+(NP (NNP ) (CD ))	0.000176482
+(NP (NP ) (PP (IN ) (NP (NP (NNP )) (NP|<,> (, ) (NP (NNP ))))))	4.41205e-05
+(SBAR (S (NP (PRP )) (VP (VBD ) (VP|<NP> ))))	0.00282197
+(NP|<NN> (NN ) (NN ))	0.000342982
+(NP (NP ) (PP (IN ) (NP (DT ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> ))))))	4.41205e-05
+(NP (NP ) (NP|<,> (, ) (NP|<CC> (CC ) (NP|<NP> (NP ) (, )))))	4.41205e-05
+(TOP (S (NP (NP (NNP Mr.) (NNP )) (NP|<,> )) (S|<VP> )))	0.00766459
+(S|<,> (, ) (S|<CC> (CC ) (S|<S> (S (NP (NNS )) (VP )) (. ))))	0.000424791
+(NP|<PP> (PP ) (PP ))	0.748192
+(PP (TO ) (NP ))	9.029e-05
+(NP|<JJ> (JJ ) (NNS ))	0.0116045
+(VP (VBN ) (S (VP (TO ) (VP (VB ) (NP )))))	9.11206e-05
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ) (NP (NN ) (NNS )))) (, )))	0.00213871
+(TOP (S (ADVP (RB )) (S|<PRN> (PRN (, ,) (PRN|<S> (S (NP ) (VP (VBD ))) (, ))) (S|<NP> (NP ) (S|<VP> (VP ) (. ))))))	6.13167e-05
+(NP|<,> (, ) (NP|<NP> (NP (DT ) (NN )) (, )))	0.0222783
+(TOP (S (S ) (S|<,> (, ) (S|<S> ))))	0.000184689
+(VP|<VB> (VB ) (VP|<NP> ))	1
+(PP (TO ) (NP (NP ) (NP|<,> (, ) (SBAR to))))	4.5145e-05
+(PP (IN ) (NP (DT ) (NP|<NNP> )))	0.0225725
+(PP (IN ) (NP (NP (NNS )) (PP (JJ ) (PP|<IN> (IN ) (NP )))))	0.000156753
+(VP|<NP> (NP ) (PP (IN ) (NP (NN ))))	0.00761419
+(TOP (S (SBAR (IN As) (S (NP ) (VP (VBD ) (PP )))) (S|<,> (, ) (S|<NP> ))))	3.06584e-05
+(NP|<PP> (PP (IN ) (NP )) (NP|<,> (, ) (PP )))	0.0179566
+(VP (TO ) (VP (VB ) (VP|<NP> (NP ) (PP (TO ) (NP )))))	0.00198088
+(ADJP (RBR ) (JJ ))	0.00819091
+(NP|<,> (, ) (NP|<NN> (NN ) (NP|<CC> ,)))	0.00107043
+(NP (NNP ))	0.0220382
+(NP|<NN> (NN ) (NP|<CC> (CC ) (NP|<NNS> (NNS ) (NN ))))	0.0149123
+(NP (DT ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP ))))	2.20382e-05
+(NP (DT ) (NNP ))	0.000176305
+(TOP (S (`` ) (S|<S> (S (NP (PRP )) (VP )) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	0.00127743
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NNS ))) (PP (IN ) (NP (NNP ) (NNP ))))	0.000352611
+(PP (IN ) (NP (NP (ADJP ) (NNS )) (PP )))	0.000156753
+(TOP (S (NP (DT The) (NP|<NNP> (NNP ) (NNP ))) (S|<VP> )))	0.000136259
+(TOP (S (PP (IN In) (NP (DT the) (NN ))) (S|<,> )))	0.0306584
+(TOP (S (NP ) (S|<VP> (VP (MD ) (VP (VB ) (VP ))) (. ))))	0.00109494
+(QP (JJR ) (QP|<IN> (IN ) (CD )))	0.112325
+(VP|<ADVP> (ADVP (RB )) (PP (IN ) (NP )))	0.0217329
+(PP (IN ) (NP (DT of) (NNS the)))	0.000188891
+(NP (JJ ) (NP|<NNP> (NNP ) (NNP )))	0.000176305
+(PP (IN ) (NP (NP (DT ) (NN )) (PP with)))	0.00188104
+(NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NN ))	0.000153043
+(QP|<CD> (CD ) (CD ))	0.0810071
+(S|<VP> (VP (VBD ) (VP (ADVP (RB )) (VP|<VBN> ))) (. ))	0.00317749
+(NP|<NNP> (NNP ) (NNP ))	0.106713
+(NP (NNP ) (NNP ))	8.81527e-05
+(SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP (NNP ) (NNP )) (NP|<,> (, ) (NP (NP (NN )) (PP (IN ) (NP ))))) (. ))))	0.25
+(S|<,> (, ) (S|<NP> (NP (DT ) (NP|<NNP> )) (S|<VP> ,)))	0.0303119
+(NP|<NNP> (NNP ) (NNP ))	0.000480208
+(NP (NP (NNS )) (PP ))	4.40763e-05
+(NP (NP (DT ) (NN )) (PP (IN ) (NP )))	0.000110191
+(TOP (S (ADVP (RB Eventually)) (S|<,> )))	6.15012e-05
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (NNP ) (NNP )) (, )))) (S|<VP> ,)))	6.13167e-05
+(SINV|<NP> (NP (NNP ) (NNP )) (. ))	0.694163
+(TOP (S (PP (IN In) (NP )) (S|<,> (, ) (S|<NP> (NP (DT ) (NP|<NN> the)) (S|<VP> )))))	0.000122633
+(S|<VP> (VP (VBD ) (VP (VBN ) (S (NP (NP was) (NP|<,> (, ) (NP )))))) (. ))	9.85023e-05
+(NP (JJ ) (NNS ))	0.0220382
+(NP|<JJ> (JJ ) (NN ))	0.0018132
+(NP (NP (JJ ) (NNS )) (NP|<,> (, ) (SBAR )))	0.00100173
+(NP|<,> (, ) (NP|<NP> (NP (CD )) (NP|<,> )))	0.0445565
+(NP|<NN> (NN ) (NN ))	0.000688029
+(NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> )))	0.000480208
+(NP (NNP Mr.) (NNP ))	4.41205e-05
+(VP|<NP> (NP ) (PP (ADVP (RB )) (PP|<IN> )))	0.317258
+(VP|<ADVP> (ADVP (RB )) (VP|<,> ))	0.0365113
+(TOP (SINV (S ) (SINV|<,> (, ) (SINV|<VP> (VP (VBZ )) (SINV|<NP> )))))	0.00218988
+(VP (VB ) (VP (VBN ) (VP|<PP> )))	0.000364847
+(NP (DT ) (NP|<NNP> (NNP ) (NNS )))	0.000352611
+(QP (JJR ) (QP|<IN> (IN ) (CD )))	0.0561625
+(S|<VP> (VP (VBZ ) (VP|<NP> (NP ) (VP|<,> (, is) (VP )))) (. ))	0.000619511
+(S|<NP> (NP (DT ) (NP|<JJ> (JJ the) (NN ))) (S|<VP> ))	0.667563
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (PP (IN ) (NP from))) (. ))))	0.0306584
+(PP (IN ) (NP (NP ) (NP|<,> (, ) (SBAR ))))	4.5145e-05
+(PP (IN ) (NP (NP ) (PP (IN ) (NP (DT ) (NN )))))	9.029e-05
+(NP (DT ) (NNS ))	0.000282541
+(VP (VB ) (NP (NN )))	9.11206e-05
+(TOP (S (PP (IN In) (NP (DT the) (NN ))) (S|<,> )))	0.0102195
+(NP (RB ) (NP|<DT> (DT ) (NN )))	4.41647e-05
+(PP (IN ) (NP (JJ ) (CD )))	0.00018058
+(TOP (S (`` ``) (S|<NP> )))	6.13167e-05
+(ADVP (IN ) (PP ))	0.000668138
+(NP|<,> (, ) (NP|<PP> (PP (VBG ) (NP )) (, )))	0.000840689
+(NP (NNP ) (NP|<NNPS> ))	4.40763e-05
+(TOP (S (NP (DT ) (NNS funds)) (S|<VP> (VP ) (. ))))	6.13781e-05
+(TOP (S (`` ``) (S|<S> (S (NP (PRP It)) (VP )) (S|<,> (, ) (S|<''> )))))	0.000958074
+(NP (QP ($ ) (QP|<CD> (CD ) (CD ))))	0.000881527
+(ADJP (JJ ) (S (VP )))	0.00102386
+(S|<VP> (VP (VBD ) (SBAR (S (NP (DT ) (NN )) (VP the)))) (. ))	0.000199599
+(NP|<,> (, ) (SBAR (WHNP (WDT )) (S )))	0.000537906
+(NP|<NNP> (NNP ) (NNP ))	0.0200087
+(NP (NP (NP (NN )) (NP|<CC> (CC ) (NP (JJ ) (NP|<VBG> (VBG ) (NN president))))) (PP (IN and) (NP chief)))	4.40763e-05
+(NP|<NNP> (NNP ) (NNP Reserve))	0.0200087
+(NP|<,> (, ) (NP|<VP> (VP (VBN ) (PP )) (, based)))	0.00213871
+(PP (TO ) (NP (NP ) (PP )))	9.05617e-05
+(PP (IN ) (NP (NP (NNP )) (NP|<,> (, ) (NP (NNP )))))	0.00045145
+(NP|<NN> (NN ) (NN ))	0.0051967
+(VP|<,> (, ) (VP|<``> (`` ) (S )))	0.0145206
+(NP (DT The) (NNS ))	9.79474e-05
+(VP (VBP ) (ADJP ))	9.11206e-05
+(S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBZ ) (NP )) (. ))))	0.00198302
+(NP|<JJ> (JJ ) (NP|<''> ('' ) (NN )))	0.00290113
+(NP (PRP ))	4.40763e-05
+(NP|<NN> (NN ) (NNS ))	0.000342982
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ) (NP ,))) (, )))	0.00213871
+(VP (VB ) (SBAR ))	4.55603e-05
+(S (VP (VBD ) (VP|<ADJP> )))	0.00126619
+(NP (PRP ))	6.26084e-05
+(VP (VB ) (SBAR (IN ) (S )))	9.11206e-05
+(NP (DT ) (NP|<JJ> (JJ new) (NP|<NN> )))	7.75992e-05
+(UCP (NP (CD )) (UCP|<CC> ))	1
+(S|<,> (, ) (S|<NP> (NP ) (S|<VP> )))	0.000212183
+(TOP (S (NP (PRP It)) (S|<VP> (VP ) (. ))))	0.0038323
+(VP (VBN ) (VP|<NP> ))	0.000182241
+(NP (NP (DT ) (NNP )) (PP (IN ) (NP (NNP ))))	2.20602e-05
+(NP|<,> (, ) (NP|<ADJP> ))	0.13367
+(PP (IN ) (NP (NNS )))	9.029e-05
+(NP|<NNP> (NNP ) (NP|<NNPS> ))	0.000960416
+(NP|<CC> (CC ) (NP (NN ) (NNS )))	0.014115
+(TOP (S (S (NP ) (VP (MD ) (VP ))) (S|<,> (, ) (S|<CC> (CC ) (S|<S> )))))	0.00340649
+(VP (VBD ) (VP (VBN )))	0.000397907
+(NP|<NN> (NN ) (NNS ))	0.00194876
+(NP (DT ) (NN ))	4.40763e-05
+(S (NP ) (VP (VBD ) (NP (NP ) (PP (IN ) (NP )))))	0.000316865
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NN ))))	9.029e-05
+(NP|<NN> (NN ) (NNS ))	0.00153117
+(NP (DT ) (NN ))	0.000176305
+(S|<NP> (NP (PRP )) (S|<VP> (VP (VBD )) (. )))	0.222521
+(SBAR (WHADVP ) (S (NP (NNP )) (VP )))	0.322511
+(NP|<NN> (NN ) (NN ))	0.000685965
+(PP (IN ) (NP (NNS )))	9.029e-05
+(NP (NNP ) (NP|<NNP> (NNP ) (POS )))	0.000229564
+(NP (NP (NN )) (VP (VBN ) (PP )))	8.34779e-05
+(VP (VBD ) (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP )))	4.56059e-05
+(NP (NNP ) (NN ))	0.000367303
+(NP (NP (NN )) (VP ))	2.23284e-05
+(VP|<ADVP> (ADVP (RB )) (PP (IN ) (NP (NP (DT ) (NN )) (VP ))))	0.0950815
+(PP (IN ) (NP (NP (DT ) (NN )) (PP (IN ) (NP ))))	0.00036116
+(NP|<NNS> (NNS ) (NP|<CC> (CC ) (NNS )))	0.00453576
+(NP|<JJ> (JJ ) (NN ))	0.000726008
+(NP (NP (PRP$ ) (NN )) (PP (IN ) (NP )))	8.82409e-05
+(VP|<PP> (PP ) (SBAR ))	0.00135623
+(VP (VBD ) (NP (NNP )))	0.0455603
+(NP (DT The) (NN charge))	0.0220382
+(PP (IN ) (NP (NNP )))	9.03804e-05
+(PP (IN ) (NP (DT ) (NP|<NN> (NN ) (NN ))))	0.00018058
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<VP> (VP (ADVP (RB )) (VP|<VBN> (VBN ,) (PP ))) (, )))) (S|<VP> )))	0.0038323
+(NP|<NNP> (NNP ) (NNP ))	0.00250108
+(NP (DT ) (NNS ))	4.40763e-05
+(S|<VP> (VP (VBP ) (VP (VBN have) (VP been))) (. ))	0.0985023
+(NP (NP (NN )) (PP (IN ) (NP (DT ) (NP|<NNP> ))))	2.20602e-05
+(VP|<PP> (PP (IN ) (NP (DT ) (NN ))) (PP (IN ) (NP (NNP ))))	0.00271246
+(NP|<,> (, ) (NP|<NP> (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP (IN ) (NP ))) (, )))	0.00278478
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP )) (, )))	0.00213871
+(NP|<NNP> (NNP ) (NN ))	0.0120052
+(NP (DT The) (NNP ))	0.000137739
+(ADJP (JJ ) (S (VP (TO ) (VP (VB ) (VP|<NP> )))))	0.00409955
+(TOP (S (NP (DT The) (NN )) (S|<VP> (VP ) (. ))))	0.000170324
+(VP|<NP> (NP ) (VP|<NP> (NP ) (PP (IN ) (NP ))))	0.00190545
+(VP|<,> (, ) (S (ADVP (RB )) (VP )))	0.00363015
+(NP|<NNP> (NNP ) (NP|<NN> (NN ) (NNS )))	0.00133391
+(S|<NP> (NP (NN )) (S|<VP> ))	0.00267025
+(PP (IN ) (NP (NNP )))	0.00018058
+(NP|<NN> (NN ) (NN ))	0.000439721
+(NP|<,> (, ) (NP|<NP> (NP ) (NP|<,> (, ) (NP|<CC> (CC ,) (NP )))))	0.0015913
+(VP|<,> (, ) (VP|<``> (`` ) (S )))	0.0145206
+(VP (VBG ) (VP|<ADVP> ))	0.000182424
+(NP (PRP$ ) (NP|<NN> (NN ) (NN )))	4.40763e-05
+(VP (VBG ) (VP|<NP> (NP ) (VP|<PP> )))	9.12118e-05
+(VP (VBZ ) (PP (IN ) (NP (NP (NN )) (PP ))))	0.000286543
+(S|<VP> (VP (VBP ) (VP (VBN ) (VP ))) (. ))	0.000197005
+(TOP (S (SBAR (IN Although) (S )) (S|<,> )))	6.13167e-05
+(VP (VBZ ) (VP (VBG ) (VP|<PP> )))	9.13032e-05
+(NP (JJ ) (NP|<NN> ))	0.0220382
+(S (NP (PRP )) (VP (MD ) (VP|<RB> (RB ) (VP (VB ) (VP|<NP> )))))	0.0143885
+(NP (DT ))	0.00367303
+(PP (IN ) (NP (DT ) (NN )))	4.51902e-05
+(VP (TO ) (VP (VB ) (S )))	4.55603e-05
+(PP (IN ) (NP (NP ) (NP|<,> (, ) (SBAR ))))	4.5145e-05
+(TOP (S (NP ) (S|<ADVP> )))	0.000273735
+(VP (VBD ) (ADJP was))	9.11206e-05
+(TOP (S (S (NP ) (VP )) (S|<,> (, ) (S|<NP> (NP (DT ) (NP|<NNP> )) (S|<VP> (VP ) (. ))))))	0.0153292
+(VP|<NP> (NP ) (VP|<PP> (PP ) (SBAR (IN ) (S ))))	0.00190545
+(SBAR (WHADVP (WRB )) (S (NP (PRP )) (VP )))	0.00225757
+(NP (DT ) (NN ))	9.41802e-05
+(NP (JJ ) (NP|<JJ> (JJ ) (NNS )))	0.000411928
+(S|<VP> (VP (MD ) (VP|<RB> (RB ) (VP (VB ) (VP )))) (. ))	0.000197005
+(VP (VB ))	9.13032e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	4.40763e-05
+(PP (IN ) (NP (JJ ) (NNS )))	7.52417e-05
+(VP (VBZ ) (VP|<NP> (NP (DT ) (NN )) (PP )))	9.13032e-05
+(ADJP (ADJP ) (PP (IN ) (NP )))	0.0930785
+(NP (NN ) (NN ))	4.4209e-05
+(SBAR (IN ) (S (NP (NNP )) (S|<ADVP> (ADVP (RB )) (VP ))))	0.00112992
+(NP|<,> (, ) (NP|<CC> (CC ) (NP )))	0.000534678
+(VP (VB ) (ADVP ))	5.32869e-05
+(VP|<NP> (NP (DT ) (NN )) (ADVP (RB )))	0.0038378
+(NP (NNS ))	0.000787077
+(VP|<ADVP> (ADVP (RB )) (PP (IN ) (NP )))	0.00456848
+(VP|<,> (, ) (VP|<PP> (PP ) (VP|<,> (, ) (VP|<PP> ))))	0.0567212
+(TOP (S (NP (DT The) (NN )) (S|<VP> (VP (VBD ) (VP )) (. ))))	0.0306584
+(TOP (S (NP (NP (NNP )) (NP|<,> (, ,) (NP|<SBAR> (SBAR ) (, )))) (S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP )))) (. ))))	6.13781e-05
+(VP|<NP> (NP ) (NP (DT ) (NN )))	0.000476363
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	9.41802e-05
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NN ))))	0.000180761
+(TOP (S (NP (DT The) (NN company)) (S|<VP> )))	0.0102195
+(TOP (SINV (`` ) (SINV|<S> (S (NP (PRP I)) (VP )) (SINV|<,> (, ) (SINV|<''> )))))	0.000122633
+(NP (NP (DT ) (NNS )) (SBAR ))	2.20602e-05
+(PP (IN ) (NP (QP ($ ) (QP|<CD> (CD ) (CD )))))	0.000283931
+(TOP (S (NP (NNP Mr.) (NNP )) (S|<VP> )))	6.21243e-05
+(NP|<,> (, ) (NP|<PP> (PP (VBG ) (NP )) (, )))	0.00320807
+(VP (VBD ) (NP (NP (DT ) (NN the)) (PP (IN ) (NP of))))	0.00175232
+(VP (VBP ) (VP (VBN ) (VP|<NP> )))	9.11206e-05
+(TOP (S (NP (NNS Analysts)) (S|<VP> )))	6.13167e-05
+(VP (VBZ ) (S ))	0.00154905
+(NP (DT The) (NP|<NNP> ))	2.20602e-05
+(TOP (S (NP (PRP )) (S|<VP> (VP ) (. ))))	6.33437e-05
+(NP (NP (CD )) (PP ))	0.00550954
+(NP|<JJ> (JJ ) (NP|<NN> new))	0.000726008
+(PP (IN ) (NP (NP ) (NP|<``> )))	0.00018058
+(NP (CD ) (NNS ))	9.41802e-05
+(NP (DT ) (NP|<NN> (NN ) (NN )))	2.20382e-05
+(PP (IN ) (NP (NNS )))	0.00072232
+(NP (NP ) (NP|<CC> (CC ) (NP (DT ) (NP|<NNP> ))))	8.81527e-05
+(PP (TO ) (NP (DT ) (NP|<JJ> (JJ ) (NP|<NN> ))))	0.00136803
+(TOP (S (`` ) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(PP (IN ) (NP (NP (NN )) (PP (IN ) (NP ))))	0.0112862
+(VP (VB ) (VP|<PRT> (PRT (RP )) (PP (IN ) (NP ))))	9.12118e-05
+(ADVP (RB ))	0.00133628
+(NP (NN ) (NNS ))	2.31493e-05
+(VP|<PP> (PP ) (PP ))	0.00135623
+(VP (VB ) (NP (DT ) (NP|<NNP> )))	0.0101245
+(NP (NNP ) (NP|<NNPS> ))	0.00550954
+(VP (VBZ ) (NP (NP (DT ) (NP|<NN> )) (VP a)))	0.0455603
+(TOP (S (PP (IN In) (NP (DT ) (NP|<NN> (NN ) (NN )))) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> )))))	0.0153292
+(ADVP (RB ) (RB far))	0.00285244
+(TOP (S (S (NP ) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S|<S> (S ) (. ))))))	6.13167e-05
+(S|<VP> (VP (VBD ) (VP|<NP> (NP ) (S ))) (. ))	0.00020123
+(NP (NP (JJ ) (NNS )) (SBAR (S (VP (TO ) (VP )))))	0.000459129
+(PP (IN ) (NP (NNP ) (CD )))	0.00250806
+(NP (NP ) (NP|<,> (, ) (NP|<CC> (CC ) (NP|<NP> (NP ) (, )))))	4.41205e-05
+(TOP (S (NP (DT This)) (S|<VP> (VP ) (. ))))	6.13167e-05
+(NP (DT ) (NP|<NN> (NN ) (SBAR )))	8.81527e-05
+(S|<,> (, ) (S|<NP> (NP (PRP ,)) (S|<VP> )))	0.00196466
+(NP|<PP> (PP ) (NP|<,> (, ) (PP )))	0.0718264
+(PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NNS for))))	4.5145e-05
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<VP> (VP (ADVP (RB )) (VP|<VBN> (VBN ,) (PP ))) (, )))) (S|<VP> )))	0.0038323
+(S (NP (NNP )) (VP ))	0.00253492
+(TOP (S (NP (NP (NNP )) (NP|<,> (, ) (NP|<SBAR> (SBAR ) (, )))) (S|<VP> (VP (VBD ) (SBAR (S (NP (PRP )) (VP )))) (. ))))	6.13781e-05
+(S (NP ) (S|<ADJP> (ADJP (JJ )) (S (VP (TO ) (VP )))))	0.0211032
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP )) (NP|<,> (, ,) (NP|<CC> (CC ) (NP )))))	0.0015913
+(S|<VP> (VP (VBD ) (VP (VBN ) (VP|<PP> was))) (. ))	0.0016417
+(S|<NP> (NP (NNP )) (S|<VP> ))	0.00133513
+(SBAR (IN ) (S (NP (NNP )) (VP (VBZ ) (PP (IN ) (NP )))))	0.00112992
+(NP|<,> (, ) (NP|<NP> (NP (CD )) (NP|<,> )))	0.0445565
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP an))	4.41205e-05
+(VP|<ADVP> (ADVP (RB )) (VP|<,> ))	0.00228424
+(NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNS )))	0.000480208
+(PP (IN ) (NP (NP ) (PP (IN ) (NP (DT ) (NNP )))))	0.00036116
+(TOP (S (NP (DT The) (NN )) (S|<VP> )))	0.000127743
+(NP (NP (DT ) (NN )) (PP ))	0.000262359
+(PP (IN ) (NP (NN )))	4.74212e-05
+(S|<,> (, ) (S|<NP> (NP (PRP )) (VP )))	0.00252599
+(NP (NNP ) (NN ))	0.000176305
+(TOP (S (NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> (, ) (NP|<NP> (NP ) (, )))) (S|<VP> (VP (VBD ) (VP (VBN ) (S (NP )))) (. ))))	0.0038323
+(S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD ) (NP )) (. ))))	0.000212183
+(NP (NNS ))	0.000138605
+(NP (DT ) (NP|<NNS> (NNS ) (POS )))	8.82409e-05
+(NP (PRP ))	4.41205e-05
+(NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP (IN ) (NP )))	0.000176305
+(NP (NP (DT ) (NP|<NN> (NN government) (POS 's))) (NP|<JJ> (JJ ) (NP|<JJ> (JJ ) (NN ))))	2.20602e-05
+(VP (MD ) (VP (VB ) (PP )))	9.12118e-05
+(NP|<NNP> (NNP ) (NN ))	0.0174621
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (PP )) (. ))))	3.06584e-05
+(TOP (S (`` ``) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(VP (VBZ ) (NP ))	9.11206e-05
+(NP|<PP> (PP (IN ) (NP (NN ))) (PP ))	0.0359852
+(TOP (S (NP (NP ) (NP|<,> (, ) (NP|<NP> (NP (NNP ) (NNP )) (, )))) (S|<VP> ,)))	6.13167e-05
+(PP (IN ) (PP ))	0.00250806
+(TOP (S (S ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD )) (. ))))))	3.06584e-05
+(TOP (S (NP ) (S|<PRN> (PRN (, ) (PRN|<S> )) (S|<VP> (VP ) (. )))))	9.13811e-05
+(S (NP (NNP )) (VP (VBD )))	0.00126746
+(S|<VP> (VP (VBZ ) (VP (VBN has) (VP|<NP> ))) (. ))	0.000198794
+(NP (DT ) (NNP ))	4.40763e-05
+(S (NP (DT )) (VP ))	0.079137
+(NP (NP (DT ) (NN )) (VP ))	0.0220382
+(S|<,> (, ) (S|<ADVP> (ADVP (RB )) (S|<,> )))	0.106092
+(ADVP (RBR ))	0.00538282
+(NP|<ADJP> (ADJP ) (NP|<NN> (NN ) (NN )))	0.328947
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<JJ> (JJ ) (NN ))))	2.2673e-05
+(S (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (VP ))	0.00063373
+(NP|<NN> (NN ) (NNS ))	0.0110639
+(ADJP (JJ ) (ADJP|<CC> (CC ) (JJ )))	0.00409545
+(TOP (S (S (NP ) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S|<S> )))))	0.00340649
+(TOP (S (`` ) (S|<S> (S (NP (PRP )) (VP )) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	0.00127743
+(VP (VBD ) (VP (VBN ) (PP )))	9.12118e-05
+(TOP (S (NP ) (S|<VP> (VP (MD ) (VP|<ADVP> (ADVP (RB )) (VP (VB ) (VP (VBN be) (VP|<PP> ))))) (. ))))	8.0048e-05
+(NP (NP (NNS )) (PP (IN ) (NP (DT ) (NN ))))	4.40763e-05
+(VP (VBD ) (VP|<RB> (RB ) (VP (VB ) (NP did))))	0.00650862
+(NP (DT ) (NP|<NN> ))	4.40763e-05
+(VP (TO ) (VP (VB ) (VP (VBN ) (PP (IN ) (NP )))))	9.19481e-05
+(VP (VBD ) (PP (IN ) (NP (NP ) (PP ))))	0.000364482
+(S (NP (NNP ) (NNP )) (VP ))	0.000636917
+(S (RB ) (S|<NP> ))	0.00126619
+(NP (NP (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP ))))) (NP|<,> ))	0.000705221
+(TOP (S (NP (PRP They)) (S|<VP> (VP ) (. ))))	0.000729961
+(NP (NP (DT )) (PP (IN ) (NP )))	8.82409e-05
+(VP|<ADVP> (ADVP ) (VP|<PP> ))	0.00228424
+(S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP (VBP ) (SBAR )) (. ,))))	0.000212396
+(VP|<PP> (PP (TO ) (NP )) (VP|<,> ))	0.00271517
+(NP|<NNPS> (NNPS ) (NNP ))	0.00731527
+(PP (IN ) (NP (NNP )))	0.00072232
+(PP (IN ) (NP (DT ) (NN )))	0.000564312
+(NP|<NNP> (NNP ) (NNP ))	0.120052
+(NP|<,> (, ) (NP|<NNP> (NNP ,) (NP|<CC> )))	0.00106936
+(VP (VB ) (NP (DT ) (NN )))	9.11206e-05
+(VP (VBZ ) (NP (NP (DT ) (NN )) (PP (IN ) (NP ))))	9.16706e-05
+(NP (NP (JJ ) (NN )) (PP ))	2.8621e-05
+(NP (PRP$ ) (NP|<NN> ))	6.26084e-05
+(NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT )) (S (ADVP (RB )) (VP ))) (, which)))	0.00213871
+(PP (IN ) (NP (DT ) (NP|<NN> )))	0.00288928
+(TOP (S (PP ) (S|<,> (, ) (S|<NP> (NP (NNP ) (NNPS )) (S|<VP> (VP (VBD ,) (NP )) (. ))))))	0.000851621
+(S (NP (PRP )) (VP (MD ) (VP )))	0.00164869
+(NP (NP ) (ADVP (RB )))	0.00550954
+(ADVP (RB ) (PP (IN ) (NP )))	0.000686698
+(VP|<,> (, ) (VP|<ADVP> ))	0.00726031
+(VP (VBD ) (VP (VBN ) (PP (IN ) (NP (NP (DT ) (NN )) (PP )))))	9.49173e-05
+(NP (NP ) (NP|<CC> (CC ) (NP (JJ ) (NP|<NN> (NN ) (NN )))))	2.20382e-05
+(S|<VP> (VP (VBZ ) (NP (NP (DT ) (NN )) (PP (IN ) (NP )))) (. ))	0.0246256
+(NP (QP ($ ) (QP|<CD> (CD ) (CD ))))	0.000881527
+(PP (IN ) (NP (NP (DT ) (NP|<NNP> (NNP ) (NN ))) (PP (IN ) (NP ))))	4.5145e-05
+(TOP (S (S (NP ) (VP )) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> )))))	3.06584e-05
+(VP (VBD ) (ADJP ))	4.55603e-05
+(VP (VBG ) (VP|<NP> (NP ) (ADVP )))	4.56059e-05
+(TOP (S (NP (DT The) (NP|<NN> )) (S|<VP> )))	0.000122756
+(PP (IN ) (NP (NP (CD ) (NN )) (PP (IN ) (NP ))))	0.000180761
+(NP|<,> (, ) (NP|<VP> (VP ) (, )))	0.00972142
+(PP (IN ) (NP (NNP )))	0.00045601
+(S|<VP> (VP (VBD ) (ADVP )) (. ))	0.00205213
+(TOP (S (S ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD )) (. ))))))	3.06584e-05
+(TOP (S (ADVP (RB )) (S|<PRN> (PRN (, ,) (PRN|<S> (S (NP ) (VP (VBD ))) (, ))) (S|<NP> (NP ) (S|<VP> (VP ) (. ))))))	6.13167e-05
+(NP (NP (JJ ) (NNS )) (SBAR ))	0.000220382
+(SBAR (IN ) (S (VP (VBN ) (PP (IN ) (NP )))))	0.00112992
+(VP (VB ) (VP|<S> ))	0.0113901
+(S|<NP> (NP ) (VP ))	0.00267025
+(NP (NNP ) (CD ))	0.00146921
+(S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD ) (NP )) (. ))))	0.000212183
+(TOP (S (`` ``) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(NP|<,> (, ) (NP|<NP> (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP (IN ) (NP ))) (, )))	0.00278478
+(S|<NP> (NP (NNP )) (S|<VP> (VP (VBD )) (. )))	0.0226971
+(NP (DT ) (NP|<JJ> (JJ ) (NNS )))	4.46569e-05
+(PP (IN ) (NP (CD ) (NN )))	0.0479666
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP ) (PP (IN ) (NP ))) (. ))))))))	4.79037e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NNS )))	0.000352611
+(TOP (S (NP (DT ) (NN )) (S|<VP> (VP (VBZ is) (VP )) (. ))))	0.000464521
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<JJ> (JJ ) (NNS ))))	4.40763e-05
+(S (NP (NP (NN )) (PP )) (VP (VBZ ) (VP (VBN ) (PP (IN ) (NP is)))))	0.00381383
+(TOP (S (NP (NNP ) (NNP )) (S|<VP> )))	0.000122633
+(TOP (S (NP ) (S|<NP> (NP ) (S|<VP> ))))	0.000106453
+(VP (VBZ ) (VP|<PRT> ))	0.000364482
+(SBAR (WHNP (WDT )) (S (VP (VBZ ) (VP (VBN which) (PP (IN ) (NP ))))))	0.00903934
+(NP|<NNP> (NNP ) (NNP ))	0.060026
+(NP (NP (NNS )) (SBAR ))	8.81527e-05
+(NP (NN ) (NN ))	0.000352611
+(VP (VBZ ) (NP (JJ ) (NN )))	0.00126556
+(NP (NP (DT ) (NN )) (SBAR (S )))	8.81527e-05
+(NP (`` ) (NP|<NP> (NP ) (NP|<''> ('' ) (PP (IN ) (NP )))))	4.40763e-05
+(NP (JJ ) (NN ))	2.8621e-05
+(NP (DT ) (NNS ))	0.000787077
+(S (NP (NNS )) (VP ))	0.00753686
+(S (NP (PRP )) (VP (VBD ) (S (VP (TO ) (VP )))))	0.000316548
+(PP (IN ) (NP (NN )))	9.05617e-05
+(UCP|<CC> (CC ) (ADVP ))	1
+(TOP (S (`` ) (S|<S> (S (S (NP (PRP I)) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S )))) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	7.98395e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	4.40763e-05
+(NP|<JJ> (JJ ) (NN ))	0.00148168
+(NP (NP (DT ) (NP|<NNP> (NNP ) (POS ))) (NP|<JJ> ))	2.20602e-05
+(TOP (S (NP ) (S|<VP> (VP (VBD ) (NP )) (. ))))	0.000718555
+(NP (DT ) (NN ))	2.20382e-05
+(PP (IN ) (NP (DT ) (NP|<NN> )))	0.045145
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> )))))))	0.00127743
+(NP (NNP ) (NP|<NNPS> (NNPS ) (NNP )))	0.00191636
+(NP (NNP ) (NP|<CC> (CC ) (NNP )))	0.000352611
+(S|<VP> (VP (VBD ) (VP|<NP> (NP ) (S (VP (TO ) (VP ))))) (. ))	0.000394009
+(NP (DT ) (NNS ))	2.20382e-05
+(NP|<``> (`` ) (NP ))	0.5
+(VP (VBD ) (SBAR ))	0.000182241
+(TOP (S (NP (NP (NNP ) (NNP )) (NP|<,> (, ) (NP|<NP> (NP ) (, )))) (S|<VP> )))	3.06584e-05
+(NP (DT The) (NP|<NNPS> ))	0.000196769
+(VP (VBD ) (NP (NP (DT ) (NN )) (PP )))	4.55603e-05
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP )) (NP|<,> (, ) (NP|<CC> (CC ) (NP )))))	0.0015913
+(NP|<NN> (NN ) (NNS ))	0.0011471
+(TOP (S (NP ) (S|<,> (, ) (S|<ADVP> (ADVP (RB )) (S|<,> (, ,) (S|<VP> ))))))	3.06891e-05
+(ADJP (JJ ) (SBAR ))	0.00206009
+(VP (VBD ) (ADJP ))	0.000271596
+(S|<VP> (VP (VBD ) (SBAR (IN ) (S (PP (IN ) (NP said)) (S|<,> (, that) (S|<NP> (NP (NP (DT ) (NN )) (PP )) (VP )))))) (. ))	9.85023e-05
+(NP (DT ) (NP|<JJ> (JJ ) (NP|<NN> (NN ) (NN ))))	0.000176482
+(S|<ADVP> (ADVP (RB )) (S|<VP> (VP (MD ) (VP (VB also) (S would))) (. allow)))	0.105193
+(VP|<NP> (NP (NNP ) (NNP )) (NP ))	0.000951773
+(NP (DT ) (NP|<NP> (NP ) (NP|<CC> )))	4.4209e-05
+(NP (NP ) (ADJP (JJ )))	0.00122434
+(PP (IN ) (NP (NP (NNP ) (NNS )) (NP|<,> )))	0.00153493
+(S|<,> (, ) (S|<S> (S ) (S|<,> ,)))	0.000471518
+(NP (NP (NN ) (NN )) (PP ))	0.000176305
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> )))))))	0.00127743
+(NP (QP ) (NP|<JJ> ))	0.000176305
+(S (CC But) (S|<NP> ))	0.000634365
+(SBAR (WHADVP (WRB )) (S ))	0.0180606
+(VP (VBG ) (NP ))	0.000364482
+(S|<VP> (VP (VBZ ) (VP (VBN ) (VP has))) (. been))	0.0328341
+(VP (VP (VBN ) (PP (IN ) (NP ))) (VP|<,> (, ) (VP|<VP> (VP ) (VP|<CC> (CC ) (VP )))))	9.73511e-05
+(S|<VP> (VP (VBD ) (VP|<RB> )) (. was))	0.00820852
+(ADJP (JJ ))	0.00409545
+(NP (NP (JJ ) (NNS )) (NP|<,> (, ) (SBAR (WHNP (WDT )) (S (VP )))))	0.00734606
+(VP|<,> (, ) (VP|<``> (`` ) (S )))	0.0145206
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ) (NP (NN ) (NNS )))) (, ,)))	0.00213871
+(NP (PRP$ ) (NP|<JJ> ))	2.20382e-05
+(S (NP ) (VP (VBZ ) (VP|<NP> (NP ) (PP ))))	0.00063373
+(S|<,> (, ) (S|<CC> (CC ) (S|<S> (S (NP (PRP )) (VP )) (. ))))	0.000709643
+(NP|<PP> (PP ) (NP|<,> (, ) (VP )))	0.0181197
+(TOP (S (NP (DT That)) (S|<VP> (VP (VBZ 's) (SBAR (IN because) (S ))) (. ))))	6.13167e-05
+(NP|<,> (, ) (SBAR (WHNP (WDT )) (S (VP ))))	0.000536287
+(S|<VP> (VP (VBZ ) (NP )) (. ))	0.00246256
+(NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ) (NP ))) (, )))	0.00213871
+(VP|<NP> (NP (PRP$ ) (NNS )) (PP ))	0.00135195
+(PP (IN ) (NP (PRP$ ) (NN )))	0.0128986
+(NP (DT ) (NP|<JJ> (JJ ) (NNS )))	8.82409e-05
+(S|<VP> (VP (VBD ) (PP )) (. ))	0.000197399
+(TOP (S (NP ) (S|<PRN> (PRN (, ) (PRN|<S> ,)) (S|<VP> (VP ) (. )))))	9.13811e-05
+(PP (VBG ) (NP ))	0.000135571
+(NP (CD ) (NN ))	9.79474e-05
+(S|<VP> (VP (VBD ) (VP|<,> (, ) (SBAR (IN ) (S )))) (. ))	0.0492511
+(S (NP (PRP )) (VP (VBD ) (NP )))	0.00126746
+(NP (DT ) (NP|<JJ> (JJ ) (NN )))	0.00027721
+(TOP (S (NP (NNP Mr.) (NNP )) (S|<VP> )))	7.96321e-05
+(VP (VBN ) (PP ))	9.13948e-05
+(NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WP )) (S (VP ))) (, )))	0.00855485
+(NP (NNP ))	8.81527e-05
+(NP (NP ) (NP|<,> (, ) (SBAR (WHNP (WDT )) (S (VP (VBZ ) (VP ))))))	8.82409e-05
+(SBAR (WHADVP (WRB )) (S (VP )))	0.0171028
+(S (NP (NNP ) (NNP )) (VP (VBD ) (NP )))	0.000633096
+(NP|<NP> (NP ) (NP|<CC> ))	0.968992
+(VP (VB ) (ADJP (JJ )))	0.000216954
+(VP (TO ) (VP (VB ) (SBAR )))	4.55603e-05
+(NP (NP ) (PP ))	2.20602e-05
+(SBAR (WHADVP (WRB )) (S ))	0.00112879
+(NP (NN ))	4.40763e-05
+(VP|<PP> (PP ) (SBAR (IN ) (S )))	0.000678114
+(PP (IN ) (NP (NP (DT ) (NN )) (VP (VBN ))))	4.51902e-05
+(VP (VBP ) (VP|<PP> (PP ) (ADVP )))	0.000569504
+(NP (DT ) (NP|<NNP> (NNP ) (NNP )))	0.00146921
+(TOP (S (S ) (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD )) (. ))))))	6.13167e-05
+(TOP (S (NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> (, ,) (NP|<NP> (NP ) (, )))) (S|<VP> (VP (VBD ) (VP (VBN ) (S (NP )))) (. ))))	0.0038323
+(NP (PRP ))	0.000176659
+(VP (MD ) (VP (VB ) (VP )))	0.000364482
+(PP (IN ) (NP (NP between) (NP|<CC> (CC ) (NP ))))	4.5145e-05
+(NP (NP (NNP ) (NP|<NNP> (NNP ) (POS ))) (NN ))	0.000176305
+(NP (DT ) (NP|<NN> (NN ) (NN )))	4.40763e-05
+(NP|<JJ> (JJ ) (NP|<JJ> (JJ ) (NNS )))	0.000848283
+(NP (CD ))	0.000550954
+(VP|<PP> (PP ) (VP|<NP> ))	0.0113019
+(VP (VB ) (VP|<NP> ))	9.11206e-05
+(NP (QP ($ ) (QP|<CD> (CD ) (CD ))))	0.000352611
+(VP (VBN ) (VP|<PP> (PP ) (PP )))	9.11206e-05
+(NP (QP (DT ) (CD )) (NNS ))	0.000352611
+(ADJP (RB ) (JJ ))	0.0163818
+(ADVP (RBR ))	0.00136358
+(VP|<,> (, ) (VP|<PP> (PP ) (VP|<,> (, ) (VP|<PP> ))))	0.0567212
+(NP (DT ) (NN ))	4.40763e-05
+(VP|<PP> (PP ) (SBAR (IN ) (S )))	0.00135623
+(VP (VBD ) (VP|<RB> (RB ) (VP )))	9.12118e-05
+(PP (IN ) (NP (NP ) (NP|<,> (, ) (NP|<SBAR> (SBAR (WHNP (WDT in)) (S )) (, )))))	4.5145e-05
+(VP (VBN ) (VP|<NP> ))	0.000182241
+(PP (IN ) (NP (DT ) (NN )))	0.00018058
+(ADVP (ADVP (RB ) (RB )) (SBAR (IN ) (S )))	0.0278113
+(VP|<,> (, ) (PP (IN ) (NP (NP (JJ ) (NN )) (PP ))))	0.0137506
+(TOP (S (NP (NNP Mr.) (NNP )) (S|<VP> )))	3.06584e-05
+(S (NP (PRP )) (VP (VBD ) (ADJP )))	0.0202591
+(PP (IN ) (NP (DT ) (NP|<NN> )))	4.5145e-05
+(NP|<NNP> (NNP ) (NP|<CC> (CC ) (NP|<NNP> )))	0.000961378
+(PP (TO ) (NP (NP (QP ) (NNS )) (PRN (-LRB- ) (PRN|<NP> (NP (QP ($ ) (QP|<CD> ))) (-RRB- to)))))	0.000117872
+(PP (TO ) (NP (DT ) (NN )))	9.029e-05
+(NP (NP ) (PP (IN ) (NP (NP (NNP ) (POS )) (NN ))))	9.79474e-05
+(NP|<,> (, ) (SBAR (WHNP (WDT )) (S (VP (VBP ) (VP )))))	0.000536287
+(NP (PRP$ ) (NNS ))	8.82409e-05
+(VP (VBD ) (ADVP ))	0.000129433
+(TOP (S (NP ) (S|<VP> (VP ) (. ))))	3.06584e-05
+(TOP (S (SBAR (WHADVP (WRB When)) (S )) (S|<,> )))	0.00204389
+(NP|<,> (, ) (NP|<CC> (CC ) (NP )))	0.000534678
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBZ )) (SINV|<NP> (NP ) (. ))))))))	3.99197e-05
+(VP (TO ) (VP (VB ) (VP|<ADVP> )))	4.56059e-05
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> )))))))	0.00127743
+(VP (TO ) (VP (VB ) (NP (PRP ))))	0.00303735
+(VP (VBD ) (VP (VBG were) (VP|<ADVP> )))	0.00325431
+(NP (DT ) (NN ))	9.41802e-05
+(ADVP (RP ) (PP ))	0.00133494
+(NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP )))	0.000960416
+(ADVP (RB ))	0.044498
+(VP|<,> (, ) (S (VP (VBG ) (NP ))))	0.00363015
+(VP (VBD ) (VP|<NP> (NP (NP ) (PP (IN ) (NP ))) (PP )))	4.55603e-05
+(NP|<NNP> (NNP ) (NP|<NN> ))	0.000240344
+(NP (NP ) (VP (VBN ) (VP|<PP> (PP (IN ) (NP )) (PP ))))	4.40763e-05
+(PP (TO ) (NP (NP ) (NP|<CC> (CC ) (NP ))))	0.0225725
+(S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP ) (. ))))	0.00316691
+(NP|<,> (, ) (NP|<PP> (PP (VBG ) (NP )) (, )))	0.000840689
+(NP (DT ) (NN ))	8.82409e-05
+(TOP (SINV (`` ) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP ) (PP (IN ) (NP ))) (. ))))))))	4.79037e-05
+(NP (DT ) (NNP ))	2.20382e-05
+(VP|<,> (, ) (VP ))	0.00181689
+(NP (NNP ))	0.000352611
+(S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBD )) (. ))))	0.000424367
+(VP|<NP> (NP ) (VP|<PP> (PP (IN ) (NP )) (VP|<,> )))	0.0144208
+(TOP (S (SBAR (IN As) (S (NP ) (VP (VBD ) (PP )))) (S|<,> (, ) (S|<NP> ))))	3.06584e-05
+(SBAR (IN ) (S (NP ) (VP (VBP ) (VP (VBN )))))	0.0403138
+(NP|<CC> (CC ) (NP (NP and) (SBAR )))	0.000882188
+(TOP (S (NP (DT The) (NN )) (S|<VP> (VP (VBD ) (NP (NP ) (PP (IN ) (SBAR )))) (. ))))	0.00204389
+(VP (MD ) (VP (VB ) (VP (VBN ))))	0.0151868
+(NP (DT No) (NN ))	0.0110191
+(TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> (NP (NP ) (PP (IN ) (NP ))) (. ))))))))	4.79037e-05
+(S|<VP> (VP (VBZ ) (NP )) (. has))	0.000395195
+(S|<ADVP> (ADVP (RB )) (VP ))	0.00362917
+(NP|<JJ> (JJ ) (NN ))	0.00581388
+(PP (IN ) (NP (DT ) (NN )))	4.5145e-05
+(TOP (FRAG (NP ) (. )))	0.0153292
+(TOP (S (CC And) (S|<NP> )))	0.000929041
+(S (NP (NNP )) (VP (VBD ) (NP )))	0.00126619
