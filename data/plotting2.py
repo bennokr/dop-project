@@ -101,14 +101,49 @@ def tinyPlots():
     plotTwo(2,"Double-DOP split: 3/4",4,"DOP* split: 3/4", 0)
     plotTwo(3,"DOP* 1vsAll: 7",4,"DOP* split: 3/4", 0)
 
-def WSJPlots():
-    readFragments("wsj/wsj_ddop_split_20000_50_1.txt",1)
+def WSJPlots20050():
+    f1 = "wsj/wsj_ddop_split_20000_50_1.txt"
+    readFragments(f1,1)
     d1 = "Double-DOP split: 50/20000"
-    readFragments("wsj/wsj_dops_split_20000_50_1.txt",2)
+
+    f2 = "wsj/wsj_dops_split_20000_50_1.txt"
+    readFragments(f2,2)
     d2 = "DOP* split: 50/20000"
-    readFragments("wsj/wsj_ddop_1vall_20050_1.txt",3)
+
+    f3 = "wsj/wsj_ddop_1vall_20050_1.txt"
+    readFragments(f3,3)
     d3 = "Double-DOP 1 vs all: 20050"
+
+    f4 = "wsj/wsj_dops_1vall_20050_1.txt"
+    readFragments(f4,4)
+    d4 = "DOP* 1 vs all: 20050"
+
     plotTwo(1,d1,2,d2,1)
     plotTwo(1,d1,3,d3,1)
+    plotTwo(3,d1,4,d3,1)
+    plotTwo(2,d1,4,d3,1)
 
-WSJPlots()
+def WSJPlots1000():
+    f1 = "wsj/wsj_ddop_split_500_500_1.txt"
+    readFragments(f1,1)
+    d1 = "Double-DOP split: 500/500"
+
+    f2 = "wsj/wsj_dops_split_500_500_1.txt"
+    readFragments(f2,2)
+    d2 = "DOP* split: 500/500"
+
+    f3 = "wsj/wsj_ddop_1vall_1000_1.txt"
+    readFragments(f3,3)
+    d3 = "Double-DOP 1 vs all: 1000"
+
+#    f4 = "wsj/wsj_dops_1vall_1000_1.txt"
+#    readFragments(f4,4)
+#    d4 = "DOP* 1 vs all: 20050"
+
+    plotTwo(1,d1,2,d2,1)
+    plotTwo(1,d1,3,d3,1)
+#    plotTwo(3,d1,4,d3,1)
+#    plotTwo(2,d1,4,d3,1)
+
+WSJPlots20050()
+#WSJPlots1000()
