@@ -1,0 +1,39 @@
+\section{Statistics: Bias and Consistency}
+
+
+
+% Distribution, sampling, estimation, corpus.
+In contrast to \emph{competence} models that are the subject of most linguistic study, a \emph{performance} model of language is an estimate of the probability of observing a parse tree. It treats language as a statistical distribution over syntactic structures.
+
+$$\Omega = $$
+
+Using parse tree samples from the language, an estimator builds a statistical model. A parser then uses that statistical model to predict the correct parse tree of sentences.
+A collection of parse tree samples is called a \emph{corpus} or \emph{treebank}.
+
+$$  $$
+
+% Expectation given a distribution, Loss, risk, mean squared difference, error.
+In theory, an estimator should make exactly the right estimations of probabilities if it's given an infinite amount of data. That is to say, it should \emph{converge} to the true distribution. If an estimator converges in the limit, that estimator is \emph{consistent}.
+However, given a finite amount of data, the estimator will probably not generate the correct probabilities. The distance between the true distribution and an estimate is called the \emph{loss} of that estimate. The loss can be defined in different ways, but the most popular is the \emph{mean squared difference}:
+
+$$ \mathcal{L} $$
+
+From a true distribution, it's possible to calculate the expected loss of an estimator trained on a treebank of a certain size. This is the \emph{risk} of that estimator given a sample size and a distribution.
+
+$$ \mathcal{E} $$
+
+%Other estimators:
+
+%\emph{relative frequency}
+
+%EWE, MLE
+
+
+
+%- Why DOP*?
+
+
+
+%- How do we prevent overfitting?
+
+Bias is good.
