@@ -8,22 +8,36 @@
 
 %Je hebt de introductie en terminologie helemaal uit elkaar getrokken. Wat op zich wel helder is, maar niet zo compact.. Aangezien we maar 9 pagina's mogen schrijven kunnen we dat denk ik beter samenvoegen.
 
+\begin{figure}[h!]
+\center \input{figureTreebank}
+\caption{A toy treebank} \label{f:treebank}
+\end{figure}
 
-A common approach to natural language syntax, is to view the structure of sentences as constituent trees. Such trees can be described by a \emph{Context Free Grammars} (CFGs),  such that all trees are built up from  rules that each describe the production (children nodes) of a single node (parent) in the tree. When building an empirical model of observed parse trees, these rules are extended with probabilities to form a \emph{probabilistic CFG} (PCFG). This gives the trees that are `generated' by these rules their own probability, which makes it a statistical model of a distribution over natural language syntax.
+A common approach to natural language syntax, is to view the structure of sentences as constituent trees. An artificial example of a treebank is given in figure \ref{f:treebank}. Constituent trees can be described by a \emph{Context Free Grammars} (CFGs),  such that all trees are built up from  rules that each describe the production (children nodes) of a single node (parent) in the tree. When building an empirical model of observed parse trees, these rules are extended with probabilities to form a \emph{probabilistic~CFG}~(PCFG). This gives the trees that are `generated' by these rules their own probability, which makes it a statistical model of a distribution over natural language syntax.
 
-The simple rules of a CFG cannot describe all linguistic phenomena, such as long distance dependencies. Grammars can be enriched by Markovisation, to include deeper levels in the tree. 
+The simple rules of a CFG cannot describe all linguistic phenomena, such as long distance dependencies. Grammars can be enriched (e.g. by Markovisation), to include deeper levels in the tree. 
 
 
 \subsection{DOP}
-\emph{Data-Oriented Parsing} (DOP), as first introduced in\cite{scha1990}, takes a different approach. It models the language with a Probabilistic Tree Substitution Grammar (PTSG). 
-The trees in the treebank are taken apart, which results in \emph{fragments} of arbitrary depth. A fragment is a connected subgraph of a tree such that it corresponds to context-free productions in that tree, i.e. each node must have either have children with the same labels as in the original tree, or no children at all. Note that a level-one fragment corresponds to a CFG rule. Its \emph{symbolic grammar} refers to the set of fragments (that receive a non-zero weight) in a grammar. 
+\emph{Data-Oriented Parsing} (DOP), as first introduced in \cite{scha1990}, takes a different approach. It models the language with a \emph{Probabilistic Tree Substitution Grammar}~(PTSG). 
+The trees in the treebank are taken apart, which results in \emph{fragments} of arbitrary depth\footnote{Fragments are sometimes referred to as `subtrees' or `elementary trees' in literature}.
+A fragment is a connected subgraph of a tree such that it corresponds to context-free productions in that tree, i.e. each node must have either have children with the same labels as in the original tree, or no children at all. This is illustrated in figure \ref{f:fragments}. Note that a level-one fragment corresponds to a CFG rule. The \emph{symbolic grammar} refers to the set of fragments (that receive a non-zero weight) in a grammar. 
 
-Fragments can be combined in a \emph{derivation} to build syntactic structures. A step in a derivation is a composition, denoted by the symbol $\circ$. We follow the convention to only allow left-most derivations. This means that the left-most non-terminal node in a fragment $f_1$ must correspond to the root node of $f_2$ in order to derive $f_3=f_1\circ f_2$
 
-For each fragment, the probability is estimated by counting how often it occurs in the treebank, compared to others with the same root. The probability of a derivation is the product of the probability of the fragments. Note that a single tree can be the result of different derivations. Therefore probability of a tree is the sum of the probabilities of all its derivations.
+
+\begin{figure}[h!]
+\center \input{figureFragments}
+\caption{All extracted fragments}
+\label{f:fragments}
+\end{figure}
+
+
+Fragments can be combined in a \emph{derivation} to build syntactic structures. A step in a derivation is a composition, denoted by the symbol $\circ$. For instance, tree $t_1$ can be derived as $t_1=f_2\circ f_{10}$. We follow the convention to only allow left-most derivations. This means that the left-most non-terminal node in a fragment $f_1$ must correspond to the root node of $f_2$ in order to derive $f_3=f_1\circ f_2$
+
+For each fragment, a weight is assessed. This can be done by counting how often it occurs in the treebank compared to others with the same root, yielding the \emph{relative frequency estimate}. The probability of a derivation is the product of the probability of the fragments it uses. Note that a single tree can be the result of different derivations. Therefore probability of a tree is the sum of the probabilities of all its derivations.
 
 \subsection{Theoretical issues}
-It has been argued that DOP (in its original formulation) is biased and inconsistent \cite{johnson2002}, both assumed to be bad properties of an estimator in general. As we will see, bias is not necessarily a bad thing. In fact, \cite{zollmann2005} proves that any non-overfitting estimator is biased. Furthermore, he shows that it is possible to define a DOP-estimator that is consistent.
+It has been argued that DOP (in its original formulation) is biased and inconsistent \cite{johnson2002}, which are both assumed to be bad properties of an estimator in general. As we will see, bias is not necessarily a bad thing. In fact, Zollman proves in  \cite{zollmann2005} that any non-overfitting estimator is biased. Furthermore, he shows that it is possible to define a DOP-estimator that is consistent.
 
 
 \subsection{Practical issues}
@@ -33,8 +47,8 @@ Different approaches have been taken to reduce the symbolic grammar, e.g. by sam
 
 \subsection{Outlook}
 Section~\ref{sec:Statistics} elaborates the notions of consistency and bias and their relation to overfitting.
-In section~\ref{sec:Existing}, we outline two approaches that tackle the reduction of the symbolic grammars: \ddop{} and \dops{}. This report focuses on a comparison of these approaches. Theoretically, they differ in that \dops{}, unlike \ddop{}, has been proven to be consistent \cite{zollmann2005}. We investigate the differences between the grammars produced by \ddop{} \dops{}. The algorithms can be decomposed into two parts. We also analyze the impact of the partial choices by mutually using these parts.
+In section~\ref{sec:Existing}, we outline two approaches that tackle the reduction of the symbolic grammars: \ddop{} and \dops{}. This report focuses on a comparison of these approaches. Section~\ref{sec:Comparison} offers a detailed comparison as well as a description of the experiments we conduct. Theoretically, they differ in that \dops{}, unlike \ddop{}, has been proven to be consistent \cite{zollmann2005}. We investigate the differences between the grammars produced by \ddop{} \dops{}. The algorithms can be decomposed into two parts. We also analyze the impact of the partial choices by mutually using these parts.
 
-Section~\ref{sec:Comparison} offers a detailed comparison of the two methods as well as a description of the experiments we conduct. In section~\ref{sec:Results}, we present our findings and provide an analysis. 
+In section~\ref{sec:Results}, we present our findings and provide an analysis. 
 
 
