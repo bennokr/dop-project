@@ -1,40 +1,38 @@
-\section{Statistics: Bias and Consistency}\label{sec:Statistics}
+\section{Statistics: Consistency and Bias}\label{sec:Statistics}
 
 
 
 % Distribution, sampling, estimation, corpus.
 Linguistic studies of syntax mostly concern \emph{competence} models, which describe the which structures appear in a language. In contrast, a \emph{performance} model of language is an estimate of the probability of observing a parse tree in language use. It treats language as a statistical distribution over syntactic structures.
 
-Let $\Omega$ be the set of all possible parse trees. The distribution $P_\Omega$ then describes the language, where $P_\Omega(t)$ is the probability of observing tree $t \in \Omega$. Using a sample of parse trees from the language, an \emph{estimator} $\varphi$ builds a statistical model. A parser then uses that statistical model to predict the correct parse tree of sentences.
-A sample $X \in \Omega^n$ from the language is called a \emph{corpus} or \emph{treebank} of size $n$. If $\mathcal{M}$ is the set of probability distributions over $\Omega$,
-
-\begin{align}
-P_\Omega &\in \mathcal{M} \\
-\varphi(X) &\in \mathcal{M}
-\end{align}
+Let $\Omega$ be the set of all possible parse trees. The distribution $P_\Omega$ then describes the language, where $P_\Omega(t)$ is the probability of observing a tree $t \in \Omega$. Using a sample of parse trees from the language, an \emph{estimator} $\textsc{est}$ builds a statistical model. A parser then uses that statistical model to predict the correct parse tree of sentences.
+A sample $X \in \Omega^n$ from the language is called a \emph{corpus} or \emph{treebank} of size $n$, which makes $\textsc{est}(X)$ an estimator trained on a sample. If $\mathcal{M}$ is the set of probability distributions over $\Omega$, then $P_\Omega \in \mathcal{M}$ and $\textsc{est}(X) \in \mathcal{M}$.
 
 % Expectation given a distribution, Loss, risk, mean squared difference, error.
 In theory, an estimator should make exactly the right estimations of probabilities if it's given an infinite amount of data. That is to say, it should \emph{converge} to the true distribution. If an estimator converges in the limit, that estimator is \emph{consistent}.
-However, given a finite amount of data, the estimator will probably not generate the correct probabilities. The distance between the true distribution and an estimate is called the \emph{loss} of that estimate. The loss can be defined in different ways, but the most popular is the \emph{mean squared difference}:
+However, given a finite amount of data, the estimator will probably not generate the correct distribution. The distance between the true distribution $P^*$ and an estimate $P$ is called the \emph{loss} of that estimate. The loss can be defined in different ways, but the most popular is the \emph{mean squared difference}:
 
-$$ \mathcal{L} $$
+$$ \mathcal{L}(P, P^*) =  \sum_{t \in \Omega} P^*(t) (P^*(t)-P(t))^2$$
 
-From a true distribution, it's possible to calculate the expected loss of an estimator trained on a treebank of a certain size. This is the \emph{risk} of that estimator given a sample size and a distribution.
+From a true distribution, it's possible to calculate the expected loss of an estimator trained on a treebank of a certain size. This is the \emph{risk} or \emph{error} of that estimator given a sample size and a distribution. 
+% When sampling $X$ of size $n$ from $P^*$,
+% $$ error(\textsc{est}, P^*) = \mathbf{E}[\mathcal{L}(\textsc{est}(X), P^*)]$$
+With these definitions, it is possible to define estimator consistency when sampling $X \in \Omega^n$ from $P_\Omega$:
 
-$$ \mathcal{E} $$
+$$\lim_{n \to \infty} \mathbf{E}[\mathcal{L}(\textsc{est}(X), P_\Omega)] = 0 $$
 
-%Other estimators:
+% Estimators: RF, EWE?, MLE?
 
-%\emph{relative frequency}
+In its original formulation, DOP was defined using a \emph{relative frequency estimate}, by counting how often it occurs in the treebank compared to others with the same root. However, it has been shown () that in this case, the RF estimator is inconsistent.
 
-%EWE, MLE
+% Bias
+Another possible property of an estimator is its \emph{bias}, which is defined as the difference between the true probability and the expected estimate. 
+It has been proven that any unbiased DOP estimator will overfit a treebank by assigning zero-probabilites to trees outside the corpus.
+To prevent overfitting, it is therefore necessary to introduce a bias that assigns a non-zero probability to unseen trees.
+By maximizing the probability of a corpus different from the one from which the fragments are extracted, we will see that it is possible to minimize overfitting.
 
+%- How do we prevent overfitting?
 
 
 %- Why DOP*?
 
-
-
-%- How do we prevent overfitting?
-
-Bias is good.
