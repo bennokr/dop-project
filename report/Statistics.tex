@@ -3,14 +3,15 @@
 
 
 % Distribution, sampling, estimation, corpus.
-In contrast to \emph{competence} models that are the subject of most linguistic study, a \emph{performance} model of language is an estimate of the probability of observing a parse tree. It treats language as a statistical distribution over syntactic structures.
+Linguistic studies of syntax mostly concern \emph{competence} models, which describe the which structures appear in a language. In contrast, a \emph{performance} model of language is an estimate of the probability of observing a parse tree in language use. It treats language as a statistical distribution over syntactic structures.
 
-$$\Omega = $$
+Let $\Omega$ be the set of all possible parse trees. The distribution $P_\Omega$ then describes the language, where $P_\Omega(t)$ is the probability of observing tree $t \in \Omega$. Using a sample of parse trees from the language, an \emph{estimator} $\varphi$ builds a statistical model. A parser then uses that statistical model to predict the correct parse tree of sentences.
+A sample $X \in \Omega^n$ from the language is called a \emph{corpus} or \emph{treebank} of size $n$. If $\mathcal{M}$ is the set of probability distributions over $\Omega$,
 
-Using parse tree samples from the language, an estimator builds a statistical model. A parser then uses that statistical model to predict the correct parse tree of sentences.
-A collection of parse tree samples is called a \emph{corpus} or \emph{treebank}.
-
-$$  $$
+\begin{align}
+P_\Omega &\in \mathcal{M} \\
+\varphi(X) &\in \mathcal{M}
+\end{align}
 
 % Expectation given a distribution, Loss, risk, mean squared difference, error.
 In theory, an estimator should make exactly the right estimations of probabilities if it's given an infinite amount of data. That is to say, it should \emph{converge} to the true distribution. If an estimator converges in the limit, that estimator is \emph{consistent}.
