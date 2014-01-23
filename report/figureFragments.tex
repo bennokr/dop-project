@@ -2,32 +2,32 @@
 \begin{tikzpicture}
 [node distance = 0 pt, sibling distance=18pt, level distance=20pt,level 2/.style={sibling distance=9pt},level 3/.style={sibling distance=9pt}]
 
-\draw[black,dashed,join=round, inner frame sep=2cm and 2cm, rounded corners ] (0,2.5) rectangle (8,10);
+\draw[black,dashed,join=round, inner frame sep=2cm and 2cm, rounded corners ] (0,3) rectangle (8,10);
 %\node[fill = white, rectangle, draw] (treebank) at(3.5,10) {Fragments with non-zero weights};
 
 
-\node (f1) at(1,9){f1:}
+\node (f1) at(0.6,9){f1:}
 node [ below =of f1] {S}
 child {node {A} 		}
 child {node {B}		}
 ;
 
 
-\node (f2) at(2.5,9){f2:}
+\node (f2) at(1.7,9){f2:}
 node [ below =of f2] {S}
 child {node {A} 	child {node {a}}
 	}
 child {node {B}	}
 ;
 
-\node (f3)  at(4,9){f3:}
+\node (f3)  at(2.8,9){f3:}
 node [ below =of f3] {S}
 child {node {A} 	}
 child {node {B}	child{node {b}}
 	}
 ;
 
-\node (f4) at(5.5,9) {f4:}
+\node (f4) at(3.9,9) {f4:}
 node [ below =of f4] {S}
 child {node {A} 	child{node {A}	child{node {a}}}
 			child{node {B}	child{node {b}}}
@@ -35,7 +35,7 @@ child {node {A} 	child{node {A}	child{node {a}}}
 child {node {B}		}
 ;
 
-\node (f5) at(7,9) {f5:}
+\node (f5) at(5.0,9) {f5:}
 node [ below =of f5] {S}
 child {node {A} 		}
 child {node {B}	child{node {X}	child{node {x}}}
@@ -43,63 +43,50 @@ child {node {B}	child{node {X}	child{node {x}}}
 	}
 ;
 
-
-\node(f6) at(1,5.5) {f6:}
+\node(f6) at(6.1,9) {f6:}
 node [ below =of f6] {A}	
 	child {node {a}}
 ;
 
-\node(f7) at(2.5,5.5) {f7:}
+\node(f7) at(7.2,9) {f7:}
 node [ below =of f7]  {A} 	
 	child{node {A}	child{node {a}}}
 	child{node {B}	child{node {b}}}
 ;
 
 
-\node(f8) at(4,5.5) {f8:}
-node [ below =of f8] {B}	
+
+
+\node(f8) at(0.6,5.5){f8:}
+node [ below =of f8]  {A} 	
+	child{node {A}	}
+	child{node {B}	}
+;
+
+\node(f9) at(1.7,5.5) {f9:}
+node [ below =of f9] {B}	
 	child {node {b}}
 ;
 
-\node(f9) at(5.5,5.5) {f9:}
-node [ below =of f9]  {B} 	
+\node(f10) at(2.8,5.5) {f10:}
+node [ below =of f10]  {B} 	
 	child{node {X}	child{node {x}}}
 	child{node {Y}	child{node {y}}}
 ;
+
+\node(f11) at(3.9,5.5) {f11:}
+node [ below =of f11]  {B} 	
+	child{node {X}	}
+	child{node {Y}	}
+;
+
+\node(f12) at(5.0,5.5) {f12:}
+node [ below =of f12] {X}	
+	child {node {x}}
+;
+
+\node(f13) at(6.1,5.5) {f13:}
+node [ below =of f13] {Y}	
+	child {node {y}}
+;
 \end{tikzpicture}
-
-
-
-%\begin{tikzpicture}
-%[node distance = 0 pt, sibling distance=18pt, level distance=20pt,level 2/.style={sibling distance=9pt},level 3/.style={sibling distance=9pt}]
-%
-%\draw[black,dashed,join=round, inner frame sep=2cm and 2cm, rounded corners ] (0,0) rectangle (7,10);
-%\node[fill = white, rectangle, draw] (treebank) at(2,10) {Maximum overlap};
-%
-%\node (st1-2) at(1,9){t1 and t2:}
-%node [ below =of st1-2] {S}
-%child {node {A} 	child {node {a}}
-%	}
-%child {node {B}	
-%	}
-%;
-%
-%\node (st1-3) at(4,9) {t1 and t3:}
-%node [ below left  = 0pt and -10pt of st1-3] {S}
-%child {node {A}}
-%child {node {B}}
-%node [below right =0pt and -10 pt of st1-3] {A}	
-%	child {node {a}}
-%;
-%
-%\node(st1-4) at (1,6.5) {t1 and t4:}
-%node [ below = of st1-4] {S}
-%child {node {A}}
-%child {node {B}	child{node {X}	child{node {x}}}
-%			child{node {Y}	child{node {y}}}
-%	}
-%node [below right =0pt and -5 pt of st1-4] {A}	
-%	child {node {a}}
-%
-%;
-%\end{tikzpicture}

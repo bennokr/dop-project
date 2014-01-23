@@ -23,40 +23,17 @@ Furthermore, we can compare the grammars by having them parse a testset and dete
 
 \paragraph{Example}
 \FloatBarrier
-This example clarifies how the grammars that result from \ddop{} and \dops{} can actually differ. Figure \ref{f:treebank} shows a small artificial treebank with four trees. In figure \ref{f:fragments} all fragments are displayed that are in the symbolic grammar after applying the maximal overlap or shortest derivation extraction to this corpus. In table \ref{t:weights} it can be seen where these fragments originate from. Moreover, the table gives the weights assigned by both methods. Note that in the maximal overlap case, all PCFG rules in the treebank are added as well. The weight estimates are the relative frequencies of the fragments in the treebank: $p(f)=\frac{count(f)}{\sum_{f'\in F_{root}(f)} count(f')}$\cite{sangati2011}. As for the shortest derivation extraction, the weights are determined as the relative frequency of occurring in shortest derivations: $p(f)=\frac{r_c}{\sum_{k\in \{1\ldots N\}:root(f_k)=root(f_j)} r_k}$\cite{zollmann2005}.
+This example clarifies how the grammars that result from \ddop{} and \dops{} can actually differ. Recall our toy treebank from figure \ref{f:treebank} and the fragments in figure \ref{f:fragments}. 
+Applying the maximal overlap extraction and shortest derivation extraction in a 1 vs the rest manner to this treebank, yields the weights in table \ref{t:weights}.
+ Note that in the maximal overlap case, all PCFG rules in the treebank are added as well. The weight estimates are the relative frequencies of the fragments in the treebank: $p(f)=\frac{count(f)}{\sum_{f'\in F_{root}(f)} count(f')}$\cite{sangati2011}. As for the shortest derivation extraction, the weights are determined as the relative frequency of occurring in shortest derivations: $p(f)=\frac{r_c}{\sum_{k\in \{1\ldots N\}:root(f_k)=root(f_j)} r_k}$\cite{zollmann2005}.
 
 Note the remarkable differences in the weight distributions. For example, f1 gets a weight of 0.5 in the maximal overlap approach, and zero in the shortest derivation case. Of course, the sparsity of the data contributes much to these extreme variations. However, the observed differences encourage us to investigate these two approaches into more depth.
 
 
-\begin{figure}[h!]
-\center \input{figureTreebank}
-\caption{A toy treebank} \label{f:treebank}
-\end{figure}
-
-\begin{figure}[h!]
-\center \input{figureFragmentsBreed}
-\caption{All extracted fragments}
-\label{f:fragments}
-\end{figure}
 
 \begin{table}[h!]
 \center
-\begin{tabular}{c|p{.26\textwidth}c|p{.21\textwidth}c|}
-&Maximal overlap&Weight&Shortest derivation\footnotemark&Weight\\\hline
-f1&(t1,t3),(t2,t4)&4/12&-&0\\
-f2&(t1,t2)&2/12&1b, 2a&1/4\\
-f3&(t2,t3)&2/12&2b, 3b&1/4\\
-f4&(t3,t4)&2/12&3a, 4b&1/4\\
-f5&(t1,t4)&2/12&1a, 4a&1/4\\
-f6&(t1,t3),(t1,t4),(t2,t3),(t2,t4)&4/6&1a, 2b&1/2\\
-f7&-&0&3b, 4a&1/2\\
-f8&- PCFG rule&2/6&-&0\\
-f9&(t2,t3),(t2,t4),(t3,t4)&4/6&2a, 3a&1/2\\
-f10&-&0&1b, 4b&1/2\\
-f11&-  PCFG rule&2/6&-&0\\
-f12&- PCFG rule&2/2&-&0\\
-f13&- PCFG rule&2/2&-&0\\
-\end{tabular}
+\input{tableWeights}
 \caption{The weights assignment according to both methods in a one vs. the rest manner}
 \label{t:weights}
 \end{table}
