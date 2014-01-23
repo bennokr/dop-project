@@ -19,7 +19,7 @@ The simple rules of a CFG cannot describe all linguistic phenomena, such as long
 
 
 \subsection{DOP}
-\emph{Data-Oriented Parsing} (DOP), as first introduced in\cite{scha1990}, takes a different approach. It models the language with a Probabilistic Tree Substitution Grammar (PTSG). 
+\emph{Data-Oriented Parsing} (DOP), as first introduced in \cite{scha1990}, takes a different approach. It models the language with a Probabilistic Tree Substitution Grammar (PTSG). 
 The trees in the treebank are taken apart, which results in \emph{fragments} of arbitrary depth. 
 A fragment is a connected subgraph of a tree such that it corresponds to context-free productions in that tree, i.e. each node must have either have children with the same labels as in the original tree, or no children at all. This is illustrated in figure \ref{f:fragments}. Note that a level-one fragment corresponds to a CFG rule. Its \emph{symbolic grammar} refers to the set of fragments (that receive a non-zero weight) in a grammar. 
 
@@ -37,7 +37,7 @@ Fragments can be combined in a \emph{derivation} to build syntactic structures. 
 For each fragment, the probability is estimated by counting how often it occurs in the treebank, compared to others with the same root. The probability of a derivation is the product of the probability of the fragments. Note that a single tree can be the result of different derivations. Therefore probability of a tree is the sum of the probabilities of all its derivations.
 
 \subsection{Theoretical issues}
-It has been argued that DOP (in its original formulation) is biased and inconsistent \cite{johnson2002}, both assumed to be bad properties of an estimator in general. As we will see, bias is not necessarily a bad thing. In fact, \cite{zollmann2005} proves that any non-overfitting estimator is biased. Furthermore, he shows that it is possible to define a DOP-estimator that is consistent.
+It has been argued that DOP (in its original formulation) is biased and inconsistent \cite{johnson2002}, both assumed to be bad properties of an estimator in general. As we will see, bias is not necessarily a bad thing. In fact, Zollman proves in  \cite{zollmann2005} that any non-overfitting estimator is biased. Furthermore, he shows that it is possible to define a DOP-estimator that is consistent.
 
 
 \subsection{Practical issues}
