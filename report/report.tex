@@ -1,6 +1,9 @@
-\documentclass{article}
+\documentclass[11pt]{article}
+\usepackage{acl2014}
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
 
-\usepackage[a4paper]{geometry}
 
 %pseudocode:
 \usepackage{algorithm}
@@ -17,9 +20,9 @@
 
 \title{Doubling \dops \\ 
 {\normalsize Data Oriented Parsing based on \ddop~and \dops}}
-\author{Benno Kruit (10576223)\\
-Sara Veldhoen (10545298)}
-
+\author{Benno Kruit\\10576223\\\And
+Sara Veldhoen\\10545298\\}
+\date{}
 
 
 \begin{document}
@@ -27,8 +30,10 @@ Sara Veldhoen (10545298)}
 \newcommand{\dops}[0]{DOP$ ^*$}
 \newcommand{\ddop}[0]{Double-DOP}
 
-
 \maketitle
+
+\input{abstract}
+
 \input{Introduction}
 \input{Statistics}
 \input{ExistingFrameworks}
@@ -37,7 +42,12 @@ Sara Veldhoen (10545298)}
 \input{Results}
 \input{Conclusion}
 
-\bibliographystyle{ieeetr}
+
+
+%\bibliographystyle{ieeetr}
+%\bibliography{bibliography}
+
+\bibliographystyle{acl}
 \bibliography{bibliography}
 
 \end{document}
