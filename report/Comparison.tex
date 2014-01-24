@@ -6,18 +6,29 @@
 %Note that the \dops{} extraction needs another decision: in many cases, there are several shortest derivations possible. From now on, we add all fragments that occur in one of these shortest derivations to the symbolic grammar. Of course we need to adjust the weights (e.g. divide the frequency counts by the number of shortest derivations) so that no full tree gets a higher impact on the PTSG. We will keep to the original formulation of \dops{} in case no derivation is possible, i.e. not including any fragments for this tree.
 
 \paragraph{Extraction}
-\ddop{} uses tree kernels to find the maximal overlapping fragments of pairs of trees, which are added to the symbolic grammar. We will call this the \emph{maximal-overlap} method. \dops{} iteratively finds the shortest derivation of one tree given all the fragments of a set of trees, hereafter the \emph{shortest-derivation} method. 
+\ddop{} uses a tree kernel approach to find the maximal overlapping fragments of pairs of trees, which are added to the symbolic grammar. We will call this the \emph{maximal-overlap} method. \dops{} iteratively finds the shortest derivation of one tree given all the fragments of a set of trees, hereafter the \emph{shortest-derivation} method. 
 
-It is easy to see that the\emph{shortest-derivation} extraction in itself does not depend on the corpus split: we can also try to find the shortest possible derivation using fragments from all the other trees. Likewise \ddop{} could be implemented using a split, comparing only those pairs that consist of a tree from each part of the corpus. 
+It is easy to see that the \emph{shortest-derivation} extraction in itself does not depend on the corpus split: we can also find the shortest possible derivation using fragments from all the other trees. Likewise \ddop{} could be implemented using a split, comparing all trees in the $HC$ to all trees in the $EC$.
+We will refer to these methods as \emph{one vs. rest} and \emph{split} estimation.
+
 %Whether the corpus is split in two does only influence the size of the symbolic grammar and
 
 %Therefore, w
 %We will implement both extraction methods in a 1 vs the rest manner. In this way, we can analyse how the resulting symbolic grammars differ. The analysis will comprise the size of the resulting symbolic grammar and the relative number of fragments of certain depth. Furthermore, we might be able to find interesting patterns by manually looking at the fragments that were extracted by one of the systems only.
 
 \paragraph{Estimation}
-\ddop{} determines the weights of the fragments in the symbolic grammar in a separate run over the treebank, to obtain exact counts. We use the relative frequency estimate to assign weights to the fragments. \dops{} on the other hand counts the occurrence in shortest derivations of the fragments, and normalizes relative to counts of fragments with the same rout.
 
-%The estimation of \ddop{} thus uses the whole treebank, whereas \dops{} uses the split. We compare these approaches by using either a split or the whole set of trees for both estimators. We will plot the fragments according to the weights assigned by the estimators, such that the differences can stand out.
+Both approaches use the relative frequencies of the fragments for the weights:
+\begin{align}p(f)=\frac{count(f)}{\sum_{f'\in F_{root}(f)} count(f')}\end{align} 
+However, in the \ddop{} case these values refer to exact counts of the fragments in the treebank, whereas in \dops{} they refer to occurrence of fragments in shortest derivations.
+
+
+\ddop{} determines the weights of the fragments in the symbolic grammar in a separate run over the treebank, to obtain exact counts. We use the relative frequency estimate to assign weights to the fragments. \dops{} on the other hand counts the occurrence in shortest derivations of the fragments, and normalizes relative to counts of fragments with the same root.
+
+To maximize coverage of the grammar, both \ddop{} and \dops{} apply some smoothing that slightly alters the weights
+ \ddop{} adds the CFG rules to the grammar. Furthermore, infrequent words are replaced by a lexical description.
+
+%HIER
 
 
 
@@ -25,9 +36,6 @@ It is easy to see that the\emph{shortest-derivation} extraction in itself does n
 \FloatBarrier
 This example clarifies how the grammars that result from \ddop{} and \dops{} can actually differ. Recall our toy treebank from figure \ref{f:treebank} and the fragments in figure \ref{f:fragments}. 
 Applying the maximal overlap extraction and shortest derivation extraction in a 1 vs the rest manner to this treebank, yields the weights in table \ref{t:weights}.
- Note that in the maximal overlap case, all context-free productions are added as well. The weight estimates are the relative frequencies of the fragments in the treebank\cite{sangati2011}: 
-\begin{align}p(f)=\frac{count(f)}{\sum_{f'\in F_{root}(f)} count(f')}\end{align} As for the shortest derivation extraction, the weights are determined as the relative frequency of occurring in shortest derivations\cite{zollmann2005}: 
-\begin{align}p(f)=\frac{r_c}{\sum_{k\in \{1\ldots N\}:root(f_k)=root(f_j)} r_k}\end{align}
 
 Note the remarkable differences in the weight distributions. For example, $f_1$ gets a weight of 0.5 in the maximal overlap approach, and zero in the shortest derivation case. Of course, the sparsity of the data contributes much to these extreme variations. However, the observed differences encourage us to investigate these two approaches into more depth.
 
@@ -39,7 +47,7 @@ Note the remarkable differences in the weight distributions. For example, $f_1$ 
 \caption{The weights assignment according to both methods in a one vs. the rest manner}
 \label{t:weights}
 \end{table}
-\footnotetext{For this dataset, two shortest derivations exist for each tree. We refer to them with the following variables: 1a = f5, f6; 1b = f2, f9; 2a = f2, f8; 2b = f3, f6; 3a = f4, f8; 3b = f3, f7; 4a = f5, f7; 4b = f4, f9}
+\footnotetext{For this dataset, two shortest derivations exist for each tree. We refer to them with the following variables: 1a = f5, f6; 1b = f2, f10; 2a = f2, f8; 2b = f3, f6; 3a = f4, f8; 3b = f3, f7; 4a = f5, f7; 4b = f4, f9}
 
 
 
@@ -49,12 +57,15 @@ Note the remarkable differences in the weight distributions. For example, $f_1$ 
 %Description of our implementation, how does it resemble Double-DOP and DOP*? What are the differences? What are the theoretical capabilities? 
 
 
+
+
+
 We compare the maximal overlap and shortest derivation extraction by using either a split or the whole set of trees for both estimators. We will plot the fragments according to the weights assigned by the estimators, such that the differences can stand out. In the same way, we compare the split and one vs. the rest estimation or the same estimator.
 
 Furthermore, we can compare the grammars by having them parse a test set and determine their performance, e.g. the F1-score for correctly predicted parses.
 
 \paragraph{Data}
-We use the \emph{Wall Street Journal}~(WSJ) treebank for our experiments. \dops{} has only been applied to the Dutch OVIS corpus in \cite{zollmann2005}, which contains relatively small and (therefore) easy sentences. Therefore we are curious about its performance on the WSJ.
+We use the \emph{Wall Street Journal}~(WSJ) section of the Penn Treebank for our experiments. \dops{} has only been applied to the Dutch OVIS corpus in \cite{zollmann2005}, which contains relatively small and (therefore) easy sentences. Therefore we are curious about its performance on the WSJ.
 
 %
 %

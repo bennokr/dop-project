@@ -15,29 +15,29 @@
 
 A common approach to natural language syntax, is to view the structure of sentences as constituent trees. An artificial example of a treebank is given in figure \ref{f:treebank}. Constituent trees can be described by a \emph{Context Free Grammars} (CFGs),  such that all trees are built up from  rules that each describe the production (children nodes) of a single node (parent) in the tree. When building an empirical model of observed parse trees, these rules are extended with probabilities to form a \emph{probabilistic~CFG}~(PCFG). This gives the trees that are `generated' by these rules their own probability, which makes it a statistical model of a distribution over natural language syntax.
 
-The simple rules of a CFG cannot describe all linguistic phenomena, such as long distance dependencies. Grammars can be enriched (e.g. by Markovisation), to include deeper levels in the tree. 
+A CFG models each production as an independent event, but natural language probably has more complex interdependencies. To this end, grammars can be enriched (e.g. by Markovisation, that include information about grandparent or sibling nodes.
 
 
 \subsection{DOP}
 \emph{Data-Oriented Parsing} (DOP), as first introduced in \cite{scha1990}, takes a different approach. It models the language with a \emph{Probabilistic Tree Substitution Grammar}~(PTSG). 
-The trees in the treebank are taken apart, which results in \emph{fragments} of arbitrary depth\footnote{Fragments are sometimes referred to as `subtrees' or `elementary trees' in literature}.
-A fragment is a connected subgraph of a tree such that it corresponds to context-free productions in that tree, i.e. each node must have either have children with the same labels as in the original tree, or no children at all. This is illustrated in figure \ref{f:fragments}. Note that a level-one fragment corresponds to a CFG rule. The \emph{symbolic grammar} refers to the set of fragments (that receive a non-zero weight) in a grammar. 
+The trees in the treebank are taken apart, which results in \emph{fragments} of arbitrary depth\footnote{Fragments are sometimes referred to as `subtrees' in literature}.
+A fragment is a connected subgraph of a tree such that it corresponds to context-free productions in that tree, i.e. each node must have either have children with the same labels as in the original tree, or no children at all. This is illustrated in figure \ref{f:fragments}. Note that not all fragments from the treebank in figure \ref{f:treebank} are displayed. We see that each level-one fragment corresponds to a CFG rule. The \emph{symbolic grammar} refers to the set of fragments (that receive a non-zero weight) in a grammar. 
 
 
 
 \begin{figure}[h!]
 \center \input{figureFragments}
-\caption{All extracted fragments}
+\caption{Extracted fragments}
 \label{f:fragments}
 \end{figure}
 
 
 Fragments can be combined in a \emph{derivation} to build syntactic structures. A step in a derivation is a composition, denoted by the symbol $\circ$. For instance, tree $t_1$ can be derived as $t_1=f_2\circ f_{10}$. We follow the convention to only allow left-most derivations. This means that the left-most non-terminal node in a fragment $f_1$ must correspond to the root node of $f_2$ in order to derive $f_3=f_1\circ f_2$
 
-For each fragment, a weight is assessed. This can be done by counting how often it occurs in the treebank compared to others with the same root, yielding the \emph{relative frequency estimate}. The probability of a derivation is the product of the probability of the fragments it uses. Note that a single tree can be the result of different derivations. Therefore probability of a tree is the sum of the probabilities of all its derivations.
+A weight must be assigned to each fragment. This can be done by counting how often it occurs in the treebank compared to others with the same root, yielding the \emph{relative frequency estimate}. The probability of a derivation is the product of the probability of the fragments it uses. Note that a single tree can be the result of different derivations. Therefore probability of a tree is the sum of the probabilities of all its derivations.
 
 \subsection{Theoretical issues}
-It has been argued that DOP (in its original formulation) is biased and inconsistent \cite{johnson2002}, which are both assumed to be bad properties of an estimator in general. As we will see, bias is not necessarily a bad thing. In fact, Zollman proves in  \cite{zollmann2005} that any non-overfitting estimator is biased. Furthermore, he shows that it is possible to define a DOP-estimator that is consistent.
+It has been shown that DOP (in its original formulation) is biased and inconsistent \cite{johnson2002}, which are both assumed to be bad properties of an estimator in general. As we will see, bias is not necessarily a bad thing. In fact, Zollman proves in  \cite{zollmann2005} that any non-overfitting estimator is biased. Furthermore, he shows that it is possible to define a DOP-estimator that is consistent.
 
 
 \subsection{Practical issues}
