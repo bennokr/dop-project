@@ -1,34 +1,35 @@
 #!/bin/bash
 
 FILE=$1
-NUM=$2
+OUT=$2
+NUM=$3
 HALF=$(( $NUM / 2 ))
-SPLITS=$3
+SPLITS=$4
 
 # preprocess
-discodop treetransforms binarize $FILE $FILE.$NUM.bin --inputfmt=bracket --outputfmt=bracket --ensureroot=TOP --functions=remove -h 1 -v 1 --slice=0:$NUM
+discodop treetransforms binarize $FILE $OUT.$NUM.bin --inputfmt=bracket --outputfmt=bracket --ensureroot=TOP --functions=remove -h 1 -v 1 --slice=0:$NUM
 
 # Split in $SPLITS random ways
 for i in `seq 1 $SPLITS`;
 do
 	# Random sort and split
-	cat $FILE.$NUM.bin | gsort -R | split -l $HALF - $FILE.split$HALF.$i.
+	cat $OUT.$NUM.bin | gsort -R | split -l $HALF - $OUT.split$HALF.$i.
 
 	# aa = HC, ab = EC
 
 	# double-dop
-	discodop fragments $FILE.split$HALF.$i.aa $FILE.split$HALF.$i.ab --cover --relfreq > $FILE.split$HALF.$i.mo.txt
+	discodop fragments $OUT.split$HALF.$i.aa $OUT.split$HALF.$i.ab --cover --relfreq > $OUT.split$HALF.$i.mo.txt
 
 	# dop-star
-	discodop grammar dopreduction $FILE.split$HALF.$i.ab $FILE.split$HALF.$i.EC --inputfmt=bracket --gzip --dopestimator=shortest
+	discodop grammar dopreduction $OUT.split$HALF.$i.ab $OUT.split$HALF.$i.EC --inputfmt=bracket --gzip --dopestimator=shortest
 
-	python dopstar.py $FILE.split$HALF.$i.EC.rules.gz $FILE.split$HALF.$i.EC.lex.gz $FILE.split$HALF.$i.aa --relfreq -s TOP >$FILE.split$HALF.$i.sd.txt
+	python dopstar.py $OUT.split$HALF.$i.EC.rules.gz $OUT.split$HALF.$i.EC.lex.gz $OUT.split$HALF.$i.aa --relfreq -s TOP >$OUT.split$HALF.$i.sd.txt
 
 done
 
 # double-dop (all)
-discodop fragments $FILE.$NUM.bin --cover --relfreq > $FILE.$NUM.mo.txt
+discodop fragments $OUT.$NUM.bin --cover --relfreq > $OUT.$NUM.mo.txt
 
 # dop-star all -- INCORRECT
-discodop grammar doubledop $FILE.$NUM.bin $FILE.$NUM.ddop --inputfmt=bracket --gzip --dopestimator=shortest
-python dopstar.py $FILE.$NUM.ddop.rules.gz $FILE.$NUM.ddop.lex.gz $FILE.$NUM.bin --relfreq -s TOP >$FILE.$NUM.sd.txt
+# discodop grammar doubledop $OUT.$NUM.bin $OUT.$NUM.ddop --inputfmt=bracket --gzip --dopestimator=shortest
+# python dopstar.py $OUT.$NUM.ddop.rules.gz $OUT.$NUM.ddop.lex.gz $OUT.$NUM.bin --relfreq -s TOP >$OUT.$NUM.sd.txt
