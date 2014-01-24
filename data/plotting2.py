@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 fragments = dict()
+plotn = 8
 
 class Fragment:
     def __init__(self, flat):
@@ -19,7 +20,7 @@ class Fragment:
                depth = depth -1
             if depth>maxDepth:
                maxDepth = depth
-        self.depth = maxDepth
+        self.depth = maxDepth-1
         #Root of the fragment:
         self.root = flat.split()[0][1:]   #split at whitespace, take the first part, omit the first character '('
 
@@ -35,7 +36,7 @@ class Fragment:
         self.splits[N] += 1
 
 
-def plotTwo(N, NDescription, M, MDescription, log):
+def plotTwo(N, NDescription, M, MDescription, log, fromDepth):
     # Getting the data to plot:
     number = len(fragments)
     X = [0]*number
@@ -43,10 +44,17 @@ def plotTwo(N, NDescription, M, MDescription, log):
     color = [0]*number
     i = 0
     for flat,frag in fragments.iteritems():
-        X[i] = frag.weights[N]
-        Y[i] = frag.weights[M]
-        color[i] = frag.depth
-        i = i+1
+        if frag.depth >= fromDepth:
+            X[i] = frag.weights[N]
+            Y[i] = frag.weights[M]
+            color[i] = frag.depth
+            i +=1
+    X = X[:i]
+    Y = Y[:i]
+    color = color[:i]
+
+    #Ik wil de kleurtjes beïnvloeden op de eenofandere manier.. maar weet nog niet hoe
+#    color = plt.Normalize(color)
 
     fig = plt.figure()
 
@@ -62,8 +70,11 @@ def plotTwo(N, NDescription, M, MDescription, log):
 
     plt.scatter(X,Y,c=color,edgecolors='None')
     plt.xlabel(NDescription)
-    plt.ylabel(NDescription)
-    plt.show()
+    plt.ylabel(MDescription)
+    global plotn
+    plt.savefig('plots/plot'+str(plotn), dpi=300)
+    plotn+=1
+    #plt.show()
 
 def readFragments(fragsFile, N):
     #fragments: a dictionary of Strings (flat fragments) to Fragment objects
@@ -136,14 +147,20 @@ def WSJPlots1000():
     readFragments(f3,3)
     d3 = "Double-DOP 1 vs all: 1000"
 
-#    f4 = "wsj/wsj_dops_1vall_1000_1.txt"
-#    readFragments(f4,4)
-#    d4 = "DOP* 1 vs all: 20050"
+    f4 = "wsj/wsj_dops_1vall_1000_1.txt"
+    readFragments(f4,4)
+    d4 = "DOP* 1 vs all: 20050"
 
-    plotTwo(1,d1,2,d2,1)
-    plotTwo(1,d1,3,d3,1)
-#    plotTwo(3,d1,4,d3,1)
-#    plotTwo(2,d1,4,d3,1)
+    plotTwo(1,d1,2,d2,1,1)
+    plotTwo(1,d1,3,d3,1,1)
+    plotTwo(3,d3,4,d4,1,1)
+    plotTwo(2,d2,4,d4,1,1)
 
-WSJPlots20050()
-#WSJPlots1000()
+    plotTwo(1,d1,2,d2,1,2)
+    plotTwo(1,d1,3,d3,1,2)
+    plotTwo(3,d3,4,d4,1,2)
+    plotTwo(2,d2,4,d4,1,2)
+
+
+#WSJPlots20050()
+WSJPlots1000()
