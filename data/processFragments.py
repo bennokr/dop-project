@@ -3,8 +3,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 fragments = dict()
-plotn = 8
-#runs = 10
 
 class Fragment:
     def __init__(self, flat):
@@ -72,15 +70,17 @@ def readFragments(fragsFile, N):#, todo):
 def interpolateRuns(toInterpolate,out):
     for flat, fragment in fragments.iteritems():
         interpolated = 0
+    #    print 'weight', fragment.weights
         for n in toInterpolate:
-            interpolated += fragment.weights[n] / len(toInterpolate)
+            interpolated += fragment.weights[n] / float(len(toInterpolate))
+    #    print 'interpolated', interpolated
         fragment.addRun(out,interpolated)
 
 def smoothUnkn(original,PCFG,out,pUnkn):
     for flat, fragment in fragments.iteritems():
         discounted = (1-pUnkn)* fragment.weights[original]
         smoother = (pUnkn) * fragment.weights[PCFG]
-        # discount all original weights and amooth all CFG fragments
+        # discount all original weights and smooth all PCFG fragments
         # If an original fragment is ALSO a CFG fragment, take the weighted average
         fragment.addRun(out,discounted + smoother)
 
@@ -92,7 +92,7 @@ def loadDopsSplit():
     globalRuns = folds +3
     HCUnparsed = 50
     corpusSize = 1000
-    pUnkn = HCUnparsed/corpusSize
+    pUnkn = float(HCUnparsed)/float(corpusSize)
 
     first = "wsj/wsj_dops_split_500_500_"
     last = ".txt"
@@ -111,6 +111,7 @@ def loadDopsSplit():
 
     #smoothen interpolated (folds) with PCFG (folds+1), weighted pUnkn, write to position folds+2:
     smoothUnkn(folds, folds+1, folds+2, pUnkn)
+
 
     #write the python data structure to file:
     filename = first+'processed'+'.py'
