@@ -1,6 +1,4 @@
-import matplotlib.pyplot as plt
-#from pylab import *
-import numpy as np
+import pickle
 
 fragments = dict()
 
@@ -30,17 +28,7 @@ class Fragment:
         self.weights[N] = weight
         self.splits[N] += 1
 
-    def updateRun(self, N, weight):
-    # Interpolate the existing results for run N with the new weight
-        current = self.splits[N]
-        self.weights[N] = (current/(current+1)) * self.weights[N]    + (1/(current+1))*weight
-        self.splits[N] += 1
-
-
-def readFragments(fragsFile, N):#, todo):
-    #fragments: a dictionary of Strings (flat fragments) to Fragment objects
-    #fragsFile: a path to a file with fragments and corresponding weights
-    #description: a String that describes the run
+def readFragments(fragsFile, N):
     global fragments
     f = open(fragsFile, 'r')
     nFrags = 0
@@ -50,22 +38,16 @@ def readFragments(fragsFile, N):#, todo):
         flatFragment = flatFragment.translate(None, '@')
 
         if "/" in weight:
-            [numerator,denominator] = weight.split("/")# temporary: DDOP
-            weight = float(numerator)/float(denominator) # temporary: DDOP
+            [numerator,denominator] = weight.split("/")
+            weight = float(numerator)/float(denominator)
         else:
             weight = float(weight)
 
-
         if flatFragment not in fragments:
             fragments[flatFragment] = Fragment(flatFragment)  #create a new Fragment object
-
-   #     if todo = 'new'
         fragments[flatFragment].addRun(N, weight)
-   #     if todo = 'interpolate'
-   #        fragments[flatFragment].updateRun(N, weight)
     f.close()
     print 'reading from:', fragsFile,'number of fragments:', nFrags
-#    return nFrags
 
 def interpolateRuns(toInterpolate,out):
     for flat, fragment in fragments.iteritems():
@@ -84,51 +66,66 @@ def smoothUnkn(original,PCFG,out,pUnkn):
         # If an original fragment is ALSO a CFG fragment, take the weighted average
         fragment.addRun(out,discounted + smoother)
 
-
-def loadDopsSplit():
-    folds = 1
-#    folds = 10
-    global globalRuns
-    globalRuns = folds +3
-    HCUnparsed = 50
-    corpusSize = 1000
-    pUnkn = float(HCUnparsed)/float(corpusSize)
-
-    first = "wsj/wsj_dops_split_500_500_"
-    last = ".txt"
-
-    #read in all folds, write to position 0...folds-1:
+def readFolds(prefix, start,folds):
+    #read in all folds, write to position start...start+folds-1:
     for n in range(folds):
-        f = first+str(n)+last
-        readFragments(f,n)
+        f = prefix+str(n)+'.txt'
+        readFragments(f,start+n)
+    #interpolate the folds, write to position start+folds
+    interpolateRuns(range(start,start+folds), start+folds)
 
-    #interpolate the runs, write to position folds:
-    interpolateRuns(range(folds),folds)
 
-    #read in the PCFG grammar to position folds+1:
+def grammarToFile(N, fileName):
+    #write the resulting grammar to file:
+    f = open(fileName,'w')
+    for flat, fragment in fragments.iteritems():
+        if fragment.weights[N] >= 0:
+           f.write(fragment.flat+'\t'+str(fragment.weights[N])+'\n')
+    f.close()
+    print "Grammar written to file:", fileName
+
+
+def main():
+    nFolds = 1
+    global globalRuns
+    globalRuns = 1 + nFolds+2 + nFolds+1 + 1
+
+
+    #read in the PCFG grammar to position 0:
     f = "wsj/wsj_pseudoPCFG_1000.txt"
-    readFragments(f,folds+1)
+    PCFG = 0
+    readFragments(f,PCFG)
 
-    #smoothen interpolated (folds) with PCFG (folds+1), weighted pUnkn, write to position folds+2:
-    smoothUnkn(folds, folds+1, folds+2, pUnkn)
+    start = 1
+    DOPS = start + nFolds + 1
+    #read in the DOP* folds, interpolated grammar at position (start+nFolds):
+    readFolds('wsj/wsj_dops_split_500_500_', start,nFolds)
+    pUnkn = 0.005#float(unparsed)/float(corpusSize)
+    smoothUnkn(start+nFolds,PCFG,DOPS,pUnkn)
+    grammarToFile(DOPS, 'wsj/wsj_dops_split_500_500_processed')
+    print 'processed DOP*'
 
+    start = DOPS+1
+    DDOPS = start+nFolds
+    #read in the DDOP (split) folds, interpolated grammar at position (start+nFolds):
+    readFolds('wsj/wsj_ddop_split_500_500_', start,nFolds)
+    grammarToFile(DDOPS, 'wsj/wsj_ddop_split_500_500_processed')
+    print 'processed DDOP (split)'
+
+    DDOP1 = DDOPS +1
+    #read in the DDOP grammar
+    readFragments('wsj/wsj_ddop_1vall_1000_1.txt',start)
+    print 'processed DDOP'
 
     #write the python data structure to file:
-    filename = first+'processed'+'.py'
+    filename ='WSJgrammars_processed'+'.py'
     f = open(filename,'w')
-    f.write("fragments = " + str(fragments))
+    f.write("fragments = " + str(fragments)+'\n')
+    f.write("DOPS = "+str(DOPS)+'\n')
+    f.write("DDOPS = "+str(DDOPS)+'\n')
+    f.write("DDOP1 = "+str(DDOP1)+'\n')
     f.close()
 
-    #write the resulting grammar to file:
-    filename = first+'processed'+last
-    f = open(filename,'w')
-    for flat, fragment in fragments.iteritems():
-        f.write(fragment.flat+'\t'+str(fragment.weights[folds+2])+'\n')
-    f.close()
 
-    print 'Dop* split grammar processed, size of the grammar:', len(fragments)
-    print 'written to file:', filename
-
-loadDopsSplit()
-
+main()
 

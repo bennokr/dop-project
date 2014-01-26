@@ -16,7 +16,7 @@ def plotTwo(N, NDescription, M, MDescription, log, fromDepth):
     Y = Y[:i]
     color = color[:i]
 
-    #Ik wil de kleurtjes beïnvloeden op de eenofandere manier.. maar weet nog niet hoe
+    #Ik wil de kleurtjes beinvloeden op de eenofandere manier.. maar weet nog niet hoe
 #    color = plt.Normalize(color)
 
     fig = plt.figure()
@@ -101,4 +101,11 @@ def WSJPlots1000():
 
 
 #WSJPlots20050()
-WSJPlots1000()
+#WSJPlots1000()
+from processFragments import Fragment
+import WSJgrammars_processed
+
+
+def main():
+    print 'hello world'
+
