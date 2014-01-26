@@ -1,40 +1,3 @@
-import matplotlib.pyplot as plt
-#from pylab import *
-import numpy as np
-
-fragments = dict()
-plotn = 8
-
-class Fragment:
-    def __init__(self, flat):
-        self.weights = [0]*10
-        self.splits = [0]*10
-
-        #Depth of the fragment:
-        depth = 0
-        maxDepth = 0
-        for c in flat:
-            if c=='(':
-               depth = depth +1
-            if c ==')':
-               depth = depth -1
-            if depth>maxDepth:
-               maxDepth = depth
-        self.depth = maxDepth-1
-        #Root of the fragment:
-        self.root = flat.split()[0][1:]   #split at whitespace, take the first part, omit the first character '('
-
-    def addRun(self, N, weight):
-    # Replace the weight for run N with this weight
-        self.weights[N] = weight
-        self.splits[N] += 1
-
-    def updateRun(self, N, weight):
-    # Interpolate the existing results for run N with the new weight
-        current = self.splits[N]
-        self.weights[N] = (current/(current+1)) * self.weights[N]    + (1/(current+1))*weight
-        self.splits[N] += 1
-
 
 def plotTwo(N, NDescription, M, MDescription, log, fromDepth):
     # Getting the data to plot:
@@ -75,31 +38,6 @@ def plotTwo(N, NDescription, M, MDescription, log, fromDepth):
     plt.savefig('plots/plot'+str(plotn), dpi=300)
     plotn+=1
     #plt.show()
-
-def readFragments(fragsFile, N):
-    #fragments: a dictionary of Strings (flat fragments) to Fragment objects
-    #fragsFile: a path to a file with fragments and corresponding weights
-    #description: a String that describes the run
-    global fragments
-    f = open(fragsFile, 'r')
-    nFrags = 0
-    for line in f:
-        nFrags += 1
-        [flatFragment,weight] = line.split("\t")
-        flatFragment = flatFragment.translate(None, '@')
-
-        if "/" in weight:
-            [numerator,denominator] = weight.split("/")# temporary: DDOP
-            weight = float(numerator)/float(denominator) # temporary: DDOP
-        else:
-            weight = float(weight)
-
-
-        if flatFragment not in fragments:
-            fragments[flatFragment] = Fragment(flatFragment)  #create a new Fragment object
-        fragments[flatFragment].addRun(N, weight)
-    f.close()
-    print fragsFile,nFrags
 
 
 def tinyPlots():
