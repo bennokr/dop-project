@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 
 def plotTwo(N, NDescription, M, MDescription, log, fromDepth):
     # Getting the data to plot:
@@ -102,10 +103,34 @@ def WSJPlots1000():
 
 #WSJPlots20050()
 #WSJPlots1000()
-from processFragments import Fragment
-import WSJgrammars_processed
+
+
+import processFragments as pf
+
 
 
 def main():
-    print 'hello world'
+    global plotn
+    plotn = 0
+    pf.globalRuns = 3
+    global fragments
+    fragments = pf.fragments
 
+    f0 = "wsj/wsj_ddop_split_500_500_processed.txt"
+    pf.readFragments(f0,0)
+    d0 = "Maximal Overlap with split: 500/500"
+
+    f1 = "wsj/wsj_dops_split_500_500_processed.txt"
+    pf.readFragments(f1,1)
+    d1 = "Shortest derivation with split: 500/500"
+
+    f2 = "wsj/wsj_ddop_1vall_1000_1.txt"
+    pf.readFragments(f2,2)
+    d2 = "Maximal Overlap 1 vs all: 1000"
+
+    plotTwo(0,d0,1,d1,1,1)
+    plotTwo(0,d0,2,d2,1,1)
+
+
+if __name__ == '__main__':
+    main()
