@@ -8,6 +8,8 @@ Usage: %s <rules> <lexicon> <trees> [options]
   --bt=backtransform
                By default a DOP reduction grammar is expected. If the grammar
                is a Double-DOP grammar or a TSG, use this option.
+  --unparsed=file
+               write sentences which couldn't be parsed to this file
 
 Output is sent to stdout and consist of tab-separated fragments and
 pseudofrequencies, one per line.
@@ -54,7 +56,7 @@ def collectderivations(args):
 
 	If there is more than one derivation, the counts are divided by the number
 	of derivations."""
-	n, tree, sent, tags = args
+	n, tree, sent, tags, treestr = args
 	msg = '%d. %s' % (n, ' '.join(sent))
 	fragments = Counter()
 	# find derivations for this tree
@@ -63,7 +65,7 @@ def collectderivations(args):
 			tags=tags)
 	if not chart:  # no parse
 		msg += '\nnot derivable: %s\n' % msg1
-		return fragments, msg
+		return treestr, fragments, msg
 	entries = chart.rankededges[chart.root()]
 	_, maxprob = min(derivations, key=itemgetter(1))
 	# remove sentence numbers so that we only keep unique derivations
@@ -84,12 +86,12 @@ def collectderivations(args):
 			fragments[frag] /= numderivations
 	msg += '\n%d derivations, of which %d unique\n' % (
 			numderivations, numuniquederivations)
-	return fragments, msg
+	return treestr, fragments, msg
 
 
 def main():
 	"""CLI."""
-	options = 'relfreq numproc= bt='.split()
+	options = 'relfreq numproc= bt= unparsed='.split()
 	try:
 		opts, args = gnu_getopt(sys.argv[1:], 's:', options)
 		assert 2 <= len(args) <= 6, 'incorrect number of arguments'
@@ -105,6 +107,10 @@ def main():
 				initializer=readgrammar, initargs=(args[0], args[1],
 					opts.get('-s', b'TOP'), opts.get('--bt')))
 		mymap = pool.imap_unordered
+	if opts.get('--unparsed'):
+		unparsed = open(opts.get('--unparsed'), 'w')
+	else:
+		unparsed = None
 
 	# read trees
 	trees = []
@@ -113,16 +119,20 @@ def main():
 		tree = LEAVESRE.sub(lambda _: ' %d)' % next(cnt), treestr)
 		sent = LEAVESRE.findall(treestr)
 		tags = POSRE.findall(treestr)
-		trees.append((n, tree, sent, tags))
+		trees.append((n, tree, sent, tags, treestr))
 
 	# do work
 	fragments = Counter()
-	for newfragments, msg in mymap(collectderivations, trees):
+	for treestr, newfragments, msg in mymap(collectderivations, trees):
 		print(msg, file=sys.stderr)
 		for frag, cnt in newfragments.items():
 			fragments[frag] += cnt
+		if not newfragments and unparsed:
+			unparsed.write(treestr)
 
 	# print output
+	if unparsed:
+		unparsed.close()
 	if '--relfreq' in opts:
 		sums = Counter()
 		for (frag, _), freq in fragments.items():
@@ -131,7 +141,7 @@ def main():
 		word = iter(sent)
 		frag = LEAVESRE.sub(lambda _: ' %s)' % (next(word) or ''), frag)
 		if '--relfreq' in opts:
-			print('%s\t%g' % (frag, freq / sums[frag[1:frag.index(' ')]]))
+			print('%s\t%g/%g' % (frag, freq, sums[frag[1:frag.index(' ')]]))
 		else:
 			print('%s\t%d' % (frag, freq))
 
