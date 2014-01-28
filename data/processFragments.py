@@ -25,6 +25,12 @@ class Fragment:
             if depth>maxDepth:
                maxDepth = depth
         self.depth =  maxDepth-1
+        
+    #substitution sites and terminal leafs:
+    #Substitution site: /[(]\S+\s+[)]/
+    #Terminal leaf: /[(]\S+\s+\S+[)]/
+    #ideally, \S would be replaced by [\S-[()]]
+
     def findRoot(self, flat):
         self.root = flat.split()[0][1:]
         #split at whitespace, take the first part, omit the first character '('
@@ -48,7 +54,7 @@ def readFragments(fragsFile, N):
         if len(parts)<2:
            print "problem with line:",line
            continue
-        
+
         flatFragment = parts[0]
         weight = parts[1]
 
@@ -66,7 +72,7 @@ def readFragments(fragsFile, N):
 
         fragments[flatFragment].addRun(N, weight)
     f.close()
-    print 'read from:', fragsFile,'number of fragments:', nFrags
+    print 'read from:', fragsFile,'number of fragments:',nFrags
 
 def readPCFG(ruleFile, lexFile, N):
     global fragments
@@ -89,7 +95,7 @@ def readPCFG(ruleFile, lexFile, N):
         if flat not in fragments:
             fragments[flat] = Fragment(flat)
         fragments[flat].addRun(N,float(count)/float(rootCounts[root]))
-    print 'read from:',ruleFile,lexFile, 'number of PCFG rules:'+len(frags)
+    print 'read from:',ruleFile,lexFile, 'number of PCFG rules:',len(frags)
 
 
 def lex2Frags(line, frags, rootCounts):
@@ -185,10 +191,7 @@ def processDOPS():
     interpolateRuns(range(nFolds), INTERPOLATED)
 
     PCFG = INTERPOLATED+1
-#    f = "wsj/wsj_pseudoPCFG_1000.txt"
-#    readFragments(prefix+'1.mo.txt',PCFG)
-    #!! TODO
-    readPCFG('wsj/wsj1000.pcfg.rules', 'wsj/wsj1000.pcfg.lex',PCFG)
+    readPCFG('bigRun/wsj-02-21.mrg.39833.bin.rules', 'bigRun/wsj-02-21.mrg.39833.bin.lex',PCFG)
 
     DOPS = PCFG+1
     smoothUnkn(INTERPOLATED,PCFG,DOPS,pUnkn)
