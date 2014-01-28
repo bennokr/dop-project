@@ -23,9 +23,9 @@ def plotTwo(N, NDescription, M, MDescription, log, fromDepth):
     fig = plt.figure()
 
     if log:
-        plt.xscale('symlog',linthreshx=0.001)#, nonposx='clip')
+        plt.xscale('symlog',linthreshx=0.0000001)#, nonposx='clip')
         plt.xlim([0,1])
-        plt.yscale('symlog',linthreshy=0.001)#, nonposx='clip')
+        plt.yscale('symlog',linthreshy=0.0000001)#, nonposx='clip')
         plt.ylim([0,1])
 
     else:
@@ -111,7 +111,7 @@ import processFragments as pf
 
 def main():
     global plotn
-    plotn = 5
+    plotn = 0
     pf.globalRuns = 3
     global fragments
     fragments = pf.fragments
@@ -127,6 +127,9 @@ def main():
     f2 = "resultingGrammars/ddop.txt"
     pf.readFragments(f2,2)
     d2 = "Maximal Overlap 1 vs all"
+
+    plotTwo(0,d0,1,d1,1,1)
+    plotTwo(0,d0,2,d2,1,1)
 
     plotTwo(0,d0,1,d1,1,3)
     plotTwo(0,d0,2,d2,1,3)

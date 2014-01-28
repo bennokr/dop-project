@@ -42,7 +42,15 @@ def readFragments(fragsFile, N):
     nFrags = 0
     for line in f:
         nFrags += 1
-        [flatFragment,weight] = line.split("\t")
+        #[flatFragment,weight] = line.split("\t")
+
+        parts = line.split("\t")
+        if len(parts)<2:
+           print "problem with line:",line
+           continue
+        
+        flatFragment = parts[0]
+        weight = parts[1]
 
         flatFragment = flatFragment.translate(None, '@')
 
@@ -64,7 +72,6 @@ def readPCFG(ruleFile, lexFile, N):
     global fragments
     rootCounts = defaultdict(int)
     frags = set()
-    print     type(set)
 
     f = open(lexFile, 'r')
     for line in f:
@@ -82,30 +89,37 @@ def readPCFG(ruleFile, lexFile, N):
         if flat not in fragments:
             fragments[flat] = Fragment(flat)
         fragments[flat].addRun(N,float(count)/float(rootCounts[root]))
+    print 'read from:',ruleFile,lexFile, 'number of PCFG rules:'+len(frags)
 
 
 def lex2Frags(line, frags, rootCounts):
+    line = line.strip()
     bitParLine = line.split("\t")
     terminal = bitParLine[0]
     pairs = [p.split(' ') for p in bitParLine[1:]]
     # Loop over possibilities
     for p in pairs:
-        count = float(p[1])
+        count = int(p[1])
         root = p[0]
         rootCounts[root]+= count
         flatFragment ='('+root+' '+terminal+')'
-        frags= frags.add((root, flatFragment, count))
-    return frags,rootCounts
+        frags.add((root, flatFragment, count))
+    return frags, rootCounts
 
 def rule2Frag(line, frags, rootCounts):
+    line = line.strip()
     bitParLine = line.split("\t")
-    count = bitParLine[0]
+    count = int(bitParLine[0])
     root = bitParLine[1]
-#    if root not in rootCounts:
     rootCounts[root] += count
+    children = ''
+#    for child in bitParLine[2:]:
+#        children+=' ('+child+')'
+#    flatFragment = '('+root+children+')'
+
     children = ['(%s )'%s for s in bitParLine[2:]]
-    flatFragment = '('+root+ ' '.join(children)
-    frags = frags.add(root,flatFragment,count)
+    flatFragment = '('+root+ ' '.join(children)+')'
+    frags.add((root,flatFragment,count))
     return frags,rootCounts
 
 
@@ -172,8 +186,9 @@ def processDOPS():
 
     PCFG = INTERPOLATED+1
 #    f = "wsj/wsj_pseudoPCFG_1000.txt"
-    readFragments(prefix+'1.mo.txt',PCFG)
+#    readFragments(prefix+'1.mo.txt',PCFG)
     #!! TODO
+    readPCFG('wsj/wsj1000.pcfg.rules', 'wsj/wsj1000.pcfg.lex',PCFG)
 
     DOPS = PCFG+1
     smoothUnkn(INTERPOLATED,PCFG,DOPS,pUnkn)
@@ -245,14 +260,9 @@ def processFrags():
     global prefix
     prefix = 'bigRun/wsj-02-21.mrg.split19916.'
 #    print computePunkn(19916)
-    #processDOPS()
+    processDOPS()
 #    processDDOPS()
 
-    global fragments
-    fragments = dict()
-    global globalRuns
-    globalRuns = 1
-    readPCFG('wsj/wsj1000.pcfg.rules', 'wsj/wsj1000.pcfg.lex',0)
 
 
 
