@@ -54,6 +54,73 @@ def readFragments(fragsFile, N):
     f.close()
     print 'read from:', fragsFile,'number of fragments:', nFrags
 
+def readRules(pcfgFile, N):
+# Read the grammar from <pcfgFile>
+# If necessary, add them to the fragments dictionary
+# Update the fragments' weight in the dictionary
+    global fragments
+    f = open(pcfgFile, 'r')
+    nFrags = 0
+    root = ''
+    rootcount = 0
+    flatFragments = {}
+    for line in f:
+        nFrags += 1
+        # bitpar rules format:
+        # count HEAD CHILD1 [CHILD2 ...]
+        bitParLine = line.split("\t")
+        if (bitParLine[1] != root)
+            # add all to fragments
+            for frag, count in flatFragments:
+                if frag not in fragments:
+                    #create a new Fragment object
+                    fragments[frag] = Fragment(flatFragment)
+                fragments[frag].addRun(N, float(count)/float(rootcount))
+            # reset root count
+            flatFragments = {}
+            root = bitParLine[1]
+            rootcount = int(bitParLine[0])
+
+        children = ['(%s )'%s for s in bitParLine[2:]]
+        #(1 (2 ) ...)
+        rule = '(%s %s)' % (root, ' '.join(children)))
+        count = int(bitParLine[0])
+        flatFragments[rule] = count
+        rootcount += count
+    # add all last time
+    for frag, count in flatFragments:
+        if frag not in fragments:
+            #create a new Fragment object
+            fragments[frag] = Fragment(flatFragment)
+        fragments[frag].addRun(N, float(count)/float(rootcount))
+    f.close()
+    print 'read from:', pcfgFile,'number of fragments:', nFrags
+
+def readLex(pcfgFile, N):
+# Read the grammar from <pcfgFile>
+# If necessary, add them to the fragments dictionary
+# Update the fragments' weight in the dictionary
+    global fragments
+    f = open(pcfgFile, 'r')
+    nFrags = 0
+    for line in f:
+        nFrags += 1
+        # bitPar lex format:
+        # WORD        TAG1 count1   [TAG2 count2 ...]
+        bitParLine = line.split("\t")
+        pairs = [p.split(' ') for p in bitParLine[1:]]
+        total = sum([int(p[1]) for p in pairs])
+        # Loop over possibilities
+        for p in pairs:
+            flatFragment = "(%s %s)" % (bitParLine[0], p[0])
+            weight = float(p[1])/total
+            if flatFragment not in fragments:
+                #create a new Fragment object
+                fragments[flatFragment] = Fragment(flatFragment)
+            fragments[flatFragment].addRun(N, weight)
+    f.close()
+    print 'read from:', pcfgFile,'number of fragments:', nFrags
+
 def interpolateRuns(toInterpolate,out):
     #interpolate the weights assigned
     # by the runs in 'toInterpolate' (a list of indices),
