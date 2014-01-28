@@ -8,6 +8,10 @@ class Fragment:
         self.computeDepth(self.flat)
         self.findRoot(self.flat)
 
+        #possibly add: 
+        # - number of words
+        # - number of substitution sites
+
     def computeDepth(self, flat):
         depth = 0
         maxDepth = 0
