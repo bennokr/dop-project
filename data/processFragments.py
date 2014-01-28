@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 globalRuns = 0
 fragments = dict()
 
@@ -58,72 +60,55 @@ def readFragments(fragsFile, N):
     f.close()
     print 'read from:', fragsFile,'number of fragments:', nFrags
 
-def readRules(pcfgFile, N):
-# Read the grammar from <pcfgFile>
-# If necessary, add them to the fragments dictionary
-# Update the fragments' weight in the dictionary
+def readPCFG(ruleFile, lexFile, N):
     global fragments
-    f = open(pcfgFile, 'r')
-    nFrags = 0
-    root = ''
-    rootcount = 0
-    flatFragments = {}
-    for line in f:
-        nFrags += 1
-        # bitpar rules format:
-        # count HEAD CHILD1 [CHILD2 ...]
-        bitParLine = line.split("\t")
-        if (bitParLine[1] != root)
-            # add all to fragments
-            for frag, count in flatFragments:
-                if frag not in fragments:
-                    #create a new Fragment object
-                    fragments[frag] = Fragment(flatFragment)
-                fragments[frag].addRun(N, float(count)/float(rootcount))
-            # reset root count
-            flatFragments = {}
-            root = bitParLine[1]
-            rootcount = int(bitParLine[0])
+    rootCounts = defaultdict(int)
+    frags = set()
+    print     type(set)
 
-        children = ['(%s )'%s for s in bitParLine[2:]]
-        #(1 (2 ) ...)
-        rule = '(%s %s)' % (root, ' '.join(children)))
-        count = int(bitParLine[0])
-        flatFragments[rule] = count
-        rootcount += count
-    # add all last time
-    for frag, count in flatFragments:
-        if frag not in fragments:
-            #create a new Fragment object
-            fragments[frag] = Fragment(flatFragment)
-        fragments[frag].addRun(N, float(count)/float(rootcount))
-    f.close()
-    print 'read from:', pcfgFile,'number of fragments:', nFrags
-
-def readLex(pcfgFile, N):
-# Read the grammar from <pcfgFile>
-# If necessary, add them to the fragments dictionary
-# Update the fragments' weight in the dictionary
-    global fragments
-    f = open(pcfgFile, 'r')
-    nFrags = 0
+    f = open(lexFile, 'r')
     for line in f:
-        nFrags += 1
-        # bitPar lex format:
-        # WORD        TAG1 count1   [TAG2 count2 ...]
-        bitParLine = line.split("\t")
-        pairs = [p.split(' ') for p in bitParLine[1:]]
-        total = sum([int(p[1]) for p in pairs])
-        # Loop over possibilities
-        for p in pairs:
-            flatFragment = "(%s %s)" % (bitParLine[0], p[0])
-            weight = float(p[1])/total
-            if flatFragment not in fragments:
-                #create a new Fragment object
-                fragments[flatFragment] = Fragment(flatFragment)
-            fragments[flatFragment].addRun(N, weight)
+        frags,rootCounts =lex2Frags(line,frags,rootCounts)
     f.close()
-    print 'read from:', pcfgFile,'number of fragments:', nFrags
+    f = open(ruleFile, 'r')
+    for line in f:
+        frags,rootCounts = rule2Frag(line,frags,rootCounts)
+    f.close()
+
+    for frag in frags:
+        root = frag[0]
+        flat = frag[1]
+        count = frag[2]
+        if flat not in fragments:
+            fragments[flat] = Fragment(flat)
+        fragments[flat].addRun(N,float(count)/float(rootCounts[root]))
+
+
+def lex2Frags(line, frags, rootCounts):
+    bitParLine = line.split("\t")
+    terminal = bitParLine[0]
+    pairs = [p.split(' ') for p in bitParLine[1:]]
+    # Loop over possibilities
+    for p in pairs:
+        count = float(p[1])
+        root = p[0]
+        rootCounts[root]+= count
+        flatFragment ='('+root+' '+terminal+')'
+        frags= frags.add((root, flatFragment, count))
+    return frags,rootCounts
+
+def rule2Frag(line, frags, rootCounts):
+    bitParLine = line.split("\t")
+    count = bitParLine[0]
+    root = bitParLine[1]
+#    if root not in rootCounts:
+    rootCounts[root] += count
+    children = ['(%s )'%s for s in bitParLine[2:]]
+    flatFragment = '('+root+ ' '.join(children)
+    frags = frags.add(root,flatFragment,count)
+    return frags,rootCounts
+
+
 
 def interpolateRuns(toInterpolate,out):
     #interpolate the weights assigned
@@ -261,7 +246,16 @@ def processFrags():
     prefix = 'bigRun/wsj-02-21.mrg.split19916.'
 #    print computePunkn(19916)
     #processDOPS()
-    processDDOPS()
+#    processDDOPS()
+
+    global fragments
+    fragments = dict()
+    global globalRuns
+    globalRuns = 1
+    readPCFG('wsj/wsj1000.pcfg.rules', 'wsj/wsj1000.pcfg.lex',0)
+
+
+
 
 if __name__ == '__main__':
     processFrags()
