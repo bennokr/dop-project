@@ -58,47 +58,47 @@ def readFragments(fragsFile, N):
     f.close()
     print 'read from:', fragsFile,'number of fragments:', nFrags
 
-# def readRules(pcfgFile, N):
-# # Read the grammar from <pcfgFile>
-# # If necessary, add them to the fragments dictionary
-# # Update the fragments' weight in the dictionary
-#     global fragments
-#     f = open(pcfgFile, 'r')
-#     nFrags = 0
-#     root = ''
-#     rootcount = 0
-#     flatFragments = {}
-#     for line in f:
-#         nFrags += 1
-#         # bitpar rules format:
-#         # count HEAD CHILD1 [CHILD2 ...]
-#         bitParLine = line.split("\t")
-#         if (bitParLine[1] != root)
-#             # add all to fragments
-#             for frag, count in flatFragments:
-#                 if frag not in fragments:
-#                     #create a new Fragment object
-#                     fragments[frag] = Fragment(flatFragment)
-#                 fragments[frag].addRun(N, float(count)/float(rootcount))
-#             # reset root count
-#             flatFragments = {}
-#             root = bitParLine[1]
-#             rootcount = int(bitParLine[0])
-# 
-#         children = ['(%s )'%s for s in bitParLine[2:]]
-#         #(1 (2 ) ...)
-#         rule = '(%s %s)' % (root, ' '.join(children)))
-#         count = int(bitParLine[0])
-#         flatFragments[rule] = count
-#         rootcount += count
-#     # add all last time
-#     for frag, count in flatFragments:
-#         if frag not in fragments:
-#             #create a new Fragment object
-#             fragments[frag] = Fragment(flatFragment)
-#         fragments[frag].addRun(N, float(count)/float(rootcount))
-#     f.close()
-#     print 'read from:', pcfgFile,'number of fragments:', nFrags
+def readRules(pcfgFile, N):
+# Read the grammar from <pcfgFile>
+# If necessary, add them to the fragments dictionary
+# Update the fragments' weight in the dictionary
+    global fragments
+    f = open(pcfgFile, 'r')
+    nFrags = 0
+    root = ''
+    rootcount = 0
+    flatFragments = {}
+    for line in f:
+        nFrags += 1
+        # bitpar rules format:
+        # count HEAD CHILD1 [CHILD2 ...]
+        bitParLine = line.split("\t")
+        if (bitParLine[1] != root)
+            # add all to fragments
+            for frag, count in flatFragments:
+                if frag not in fragments:
+                    #create a new Fragment object
+                    fragments[frag] = Fragment(flatFragment)
+                fragments[frag].addRun(N, float(count)/float(rootcount))
+            # reset root count
+            flatFragments = {}
+            root = bitParLine[1]
+            rootcount = int(bitParLine[0])
+
+        children = ['(%s )'%s for s in bitParLine[2:]]
+        #(1 (2 ) ...)
+        rule = '(%s %s)' % (root, ' '.join(children)))
+        count = int(bitParLine[0])
+        flatFragments[rule] = count
+        rootcount += count
+    # add all last time
+    for frag, count in flatFragments:
+        if frag not in fragments:
+            #create a new Fragment object
+            fragments[frag] = Fragment(flatFragment)
+        fragments[frag].addRun(N, float(count)/float(rootcount))
+    f.close()
+    print 'read from:', pcfgFile,'number of fragments:', nFrags
 
 def readLex(pcfgFile, N):
 # Read the grammar from <pcfgFile>
@@ -157,11 +157,11 @@ def grammarToFile(N, fileName):
     print "Grammar written to file:", fileName
 
 
-def readFolds(prefix, start,folds):
+def readFolds(postfix):
     #read in all folds, write to position start...start+folds-1:
-    for n in range(folds):
-        f = prefix+str(n)+'.txt'
-        readFragments(f,start+n)
+    for n in range(1,nFolds+1):
+        f = prefix+str(n)+postfix
+        readFragments(f,n-1)
 
 
 def processDOPS():
@@ -169,7 +169,7 @@ def processDOPS():
     # read in the folds, interpolate them,
     # read in the PCFG grammar, smoothen
 
-    pUnkn = 0.005#float(unparsed)/float(corpusSize)
+    pUnkn = computePunkn()
 
     #initialize the dictionary
     global fragments
@@ -180,26 +180,25 @@ def processDOPS():
     global globalRuns
     globalRuns = nFolds+3
 
-    readFolds('wsj/wsj_dops_split_500_500_', 0,nFolds)
+    readFolds('.sd.txt')
 
     INTERPOLATED = nFolds
     interpolateRuns(range(nFolds), INTERPOLATED)
 
     PCFG = INTERPOLATED+1
-    f = "wsj/wsj_pseudoPCFG_1000.txt"
-    readFragments(f,PCFG)
+#    f = "wsj/wsj_pseudoPCFG_1000.txt"
+    readFragments(prefix+'1.mo.txt',PCFG)
+    #!! TODO
 
     DOPS = PCFG+1
     smoothUnkn(INTERPOLATED,PCFG,DOPS,pUnkn)
 
-    grammarToFile(DOPS, 'wsj/wsj_dops_split_500_500_processed.txt')
+    grammarToFile(DOPS, 'resultingGrammars/dops.txt')
     print 'processed DOP*'
 
 def processDDOPS():
     #Process DDOP SPLIT results:
     # read in the folds, interpolate them
-
-    pUnkn = 0.005#float(unparsed)/float(corpusSize)
 
     #initialize the dictionary
     global fragments
@@ -209,26 +208,44 @@ def processDDOPS():
     global globalRuns
     globalRuns = nFolds+3
 
-    readFolds('wsj/wsj_ddop_split_500_500_', 0,nFolds)
+    readFolds('.mo.txt')
 
     DDOPS = nFolds
     interpolateRuns(range(nFolds), DDOPS)
 
-    grammarToFile(DDOPS, 'wsj/wsj_ddop_split_500_500_processed.txt')
+    grammarToFile(DDOPS, 'resultingGrammars/ddopSplit.txt')
     print 'processed DDOP (split)'
 
-def computePunkn(hcSize):
-    prefix = 'bigRun/wsj-02-21.mrg.split19916.'
+def computePunkn():
+    postfixNP = '.noparse.txt'
+    postfixHC = '.aa'
 
-    f = open(prefix+'1.noparse.txt', 'r')
-    unparsed = set(f)
+    unparsed = set()
 
-    print len(unparsed)
+    for m in range(1,nFolds+1):
+        hcSize = 19916
+        NPf = open(prefix+str(m)+postfixNP, 'r')
+        NPm = set(NPf)
+        NPf.close()
 
-    for n in range(2,nFolds+1):
-        fn = open(prefix+str(n)+'.noparse.txt','r')
-        unparsed = unparsed.intersection(set(fn))
-        print len(unparsed)
+        for n in [x for x in range (1,nFolds+1) if x!=m]:
+#            print m,n, len(NPm)
+
+            NPf = open(prefix+str(n)+postfixNP,'r')
+            NPn = set(NPf)
+            NPf.close()
+
+            HCf = open(prefix+str(n)+postfixHC,'r')
+            HCn = set(HCf)
+            HCf.close()
+
+            toKeep = NPm.difference(HCn)
+            toCompare = unparsed.intersection(HCn)
+            toAdd = toCompare.intersection(NPn)
+            NPm = toKeep.union(toAdd)
+
+        unparsed = unparsed.union(NPm)
+#        print m, len(unparsed)
     return float(len(unparsed))/float(hcSize)
 
 
@@ -238,9 +255,12 @@ def computePunkn(hcSize):
 def processFrags():
     global nFolds
     nFolds = 10
-    print computePunkn(19916)
+
+    global prefix
+    prefix = 'bigRun/wsj-02-21.mrg.split19916.'
+#    print computePunkn(19916)
     #processDOPS()
-    #processDDOPS()
+    processDDOPS()
 
 if __name__ == '__main__':
     processFrags()

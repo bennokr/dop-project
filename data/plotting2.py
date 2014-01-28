@@ -111,25 +111,25 @@ import processFragments as pf
 
 def main():
     global plotn
-    plotn = 0
+    plotn = 5
     pf.globalRuns = 3
     global fragments
     fragments = pf.fragments
 
-    f0 = "wsj/wsj_ddop_split_500_500_processed.txt"
+    f0 = "resultingGrammars/ddopSplit.txt"
     pf.readFragments(f0,0)
-    d0 = "Maximal Overlap with split: 500/500"
+    d0 = "Maximal Overlap with split"
 
-    f1 = "wsj/wsj_dops_split_500_500_processed.txt"
+    f1 = "resultingGrammars/dops.txt"
     pf.readFragments(f1,1)
-    d1 = "Shortest derivation with split: 500/500"
+    d1 = "Shortest derivation with split"
 
-    f2 = "wsj/wsj_ddop_1vall_1000_1.txt"
+    f2 = "resultingGrammars/ddop.txt"
     pf.readFragments(f2,2)
-    d2 = "Maximal Overlap 1 vs all: 1000"
+    d2 = "Maximal Overlap 1 vs all"
 
-    plotTwo(0,d0,1,d1,1,1)
-    plotTwo(0,d0,2,d2,1,1)
+    plotTwo(0,d0,1,d1,1,3)
+    plotTwo(0,d0,2,d2,1,3)
 
 
 if __name__ == '__main__':
