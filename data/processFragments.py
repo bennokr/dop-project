@@ -219,16 +219,35 @@ def processDDOPS():
 
 def computePunkn(hcSize):
     prefix = 'bigRun/wsj-02-21.mrg.split19916.'
+    postfixNP = '.noparse.txt'
+    postfixHC = '.aa'
 
-    f = open(prefix+'1.noparse.txt', 'r')
-    unparsed = set(f)
+    unparsed = set()
 
-    print len(unparsed)
+    for m in range(1,nFolds+1):
+        NPf = open(prefix+str(m)+postfixNP, 'r')
+        NPm = set(NPf)
+        NPf.close()
 
-    for n in range(2,nFolds+1):
-        fn = open(prefix+str(n)+'.noparse.txt','r')
-        unparsed = unparsed.intersection(set(fn))
-        print len(unparsed)
+        for n in [x for x in range (1,nFolds+1) if x!=m]:
+            print m,n, len(NPm)
+
+            NPf = open(prefix+str(n)+postfixNP,'r')
+            NPn = set(NPf)
+            NPf.close()
+
+            HCf = open(prefix+str(n)+postfixHC,'r')
+            HCn = set(HCf)
+            HCf.close()
+
+            toKeep = NPm.difference(HCn)
+            toCompare = unparsed.intersection(HCn)
+            toAdd = toCompare.intersection(NPn)
+            NPm = toKeep.union(toAdd)
+
+
+        unparsed = unparsed.union(NPm)
+        print m, len(unparsed)
     return float(len(unparsed))/float(hcSize)
 
 
