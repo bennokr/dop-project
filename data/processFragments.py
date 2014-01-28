@@ -244,6 +244,7 @@ def computePunkn():
             toAdd = toCompare.intersection(NPn)
             NPm = toKeep.union(toAdd)
 
+
         unparsed = unparsed.union(NPm)
 #        print m, len(unparsed)
     return float(len(unparsed))/float(hcSize)
