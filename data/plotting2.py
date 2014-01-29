@@ -58,7 +58,7 @@ def goPlot():
             toPlotN = [N[i] for i in indexes]
             plot(toPlotL,dL,toPlotM,dM,colors,title)
             plot(toPlotN,dN,toPlotM,dM,colors,title)
-            plot(toPlotL,dL,toPlotN,dN,colors,title)
+            plot(toPlotN,dN,toPlotL,dL,colors,title)
 
 def plot(toPlotX,Xdescription,toPlotY,Ydescription,colors,title):
     thres = 0.000001
@@ -69,8 +69,8 @@ def plot(toPlotX,Xdescription,toPlotY,Ydescription,colors,title):
     plt.ylim([0,1])
 
     maxFeat = max(colors)
-    colormap = cm = plt.get_cmap('hot',maxFeat)
-    
+    colormap = plt.get_cmap('hot')
+
     plt.scatter(toPlotX,toPlotY,norm = cl.LogNorm(),c = colors,edgecolors='None',cmap = colormap)
 
     plt.axhline(y=thres,linestyle='dashed', color='black')
@@ -78,46 +78,15 @@ def plot(toPlotX,Xdescription,toPlotY,Ydescription,colors,title):
 
     plt.xlabel(Xdescription)
     plt.ylabel(Ydescription)
-#    v =
-    bar = plt.colorbar()
-    bar.ax.get_yaxis().set_ticks([])
-    for j, lab in enumerate(range(1,maxFeat+1)):#['$0$','$1$','$2$','$>3$']):#enumerate(range(1,max(colors+1))):
-        bar.ax.text(.5, (2 * j + 1) / float(maxFeat*2), str(lab), ha='center', va='center')
-#    bar.ax.get_yaxis().labelpad = 15
-#    bar.ax.set_ylabel('# of contacts', rotation=270)
-#    bar.set_ticks(np.linspace(0, 1, max(colors), endpoint=True))
-#    bar.set_ticklabels(range(1,max(colors)+1))
-#    bar.draw_all()
-#    ticks = v, ticklabels=range(1,max(colors)+1)
+
+    from matplotlib.ticker import LogFormatter
+    l_f = LogFormatter(labelOnlyBase=False)
+    plt.colorbar(format=l_f,ticks=range(0,maxFeat+1,5))
+
     plt.title(title)
-#        plt.title('Fragments of depth from'+str(minDepth))
     global plotn
     plt.savefig('plots/'+str(plotn), dpi=300)
     plotn+=1
-    #plt.show()
-
-
-def plotTwo(N, NDescription, M, MDescription):
-
-        fig = plt.figure()
-        plt.xscale('symlog',linthreshx=0.0000001)#, nonposx='clip')
-        plt.xlim([0,1])
-        plt.yscale('symlog',linthreshy=0.0000001)#, nonposx='clip')
-        plt.ylim([0,1])
-
-        colormap = cl.colorMap('hot',maxFeat)
-
-        plt.scatter(toPlotX,toPlotY,norm = cl.LogNorm(),c = colors,edgecolors='None',cmap = colormap)
-
-        plt.xlabel(NDescription)
-        plt.ylabel(MDescription)
-        v = np.linspace(0, 1, maxProp, endpoint=True)
-        plt.colorbar(ticks = v)
-        plt.title(feat)
-#        plt.title('Fragments of depth from'+str(minDepth))
-        global plotn
-        plt.savefig('plots/'+feat+str(plotn), dpi=300)
-        plotn+=1
     #plt.show()
 
 import processFragments as pf
@@ -162,6 +131,7 @@ def main():
 
     global plotn
     plotn = 30
+#    readFragsSmall()
     readFragsLarge()
     fragmentsToPlottable()
     goPlot()
