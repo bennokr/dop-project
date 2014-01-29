@@ -29,6 +29,12 @@
 \newcommand{\ddop}[0]{Double-DOP}
 
 
+%figures:
+\usepackage{tikz}
+\usetikzlibrary{trees,positioning,backgrounds}
+\usepackage{tikz-qtree}
+
+
 \title{Doubling \dops}
 \subtitle{ A comparison of \ddop{} and \dops{}}
 \author[Kruit, Veldhoen]{Benno Kruit\and Sara Veldhoen{\\\small Supervised by: \\Andras van Cranenburg \and Khalil Sima'an}}
@@ -71,8 +77,31 @@
   %   for anyone how does not follow everything on the slide itself.
 
   \begin{itemize}
-  \item input: sentence \pause
+  \item input: sentence 
+\begin{quotation} John Loves Mary \end{quotation}
+\pause
   \item output: constituent tree
+\begin{figure}
+\begin{tikzpicture}
+%[node distance = 0 pt, sibling distance=40pt, level distance=40pt,level 2/.style={sibling distance=9pt},level 3/.style={sibling distance=9pt}]
+[level 2/.style={sibling distance = 30 pt}]
+
+\node (S) {S}
+child { node {NP}  
+	child{ node {John}}
+	}
+child { node {VP} 
+	child{ node {V} 
+		child {node {Loves}}
+		} 
+	child{node {NP}
+		child {node {Mary}}
+		}
+	}
+;
+\end{tikzpicture}
+
+\end{figure}
   \end{itemize}
 \end{frame}
 
@@ -87,7 +116,7 @@ A grammar describes:
 \item how likely constructions are: \emph{probabilistic} grammars
 \begin{itemize} 
 \item PCFG's - independence 
-\item TSG's  - derivations
+\item PTSG's  - derivations
 \end{itemize}
 
 \end{itemize}
