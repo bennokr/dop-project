@@ -77,6 +77,7 @@ def plotTwo(N, NDescription, M, MDescription):
         plt.xlabel(NDescription)
         plt.ylabel(MDescription)
         plt.colorbar(p)
+        plt.title('Fragments of depth from'+str(minDepth))
         global plotn
         plt.savefig('plots/plot'+str(plotn), dpi=300)
         plotn+=1
@@ -181,7 +182,7 @@ def main():
 
     plotTwo(0,d0,1,d1)
     plotTwo(0,d0,2,d2)
-
+    plotTwo(1,d1,2,d2)
 
 if __name__ == '__main__':
     main()
