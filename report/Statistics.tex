@@ -3,7 +3,7 @@
 
 
 % Distribution, sampling, estimation, corpus.
-Linguistic studies of syntax mostly concern \emph{competence} models, which describe the which structures appear in a language. In contrast, a \emph{performance} model of language is an estimate of the probability of observing a parse tree in language use. It treats language as a statistical distribution over syntactic structures.
+Linguistic studies of syntax mostly concern \emph{competence} models, which describe the structures that appear in a language. In contrast, a \emph{performance} model of language is an estimate of the probability of observing a parse tree in language use. It treats language as a statistical distribution over syntactic structures.
 
 Let $\Omega$ be the set of all possible parse trees. The distribution $P_\Omega$ then describes the language, where $P_\Omega(t)$ is the probability of observing a tree $t \in \Omega$. Using a sample of parse trees from the language, an \emph{estimator} $\textsc{est}$ builds a statistical model. A parser then uses that statistical model to predict the correct parse tree of sentences.
 A sample $X \in \Omega^n$ from the language is called a \emph{corpus} or \emph{treebank} of size $n$, which makes $\textsc{est}(X)$ an estimator trained on a sample. If $\mathcal{M}$ is the set of probability distributions over $\Omega$, then $P_\Omega \in \mathcal{M}$ and $\textsc{est}(X) \in \mathcal{M}$.
@@ -17,16 +17,16 @@ $$ \mathcal{L}(P, P^*) =  \sum_{t \in \Omega} P^*(t) (P^*(t)-P(t))^2$$
 From a true distribution, it's possible to calculate the expected loss of an estimator trained on a treebank of a certain size. This is the \emph{risk} or \emph{error} of that estimator given a sample size and a distribution. 
 % When sampling $X$ of size $n$ from $P^*$,
 % $$ error(\textsc{est}, P^*) = \mathbf{E}[\mathcal{L}(\textsc{est}(X), P^*)]$$
-With these definitions, it is possible to define estimator consistency when sampling $X \in \Omega^n$ from $P_\Omega$:
+When the sample size approaches the limit, the error of an estimator should diminish. With these definitions, it is possible to define estimator consistency when sampling $X \in \Omega^n$ from $P_\Omega$:
 
 $$\lim_{n \to \infty} \mathbf{E}[\mathcal{L}(\textsc{est}(X), P_\Omega)] = 0 $$
 
 % Estimators: RF, EWE?, MLE?
 
-In its original formulation, DOP was defined using a \emph{relative frequency estimate}, by counting how often it occurs in the treebank compared to others with the same root. However, it has been shown () that in this case, the RF estimator is inconsistent.
+In its original formulation, DOP was defined using a \emph{relative frequency estimate}, by counting how often it occurs in the treebank compared to others with the same root. However, it has been shown \ref{johnson2002} that in this case, the RF estimator is inconsistent.
 
 % Bias
-Another possible property of an estimator is its \emph{bias}, which is defined as the difference between the true probability and the expected estimate. 
+Another property of an estimator is its \emph{bias}, which is defined as the difference between the true probability and the expected estimate. 
 It has been proven that any unbiased DOP estimator will overfit a treebank by assigning zero-probabilites to trees outside the corpus.
 To prevent overfitting, it is therefore necessary to introduce a bias that assigns a non-zero probability to unseen trees.
 By maximizing the probability of a corpus different from the one from which the fragments are extracted, we will see that it is possible to minimize overfitting.
