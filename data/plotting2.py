@@ -4,68 +4,100 @@ import matplotlib.colors as cl
 import numpy as np
 from collections import defaultdict
 
-def plotColors(N, NDescription, M, MDescription):
+
+def fragmentsToPlottable():
+    global L
+    global M
+    global N
+    global depth
+    global width
+    global subs
+    global term
     number = len(fragments)
-    X = defaultdict(list)
-    Y = defaultdict(list)
+    L = [0]*number
+    M = [0]*number
+    N = [0]*number
+    depth = [0]*number
+    width = [0]*number
+    subs = [0]*number
+    term = [0]*number
 
+    i = 0
     for flat,frag in fragments.iteritems():
-        depth = frag.depth
-        X[depth].append(frag.weights[N])
-        Y[depth].append(frag.weights[M])
-        #color[i] = frag.depth
+        L[i] = frag.weights[0]
+        M[i] = frag.weights[1]
+        N[i] = frag.weights[2]
+        depth[i] = frag.depth
+        width[i] = frag.width
+        subs[i] = frag.substitutionSites
+        term[i] = frag.terminals
+        i+=1
 
+def goPlot():
+    feats = ['depth','width','subs','term']
+    for feat in feats:
+        if feat == 'depth':
+           props = depth
+           title = 'Depth of the fragments'
+        if feat == 'width':
+           props = width
+           title = 'Width of the fragments'
+        if feat == 'subs':
+           props = subs
+           title = 'Number of substitution sites'
+        if feat == 'term':
+           props = term
+           title = 'Number of terminals (words)'
+
+        for minProp in range(1,2):
+            indexes = [i for i in range(len(props)) if props[i]>minProp]
+            colors = [props[i] for i in indexes]
+
+            toPlotL = [L[i] for i in indexes]
+            toPlotM = [M[i] for i in indexes]
+            toPlotN = [N[i] for i in indexes]
+            plot(toPlotL,dL,toPlotM,dM,colors,title)
+            plot(toPlotN,dN,toPlotM,dM,colors,title)
+            plot(toPlotL,dL,toPlotN,dN,colors,title)
+
+def plot(toPlotX,Xdescription,toPlotY,Ydescription,colors,title):
+    thres = 0.000001
     fig = plt.figure()
-    plt.xscale('symlog',linthreshx=0.0000001)#, nonposx='clip')
+    plt.xscale('symlog',linthreshx=thres)
     plt.xlim([0,1])
-    plt.yscale('symlog',linthreshy=0.0000001)#, nonposx='clip')
+    plt.yscale('symlog',linthreshy=thres)
     plt.ylim([0,1])
 
-    colorm = cl.Colormap('Blues',11)
-    colors = colorm(np.arange(10))
-   # for depth in range(1,10):
+    maxFeat = max(colors)
+    colormap = cm = plt.get_cmap('hot',maxFeat)
+    
+    plt.scatter(toPlotX,toPlotY,norm = cl.LogNorm(),c = colors,edgecolors='None',cmap = colormap)
 
-    for depth in X:
-        if depth>10:
-           plt.scatter(X[depth],Y[depth],c=colors[11], edgecolors = 'None', label='depth '+str(depth))
-        else:
-            plt.scatter(X[depth],Y[depth],c=colors[depth], edgecolors = 'None', label='depth '+str(depth))
+    plt.axhline(y=thres,linestyle='dashed', color='black')
+    plt.axvline(x=thres,linestyle='dashed', color='black')
 
-
-    plt.xlabel(NDescription)
-    plt.ylabel(MDescription)
-    plt.legend()
+    plt.xlabel(Xdescription)
+    plt.ylabel(Ydescription)
+#    v =
+    bar = plt.colorbar()
+    bar.ax.get_yaxis().set_ticks([])
+    for j, lab in enumerate(range(1,maxFeat+1)):#['$0$','$1$','$2$','$>3$']):#enumerate(range(1,max(colors+1))):
+        bar.ax.text(.5, (2 * j + 1) / float(maxFeat*2), str(lab), ha='center', va='center')
+#    bar.ax.get_yaxis().labelpad = 15
+#    bar.ax.set_ylabel('# of contacts', rotation=270)
+#    bar.set_ticks(np.linspace(0, 1, max(colors), endpoint=True))
+#    bar.set_ticklabels(range(1,max(colors)+1))
+#    bar.draw_all()
+#    ticks = v, ticklabels=range(1,max(colors)+1)
+    plt.title(title)
+#        plt.title('Fragments of depth from'+str(minDepth))
     global plotn
-    plt.savefig('plots/plot'+str(plotn), dpi=300)
+    plt.savefig('plots/'+str(plotn), dpi=300)
     plotn+=1
     #plt.show()
 
 
-
-
 def plotTwo(N, NDescription, M, MDescription):
-    number = len(fragments)
-    X = [0]*number
-    Y = [0]*number
-    depth = [0]*number
-    colors = [0]*number
-    i = 0
-    for flat,frag in fragments.iteritems():
-        X[i] = frag.weights[N]
-        Y[i] = frag.weights[M]
-        depth[i] = frag.depth
-        i+=1
-
-
-    for minDepth in range(1,11):
-        indexes = [i for i in range(len(depth)) if depth[i]>minDepth]
-        colors = [depth[i] for i in indexes]
-        toPlotX = [X[i] for i in indexes]
-        toPlotY = [Y[i] for i in indexes]
-
-       # toPlotX = [X[i] for i in range(len(colors)) if depth[i]>minDepth]
-       # toPlotY = [Y[i] for i in range(len(Y)) if depth[i]>minDepth]
-
 
         fig = plt.figure()
         plt.xscale('symlog',linthreshx=0.0000001)#, nonposx='clip')
@@ -73,116 +105,67 @@ def plotTwo(N, NDescription, M, MDescription):
         plt.yscale('symlog',linthreshy=0.0000001)#, nonposx='clip')
         plt.ylim([0,1])
 
-        p = plt.scatter(toPlotX,toPlotY,norm = cl.LogNorm(),c = colors,edgecolors='None',cmap = cm.hot)
+        colormap = cl.colorMap('hot',maxFeat)
+
+        plt.scatter(toPlotX,toPlotY,norm = cl.LogNorm(),c = colors,edgecolors='None',cmap = colormap)
+
         plt.xlabel(NDescription)
         plt.ylabel(MDescription)
-        plt.colorbar(p)
-        plt.title('Fragments of depth from'+str(minDepth))
+        v = np.linspace(0, 1, maxProp, endpoint=True)
+        plt.colorbar(ticks = v)
+        plt.title(feat)
+#        plt.title('Fragments of depth from'+str(minDepth))
         global plotn
-        plt.savefig('plots/plot'+str(plotn), dpi=300)
+        plt.savefig('plots/'+feat+str(plotn), dpi=300)
         plotn+=1
     #plt.show()
 
-
-def tinyPlots():
-    readFragments("tiny/tiny_ddop_1vall_7_1.txt",1)
-    readFragments("tiny/tiny_ddop_split_3_4_1.txt",2)
-    readFragments("tiny/tiny_dops_1vall_7_1.txt",3)
-    readFragments("tiny/tiny_dops_split_3_4_1.txt",4)
-    plotTwo(1,"Double-DOP 1vsAll: 7",2,"Double-DOP split: 3/4", 0)
-#    plotTwo(1,"Double-DOP 1vsAll: 7",3,"DOP* 1vsAll: 7", 0)
-#    plotTwo(2,"Double-DOP split: 3/4",4,"DOP* split: 3/4", 0)
-#    plotTwo(3,"DOP* 1vsAll: 7",4,"DOP* split: 3/4", 0)
-
-def WSJPlots20050():
-    f1 = "wsj/wsj_ddop_split_20000_50_1.txt"
-    readFragments(f1,1)
-    d1 = "Double-DOP split: 50/20000"
-
-    f2 = "wsj/wsj_dops_split_20000_50_1.txt"
-    readFragments(f2,2)
-    d2 = "DOP* split: 50/20000"
-
-    f3 = "wsj/wsj_ddop_1vall_20050_1.txt"
-    readFragments(f3,3)
-    d3 = "Double-DOP 1 vs all: 20050"
-
-    f4 = "wsj/wsj_dops_1vall_20050_1.txt"
-    readFragments(f4,4)
-    d4 = "DOP* 1 vs all: 20050"
-
-    plotTwo(1,d1,2,d2,1)
-    plotTwo(1,d1,3,d3,1)
-    plotTwo(3,d1,4,d3,1)
-    plotTwo(2,d1,4,d3,1)
-
-def WSJPlots1000():
-    f1 = "wsj/wsj_ddop_split_500_500_1.txt"
-    readFragments(f1,1)
-    d1 = "Double-DOP split: 500/500"
-
-    f2 = "wsj/wsj_dops_split_500_500_1.txt"
-    readFragments(f2,2)
-    d2 = "DOP* split: 500/500"
-
-    f3 = "wsj/wsj_ddop_1vall_1000_1.txt"
-    readFragments(f3,3)
-    d3 = "Double-DOP 1 vs all: 1000"
-
-    f4 = "wsj/wsj_dops_1vall_1000_1.txt"
-    readFragments(f4,4)
-    d4 = "DOP* 1 vs all: 20050"
-
-    plotTwo(1,d1,2,d2,1,1)
-    plotTwo(1,d1,3,d3,1,1)
-    plotTwo(3,d3,4,d4,1,1)
-    plotTwo(2,d2,4,d4,1,1)
-
-    plotTwo(1,d1,2,d2,1,2)
-    plotTwo(1,d1,3,d3,1,2)
-    plotTwo(3,d3,4,d4,1,2)
-    plotTwo(2,d2,4,d4,1,2)
-
-
-#WSJPlots20050()
-#WSJPlots1000()
-
-
 import processFragments as pf
+pf.globalRuns = 3
 
 
-
-def main():
-    global plotn
-    plotn = 0
-    pf.globalRuns = 3
+def readFragsSmall():
     global fragments
     fragments = pf.fragments
+    global dL,dM,dN
 
-
-#     f1 = "wsj/wsj_ddop_split_500_500_0.txt"
-#     pf.readFragments(f1,1)
-#     d1 = "Double-DOP split: 500/500"
-#     f2 = "wsj/wsj_ddop_1vall_1000_1.txt"
-#     pf.readFragments(f2,2)
-#     d2 = "Double-DOP 1 vs all: 1000"
-#     plotTwo(1,d1,2,d2)
-
-    f0 = "resultingGrammars/ddopSplit.txt"
+    f0 = "wsj/wsj_dops_split_500_500_0.txt"
     pf.readFragments(f0,0)
-    d0 = "Maximal Overlap with split"
+    dL = "Weight according to Shortest Derivation with Split"
 
-    f1 = "resultingGrammars/dops.txt"
+    f1 = "wsj/wsj_ddop_split_500_500_0.txt"
     pf.readFragments(f1,1)
-    d1 = "Shortest derivation with split"
-
-    f2 = "resultingGrammars/ddop.txt"
+    dM = "Double-DOP split: 500/500"
+    f2 = "wsj/wsj_ddop_1vall_1000_1.txt"
     pf.readFragments(f2,2)
-    d2 = "Maximal Overlap 1 vs all"
+    dN = "Double-DOP 1 vs all: 1000"
 
-    plotTwo(0,d0,1,d1)
-    plotTwo(0,d0,2,d2)
-    plotTwo(1,d1,2,d2)
+def readFragsLarge():
+    global fragments
+    fragments = pf.fragments
+    global dL, dM, dN
+
+    fL = "resultingGrammars/ddopSplit.txt"
+    pf.readFragments(fL,0)
+    dL = "Weight according to Maximal Overlap with Split"
+
+    fM = "resultingGrammars/dops.txt"
+    pf.readFragments(fM,1)
+    dM = "Weight according to Shortest Derivation with Split"
+
+    fN = "resultingGrammars/ddop.txt"
+    pf.readFragments(fN,2)
+    dN = "Weight according to Maximal Overlap 1 vs all"
+
+def main():
+
+
+    global plotn
+    plotn = 30
+    readFragsLarge()
+    fragmentsToPlottable()
+    goPlot()
+
 
 if __name__ == '__main__':
     main()

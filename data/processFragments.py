@@ -1,4 +1,5 @@
 from collections import defaultdict
+import re
 
 globalRuns = 0
 fragments = dict()
@@ -7,8 +8,9 @@ class Fragment:
     def __init__(self, flat):
         self.flat = flat
         self.weights = [0]*globalRuns
-        self.computeDepth(self.flat)
-        self.findRoot(self.flat)
+        self.computeDepth(flat)
+        self.computeWidth(flat)
+        self.findRoot(flat)
 
         #possibly add:
         # - number of words
@@ -26,10 +28,17 @@ class Fragment:
                maxDepth = depth
         self.depth =  maxDepth-1
 
-    #substitution sites and terminal leafs:
-    #Substitution site: /[(]\S+\s+[)]/
-    #Terminal leaf: /[(]\S+\s+\S+[)]/
-    #ideally, \S would be replaced by [\S-[()]]
+    def computeWidth(self,flat):
+  #      subs = re.findall('\(\S+ \)',flat)
+  #      print subs
+  #
+  #      term = re.findall('\(\S+ [^\(\)]+\)',flat)
+  #      print term
+
+        self.substitutionSites = len(re.findall('\(\S+ \)',flat))
+        self.terminals = len(re.findall('\(\S+ [^\(\)]+\)',flat))
+        self.width=self.substitutionSites+self.terminals
+
 
     def findRoot(self, flat):
         self.root = flat.split()[0][1:]
