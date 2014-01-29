@@ -76,7 +76,7 @@ Then, we randomly split the corpus ten times in two equally-sized parts, called 
 
 The results for the different splits were interpolated and the resulting grammars were smoothed as described above. For finding the weight of unparsable sentences in the \dops{} estimation, we needed to find the trees that had not been derived in any split. This was done by comparing each set of underived trees with the $HC$ sets of every split.
 
-Estimation and parsing were done with the \texttt{disco-dop} framework \ref{cranenburg?}.
+Estimation and parsing were done with the \tt{disco-dop} framework \ref{cranenburg?}.
 
 \paragraph{Parsing}
 The input for the parser consisted of sentences of word and POS tag pairs. The parser matches fragments to the whole pair when the word is known, but only uses the POS tag when the word is unknown.

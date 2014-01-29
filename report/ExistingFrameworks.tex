@@ -29,7 +29,9 @@ To maximize coverage of the grammar, \dops{} comes with a smoothing method. The 
 
 
 \paragraph{Consistency and bias}
-\dops{} was introduced as the first consistent (non-trivial) DOP-estimator. Zollmann provides a consistency proof in \cite{zollmann2005}. On the other hand \dops{} is  biased, but Zollmann shows how bias actually arises from generalization: no non-overfitting DOP estimator could be unbiased. Bias is therefore not problematic but on the contrary a desirable property of an estimator.
+\dops{} was introduced as the first consistent (non-trivial) DOP-estimator. Zollmann provides a consistency proof in \cite{zollmann2005}. On the other hand, \dops{} is  biased, but Zollmann shows how bias actually arises from generalization: no non-overfitting DOP estimator could be unbiased. Bias is therefore not problematic but a desirable property of an estimator.
+
+The consistency of \dops{} is fundamentally tied to the extraction of fragments in the shortest derivations. As the treebank size increases, the expected loss of the estimate will diminish, as described above. One of the goals of this project is to describe what influence this has on the distribution of weight over the fragments in the grammar.
 
 In \cite{zuidema2006} it is argued that there is a problem with the consistency proof given for \dops{}, as well as the non-consistency proof for other DOP-estimators by \cite{johnson2002}. Zuidema points out that these proofs use a frequency-distribution test, whereas for DOP a weight-distribution test would be more appropriate. 
 %Wat hiermee?
