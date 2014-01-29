@@ -25,7 +25,7 @@ class Fragment:
             if depth>maxDepth:
                maxDepth = depth
         self.depth =  maxDepth-1
-        
+
     #substitution sites and terminal leafs:
     #Substitution site: /[(]\S+\s+[)]/
     #Terminal leaf: /[(]\S+\s+\S+[)]/
@@ -124,7 +124,7 @@ def rule2Frag(line, frags, rootCounts):
 #    flatFragment = '('+root+children+')'
 
     children = ['(%s )'%s for s in bitParLine[2:]]
-    flatFragment = '('+root+ ' '.join(children)+')'
+    flatFragment = '('+root+' '+' '.join(children)+')'
     frags.add((root,flatFragment,count))
     return frags,rootCounts
 
@@ -154,8 +154,12 @@ def smoothUnkn(original,PCFG,out,pUnkn):
 
 def grammarToFile(N, fileName):
     #Write the grammar in run 'N' to file
+
     f = open(fileName,'w')
     for flat, fragment in fragments.iteritems():
+        if fragment.depth<1:
+           print 'not a valid fragment:',frag.flat
+           continue
         if fragment.weights[N] > 0:
            f.write(fragment.flat+'\t'+str(fragment.weights[N])+'\n')
     f.close()
