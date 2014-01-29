@@ -275,8 +275,8 @@ def processFrags():
 
     global prefix
     prefix = 'bigRun/wsj-02-21.mrg.split19916.'
-#    print computePunkn(19916)
-    processDOPS()
+    print computePunkn()
+#    processDOPS()
 #    processDDOPS()
 
 
