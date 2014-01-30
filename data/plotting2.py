@@ -6,21 +6,13 @@ from collections import defaultdict
 
 
 def fragmentsToPlottable():
-    global L
-    global M
-    global N
-    global depth
-    global width
-    global subs
-    global term
+    global L, M, N
+    global depth, width, subs, term, roots
+
     number = len(fragments)
-    L = [0]*number
-    M = [0]*number
-    N = [0]*number
-    depth = [0]*number
-    width = [0]*number
-    subs = [0]*number
-    term = [0]*number
+    L, M, N = [[0]*number for i in range(3)]
+    depth, width, subs, term = [[0]*number for i in range(4)]
+    roots = {'NP':[],'VP':[],'S':[],'PP':[],'ADJP':[],'SBAR':[],'QP':[]}
 
     i = 0
     for flat,frag in fragments.iteritems():
@@ -31,6 +23,8 @@ def fragmentsToPlottable():
         width[i] = frag.width
         subs[i] = frag.substitutionSites
         term[i] = frag.terminals
+        if frag.root in roots:
+            roots[frag.root].append(i)
         i+=1
 
 def goPlot():
@@ -49,7 +43,7 @@ def goPlot():
            props = term
            title = 'Number of terminals (words)'
 
-        for minProp in range(1,2):
+        for minProp in range(1,1):
             indexes = [i for i in range(len(props)) if props[i]>minProp]
             colors = [props[i] for i in indexes]
 
@@ -59,6 +53,16 @@ def goPlot():
             plot(toPlotL,dL,toPlotM,dM,colors,title)
             plot(toPlotN,dN,toPlotM,dM,colors,title)
             plot(toPlotN,dN,toPlotL,dL,colors,title)
+
+    for root, indexes in roots.iteritems():
+        title = 'Depth of the fragments rooted at '+root
+        colors = [depth[i] for i in indexes]
+        toPlotL = [L[i] for i in indexes]
+        toPlotM = [M[i] for i in indexes]
+        toPlotN = [N[i] for i in indexes]
+        plot(toPlotL,dL,toPlotM,dM,colors,title)
+        plot(toPlotN,dN,toPlotM,dM,colors,title)
+        plot(toPlotN,dN,toPlotL,dL,colors,title)
 
 def plot(toPlotX,Xdescription,toPlotY,Ydescription,colors,title):
     thres = 0.000001
@@ -124,13 +128,13 @@ def readFragsLarge():
 
     fN = "resultingGrammars/ddop.txt"
     pf.readFragments(fN,2)
-    dN = "Weight according to Maximal Overlap 1 vs all"
+    dN = "Weight according to Maximal Overlap 1 vs. Rest"
 
 def main():
 
 
     global plotn
-    plotn = 30
+    plotn = 0
 #    readFragsSmall()
     readFragsLarge()
     fragmentsToPlottable()

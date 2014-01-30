@@ -1,4 +1,10 @@
 \section{Results}\label{sec:Results}
+
+There are three grammars we analyze.%
+
+
+
+
 \subsection{Parsing performance}
 
 \begin{table*}[t]
@@ -18,7 +24,7 @@ leaf-ancestor&95.09&94.70&92.87\\
 \label{t:performance16}
 \end{table*}
 
-Table\ref{t:performance16} shows the parsing performance for the three grammars we constructed. Note that the POS-tags were passed to the parser in all cases, so tagging accuracy was 100\% and is ommitted from this table. %Leaf-ancestor?
+Table\ref{t:performance16} shows the parsing performance for the three grammars we constructed. Note that the POS-tags were passed to the parser in all cases, so tagging accuracy was 100\% and is omitted from this table. %Leaf-ancestor?
 
 
 
@@ -32,6 +38,9 @@ $p_{unkn}$ was found to be $1.41\times 10^{-3}$%0.00140590480016
 
 \subsection{Pairwise comparison of the grammars}
 In each plot, two grammars are compared to each other. The fragments are presented in a scatter plot, with the weights assigned by the two grammars along the axes. The weights are best visualized on a logarithmic scale. However, it is also informative to see those fragments with value zero. Therefore, the first interval ($[0,10^{-6}]$) is linear, while the rest of the plot is logarithmic. %symlog scaling
+
+The difference between grammars is represented by the distance of the points to the \emph{identity} line ($x=y$).
+
 The color corresponds to some feature, e.g. the depth of the fragment. The color mapping is also logarithmic. 
 
 
@@ -39,26 +48,45 @@ The color corresponds to some feature, e.g. the depth of the fragment. The color
 \paragraph{Comparing `split' to `one vs. rest'}
 \begin{figure}
 \center
-\includegraphics[width=\linewidth]{../data/plots/plot32.png}
+\includegraphics[width=\linewidth]{../data/plots/32.png}
 \label{f:ddop-ddops-depth}
 \end{figure}
 
-Figure \ref{f:ddop-ddops-depth} illustrates the effect of the split estimation as compared to the one vs. rest. 
+Figure \ref{f:ddop-ddops-depth} illustrates the effect of the split estimation as compared to the one vs. rest. We see a remarkable separation of fragments with larger depth (lighter color) below the identity line, and fragments with smaller depth above it. This indicates that the split estimation tends to introduce a bias towards smaller fragments, or reduce the bias towards larger fragments.
+
+%Diepe fragmenten zijn zwaarder in :
+%	SD dan in MOS
+%	SD dan MO
+%	MO dan MOS (scherp)
+
+%Brede fragmenten zijn zwaarder in:
+% 	SD dan MOS (punt: CFG rules)
+%	MO dan MOS (scherp)
 
 
-\begin{figure}
-\center
-\includegraphics[width=\linewidth]{../data/plots/plot1.png}
-\end{figure}
 
 
-\begin{figure}
-\center
-\includegraphics[width=\linewidth]{../data/plots/plot2.png}
-\end{figure}
 
 
-\begin{figure}
-\center
-\includegraphics[width=\linewidth]{../data/plots/plot3.png}
-\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

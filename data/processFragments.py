@@ -11,7 +11,7 @@ class Fragment:
         self.computeDepth(flat)
         self.computeWidth(flat)
         self.findRoot(flat)
-
+       # print flat,self.depth
         #possibly add:
         # - number of words
         # - number of substitution sites
@@ -19,14 +19,19 @@ class Fragment:
     def computeDepth(self, flat):
         depth = 0
         maxDepth = 0
+        sawSpace = False
         for c in flat:
-            if c=='(':
-                depth = depth +1
             if c ==')':
-                depth = depth -1
+                depth -= 1
+            if sawSpace:
+               if c=='(':
+                  depth += 1
+               elif not c==')' and depth+1>maxDepth:
+                  maxDepth = depth+1
+            sawSpace = (c==' ')
             if depth>maxDepth:
                maxDepth = depth
-        self.depth =  maxDepth-1
+        self.depth =  maxDepth
 
     def computeWidth(self,flat):
   #      subs = re.findall('\(\S+ \)',flat)
@@ -167,7 +172,7 @@ def grammarToFile(N, fileName):
     f = open(fileName,'w')
     for flat, fragment in fragments.iteritems():
         if fragment.depth<1:
-           print 'not a valid fragment:',frag.flat
+           print 'not a valid fragment:',fragment.flat
            continue
         if fragment.weights[N] > 0:
            f.write(fragment.flat+'\t'+str(fragment.weights[N])+'\n')
@@ -266,7 +271,14 @@ def computePunkn():
     return float(len(unparsed))/float(hcSize)
 
 
-
+def processDDOP():
+    global fragments
+    fragments = dict()
+    global globalRuns
+    globalRuns = 1
+    readFragments('bigRun/wsj-02-21.mrg.39833.mo.txt',0)
+    grammarToFile(0, 'resultingGrammars/ddop.txt')
+    print 'processed DDOP '
 
 
 def processFrags():
@@ -275,9 +287,10 @@ def processFrags():
 
     global prefix
     prefix = 'bigRun/wsj-02-21.mrg.split19916.'
-    print computePunkn()
+#    print computePunkn()
 #    processDOPS()
 #    processDDOPS()
+    processDDOP()
 
 
 
