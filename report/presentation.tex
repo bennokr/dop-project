@@ -39,7 +39,7 @@
 
 \title{Doubling \dops}
 \subtitle{ A comparison of \ddop{} and \dops{}}
-\author[Kruit, Veldhoen]{Benno Kruit\and Sara Veldhoen{\\\vspace{.6cm}\small Supervised by: \\Andras van Cranenburg \and Khalil Sima'an}}
+\author[Kruit, Veldhoen]{Benno Kruit\and Sara Veldhoen{\\\vspace{.6cm}\small Supervised by: \\Andreas van Cranenburg \and Khalil Sima'an}}
 
 \institute{University of Amsterdam (UvA)}
 \date{Project AI, January 2014}
@@ -197,7 +197,38 @@ child { node {VP}
 \end{frame}
 \subsection{Bias and Consistency}
 
-\begin{frame}{Title}
+\begin{frame}{Consistency}
+
+\begin{itemize}
+\item Assumption
+  \begin{itemize}
+  \item Language is an infinite parse tree distribution
+  \item Treebank is a finite sample
+  \end{itemize}
+\\
+\item \emph{Estimate} the true distribution
+\item Expected estimation should improve when the treebank grows 
+$\rightarrow$ expected \emph{loss} should decline
+\item {\bf Consistency}: Expected loss becomes 0 when the sample size approaches $\infty$
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Bias}
+
+\begin{itemize}
+\item Assumption
+  \begin{itemize}
+  \item An estimator should approach \emph{any} distribution
+  \item Even finite distributions!
+  \end{itemize}
+\\
+\item If there's a distribution that doesn't match its expected estimate, the estimator is {\bf biased}.
+\item What about unseen data?
+\item Bias is {\bf good}
+\end{itemize}
+
 \end{frame}
 
 \section{\ddop{} and \dops{}: a comparison}
@@ -253,11 +284,11 @@ child { node {VP}
   % Keep the summary *very short*.
   \begin{itemize}
   \item
-    The \alert{first main message} of your talk in one or two lines.
+    So \alert{shortest derivations} are not as useful as they seem
   \item
-    The \alert{second main message} of your talk in one or two lines.
+    And a \alert{split} moves weight to large fragments
   \item
-    Perhaps a \alert{third message}, but not more than that.
+    \alert{Performance} is not related to \alert{consistency}
   \end{itemize}
   
   % The following outlook is optional.
@@ -267,9 +298,9 @@ child { node {VP}
     Outlook
     \begin{itemize}
     \item
-      Something you haven't solved.
+      Why not?
     \item
-      Something else you haven't solved.
+      Is it just grammar size?
     \end{itemize}
   \end{itemize}
 \end{frame}
