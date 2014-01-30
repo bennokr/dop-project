@@ -134,15 +134,31 @@ def readFragsLarge():
     pf.readFragments(fN,2)
     dN = "Weight according to Maximal Overlap - Full"
 
+def fragsToArff():
+    f = open('wekabaar.arff','w')
+    for flat,fragment in fragments.iteritems():
+        f.write(str(fragment.depth)+',')
+        f.write(str(fragment.substitutionSites)+',')
+        f.write(str(fragment.terminals)+',')
+        if fragment.root in ['NP','VP','S','PP','ADJP','SBAR','QP']:
+           f.write(str(fragment.root)+',')
+        else:
+           f.write('other,')
+        f.write(str(fragment.weights[0])+',')
+        f.write(str(fragment.weights[0])+',')
+        f.write(str(fragment.weights[0])+'\n')
+    f.close()
+
 def main():
 
 
     global plotn
-    plotn = 0
+#    plotn = 0
 #    readFragsSmall()
     readFragsLarge()
-    fragmentsToPlottable()
-    goPlot()
+#    fragmentsToPlottable()
+#    goPlot()
+    fragsToArff()
 
 
 if __name__ == '__main__':
