@@ -28,16 +28,18 @@
 \newcommand{\dops}[0]{DOP$ ^*$}
 \newcommand{\ddop}[0]{Double-DOP}
 
+\newcommand{\pijl}[0]{$\rightarrow$}
 
 %figures:
 \usepackage{tikz}
 \usetikzlibrary{trees,positioning,backgrounds}
+\usetikzlibrary{shapes.multipart}
 \usepackage{tikz-qtree}
 
 
 \title{Doubling \dops}
 \subtitle{ A comparison of \ddop{} and \dops{}}
-\author[Kruit, Veldhoen]{Benno Kruit\and Sara Veldhoen{\\\small Supervised by: \\Andras van Cranenburg \and Khalil Sima'an}}
+\author[Kruit, Veldhoen]{Benno Kruit\and Sara Veldhoen{\\\vspace{.6cm}\small Supervised by: \\Andras van Cranenburg \and Khalil Sima'an}}
 
 \institute{University of Amsterdam (UvA)}
 \date{Project AI, January 2014}
@@ -122,7 +124,77 @@ A grammar describes:
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Grammar: CFG rules}
+\begin{quotation}
+S\pijl{} NP VP\\
+VP\pijl{} V NP\\
+NP \pijl{} John\\
+NP\pijl{} Mary\\
+V\pijl{} loves
+\end{quotation}
 
+\end{frame}
+\begin{frame}{Grammar: Tree fragments}
+
+\begin{figure}
+\begin{tikzpicture}
+[node distance = 70 pt, sibling distance=30pt, level distance=20pt,level 2/.style={sibling distance=25pt},level 3/.style={sibling distance=15pt}]
+%[level 2/.style={sibling distance = 30 pt}]
+
+\node (f1) {S}
+child { node {NP}  
+	child{ node [color=blue]{\small John}}
+	}
+child { node {VP} 
+	child{ node {V} 
+		child {node [color=blue]{\small Loves}}
+		} 
+	child{node {NP}
+		child {node [color=blue]{\small Mary}}
+		}
+	};
+\node (f2)[right=of f1] {S}
+child { node {NP} 
+	}
+child { node {VP} 
+	child{ node {V} 
+		child {node [color=blue]{\small Loves}}
+		} 
+	child{node {NP}
+		}
+	};
+\node (f3)[right=of f2] {S}
+child { node {NP}  
+	child{ node [color=blue]{\small John}}
+	}
+child { node {VP} 
+	};
+
+\node (f4)[below=of f1] {S}
+child { node {NP}  
+	child{ node [color=blue]{\small John}}
+	}
+child { node {VP} 
+	child{ node {V} 
+		} 
+	child{node {NP}
+		child {node [color=blue]{\small Mary}}
+		}
+	};
+
+\node (f5)[right=of f4] {VP} 
+	child{ node {V} 
+		} 
+	child{node {NP}
+		child {node [color=blue]{\small Mary}}
+		};
+\node(etc)[below right = 0cm and 1cm of f5, align=center]{\\Etc...\\ Exponentially many};
+\end{tikzpicture}
+
+\end{figure}
+
+
+\end{frame}
 \subsection{Bias and Consistency}
 
 \begin{frame}{Title}
