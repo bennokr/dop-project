@@ -43,7 +43,11 @@ def goPlot():
            props = term
            title = 'Number of terminals (words)'
 
-        for minProp in range(1,1):
+
+        for minProp in range(1,3):
+            if minProp>1:
+               title+=', starting at '+str(minProp)
+
             indexes = [i for i in range(len(props)) if props[i]>minProp]
             colors = [props[i] for i in indexes]
 
@@ -111,7 +115,7 @@ def readFragsSmall():
     dM = "Double-DOP split: 500/500"
     f2 = "wsj/wsj_ddop_1vall_1000_1.txt"
     pf.readFragments(f2,2)
-    dN = "Double-DOP 1 vs all: 1000"
+    dN = "Double-DOP full: 1000"
 
 def readFragsLarge():
     global fragments
@@ -120,15 +124,15 @@ def readFragsLarge():
 
     fL = "resultingGrammars/ddopSplit.txt"
     pf.readFragments(fL,0)
-    dL = "Weight according to Maximal Overlap with Split"
+    dL = "Weight according to Maximal Overlap - Split"
 
     fM = "resultingGrammars/dops.txt"
     pf.readFragments(fM,1)
-    dM = "Weight according to Shortest Derivation with Split"
+    dM = "Weight according to Shortest Derivation - Split"
 
     fN = "resultingGrammars/ddop.txt"
     pf.readFragments(fN,2)
-    dN = "Weight according to Maximal Overlap 1 vs. Rest"
+    dN = "Weight according to Maximal Overlap - Full"
 
 def main():
 
