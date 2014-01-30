@@ -11,7 +11,7 @@
 \end{figure}
 %SIZE OF THE GRAMMARs
 
-Figure \ref{f:grammars} summarizes the three grammars we investigate.
+Figure \ref{f:grammars} summarizes the three grammars we investigate. We have not been able to provide an efficient  implementation of shortest derivation extraction with full estimation.
 %There are three grammars we analyze: maximal overlap extraction with both split and full estimation, and shortest derivation with split estimation.
 The split estimation was done by interpolating the estimates produced by ten random (equal) splits.  All grammars have been smoothed with PCFG rules to maximize coverage. In the maximal overlap approach, this is done internally as defined in \ddop{}. In the shortest derivation apporach, we redistribute a proportion $p_{unkn}$ of the probability mass over the PCFG grammar. $p_{unkn}$ was found to be $1.41\times 10^{-3}$ for our dataset.%0.00140590480016
 
