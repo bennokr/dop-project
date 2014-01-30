@@ -1,0 +1,26 @@
+
+ Category Statistics (10 most frequent categories / errors)
+  label  % gold  recall    prec.     F1           test/gold   count
+_______________________________________        ____________________
+     NP   41.06   84.44   83.62   84.03               NP/S      44
+     VP   20.26   79.13   79.19   79.16               S/NP      33
+      S   13.25   77.86   80.28   79.05              NP/VP      21
+     PP   12.71   75.71   74.69   75.20            ADJP/VP      21
+   SBAR    3.43   68.08   68.83   68.45             PRT/NP      20
+    PRT    3.32   70.24   75.23   72.65           ADJP/PRT      20
+   ADJP    2.30   58.04   53.98   55.94              NP/PP      19
+     QP    0.96   76.10   78.79   77.42            VP/ADJP      19
+   WHNP    0.87   92.43   96.07   94.21              VP/NP      19
+ WHADVP    0.32   91.30   92.65   91.97            PP/SBAR      17
+
+__________ Summary (ALL) __________
+number of sentences:         1229
+longest sentence:              40
+gold brackets:              21341
+cand. brackets:             21323
+labeled recall:             79.20
+labeled precision:          79.32
+labeled f-measure:          79.26
+exact match:                16.52
+leaf-ancestor:              91.29
+tagging accuracy:          100.00
