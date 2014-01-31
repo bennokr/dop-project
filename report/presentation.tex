@@ -195,6 +195,48 @@ child { node {VP}
 
 
 \end{frame}
+
+\begin{frame}{Grammar: Tree fragments}
+
+\begin{figure}
+\begin{tikzpicture}
+[node distance = 70 pt, sibling distance=30pt, level distance=20pt,level 2/.style={sibling distance=25pt},level 3/.style={sibling distance=15pt}]
+%[level 2/.style={sibling distance = 30 pt}]
+
+\node (f1) {S}
+child { node {NP}  
+  child{ node [color=blue]{\small John}}
+  }
+child { node {VP} };
+\node(c)[below right = 0cm and 1cm of f1, align=center]{\\$\circ$};
+\node (f2)[right=of f1] {VP} 
+  child{ node {V} 
+    child {node [color=blue]{\small Loves}}
+    } 
+  child{node {NP}
+    child {node [color=blue]{\small Mary}}
+    };
+\node(is)[below right = 0cm and 1cm of f2, align=center]{\\$=$};
+\node (f3)[right=of f2] {S}
+child { node {NP}  
+  child{ node [color=blue]{\small John}}
+  }
+child { node {VP} 
+  child{ node {V} 
+    child {node [color=blue]{\small Loves}}
+    } 
+  child{node {NP}
+    child {node [color=blue]{\small Mary}}
+    }
+  };
+\end{tikzpicture}
+
+\end{figure}
+
+
+\end{frame}
+
+
 \subsection{Bias and Consistency}
 
 \begin{frame}{Consistency}
@@ -205,7 +247,6 @@ child { node {VP}
   \item Language is an infinite parse tree distribution
   \item Treebank is a finite sample
   \end{itemize}
-\\
 \item \emph{Estimate} the true distribution
 \item Expected estimation should improve when the treebank grows 
 $\rightarrow$ expected \emph{loss} should decline
@@ -222,7 +263,6 @@ $\rightarrow$ expected \emph{loss} should decline
   \item An estimator should approach \emph{any} distribution
   \item Even finite distributions!
   \end{itemize}
-\\
 \item If there's a distribution that doesn't match its expected estimate, the estimator is {\bf biased}.
 \item What about unseen data?
 \item Bias is {\bf good}
