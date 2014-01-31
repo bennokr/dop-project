@@ -195,6 +195,55 @@ child { node {VP}
 
 
 \end{frame}
+
+\begin{frame}{Grammar: Tree fragments}
+
+\begin{figure}
+\begin{tikzpicture}
+[node distance = 70 pt, sibling distance=30pt, level distance=20pt,level 2/.style={sibling distance=25pt},level 3/.style={sibling distance=15pt}]
+%[level 2/.style={sibling distance = 30 pt}]
+
+\node (f1) {S}
+child { node {NP}  
+  child{ node [color=blue]{\small John}}
+  }
+child { node {VP} };
+\node(c)[below right = 0cm and 1cm of f1, align=center]{\\$\circ$};
+\node (f2)[right=of f1] {VP} 
+  child{ node {V} 
+    child {node [color=blue]{\small Loves}}
+    } 
+  child{node {NP}
+    child {node [color=blue]{\small Mary}}
+    };
+\node(is)[below right = 0cm and 1cm of f2, align=center]{\\$=$};
+\node (f3)[right=of f2] {S}
+child { node {NP}  
+  child{ node [color=blue]{\small John}}
+  }
+child { node {VP} 
+  child{ node {V} 
+    child {node [color=blue]{\small Loves}}
+    } 
+  child{node {NP}
+    child {node [color=blue]{\small Mary}}
+    }
+  };
+
+\node(p1)[below=3cm of f1, align=center]{\\$0.1$};
+\node(p2)[below=of c, align=center]{\\$\times$};
+\node(p3)[below=3cm of f2, align=center]{\\$0.3$};
+\node(p4)[below=of is, align=center]{\\$=$};
+\node(p5)[below=3cm of f3, align=center]{\\$0.03$};
+
+\end{tikzpicture}
+
+\end{figure}
+
+
+\end{frame}
+
+
 \subsection{Bias and Consistency}
 
 \begin{frame}{Consistency}
@@ -205,7 +254,6 @@ child { node {VP}
   \item Language is an infinite parse tree distribution
   \item Treebank is a finite sample
   \end{itemize}
-\\
 \item \emph{Estimate} the true distribution
 \item Expected estimation should improve when the treebank grows 
 $\rightarrow$ expected \emph{loss} should decline
@@ -222,7 +270,6 @@ $\rightarrow$ expected \emph{loss} should decline
   \item An estimator should approach \emph{any} distribution
   \item Even finite distributions!
   \end{itemize}
-\\
 \item If there's a distribution that doesn't match its expected estimate, the estimator is {\bf biased}.
 \item What about unseen data?
 \item Bias is {\bf good}
@@ -303,6 +350,7 @@ $t_3=f_4\circ f_8$(a) or $f_3\circ f_7$(b), $t_4=f_5\circ f_7$(a) or $f_4\circ f
 
 
 \subsection{Experiments}
+<<<<<<< HEAD
 \begin{frame}{Experiments}
 Estimation and Parsing with the {\tt Disco-Dop} framework.
 
@@ -318,6 +366,13 @@ Wall Street Journal (WSJ) section of the Penn Treebank
 Preprocessing:\begin{itemize}
 \item Removing functions
 \item Binarizing by Markovization (h=1 v=1)
+=======
+\begin{frame}{Three grammars}
+\begin{itemize}
+\item Shortest derivations (split)
+\item Maximal overlap (full)
+\item Maximal overlap (split)
+>>>>>>> a4a538f9df18e499f49291fecce3b05c4b5f36d1
 \end{itemize}
 \end{frame}
 
@@ -367,6 +422,12 @@ $p_{unkn}$= $1.41\times 10^{-3}$
 
 \subsection{Analyzing grammars}
 
+<<<<<<< HEAD
+=======
+\begin{frame}{Maximal overlap $\leftrightarrow$ shortest derivation}
+\includegraphics[width=\linewidth,trim=0.5cm 0cm 2.5cm 0.5cm, clip=true]{../data/plots/0.png}
+\end{frame}
+>>>>>>> a4a538f9df18e499f49291fecce3b05c4b5f36d1
 
 \begin{frame}{Split $\leftrightarrow$ Full}
 \begin{figure}
