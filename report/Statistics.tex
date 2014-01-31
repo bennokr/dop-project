@@ -26,7 +26,7 @@ $$\lim_{n \to \infty} \mathbf{E}[\mathcal{L}(\textsc{est}(X), P_\Omega)] = 0 $$
 In its original formulation, DOP was defined using a \emph{relative frequency estimate}, by counting how often it occurs in the treebank compared to others with the same root. However, it has been shown \cite{johnson2002} that in this case, the RF estimator is inconsistent.
 
 % Bias
-Another property of an estimator is its \emph{bias}, which is defined as the difference between the true probability and the expected estimate. 
+Another property of an estimator is its \emph{bias}, which is defined as the difference between the true probability distribution and the expected estimate for a language. If such a language exists, the estimator is biased in general.
 It has been proven that any unbiased DOP estimator will overfit a treebank by assigning zero-probabilites to trees outside the corpus.
 To prevent overfitting, it is therefore necessary to introduce a bias that assigns a non-zero probability to unseen trees.
 By maximizing the probability of a corpus different from the one from which the fragments are extracted, we will see that it is possible to minimize overfitting.
