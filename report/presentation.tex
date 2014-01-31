@@ -253,13 +253,93 @@ $\rightarrow$ expected \emph{loss} should decline
 \begin{frame}{Comparison}
 \begin{itemize}
 \item Shortest derivations or Maximal overlap
-\item Held-out estimation or one vs. the rest
+\item Split or full estimation
+\item Consistency
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Example}
+\begin{figure}
+\input{figureTreeBank}
+\caption{A toy treebank}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Example}
+\begin{figure}
+\input{figureFragments}
+\caption{Some extracted fragments}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Example}
+\begin{table}
+\footnotesize
+\begin{tabular}{c|p{.3\textwidth}c|p{.3\textwidth}c|}
+&Maximal overlap&weight&Shortest deriv.\footnotemark&weight\\\hline
+f1&(t1,t3),(t2,t4)&4/12&-&0\\
+f2&(t1,t2)&2/12&1b, 2a&1/4\\
+f3&(t2,t3)&2/12&2b, 3b&1/4\\
+f4&(t3,t4)&2/12&3a, 4b&1/4\\
+f5&(t1,t4)&2/12&1a, 4a&1/4\\
+f6&(t1,t3),(t1,t4), (t2,t3),(t2,t4)&4/6&1a, 2b&1/2\\
+f7&-&0&3b, 4a&1/2\\
+f8&CFG rule&2/6&-&0\\
+f9&(t2,t3),(t2,t4), (t3,t4)&4/6&2a, 3a&1/2\\
+f10&-&0&1b, 4b&1/2\\
+f11&CFG rule&2/6&-&0\\
+f12&CFG rule&2/2&-&0\\
+f13&CFG rule&2/2&-&0\\
+\end{tabular}
+
+\caption{Weight assignment of MO and SD, full estimation}
+\end{table}
+\footnotetext{
+$t_1=f_5\circ f_6$(a) or $f_2\circ f_{10}$(b), $t_2=f_2\circ f_8$(a) or $f_3\circ f_6$(b),
+$t_3=f_4\circ f_8$(a) or $f_3\circ f_7$(b), $t_4=f_5\circ f_7$(a) or $f_4\circ f9$(b)}
+%For this dataset, two shortest derivations exist for each tree. We refer to them with the following variables: 1a = f5, f6; 1b = f2, f10; 2a = f2, f8; 2b = f3, f6; 3a = f4, f8; 3b = f3, f7; 4a = f5, f7; 4b = f4, f9}
+
+\end{frame}
+
+
 \subsection{Experiments}
+\begin{frame}{Experiments}
+Estimation and Parsing with the {\tt Disco-Dop} framework.
 
+Three grammars:
+\begin{itemize}
+\item Maximal Overlap Full (\ddop{})
+\item Maximal Overlap Split
+\item Shortest Derivtion Split (\dops{})
+\end{itemize}
+\end{frame}
+\begin{frame}{Data}
+Wall Street Journal (WSJ) section of the Penn Treebank
+Preprocessing:\begin{itemize}
+\item Removing functions
+\item Binarizing by Markovization (h=1 v=1)
+\end{itemize}
+\end{frame}
 
+\begin{frame}{Algorithm}
+\begin{itemize}
+	\item Estimation
+		\begin{itemize}
+			\item Full: Maximal Overlap
+			\item Split: 10 random folds, interpolating results
+				\begin{itemize} 
+					\item Maximal Overlap 
+					\item Shortest Derivation
+				\end{itemize}
+			\item Smoothing
+		\end{itemize}
+	\item Parsing
+		\begin{itemize}
+			\item Input: sentences with  sentences with a POS-tag attached to each word
+			\item Output: Parsing accuracy scores
+		\end{itemize}
+\end{itemize}
+\end{frame}
 
 \section{Results}
 \begin{frame}
@@ -271,22 +351,38 @@ $\rightarrow$ expected \emph{loss} should decline
 \draw[dashed](MOS)--(MOF)--(SDS)--(MOS);
 \end{tikzpicture}
 \caption{The grammars and their size}
-\label{f:grammars}
 \end{figure}
+$p_{unkn}$= $1.41\times 10^{-3}$
 \end{frame}
+
+\subsection{Parsing Performance}
+\begin{frame}{Scores}
+\footnotesize
+\begin{table}
+\input{tablePerformance}
+\end{table}
+\end{frame}
+
 
 
 \subsection{Analyzing grammars}
 
+
+\begin{frame}{Split $\leftrightarrow$ Full}
+\begin{figure}
+\includegraphics[width=\textwidth,trim=0.5cm 0cm 2.5cm 0.5cm, clip=true]{../data/plots/2.png}
+\end{figure}
+\end{frame}
+
+
 \begin{frame}{Maximal overlap $\leftrightarrow$ shortest derivation}
+
+\begin{figure}
+\includegraphics[width=\textwidth,trim=0.5cm 0cm 2.5cm 0.5cm, clip=true]{../data/plots/0.png}
+\end{figure}
 \end{frame}
 
-\begin{frame}{Split $\leftrightarrow$ one vs. the rest}
-\end{frame}
 
-\subsection{Parsing Performance}
-\begin{frame}{F1 scores}
-\end{frame}
 
 
 \section*{Summary}
@@ -296,11 +392,13 @@ $\rightarrow$ expected \emph{loss} should decline
   % Keep the summary *very short*.
   \begin{itemize}
   \item
-    So \alert{shortest derivations} are not as useful as they seem
+    \alert{Shortest Derivation} moves weight to larger fragments
   \item
-    And a \alert{split} moves weight to large fragments
+    \alert{Split} moves weight to smaller fragments
+
   \item
-    \alert{Performance} is not related to \alert{consistency}
+    \alert{Performance} is not necessarily related to \alert{consistency}:   \alert{\dops{}} has bad parsing performance
+
   \end{itemize}
   
   % The following outlook is optional.
@@ -308,50 +406,26 @@ $\rightarrow$ expected \emph{loss} should decline
   \begin{itemize}
   \item
     Outlook
+
+
     \begin{itemize}
-    \item
-      Why not?
-    \item
-      Is it just grammar size?
+    \item Further analysis %Shortest derivations seem like a good idea, but do not perform good. Why not? 
+%Is it just grammar size? Or should we use an estimator other than relative frequency?
+\item Other estimators 
+
+%exist. 
+%How do their grammars differ? Is there a link between the properties of the grammar and its performance?
+
     \end{itemize}
   \end{itemize}
 \end{frame}
 
-\bibliographystyle{acl2014}
-\bibliography{bibliography}
-
-
-%
-%
-%% All of the following is optional and typically not needed. 
-%\appendix
-%\section<presentation>*{\appendixname}
-%\subsection<presentation>*{For Further Reading}
-%
-%\begin{frame}[allowframebreaks]
-%  \frametitle<presentation>{For Further Reading}
-%    
-%  \begin{thebibliography}{10}
-%    
-%  \beamertemplatebookbibitems
-%  % Start with overview books.
-
-  % \bibitem{Author1990}
-  %   A.~Author.
-  %   \newblock {\em Handbook of Everything}.
-  %   \newblock Some Press, 1990.
- 
-    
-  % \beamertemplatearticlebibitems
-  % % Followed by interesting articles. Keep the list short. 
-
-  % \bibitem{Someone2000}
-  %   S.~Someone.
-  %   \newblock On this and that.
-  %   \newblock {\em Journal of This and That}, 2(1):50--100,
-  %   2000.
-  % \end{thebibliography}
-% \end{frame}
+\begin{frame}{Acknowledgments}
+\begin{itemize}
+\item Andreas van Cranenburgh
+\item Khalil Sima'an
+\end{itemize}
+\end{frame}
 
 \end{document}
 
