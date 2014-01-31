@@ -36,18 +36,25 @@ Fragments can be combined in a \emph{derivation} to build syntactic structures. 
 
 A weight must be assigned to each fragment. This can be done by counting how often it occurs in the treebank compared to others with the same root, yielding the \emph{relative frequency estimate}. The probability of a derivation is the product of the probability of the fragments it uses. Note that a single tree can be the result of different derivations. Therefore probability of a tree is the sum of the probabilities of all its derivations.
 
-\subsection{Theoretical issues}
-It has been shown that DOP (in its original formulation) is biased and inconsistent \cite{johnson2002}, which are both assumed to be bad properties of an estimator in general. As we will see, bias is not necessarily a bad thing. In fact, Zollman proves in  \cite{zollmann2005} that any non-overfitting estimator is biased. Furthermore, he shows that it is possible to define a DOP-estimator that is consistent.
+\paragraph{Theoretical issues}
+It has been shown that DOP (in its original formulation) is biased and inconsistent \cite{johnson2002}, which are both assumed to be bad properties of an estimator in general. As we will see, bias is not necessarily a bad thing. In fact, Zollman proves in  \cite{zollmann2005} that any non-overfitting estimator is biased. Furthermore, he shows that it is possible to define a DOP-estimator, \dops{}, that is provably consistent.
 
 
-\subsection{Practical issues}
+\paragraph{Practical issues}
 In its original formulation, DOP takes the trees apart in all possible ways. The number of fragments is exponential in the length of the sentences, thus the size of the symbolic grammar would be far too huge to be computationally feasible. 
-Different approaches have been taken to reduce the symbolic grammar, e.g. by sampling or by applying a smart algorithm. This appears to be far from trivial.
+Different approaches have been taken to reduce the symbolic grammar, e.g. by sampling or by applying a smart algorithm. Sangati and Zuidema have described a very efficient DOP variation, \ddop{}, that also produces excellent results \cite{sangati2011}.
 
+
+\subsection{Our contribution}
+The main question of this work concerns the correspondence between theoretical properties and practical performance. Is it possible to gain theoretically attractive properties without performance losses? Can we reduce overfitting in an already well-performing approach by introducing the right bias? How do consistent grammars and well-performing grammars differ in their fragment weight distribution?
+
+We trained three grammars related to the different approaches on part of the WSJ treebank. The theoretical cornerstone of the \dops{} approach, extracting fragments from shortest derivations, lead to smaller grammars. The measure that should prevent overfitting, estimations on random splits of the corpus, increased the weight of large fragments. Neither approach improved on the performance of the \ddop{} approach. However, the comparision of grammars leads to profound insight into the internal distribution of the model. This elucidates the correspondance between the fragment weights and theoretical properties.
 
 \subsection{Outlook}
 Section~\ref{sec:Statistics} elaborates the notions of consistency and bias and their relation to overfitting.
-In section~\ref{sec:Existing}, we outline two approaches that tackle the reduction of the symbolic grammars: \ddop{} and \dops{}. This report focuses on a comparison of these approaches. Section~\ref{sec:Comparison} offers a detailed comparison as well as a description of the experiments we conduct. Theoretically, they differ in that \dops{}, unlike \ddop{}, has been proven to be consistent \cite{zollmann2005}. We investigate the differences between the grammars produced by \ddop{} \dops{}. The algorithms can be decomposed into two parts. We also analyze the impact of the partial choices by mutually using these parts.
+In section~\ref{sec:Existing}, we outline two approaches that tackle the reduction of the symbolic grammars: \ddop{} and \dops{}. This report focuses on a comparison of these approaches. Section~\ref{sec:Comparison} offers a detailed comparison as well as a description of the experiments we conduct. 
+% Theoretically, they differ in that \dops{}, unlike \ddop{}, has been proven to be consistent \cite{zollmann2005}. 
+We investigate the differences between the grammars produced by \ddop{} \dops{}. The algorithms can be decomposed into two parts. We also analyze the impact of the partial choices by mutually using these parts.
 
 In section~\ref{sec:Results}, we present our findings and provide an analysis. 
 

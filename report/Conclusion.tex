@@ -1,18 +1,29 @@
 \section{Conclusion}
 %Discussion, future work
 
-%Split (held-out est) reduces bias towards large fragments
-
+We have investigated two existing estimators in the Data Oriented Parsing approach to natural language syntax: \ddop{} and \dops. Our main question concerned the correspondence between theoretical properties and practical performance. 
 
 %Double-DOP: best performance
-
 %Performance not correlated with consistency of the method
-
 %Shortest derivation, very short grammar. But not as useful as it would seem: bad performance
+We compared the theoretically attractive shortest-derivation fragment extraction from \dops{} with the practical \ddop{} approach. Is proved impossible to match its performance. Because the consistent grammar performed poorer, it seems that consistency might be a less interesting property in practice.
+
+%Split (held-out est) decreases bias towards large fragments
+We introduced the corpus splitting from \dops{} into the \ddop{} approach. Estimating on a random split did not give us the expected overfitting avoidance. The split does seem to make the grammar less biased towards large fragments. 
+
+\paragraph{Concerns}
+While all grammars were trained on the same data set, the grammar from the shortest derivation with split was significantly smaller than the others. This could in itself explain the lower performance of this grammar, instead of the estimation method, because larger tree substitution grammars simply describe more data. It is therefore impossible to be completely certain in blaming the lower performance on the shortest-derivation approach.
+
 
 \paragraph{Future work}
-% analysis of other DOP grammars, 
+% analysis of other DOP grammars,
+Our analysis concerned only two existing DOP estimators: \ddop{} and \dops{}. Others have been proposed with one or more of the same desirable properties or comparable performance, of which the comparitive analysis is future work.
+
 %more elaborate analysis: possibly clustering on features such as depth, number of substitution sites and terminals
+Additionally, the fragment weight comparision in this paper is exploratory and rough. It would be very interesting to perform clustering on features such as depth, number of substitution sites and terminals to build a model of the difference in weight distribution.
 
 % is consistency indeed a valuable property at all?
+Finally, it is an important question whether estimator consistency for DOP is a valuable property at all. Behaviour of an estimator in the limit, on finite languages and on artificial constructions is not guaranteed to lead to improved performance on real treebanks. 
 
+\paragraph{Acknowledgements}
+We would like to thank Andreas van Cranenburgh for his generous contributions to both the theoretical insights and practical implementations in this work. Without him, this work would not have been.

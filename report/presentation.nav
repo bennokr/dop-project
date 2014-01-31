@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.26pt}
+\beamer@endinputifotherversion {3.27pt}
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
@@ -22,46 +22,48 @@
 \headcommand {\beamer@framepages {9}{9}}
 \headcommand {\slideentry {1}{2}{2}{10/10}{Bias and Consistency}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\sectionentry {2}{Double-DOP{} and DOP$ ^*${}: a comparison}{11}{Double-DOP{} and DOP$ ^*${}: a comparison}{0}}
-\headcommand {\beamer@sectionpages {3}{10}}
-\headcommand {\beamer@subsectionpages {9}{10}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{11}{Introduction to Double-DOP{} and DOP$ ^*${}}}\headcommand {\beamer@subsectionpages {11}{10}}
-\headcommand {\slideentry {2}{1}{1}{11/11}{Introduction to Double-DOP{} and DOP$ ^*${}}{0}}
+\headcommand {\slideentry {1}{2}{3}{11/11}{Bias and Consistency}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{1}{2}{12/12}{Introduction to Double-DOP{} and DOP$ ^*${}}{0}}
+\headcommand {\sectionentry {2}{Double-DOP{} and DOP$ ^*${}: a comparison}{12}{Double-DOP{} and DOP$ ^*${}: a comparison}{0}}
+\headcommand {\beamer@sectionpages {3}{11}}
+\headcommand {\beamer@subsectionpages {9}{11}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{12}{Introduction to Double-DOP{} and DOP$ ^*${}}}\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\slideentry {2}{1}{1}{12/12}{Introduction to Double-DOP{} and DOP$ ^*${}}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{1}{3}{13/13}{Introduction to Double-DOP{} and DOP$ ^*${}}{0}}
+\headcommand {\slideentry {2}{1}{2}{13/13}{Introduction to Double-DOP{} and DOP$ ^*${}}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{14}{Comparison}}\headcommand {\beamer@subsectionpages {11}{13}}
-\headcommand {\slideentry {2}{2}{1}{14/14}{Comparison}{0}}
+\headcommand {\slideentry {2}{1}{3}{14/14}{Introduction to Double-DOP{} and DOP$ ^*${}}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {2}{2}{2}{15/15}{Comparison}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{15}{Comparison}}\headcommand {\beamer@subsectionpages {12}{14}}
+\headcommand {\slideentry {2}{2}{1}{15/15}{Comparison}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{16}{Experiments}}\headcommand {\beamer@subsectionpages {14}{15}}
-\headcommand {\slideentry {2}{3}{1}{16/16}{Experiments}{0}}
+\headcommand {\slideentry {2}{2}{2}{16/16}{Comparison}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\sectionentry {3}{Results}{17}{Results}{0}}
-\headcommand {\beamer@sectionpages {11}{16}}
-\headcommand {\beamer@subsectionpages {16}{16}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{17}{Analyzing grammars}}\headcommand {\beamer@subsectionpages {17}{16}}
-\headcommand {\slideentry {3}{1}{1}{17/17}{Analyzing grammars}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{17}{Experiments}}\headcommand {\beamer@subsectionpages {15}{16}}
+\headcommand {\slideentry {2}{3}{1}{17/17}{Experiments}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{1}{2}{18/18}{Analyzing grammars}{0}}
+\headcommand {\sectionentry {3}{Results}{18}{Results}{0}}
+\headcommand {\beamer@sectionpages {12}{17}}
+\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{18}{Analyzing grammars}}\headcommand {\beamer@subsectionpages {18}{17}}
+\headcommand {\slideentry {3}{1}{1}{18/18}{Analyzing grammars}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {3}{1}{3}{19/19}{Analyzing grammars}{0}}
+\headcommand {\slideentry {3}{1}{2}{19/19}{Analyzing grammars}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{20}{Parsing Performance}}\headcommand {\beamer@subsectionpages {17}{19}}
-\headcommand {\slideentry {3}{2}{1}{20/20}{Parsing Performance}{0}}
+\headcommand {\slideentry {3}{1}{3}{20/20}{Analyzing grammars}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {3}{2}{2}{21/21}{Parsing Performance}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{21}{Parsing Performance}}\headcommand {\beamer@subsectionpages {18}{20}}
+\headcommand {\slideentry {3}{2}{1}{21/21}{Parsing Performance}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\sectionentry {4}{Summary}{22}{Summary}{0}}
-\headcommand {\beamer@sectionpages {17}{21}}
-\headcommand {\beamer@subsectionpages {20}{21}}
-\headcommand {\slideentry {4}{0}{3}{22/22}{}{0}}
+\headcommand {\slideentry {3}{2}{2}{22/22}{Parsing Performance}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@partpages {1}{22}}
-\headcommand {\beamer@subsectionpages {22}{22}}
-\headcommand {\beamer@sectionpages {22}{22}}
-\headcommand {\beamer@documentpages {22}}
-\headcommand {\def \inserttotalframenumber {21}}
+\headcommand {\sectionentry {4}{Summary}{23}{Summary}{0}}
+\headcommand {\beamer@sectionpages {18}{22}}
+\headcommand {\beamer@subsectionpages {21}{22}}
+\headcommand {\slideentry {4}{0}{3}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@partpages {1}{23}}
+\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\beamer@sectionpages {23}{23}}
+\headcommand {\beamer@documentpages {23}}
+\headcommand {\def \inserttotalframenumber {22}}

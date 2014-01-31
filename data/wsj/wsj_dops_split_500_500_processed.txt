@@ -286,6 +286,7 @@
 (NP (NP (DT ) (NN )) (SBAR (WHNP (WDT )) (S (VP ))))	1.27218370333e-06
 (RB perhaps)	1.1013215859e-05
 (NN effort)	2.80583613917e-06
+(NP (NP ) (NP|<,> (, ,) (NP (NP ) (NP|<PP> (PP ) (PP (IN ) (NP ))))))	6.36091851663e-07
 (NP (NP (NNS )) (PP (IN ) (NP (NP (NNS )) (PP ))))	8.78876535e-05
 (TOP (S (NP ) (S|<VP> (VP (VBD ) (PP (IN ) (NP ))) (. .))))	5.55308751666e-06
 (NP (NP ) (VP (VBN ) (VP|<ADVP> (ADVP (RB )) (PP (IN by) (NP )))))	3.18045925832e-07
@@ -624,7 +625,7 @@
 (NP|<CC> (CC &) (NP|<NNP> ))	4.87804878049e-05
 (TOP (S (NP (NN )) (S|<VP> )))	3.0505108e-05
 (VP (VBD ) (VP|<PP> (PP ) (VP|<PP> (PP (IN in) (NP )) (VP|<,> ))))	7.35618655289e-07
-(PP (IN ) (NP (NP ) (SBAR (S ))))	8.0927974103e-06
+(NP|<NN> (NN car) (NN ))	1.80505415162e-05
 (VP (VBD ) (S (VP (TO to) (VP (VB ) (PP )))))	2.20685596587e-06
 (VP|<PP> (PP (TO to) (NP )) (VP|<,> ))	1.86104218362e-05
 (NP (NP (DT a) (NP|<JJ> (JJ ) (NN ))) (PP (IN of) (NP (NNS ))))	3.18045925832e-07
@@ -755,7 +756,6 @@
 (NP (NP (NP ) (NP|<,> (, ,) (NP|<NP> ))) (NP|<,> ))	3.18045925832e-07
 (PRP himself)	4.91803278689e-05
 (ADJP (JJ ) (S (VP (TO to) (VP (VB ) (VP|<NP> (NP ) (PP ))))))	1.51057401813e-05
-(PP (IN ) (NP (NP ) (PP (IN of) (NP (NP ) (SBAR (S (NP ) (VP )))))))	1.34879956838e-06
 (S|<ADVP> (ADVP ) (S|<SBAR> ))	2.92397660819e-05
 (NP (DT a) (NP|<NN> ))	1.14496533299e-05
 (QP (CC ) (JJR ))	2.13675213675e-05
@@ -1063,7 +1063,6 @@
 (SBAR (WHADVP (WRB )) (S (NP (PRP )) (VP )))	0.00226944817317
 (TOP (S (`` ``) (S|<S> (S (NP (PRP )) (VP )) (S|<,> (, ) (S|<''> ('' ) (S|<NP> ))))))	0.00127104285
 (PP (IN ) (NP (NP ) (NP|<CC> (CC ) (NP (JJ ) (NNS )))))	6.74399784192e-07
-(VP (VBG ) (VP|<PP> (PP (IN ) (NP )) (S (VP ))))	7.35618655289e-07
 (NP (NP (NNS )) (PP (IN on) (NP )))	3.18045925832e-07
 (PP (TO ) (NP (NP (DT ) (NN )) (PP (IN ) (NP ))))	0.0003593542
 (TOP (S (RB ) (S|<NP> (NP (PRP )) (S|<VP> ))))	3.05356545e-05
@@ -1253,6 +1252,7 @@
 (VP (VBD ) (VP|<ADJP> (ADJP (JJ )) (PP (IN in) (NP (NNP )))))	7.35618655289e-07
 (VBD estimated)	1.0460251046e-05
 (JJS most)	0.00130434782609
+(VBD resurfaced)	1.0460251046e-05
 (NP (NP (DT a) (NP|<JJ> )) (PP (IN ) (NP (NP ) (NP|<,> (, ,) (NP )))))	3.18045925832e-07
 (CD 13.5)	1.44927536232e-05
 (IN by)	0.00022539444027
@@ -1260,6 +1260,7 @@
 (PP (TO to) (NP (NP (DT a) (NN )) (PP (IN of) (NP ))))	6.74399784192e-07
 (TOP (SINV (S ) (SINV|<,> )))	4.44247001333e-06
 (PP (IN in) (NP (NP ) (PP (IN ) (NP (NP ) (SBAR )))))	6.74399784192e-07
+(JJ insolvent)	6.038647343e-06
 (VB take)	8.24175824176e-05
 (NNP Paul)	4.4964028777e-06
 (TOP (S (S (NP ) (VP (MD ) (VP ))) (S|<,> (, ,) (S|<CC> (CC but) (S|<S> (S (NP ) (VP )) (. .))))))	1.11061750333e-06
@@ -1469,7 +1470,6 @@
 (S|<``> (`` ) (ADJP ))	0.000555555555556
 (S|<NP> (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (S|<VP> (VP ) (. .)))	9.2936802974e-06
 (VP (VB have) (S (VP (TO to) (VP ))))	2.20685596587e-06
-(NP (NP ) (PP (TO to) (NP )))	4.77068888748e-06
 (S (NP ) (VP (VBD rose) (VP|<NP> (NP (CD ) (NN %)) (PP ))))	1.03455410718e-06
 (NN quarry)	2.80583613917e-06
 (NP (NP ) (PP (IN at) (NP )))	3.49850518415e-06
@@ -1517,6 +1517,7 @@
 (PP (IN ) (NP (DT of) (NNS the)))	0.000187946545
 (NNS matters)	1.47275405007e-05
 (NP (NN computer) (NN ))	6.36091851663e-07
+(VP (VP ) (VP|<CC> (CC ) (VP (VBZ ) (VP|<``> ))))	7.35618655289e-07
 (VBZ works)	2.06611570248e-05
 (S|<VP> (VP (MD would) (VP )) (. .))	2.14899713467e-05
 (S|<VP> (VP (VBD said) (SBAR (S (NP ) (VP (MD ) (VP ))))) (. .))	1.67144221585e-05
@@ -1627,6 +1628,7 @@
 (RB previously)	4.40528634361e-05
 (TOP (S (PP (IN In) (NP (NN ))) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP ) (. .))))))	2.22123500666e-06
 (NNP April)	8.9928057554e-06
+(SINV (S ) (SINV|<,> ))	0.0005
 (PP (IN ) (ADJP (JJ )))	0.0011229769
 (NN move)	1.12233445567e-05
 (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP (VBD ) (VP|<ADVP> )) (. .))))	8.56898029135e-06
@@ -1676,6 +1678,7 @@
 (PRN (-LRB- -LRB-) (PRN|<VP> (VP ) (-RRB- -RRB-)))	4.90196078431e-05
 (PP (IN ) (PP|<IN> (IN ) (NP )))	9.00185455e-05
 (TOP (SINV (`` ``) (SINV|<S> (S ) (SINV|<,> (, ) (SINV|<''> ('' ) (SINV|<VP> (VP (VBD )) (SINV|<NP> )))))))	0.00127104285
+(VP (TO to) (VP (VB ) (NP (DT ) (NN ))))	3.67809327645e-06
 (SINV|<VP> (VP ) (SINV|<NP> ))	0.000615763546798
 (NP (NP ) (PP (IN of) (NP (DT ) (NP|<NN> (NN ) (NN )))))	1.59022962916e-06
 (SBAR (WHADVP (RB ) (WRB when)) (S ))	1.9305019305e-06
@@ -1851,6 +1854,7 @@
 (VP|<PP> (PP (IN at) (NP )) (VP|<,> (, ,) (ADVP (RB up) (NP (CD ) (NNS cents)))))	6.20347394541e-06
 (NP (NP (RB )) (PP ))	0.0062651369
 (NP (NP (NN )) (PP (IN of) (NP (NP ) (NP|<,> ))))	3.18045925832e-07
+(TOP (S (NP (DT The) (NN )) (S|<VP> (VP (VBD ) (NP (NP ) (PP ))) (. .))))	2.22123500666e-06
 (NP (NP (DT the) (NP|<JJ> )) (PP (IN ) (NP (NP ) (PP (IN ) (NP )))))	6.36091851663e-07
 (S|<VP> (VP (VBP ) (NP (NP ) (PP ))) (. .))	4.77554918816e-06
 (SBAR (IN ) (S (S (NP ) (VP )) (S|<CC> (CC and) (S (NP ) (VP )))))	3.861003861e-06
@@ -1926,7 +1930,7 @@
 (TOP (S (NP ) (S|<VP> (VP (VBD ) (VP|<NP> (NP ) (VP|<PP> (PP (IN ) (NP (NP ) (PP (IN ) (NP )))) (VP|<,> )))) (. .))))	1.11061750333e-06
 (NP|<,> (, ) (NP|<NN> ))	3.51123595506e-05
 (PP (IN with) (NP (NP ) (VP (VBN ) (PP (IN ) (NP )))))	6.74399784192e-07
-(NN standstill)	2.80583613917e-06
+(JJ specific)	6.038647343e-06
 (VP|<ADJP> (ADJP (JJ )) (PP (IN ) (NP (DT ) (NP|<JJ> ))))	0.000111111111111
 (PP (IN ) (S (VP (VBG selling) (VP|<NP> (NP ) (PP )))))	6.74399784192e-07
 (NP (NP (JJ ) (NNS )) (PP (IN in) (NP )))	1.27218370333e-06
@@ -2168,6 +2172,7 @@
 (S (NP (NP ) (NP|<CC> (CC ) (NP ))) (VP ))	4.13821642872e-06
 (TOP (S (PP (IN For) (NP )) (S|<,> (, ) (S|<NP> (NP (NNS ,)) (S|<VP> (VP ) (. ))))))	0.00018321333
 (ADJP (RB ) (JJ ))	0.0166624287644
+(JJ market-research)	6.038647343e-06
 (NP|<JJ> (JJ ) (NP|<VBG> ))	3.367003367e-05
 (S|<VP> (VP (VBZ ) (SBAR )) (. .))	1.67144221585e-05
 (NP|<,> (, ,) (NP|<NP> (NP (NP (NN )) (PP (IN of) (NP ))) (, ,)))	1.40449438202e-05
@@ -2438,6 +2443,7 @@
 (NNS dealings)	1.47275405007e-05
 (NN manager)	5.61167227834e-06
 (S|<PRN> (PRN (, ,) (PRN|<S> (S (NP (NNP Mr.) (NNP )) (VP (VBD said))) (, ,))) (S|<NP> ))	0.000121951219512
+(NP (NP ) (PP (IN in) (NP (NP (NNP )) (NP|<,> (, ,) (NP )))))	3.18045925832e-07
 (VBN agreed)	3.75939849624e-05
 (NP (DT ) (NN rise))	3.18045925832e-07
 (NNS issues)	2.94550810015e-05
@@ -2536,6 +2542,7 @@
 (VP|<NP> (NP (DT ) (NP|<JJ> (JJ ) (NP|<JJ> ))) (PP (IN ) (NP )))	4.27715996578e-06
 (PP (IN ) (NP (NP ) (NP|<,> (, ,) (NP (NP ) (PP (IN in) (NP ))))))	2.02319935258e-06
 (PP (IN ) (NP (NP (DT the) (NP|<NN> (NN ) (POS 's))) (NP|<JJ> (JJ ) (NP|<NN> ))))	6.74399784192e-07
+(NNP Court)	4.4964028777e-06
 (VBD plunged)	3.13807531381e-05
 (VP (VBZ says) (SBAR (S (NP (PRP he)) (VP ))))	7.35618655289e-07
 (NP (NP ) (PP (IN ) (NP (JJ ) (NP|<NN> ))))	1.90827555499e-06
@@ -2663,11 +2670,10 @@
 (TOP (S (NP ) (S|<,> (, ,) (S|<PP> ))))	5.55308751666e-06
 (PP (IN in) (NP (JJ late) (CD )))	6.74399784192e-07
 (NP|<NNPS> (NNPS Systems) (NNP ))	0.000147058823529
-(VBD resurfaced)	1.0460251046e-05
+(SBAR (WHNP (WP who)) (S (VP (VBZ ) (NP ))))	9.65250965251e-06
 (NP (NP (DT a) (NN )) (PP (IN ) (NP (DT the) (NP|<JJ> ))))	3.18045925832e-07
 (VP (VBZ is) (VP (VBG ) (VP|<PP> (PP ) (PP ))))	1.47123731058e-06
 (S (VP (VBG ) (NP (NP ) (NP|<,> ))))	3.10366232154e-06
-(PP (IN ) (NP (NP ) (PP (IN of) (NP (NP ) (SBAR (WHNP ) (S (VP )))))))	2.02319935258e-06
 (S (NP (NN )) (VP (MD will) (VP )))	1.03455410718e-06
 (NP (NP (NP ) (PP (IN ) (NP ))) (NP|<CC> ))	2.54436740665e-06
 (S (NP ) (S|<PP> ))	1.03455410718e-06
@@ -2763,7 +2769,6 @@
 (S|<ADVP> (ADVP ) (S|<VP> ))	0.000701754385965
 (S (NP (NNS )) (VP ))	0.00751159034929
 (VP (VP ) (VP|<CC> (CC or) (VP|<VP> )))	1.47123731058e-06
-(NP (DT the) (NN press))	3.18045925832e-07
 (VP|<,> (, ,) (NP (NP ) (PP )))	1.5015015015e-05
 (NN missile)	2.80583613917e-06
 (PP (IN of) (NP (NNS ) (NP|<CC> )))	6.74399784192e-07
@@ -2785,7 +2790,7 @@
 (NP (NP (JJ ) (NNS )) (NP|<,> (, ,) (SBAR (WHNP (WDT which)) (S (VP )))))	9.54137777495e-07
 (ADVP (ADVP ) (PP ))	1.83823529412e-05
 (NN thumb)	2.80583613917e-06
-(JJ specific)	6.038647343e-06
+(NN standstill)	2.80583613917e-06
 (NP (NP (DT ) (NP|<JJ> (JJ new) (NN ))) (PP (IN of) (NP (NNS ))))	3.18045925832e-07
 (NN light)	2.80583613917e-06
 (VP|<PP> (PP (IN ) (NP (NNP ))) (PP (IN ) (NP )))	1.24069478908e-05
@@ -2832,7 +2837,6 @@
 (NP (DT ) (NP|<JJ> (JJ three-year) (NN contract)))	3.18045925832e-07
 (NP (NP (DT a) (NP|<NN> (NN ) (NN ))) (NP|<,> ))	6.36091851663e-07
 (SBAR (WHADVP ) (S (NP (NNP )) (VP (MD ) (VP ))))	1.9305019305e-06
-(NP (CD five) (NP|<JJ> ))	3.18045925832e-07
 (NP (JJ many) (NP|<JJ> (JJ ) (NNS )))	6.36091851663e-07
 (NP (DT A) (NP|<JJ> (JJ ) (NN )))	3.18045925832e-07
 (S|<VP> (VP (VBD ) (SBAR (S (NP ) (S|<``> (`` ) (VP ))))) (S|<.> (. ) ('' )))	0.000196019975
@@ -2866,9 +2870,9 @@
 (VP (TO to) (VP (VB be) (NP (DT ) (NN ))))	7.35618655289e-07
 (SBAR (IN while) (S ))	1.9305019305e-05
 (PP (IN ) (NP (DT an) (NP|<NN> (NN ) (S (VP (TO to) (VP ))))))	6.74399784192e-07
-(NNP Sunbird)	8.9928057554e-06
 (VP|<NP> (NP ) (VP|<,> (, ,) (PP (IN ) (NP ))))	4.27715996578e-06
 (PP (IN ) (NP (DT the) (NP|<NN> (NN ) (NN market))))	2.02319935258e-06
+(NNS forces)	2.94550810015e-05
 (VP|<NP> (NP ) (SBAR (IN ) (S (NP (PRP )) (VP (MD ) (VP )))))	8.55431993157e-06
 (TOP (S (NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> (, ,) (NP|<NP> ))) (S|<VP> (VP (VBD was) (VP )) (. .))))	3.33185251e-06
 (VP|<,> (, ) (VP|<``> ))	3.003003003e-05
@@ -2978,6 +2982,7 @@
 (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (VP (VBN ) (PP (IN ) (NP ))))	9.54137777495e-07
 (NP (DT ) (NP|<NN> (NN government) (POS 's)))	2.22679449258e-05
 (NP|<NP> (NP ) (, ,))	0.000810810810811
+(S (VP (TO to) (VP (VB be) (PP (IN ) (NP )))))	1.03455410718e-06
 (VP (VBG ) (S (VP (TO to) (VP (VB ) (NP (NP ) (PP (IN ) (NP )))))))	7.35618655289e-07
 (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (NP|<,> ))	9.54137777495e-07
 (VP (VBD ) (VP|<ADVP> (ADVP ) (PP (IN ) (NP ))))	3.67809327645e-06
@@ -2995,6 +3000,7 @@
 (SBAR (S (NP ) (VP (VBD ) (VP ))))	1.1583011583e-05
 (VP (VBN ) (VP|<PP> (PP (IN ) (NP )) (VP|<PP> (PP ) (VP|<,> (, ,) (PP )))))	7.35618655289e-07
 (QP|<IN> (IN ) (CD 30))	0.000217391304348
+(PP (IN ) (NP (DT the) (NP|<JJ> (JJ ) (NNS ))))	6.74399784192e-07
 (ADJP (JJ unchanged) (PP (IN from) (NP (NNP ))))	1.51057401813e-05
 (S|<.> (. ) ('' ''))	0.001625
 (S (NP ) (VP (VBD ) (VP|<ADJP> (ADJP ) (PP ))))	1.03455410718e-06
@@ -3124,7 +3130,7 @@
 (NP (JJ several) (NP|<JJ> ))	6.36091851663e-07
 (JJ low)	6.038647343e-06
 (VP|<,> (, ,) (ADJP ))	3.003003003e-05
-(JJ cubic)	6.038647343e-06
+(NP|<CC> (CC and) (NP (NP ) (SBAR )))	2.43902439024e-05
 (S|<,> (, ,) (S|<NP> (NP (DT the) (NP|<NNP> )) (S|<VP> (VP (VBD said) (SBAR )) (. .))))	4.28449014567e-06
 (PP (IN with) (NP ))	3.30455894254e-05
 (NP (NP ) (PP (IN in) (NP (DT the) (NP|<JJ> ))))	1.59022962916e-06
@@ -3258,7 +3264,6 @@
 (NNP Carl)	4.4964028777e-06
 (S|<NP> (NP ) (S|<VP> (VP (VBZ is) (ADJP )) (. .)))	4.6468401487e-06
 (VBZ goes)	2.06611570248e-05
-(PP (IN ) (NP (DT the) (NP|<JJ> (JJ ) (NNS ))))	6.74399784192e-07
 (NP|<,> (, ) (NP|<NP> (NP (NP ) (PP (IN ) (NP (NN ) (NNS )))) (, ,)))	0.00212801645
 (PP (IN ) (NP (NP ) (PP (IN of) (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP )))))	6.74399784192e-07
 (NP|<CC> (CC and) (NP (NP ) (PP (IN of) (NP (NP ) (PP (IN ) (NP (JJ ) (NNS )))))))	1.21951219512e-05
@@ -3378,7 +3383,6 @@
 (PRT (RP up))	0.00113636363636
 (S|<NP> (NP (NNP Mr.) (NNP )) (S|<VP> (VP (VBD said) (SBAR )) (. .)))	9.2936802974e-06
 (VP (VBG ) (VP|<``> ))	7.35618655289e-07
-(TOP (S (PP (IN ) (NP )) (S|<,> (, ,) (S|<NP> (NP (NNP ) (NNP )) (S|<VP> )))))	3.33185251e-06
 (S (VP (TO to) (VP (VB ) (VP|<NP> (NP ) (PP (IN ) (NP ))))))	9.31098696462e-06
 (NP (NP (CD ) (NP|<JJ> (JJ ) (NNS ))) (PP (IN ) (NP )))	3.18045925832e-07
 (S (NP (NNS )) (S|<ADVP> (ADVP ) (VP )))	1.03455410718e-06
@@ -3646,7 +3650,6 @@
 (RB Not)	1.1013215859e-05
 (PP (IN ) (NP (NP ) (PP (IN with) (NP ))))	2.69759913677e-06
 (S (NP ) (VP (VBZ ) (SBAR )))	3.10366232154e-06
-(NNP Court)	4.4964028777e-06
 (VBD rose)	6.27615062762e-05
 (PP (IN ) (NP (DT in) (NNP the)))	4.5054396e-05
 (VP (VB ) (VP|<NP> (NP ) (VP|<,> )))	1.47123731058e-06
@@ -3687,7 +3690,6 @@
 (NP (NP ) (SBAR (S (NP ) (VP (MD ) (VP )))))	6.36091851663e-07
 (TOP (S (ADVP (RB )) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP (VBD ) (VP|<NP> )) (. .))))))	1.11061750333e-06
 (S (NP (DT ) (NP|<JJ> (JJ new) (NN ))) (VP ))	1.03455410718e-06
-(NP (DT the) (NN end))	9.54137777495e-07
 (SBAR (IN ) (S (NP (NNP )) (VP (VBZ ) (PP (IN ) (NP )))))	0.0011242704
 (S (NP ) (VP (VBZ ) (VP|<NP> )))	0.00358536162464
 (IN near)	7.51314800902e-06
@@ -3788,7 +3790,6 @@
 (VP|<PP> (PP (IN ) (NP )) (S (VP (TO to) (VP (VB ) (VP|<NP> (NP ) (PP ))))))	6.20347394541e-06
 (NP|<CC> (CC or) (NP (DT ) (NP|<JJ> )))	2.43902439024e-05
 (VP (VB ) (VP ))	0.00305085237756
-(JJS worst)	0.000217391304348
 (PP|<IN> (IN in) (NP ))	0.000555555555556
 (NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NP|<JJ> (JJ ) (NP|<NN> )))	0.0014147109
 (VP (VBZ ) (VP (VBG ) (VP|<PP> (PP is) (PP ))))	0.00068685646
@@ -3800,7 +3801,7 @@
 (SBAR (IN ) (S (NP (NNP )) (S|<ADVP> (ADVP (RB )) (VP ))))	0.00112620090193
 (NP (NP ) (PP (IN of) (NP (NP ) (PP (IN for) (NP )))))	9.54137777495e-07
 (NN bank)	1.96408529742e-05
-(NP|<NN> (NN car) (NN ))	1.80505415162e-05
+(PP (IN ) (NP (NP ) (SBAR (S ))))	8.0927974103e-06
 (PRN (, ,) (PRN|<S> (S (NP (PRP )) (VP (VBP ))) (, ,)))	4.90196078431e-05
 (VP (VB ) (NP (NNP )))	7.35618655289e-07
 (VP|<PP> (PP (IN for) (NP )) (PP (IN in) (NP )))	6.20347394541e-06
@@ -4050,6 +4051,7 @@
 (TOP (S (NP (DT The) (NN )) (S|<VP> (VP (MD ) (VP )) (. ))))	0.00508418135
 (VP (VBD ) (VP|<NP> (NP (NP ) (PP (IN of) (NP ))) (PP )))	1.47123731058e-06
 (NP (NP (CD one)) (PP (IN ) (NP )))	1.59022962916e-06
+(NP (NP (DT The) (NP|<JJ> )) (NP|<,> ))	6.36091851663e-07
 (NNP Milan)	4.4964028777e-06
 (PP (IN ) (S (NP ) (VP (VBG ) (VP|<ADVP> (ADVP (RB )) (PP )))))	6.74399784192e-07
 (S (NP (NP ) (PP (IN ) (NP ))) (VP (VBD ) (VP )))	1.03455410718e-06
@@ -4078,7 +4080,6 @@
 (NNS indications)	7.36377025037e-06
 (PP (IN in) (NP (NP (NNS )) (PP (IN with) (NP ))))	6.74399784192e-07
 (NP (NP ) (NP|<CC> (CC and) (NP (NP ) (PP (IN ) (NP )))))	9.54137777495e-07
-(PP (IN ) (NP (NP ) (PP (IN for) (NP (NNS )))))	6.74399784192e-07
 (VP|<PP> (PP (IN ) (NP )) (SBAR (IN ) (S (NP ) (VP ))))	4.34243176179e-05
 (NN subsidiary)	5.61167227834e-06
 (NP|<NN> (NN stock) (NP|<NN> (NN ) (NN )))	9.02527075812e-06
@@ -4128,7 +4129,7 @@
 (TOP (S (NP (NP (DT The) (NN )) (PP (IN of) (NP ))) (S|<VP> (VP (VBD ) (VP|<NP> )) (. .))))	1.11061750333e-06
 (QP|<TO> (TO ) (CD ))	0.995714285714
 (NP|<JJ> (JJ ) (NP|<,> (, ,) (NP|<JJ> )))	1.6835016835e-05
-(NP|<CC> (CC and) (NP (NP ) (SBAR )))	2.43902439024e-05
+(JJ cubic)	6.038647343e-06
 (PRN|<NP> (NP ) (-RRB- -RRB-))	0.001375
 (JJ state-funded)	6.038647343e-06
 (JJ European)	2.4154589372e-05
@@ -4174,7 +4175,6 @@
 (MD must)	7.14285714286e-05
 (ADVP (RB ) (PP (IN ) (NP (NP ) (NP|<CC> (CC and) (NP )))))	9.19117647059e-06
 (VBD traced)	1.0460251046e-05
-(S (VP (VBG raising) (NP )))	1.03455410718e-06
 (S (NP (PRP )) (VP (VBP know) (SBAR (WHADVP (WRB how)) (S (VP (TO to) (VP (VB )))))))	1.03455410718e-06
 (PP (IN in) (NP (NP ) (NP|<,> (, ,) (SBAR (WHNP (WDT which)) (S )))))	6.74399784192e-07
 (IN on)	0.000221637866266
@@ -4318,6 +4318,7 @@
 (VBZ holds)	4.13223140496e-05
 (VBN reduced)	1.87969924812e-05
 (VP|<RB> (RB n't) (VP (VB ) (VP|<PP> )))	6.66666666667e-05
+(S|<,> (, ,) (S|<PP> ))	3.85604113111e-05
 (IN down)	3.75657400451e-06
 (S (NP ) (VP (MD ) (VP|<ADVP> (ADVP ) (VP ))))	3.10366232154e-06
 (TOP (S (NP (NP ) (NP|<,> (, ,) (NP|<NP> (NP ) (, ,)))) (S|<VP> (VP (VBD ) (SBAR )) (. .))))	3.33185251e-06
@@ -4607,6 +4608,7 @@
 (JJ ample)	6.038647343e-06
 (PP (IN ) (NP (DT the) (NP|<JJ> (JJ ) (NP|<NNP> ))))	1.34879956838e-06
 (FRAG (SBAR ))	0.000294117647059
+(PP (IN ) (NP (NP (NNP ) (NNP )) (NP|<,> (, ,) (NP ))))	6.74399784192e-07
 (VP (VBN been) (VP ))	1.0298661174e-05
 (PP (IN ) (NP (NP ) (NP|<,> (, ,) (NP|<SBAR> (SBAR (WHNP (WDT which)) (S (VP ))) (, ,)))))	6.74399784192e-07
 (CD 44)	1.44927536232e-05
@@ -4706,7 +4708,7 @@
 (PP (IN for) (NP (NP ) (PP (IN of) (NP (DT ) (NP|<JJ> )))))	6.74399784192e-07
 (SBAR (S (NP (NP ) (PP (IN ) (NP ))) (VP )))	5.79150579151e-06
 (IN before)	2.2539444027e-05
-(VB amble)	1.37362637363e-05
+(NP|<NNP> (NNP Stock) (NNP Exchange))	9.43396226415e-06
 (VP (VBN named) (S (NP (NNP ) (NNP ))))	7.35618655289e-07
 (NN wood)	2.80583613917e-06
 (NP (NN ) (NP|<NNP> (NNP ) (NP|<NNP> )))	3.18045925832e-07
@@ -5062,6 +5064,7 @@
 (NP (NP (NNP ) (POS )) (NP|<NNP> ))	4.38559185e-05
 (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP (VBZ ) (VP )) (. .))))	2.14224507284e-05
 (PP (IN ) (NP (NNPS )))	9.1765666e-05
+(VP (TO to) (VP (VB ) (NP (NP ) (PP ))))	7.35618655289e-06
 (NP (NP ) (PP (IN of) (NP (NP ) (PP (IN ) (NP (DT the) (NN ))))))	6.36091851663e-07
 (S|<NP> (NP (PRP I)) (S|<VP> ))	3.25278810409e-05
 (VP (ADVP (RB )) (VP|<VB> (VB ) (NP )))	2.20685596587e-06
@@ -5482,7 +5485,6 @@
 (VBN resold)	1.87969924812e-05
 (NN pilot)	1.40291806958e-05
 (NP (DT ) (NP|<JJ> (JJ ) (NN )))	0.000320350379616
-(S (VP (TO to) (VP (VB be) (PP (IN ) (NP )))))	1.03455410718e-06
 (NN program)	8.41750841751e-06
 (NP|<ADJP> (ADJP ) (NP|<NN> (NN ) (NN )))	0.327499633421
 (S (NP ) (VP (VBD made) (NP )))	1.03455410718e-06
@@ -5661,6 +5663,7 @@
 (VP (MD could) (VP (VB ) (NP (NP ) (PP ))))	7.35618655289e-07
 (NP (NP ) (PP (IN ) (NP (NP ) (NP|<:> ))))	1.27218370333e-06
 (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP an))	4.38998975e-05
+(NNS sweets)	7.36377025037e-06
 (S|<ADVP> (ADVP (RB also)) (S|<VP> (VP ) (. .)))	0.000263157894737
 (TOP (S (SBAR (IN ) (S )) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP ) (. .))))))	9.99555752999e-06
 (VP|<NP> (NP ) (SBAR (IN ) (S (NP ) (VP ))))	3.42172797263e-05
@@ -5874,7 +5877,6 @@
 (TOP (S (S ) (S|<,> (, ,) (S|<NP> (NP (NNP Mr.) (NNP )) (S|<VP> )))))	2.22123500666e-06
 (NP (JJ little) (NN ))	6.36091851663e-07
 (S (NP (PRP )) (VP (MD will) (VP )))	5.1727705359e-06
-(NP (NP ) (PP (IN in) (NP (NP (NNP )) (NP|<,> (, ,) (NP )))))	3.18045925832e-07
 (S (VP (VB ) (NP )))	0.000319103476429
 (VP (VBZ is) (ADJP ))	6.6205678976e-06
 (S (NP ) (PP (IN ) (NP )))	2.06910821436e-06
@@ -5987,6 +5989,7 @@
 (NP (DT these) (NP|<JJ> (JJ ) (NNS )))	6.36091851663e-07
 (VP (VBZ has) (VP (VBN ) (PP (IN ) (NP ))))	1.47123731058e-06
 (TOP (SINV (`` ``) (SINV|<S> (S (NP ) (VP (VBP ) (VP|<RB> ))) (SINV|<,> (, ,) (SINV|<''> ('' '') (SINV|<VP> (VP (VBZ )) (SINV|<NP> (NP ) (. .))))))))	2.22123500666e-06
+(NP|<JJ> (JJ personal) (NNS ))	8.41750841751e-06
 (VP (VB ) (PP (IN in) (NP (DT ) (NN ))))	7.35618655289e-07
 (NNP Board)	1.79856115108e-05
 (VBD played)	1.0460251046e-05
@@ -6039,7 +6042,6 @@
 (VP (VB ) (VP|<NP> (NP ) (PP (IN with) (NP ))))	2.20685596587e-06
 (TOP (S (NP (NP ) (PP (IN of) (NP (DT the) (NNS )))) (S|<VP> (VP ) (. .))))	3.33185251e-06
 (VP|<ADVP> (ADVP (RB )) (PP (IN ) (NP (JJ ) (NNS ))))	1.79856115108e-05
-(VP (VBP have) (VP (VBN ) (S (VP (TO to) (VP )))))	1.47123731058e-06
 (VP|<NP> (NP (DT ) (NP|<JJ> )) (VP|<PP> ))	1.71086398631e-05
 (PP (RB ) (PP|<IN> ))	6.74399784192e-07
 (PP (IN in) (NP (NP ) (PP (IN of) (NP (DT the) (NN )))))	6.74399784192e-07
@@ -6090,7 +6092,6 @@
 (VP (VBD was) (VP|<ADVP> (ADVP (RB )) (NP )))	7.35618655289e-07
 (SBAR (IN ) (S (NP (NP ) (PP (IN of) (NP ))) (VP (VBP are) (VP ))))	1.9305019305e-06
 (VBG including)	0.000164319248826
-(RB Separately)	1.1013215859e-05
 (VBN valued)	1.87969924812e-05
 (S|<VP> (VP (VBZ ) (NP (NP ) (PP (IN of) (NP )))) (. .))	2.14899713467e-05
 (NP (NP ) (PP (IN in) (NP (NP (NNP )) (NP|<,> (, ,) (NP (NNP ))))))	3.18045925832e-07
@@ -6161,13 +6162,13 @@
 (VP|<ADVP> (ADVP (RB )) (VP (VBN ) (NP )))	5.39568345324e-05
 (TOP (S (NP (NP ) (NP|<,> )) (S|<VP> (VP (VBD ) (VP|<NP> )) (S|<.> (. ) ('' )))))	0.00048808133
 (S|<VP> (VP (VP (VBD ) (VP|<NP> )) (VP|<,> )) (. .))	4.77554918816e-06
-(NNS critics)	7.36377025037e-06
 (PP (IN ) (NP (NP ) (VP (VBN ) (VP|<PP> ))))	1.34879956838e-06
 (PP|<IN> (IN ) (NP (NP ) (NP|<,> )))	0.00015873015873
 (SINV|<S> (S ) (SINV|<,> ))	0.00388888888889
 (TOP (S (NP (DT ) (NN )) (S|<NP> (NP ) (S|<VP> (VP ) (. .)))))	1.11061750333e-06
 (VP|<NP> (NP ) (NP (NP ) (PP (IN ) (NP ))))	1.28314798973e-05
 (ADVP|<SBAR> (SBAR ) (. ))	0.005
+(CONJP (RB ) (IN ))	0.00125
 (TOP (S (PP (IN In) (NP (DT ) (NP|<NN> (NN ) (NN )))) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> )))))	0.015252554
 (NP (RB ) (NP|<JJ> (JJ ) (NN )))	3.18045925832e-07
 (NP|<NN> (NN interest) (NNS rates))	1.80505415162e-05
@@ -6248,6 +6249,7 @@
 (VP (VBD ) (VP (VBN ) (PP (IN ) (NP (NP (DT ) (NN )) (PP )))))	9.44427135e-05
 (NN world)	1.96408529742e-05
 (NP|<NNPS> (NNPS ) (NNP Inc.))	0.00102941176471
+(VP (VB ) (NP (NP ) (NP|<CC> )))	1.47123731058e-06
 (PP (IN ) (UCP ))	9.24400657842e-05
 (VP (VBP 'm) (VP|<RB> (RB not) (VP )))	7.35618655289e-07
 (NN taint)	2.80583613917e-06
@@ -6297,7 +6299,6 @@
 (NP|<NNP> (NNP ) (NNP ))	0.0607164360377
 (S|<.> (. .) ('' ''))	0.0015625
 (TOP (S (NP ) (S|<VP> (VP (VBZ ) (S )) (. .))))	2.22123500666e-06
-(S|<,> (, ,) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBP ) (NP )) (. .))))	4.28449014567e-06
 (NNP Commission)	4.4964028777e-06
 (VB consider)	1.37362637363e-05
 (VP (VBG ) (ADVP ))	2.20685596587e-06
@@ -6339,6 +6340,7 @@
 (NP|<RBR> (RBR ) (NP|<JJ> ))	0.005
 (NNS hopes)	7.36377025037e-06
 (NP (NP ) (NP|<PP> (PP (IN ) (NP )) (NP|<PP> )))	3.18045925832e-07
+(NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP Association)))	9.43396226415e-06
 (TOP (S (PP (IN ) (NP )) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP ) (. .))))))	3.22079075966e-05
 (PP (PP ) (PP|<CC> ))	2.69759913677e-06
 (NP|<JJ> (JJ ) (NNS businesses))	8.41750841751e-06
@@ -6421,6 +6423,7 @@
 (NP (NP ) (PP (IN ) (NP (DT ) (NP|<JJ> ))))	6.36091851663e-06
 (VP (VBD was) (VP|<ADJP> (ADJP ) (PP )))	7.35618655289e-07
 (VBN discovered)	1.87969924812e-05
+(NP (NP ) (PP (IN on) (NP (DT the) (NN economy))))	3.18045925832e-07
 (PP (IN by) (NP (NP (DT the) (NN )) (PP (IN of) (NP ))))	1.34879956838e-06
 (VBG sharing)	2.34741784038e-05
 (VP (MD ) (VP (VB be) (NP )))	2.94247462116e-06
@@ -6570,6 +6573,7 @@
 (S (NP ) (VP (VBD ) (VP|<PP> )))	4.13821642872e-06
 (VP (ADVP (RB )) (VP|<VB> (VB ) (NP (DT ) (NN ))))	9.14006156553e-05
 (VP (VBN ) (PP (IN with) (NP )))	1.47123731058e-06
+(PP (IN ) (NP (NP ) (PP (IN for) (NP (NNS )))))	6.74399784192e-07
 (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP ) (S|<.> (. .) ('' '')))))	2.99914310197e-05
 (NP (NP (DT ) (NP|<JJ> )) (SBAR (WHNP ) (S (VP ))))	3.49850518415e-06
 (NP (NP ) (SBAR (WHNP ) (S (VP (VBD ) (NP (NP ) (PP (IN ) (NP )))))))	6.36091851663e-07
@@ -6601,7 +6605,6 @@
 (VBN elected)	3.75939849624e-05
 (NP|<NAC> (NAC (NNP ) (PP )) (NP|<NNP> (NNP ) (NNP )))	0.995
 (VP|<S> (S (NP )) (VP|<,> (, ) (S (VP (VBG ) (NP )))))	0.017430609
-(NNP Congressional)	8.9928057554e-06
 (TOP (S (S (NP ) (VP )) (S|<,> (, ,) (S|<CC> (CC ) (S|<S> (S (NP (NNS )) (VP )) (. .))))))	1.11061750333e-06
 (NP (NP (DT The) (NP|<JJ> )) (PP (IN ) (NP )))	6.36091851663e-07
 (NP|<NN> (NN ) (NN issue))	1.80505415162e-05
@@ -6684,7 +6687,6 @@
 (NP (NP (DT ) (NP|<JJ> )) (NP|<PP> the))	4.39438765e-05
 (JJ editing\/electronic)	6.038647343e-06
 (RB there)	3.30396475771e-05
-(PP (IN around) (NP ))	6.74399784192e-07
 (NP (JJ ) (NNS other))	4.39438765e-05
 (NP (NN ) (NP|<,> ))	6.36091851663e-07
 (S (NP (NNS )) (S|<ADVP> ))	0.000631999628214
@@ -7182,7 +7184,6 @@
 (NNP Greece)	4.4964028777e-06
 (VP (VB ) (VP|<NP> (NP (JJ ) (NP|<JJ> )) (PP )))	7.35618655289e-07
 (S (VP (VBN ) (PP (IN by) (NP ))))	2.06910821436e-06
-(NP (DT the) (NP|<JJ> (JJ previous) (NN )))	3.18045925832e-07
 (NP (NN ) (NP|<CC> (CC ) (NN )))	9.87298467033e-05
 (VP (VBG ) (VP|<,> ))	7.35618655289e-07
 (TOP (S (PP ) (S|<,> (, ,) (S|<NP> (NP (DT the) (NP|<NN> )) (S|<VP> )))))	2.22123500666e-06
@@ -7311,7 +7312,6 @@
 (-LRB- -LRB-)	0.00423076923077
 (NP (NP ) (NP|<PP> (PP (IN ) (NP )) (PP (IN on) (NP ))))	6.36091851663e-07
 (NP (NP (DT the) (NN )) (PP (IN of) (NP (NP ) (PP (IN ) (NP )))))	9.54137777495e-07
-(SBAR (WHNP (WDT )) (S (VP (VBZ has) (VP (VBN ) (VP|<NP> (NP ) (PP (IN ) (NP )))))))	1.9305019305e-06
 (QP (IN ) (QP|<$> ))	6.41025641026e-05
 (TOP (S (`` ``) (S|<S> (S (NP ) (VP )) (S|<,> (, ,) (S|<''> ('' '') (S|<NP> (NP (PRP he)) (S|<VP> (VP ) (. .))))))))	1.11061750333e-06
 (NP|<,> (, ,) (SBAR (WHNP ) (S )))	0.000182584269663
@@ -7320,8 +7320,8 @@
 (NP (NP ) (NP|<JJS> (JJS ) (NP|<NN> )))	3.18045925832e-07
 (VBZ puts)	2.06611570248e-05
 (PRN|<S> (S ) (: ))	0.000128205128205
-(NP (NP (DT The) (NP|<JJ> )) (NP|<,> ))	6.36091851663e-07
 (PP (IN ) (NP (CD ) (NN %)))	2.02319935258e-06
+(NP (JJR more) (NP|<JJ> ))	3.18045925832e-07
 (S|<NP> (NP ) (S|<VP> (VP (VBP ) (NP )) (. .)))	9.2936802974e-06
 (PP (RB ) (NP ))	6.74399784192e-07
 (NP (NP ) (NP|<,> (, ,) (SBAR (WHNP ) (S (NP ) (VP )))))	3.18045925832e-07
@@ -7435,7 +7435,6 @@
 (PP (IN ) (NP (NP (NNP )) (NP|<,> (, ,) (NP ))))	4.04639870515e-06
 (VP|<PP> (PP ) (PP (IN from) (NP )))	1.24069478908e-05
 (VP|<S> (S ) (VP|<,> (, ,) (S (VP (VBG succeeding) (NP )))))	0.000192307692308
-(VP (TO to) (VP (VB ) (NP (NP ) (PP (IN ) (NP )))))	5.14933058702e-06
 (NNP Service)	4.4964028777e-06
 (JJ eating)	6.038647343e-06
 (VBG bulging)	2.34741784038e-05
@@ -7628,7 +7627,6 @@
 (NP (DT ) (NP|<JJ> (JJ ) (NP|<JJ> )))	8.12275278133e-05
 (NP (NP (DT the) (NP|<JJ> (JJ ) (NN ))) (NP|<PP> ))	6.36091851663e-07
 (NP (QP ($ ) (QP|<CD> (CD ) (CD billion))))	3.18045925832e-07
-(VBG nursing)	2.34741784038e-05
 (VP (VBZ is) (VP (VBG ) (VP|<PP> )))	1.47123731058e-06
 (S (NP ) (VP (VBD ) (VP|<PP> (PP (IN ) (NP )) (PP (IN in) (NP )))))	1.03455410718e-06
 (VBN driven)	1.87969924812e-05
@@ -8111,7 +8109,6 @@
 (PP (VBG ) (NP (NP ) (NP|<,> )))	6.74399784192e-07
 (NP (NP (NNP ) (NP|<NNP> (NNP ) (NNP ))) (NP|<,> ))	3.18045925832e-06
 (S|<VP> (VP (MD will) (VP (VB be) (PP ))) (. .))	2.38777459408e-06
-(NN disbelief)	2.80583613917e-06
 (NP (NP ) (NP|<VP> (VP (VBG ) (NP )) (SBAR )))	3.18045925832e-07
 (S|<,> (, ) (S|<NP> (NP (PRP )) (VP )))	0.00251336005
 (VP (VBZ ) (VP|<NP> (NP (DT a) (NN )) (PP )))	7.35618655289e-07
@@ -8136,7 +8133,6 @@
 (TOP (S (PP (IN For) (NP )) (S|<,> (, ) (S|<NP> (NP ) (S|<VP> (VP ) (. ))))))	3.0505108e-05
 (NP (NP ) (SBAR (S (VP (TO to) (VP (VB ) (S (VP )))))))	3.18045925832e-07
 (NP (NP (NP (DT the) (NP|<NNP> )) (NN )) (PP (IN of) (NP )))	3.18045925832e-07
-(VP (VB ) (NP (NP ) (NP|<CC> )))	1.47123731058e-06
 (S|<,> (, ,) (S|<NP> (NP ) (VP (VBP ) (NP ))))	4.28449014567e-06
 (NP (NP ) (NP|<,> (, ,) (NP|<VP> )))	1.90827555499e-06
 (PP (IN ) (NP (NP (DT the) (NP|<JJ> (JJ ) (NN ))) (NP|<,> )))	6.74399784192e-07
@@ -8164,6 +8160,7 @@
 (VP|<,> (, ,) (S (VP (VBG making) (S ))))	1.5015015015e-05
 (-RRB- -RCB-)	0.000769230769231
 (VP (VBN ) (PP (IN for) (NP (DT ) (NN ))))	2.94247462116e-06
+(VBZ demonstrates)	2.06611570248e-05
 (VBN submitted)	3.75939849624e-05
 (S|<,> (, ) (VP ))	4.28449014567e-06
 (NP (NP ) (NP|<,> (, ,) (NP|<NP> (NP (NP (NNP )) (NP|<,> (, ,) (NP (NNP Calif.)))) (, ,))))	3.18045925832e-07
@@ -8520,7 +8517,6 @@
 (NP (NP ) (NP|<,> (, ,) (NP|<NP> (NP (NP ) (NP|<JJ> )) (, ,))))	3.18045925832e-07
 (VP (VBG ) (NP (DT ) (NP|<JJ> )))	2.20685596587e-06
 (VP (VBZ ) (NP (DT ) (NP|<JJ> )))	3.67809327645e-06
-(TOP (S (S ) (S|<,> )))	3.88716126166e-05
 (VB look)	2.74725274725e-05
 (VP (VBZ is) (VP ))	1.54479917611e-05
 (NP (NN time))	3.18045925832e-07
@@ -8658,7 +8654,6 @@
 (PP (IN ) (NP (JJR ) (NNS )))	6.74399784192e-07
 (S|<VP> (VP (MD ) (VP (VB ) (PP ))) (. .))	4.77554918816e-06
 (PP (IN of) (NP (PRP them)))	6.74399784192e-07
-(NNS forces)	2.94550810015e-05
 (NP (DT a) (NP|<ADJP> (ADJP ) (NN )))	4.77068888748e-06
 (VP (VB ) (S (VP (TO to) (VP (VB ) (VP|<NP> (NP ) (PP ))))))	7.35618655289e-07
 (VP|<VP> (VP ) (VP|<:> ))	0.000217391304348
@@ -8806,7 +8801,6 @@
 (TOP (S (NP ) (S|<VP> (VP (VBD ) (SBAR (IN ) (S ))) (. .))))	8.88494002665e-06
 (PP (IN ) (NP (NP ) (VP (VBN ) (PP (IN ) (NP (NP ) (PP (IN ) (NP )))))))	2.02319935258e-06
 (VP (VBG ) (PP (IN in) (NP (NP ) (PP (IN ) (NP )))))	7.35618655289e-07
-(VP (TO to) (VP (VB ) (NP (NP ) (PP ))))	7.35618655289e-06
 (TOP (S (PP (IN ) (NP (DT the) (NN ))) (S|<,> (, ,) (S|<NP> ))))	5.55308751666e-06
 (VP (VBD ) (VP|<NP> (NP (CD ) (NN %)) (VP|<PP> )))	7.35618655289e-07
 (JJ stain-resistant)	6.038647343e-06
@@ -8855,7 +8849,7 @@
 (NP (NP ) (PP (IN of) (NP (DT the) (NP|<NN> (NN ) (NN fund)))))	3.18045925832e-07
 (PRP$ His)	0.00010067114094
 (PP|<NP> (NP ) (ADVP ))	0.001
-(SBAR (WHNP (WP who)) (S (VP (VBZ ) (NP ))))	9.65250965251e-06
+(VBD walked)	1.0460251046e-05
 (VP (VBP make) (S ))	7.35618655289e-07
 (PP (IN at) (NP (NN )))	1.34879956838e-06
 (NN chair)	2.80583613917e-06
@@ -9109,7 +9103,6 @@
 (IN throughout)	3.75657400451e-06
 (NP (PRP$ ) (FW ))	3.18045925832e-07
 (NN plan)	8.41750841751e-06
-(VBZ demonstrates)	2.06611570248e-05
 (NN trust)	5.61167227834e-06
 (NNP Greenery)	8.9928057554e-06
 (VP (VBZ is) (VP|<NP> ))	1.47123731058e-06
@@ -9222,7 +9215,6 @@
 (NP (DT some) (NP|<JJ> ))	1.90827555499e-06
 (NP (NP ) (PP (IN of) (NP (VBG leading) (NNS indicators))))	1.27218370333e-06
 (NNP Greenwich)	4.4964028777e-06
-(PP (IN ) (NP (NP (NNP ) (NNP )) (NP|<,> (, ,) (NP ))))	6.74399784192e-07
 (JJ crushed)	6.038647343e-06
 (NP (DT ) (NP|<JJ> (JJ great) (NN )))	3.18045925832e-07
 (TOP (S (PP (IN In) (NP )) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> )))))	1.332741004e-05
@@ -9261,7 +9253,6 @@
 (S (S (NP (PRP )) (VP )) (S|<,> (, ,) (S|<CC> (CC ) (S (NP (PRP )) (VP )))))	2.06910821436e-06
 (IN at)	0.00015026296018
 (NP (DT an) (NP|<JJ> (JJ ) (NP|<ADJP> (ADJP ) (NN ))))	3.18045925832e-07
-(VP (MD would) (VP (VB be) (ADJP (JJ irresponsible))))	7.35618655289e-07
 (VP (MD ) (VP (VB be) (ADJP (JJ able) (S (VP (TO to) (VP ))))))	7.35618655289e-07
 (VB let)	1.37362637363e-05
 (PP (IN ) (NP (NP (JJ strong) (NNS )) (PP (IN ) (NP ))))	6.74399784192e-07
@@ -9325,7 +9316,6 @@
 (VP|<PP> (PP ) (VP|<PP> (PP ) (PP )))	3.72208436725e-05
 (SBAR (IN ) (S (NP ) (VP (VBD ) (VP|<NP> (NP ) (VP|<PP> )))))	1.9305019305e-06
 (VP|<ADVP> (ADVP ) (S (VP )))	5.39568345324e-05
-(NX (NNPS ))	0.000625
 (NP (NP (NNP ) (NNP )) (NP|<CC> (CC and) (NP )))	1.27218370333e-06
 (S|<VP> (VP (VBD ) (SBAR (IN ) (S ))) (. .))	2.38777459408e-05
 (VP|<:> (: ) (PP ))	0.000384615384615
@@ -9729,8 +9719,10 @@
 (JJ various)	3.0193236715e-05
 (S|<NP> (NP (PRP )) (S|<VP> (VP ) (S|<.> (. ) ('' ''))))	1.39405204461e-05
 (VP|<NP> (NP ) (VP|<,> (, ,) (SBAR (IN ) (S (NP ) (VP )))))	8.55431993157e-06
+(PP (IN ) (NP (NP ) (PP (IN of) (NP (DT ) (NN )))))	4.04639870515e-06
 (TOP (S (NP ) (S|<VP> (VP (VBD ) (SBAR (IN that) (S (NP ) (VP (MD ) (VP ))))) (. .))))	1.11061750333e-06
 (VP|<NP> (NP (QP )) (PP (IN ) (NP )))	4.27715996578e-06
+(NP (NP ) (NP|<,> (, ,) (NP|<NP> (NP (NNP )) (, ,))))	6.36091851663e-07
 (NP|<DT> (DT ) (NP|<JJ> (JJ ) (NN )))	0.00030303030303
 (VP|<PP> (PP (IN ) (NP )) (VP|<,> ))	0.00014888337469
 (NP (PRP he))	2.03549392532e-05
@@ -9863,10 +9855,10 @@
 (NP|<NP> (NP ) (NP|<TO> ))	2.7027027027e-05
 (VP (VBP are) (NP (NP ) (PP (IN of) (NP ))))	7.35618655289e-07
 (VB hold)	1.37362637363e-05
+(RB Separately)	1.1013215859e-05
 (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP (VBD said) (SBAR (S (NP (PRP it)) (VP )))) (. .))))	8.56898029135e-06
 (NP|<,> (, ) (NP|<NP> (NP (NP ) (PP )) (NP|<,> (, ,) (NP|<CC> (CC ) (NP )))))	0.0015833435
 (TOP (S (PP (IN ) (NP )) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP (VBD ) (NP )) (. .))))))	4.44247001333e-06
-(NP (JJR more) (NP|<JJ> ))	3.18045925832e-07
 (NP (NP ) (PP (IN on) (NP (NN ) (NNS ))))	3.18045925832e-07
 (NP (NP (PRP$ ) (NNS )) (PP (IN in) (NP (NNP ))))	3.18045925832e-07
 (PRN|<SINV> (SINV ) (, ))	0.005
@@ -9891,6 +9883,7 @@
 (RB nonetheless)	1.1013215859e-05
 (VP (VB ) (SBAR (IN whether) (S (NP ) (VP ))))	7.35618655289e-07
 (NP (NP ) (NP|<ADJP> (ADJP ) (NP|<JJ> )))	3.18045925832e-07
+(VP (TO to) (VP (VB ) (NP (NP ) (PP (IN ) (NP )))))	5.14933058702e-06
 (ADVP (RB never))	3.67647058824e-05
 (SBAR (WHNP (WP who)) (S ))	5.98455598456e-05
 (S (NP ) (VP (MD will) (VP )))	1.55183116077e-05
@@ -9931,10 +9924,10 @@
 (VP|<NP> (NP (DT ) (NN )) (ADVP (RB )))	0.00382288815997
 (NN trial)	8.41750841751e-06
 (NP (NP ) (NP|<,> (, ,) (NP|<NP> (NP ) (NP|<,> (, ,) (NP|<NP> )))))	1.59022962916e-06
-(VBD walked)	1.0460251046e-05
 (JJ necessary)	1.2077294686e-05
 (TOP (S (S (NP ) (VP )) (S|<,> (, ,) (S|<CC> (CC but) (S|<S> (S (NP ) (VP (VBZ has) (VP (VBN ) (VP|<NP> (NP (JJ ) (NN )) (PP ))))) (. .))))))	1.11061750333e-06
 (NNS properties)	7.36377025037e-06
+(VP (VBZ is) (NP (NP ) (PP (IN ) (NP ))))	5.88494924231e-06
 (VB boost)	2.74725274725e-05
 (NP|<NNP> (NNP F.) (NNP ))	2.83018867925e-05
 (NN attendee)	2.80583613917e-06
@@ -9945,7 +9938,6 @@
 (NN intervention)	8.41750841751e-06
 (NP (NP (NNS )) (VP (VBG ) (NP (QP ($ $) (QP|<CD> (CD ) (CD ))))))	6.36091851663e-07
 (NP|<VBN> (VBN ) (NP|<NN> ))	0.000833333333333
-(CONJP (RB ) (IN ))	0.00125
 (VBN invited)	1.87969924812e-05
 (NP (NP ) (NP|<,> (, ,) (NP|<NP> (NP (NP (DT the) (NP|<JJ> )) (PP (IN ) (NP ))) (, ,))))	6.36091851663e-07
 (NNP David)	8.9928057554e-06
@@ -10016,7 +10008,6 @@
 (VP (VB ) (PP (TO ) (NP )))	0.000236106535
 (NP (NP ) (NP|<,> (, ,) (NP|<NP> (NP (NP (DT a) (NN )) (PP (IN of) (NP ))) (, ,))))	3.18045925832e-07
 (NP|<NN> (NN ) (SBAR (IN that) (S (NP ) (VP (MD ) (VP )))))	9.02527075812e-06
-(NNP Murphy)	4.4964028777e-06
 (PP (IN ) (NP (PRP$ his) (NN )))	6.74399784192e-06
 (NNS orders)	2.20913107511e-05
 (VP (VBZ is) (VP (VBN ) (PP (IN ) (S ))))	7.35618655289e-07
@@ -10124,7 +10115,6 @@
 (PRN|<NNP> (NNP ) (, ))	0.00166666666667
 (SBAR (WHNP (WDT )) (S (VP (VBZ has) (VP ))))	5.79150579151e-06
 (NP (NP (PRP it)))	1.90827555499e-06
-(NNP Committee)	1.34892086331e-05
 (TOP (S (NP ) (S|<VP> (VP (VP ) (VP|<,> (, ,) (VP|<CC> (CC ) (VP )))) (. .))))	2.22123500666e-06
 (NN executive)	5.61167227834e-06
 (RB lately)	1.1013215859e-05
@@ -10490,6 +10480,7 @@
 (NP (NP (QP ) (NN %)) (PP (IN of) (NP )))	1.59022962916e-06
 (VP (TO ) (VP (VB ) (NP (DT ) (NN ))))	0.000412114075
 (VP|<``> (`` ``) (S ))	0.000434782608696
+(PP (IN around) (NP ))	6.74399784192e-07
 (NP (DT a) (NP|<JJ> (JJ net) (NN )))	3.18045925832e-07
 (TOP (S (NP (NNP ) (NNP )) (S|<VP> (VP (VBZ is) (NP )) (. ))))	0.00762626705
 (NP (NNP William) (NP|<NNP> (NNP ) (NNP )))	3.18045925832e-07
@@ -10538,7 +10529,6 @@
 (NP (NP ) (PP (IN of) (NP (QP (CD ) (CD )) (NNS ))))	3.18045925832e-07
 (VP|<PP> (PP (IN ) (NP (CD ) (NN ))) (VP|<,> ))	6.20347394541e-06
 (NN jury)	1.96408529742e-05
-(VP|<NP> (NP ) (VP|<:> ))	4.27715996578e-06
 (VP (MD ) (VP (VB ) (VP|<NP> (NP ) (PP ))))	0.00330647564252
 (NP (NP (DT the) (NP|<NNP> (NNP ) (POS 's))) (NN ))	3.18045925832e-07
 (NP (DT ) (NNS changes))	3.18045925832e-07
@@ -10610,6 +10600,7 @@
 (VP (VB ) (NP (NP ) (SBAR (S ))))	7.35618655289e-07
 (VP (VBD ) (ADJP (JJ )))	2.20685596587e-06
 (NP (NP ) (NP|<,> (, ,) (SBAR (WHNP ) (S (VP (VBP are) (VP ))))))	6.36091851663e-07
+(NP (DT ) (NP|<JJ> (JJ whole) (NN )))	3.18045925832e-07
 (S|<VP> (VP (VBD ) (VP|<NP> (NP ) (PP (IN ) (NP (NP ) (PP (IN of) (NP )))))) (. .))	4.77554918816e-06
 (NNS festivities)	7.36377025037e-06
 (NP (NP ) (SBAR (WHNP ) (S (NP ) (VP ))))	9.54137777495e-07
@@ -10760,7 +10751,7 @@
 (NP (DT the) (NP|<JJ> (JJ ) (NN time)))	9.54137777495e-07
 (NP (JJ ) (NP|<JJ> (JJ ) (NP|<NN> (NN ) (NNS ))))	6.36091851663e-07
 (S (SBAR ) (S|<,> ))	2.17256362508e-05
-(VP|<``> (`` ) (VP|<NP> ))	0.000217391304348
+(TOP (S (S ) (S|<NP> (NP ) (S|<VP> (VP (VBD said)) (. .)))))	1.11061750333e-06
 (TOP (S (`` ``) (S|<S> (S (NP ) (VP )) (S|<,> (, ,) (S|<''> ('' '') (S|<NP> (NP (NNP ) (NNP )) (S|<VP> (VP ) (. .))))))))	1.11061750333e-06
 (VP (VBN ) (PP (IN in) (NP (NP (DT the) (NP|<JJ> )) (PP (IN of) (NP )))))	7.35618655289e-07
 (JJ 91-day)	6.038647343e-06
@@ -10774,7 +10765,6 @@
 (S|<CC> (CC but) (S ))	3.42465753425e-05
 (NN hitch)	2.80583613917e-06
 (VP (VB ) (VP|<NP> (NP ) (VP|<PP> (PP (IN ) (NP )) (PP (TO to) (NP )))))	7.35618655289e-07
-(SBAR (IN ) (S (NP ) (VP (MD ) (VP (VB ) (VP|<ADVP> )))))	1.9305019305e-06
 (VP|<,> (, ,) (SBAR (IN while) (S (NP (CD ) (NNS )) (VP ))))	1.5015015015e-05
 (VP (VBP ) (NP (NP ) (PP (IN ) (NP ))))	3.67809327645e-06
 (PP|<IN> (IN ) (VP ))	7.93650793651e-05
@@ -10820,7 +10810,6 @@
 (SBAR (IN ) (S (NP ) (VP (MD ) (VP (VB ) (VP )))))	7.72200772201e-06
 (S|<,> (, ,) (S|<NP> (NP (PRP )) (S|<VP> (VP (MD ) (VP|<RB> (RB n't) (VP (VB ) (S (VP ))))) (. .))))	4.28449014567e-06
 (NP (NP ) (NP|<PP> (PP ) (PP (IN ) (NP (NP ) (PP (IN ) (NP ))))))	6.36091851663e-07
-(NNS sweets)	7.36377025037e-06
 (NP (NP ) (NP|<,> (, ,) (NP|<CC> (CC and) (NP|<NP> (NP (NP ) (NP|<,> )) (, ,)))))	3.18045925832e-07
 (VP (VBN ) (ADJP ))	0.000364866445966
 (PP (IN with) (NP (NP ) (NP|<,> (, ,) (NP|<NP> ))))	6.74399784192e-07
@@ -10855,7 +10844,6 @@
 (JJ three-year)	1.2077294686e-05
 (SBAR (WHNP (WP who)) (S (VP (VBD ) (PP (IN ) (NP )))))	3.861003861e-06
 (VP (VBP ) (NP (DT ) (NP|<JJ> )))	7.35618655289e-07
-(TOP (S (NP (DT The) (NN )) (S|<VP> (VP (VBD ) (NP (NP ) (PP ))) (. .))))	2.22123500666e-06
 (S|<VP> (VP (VBZ is) (VP (VBN ) (PP (IN ) (NP )))) (. .))	2.38777459408e-06
 (NP (NP (DT ) (NP|<NN> (NN ) (NN the))) (NP|<,> ))	2.1928009e-05
 (TOP (S (NP ) (S|<VP> (VP (VBZ ) (VP (VBN is) (VP|<PP> ))) (. ))))	0.00031776121
@@ -10875,7 +10863,6 @@
 (TOP (S (NP ) (S|<ADVP> (ADVP (RB )) (S|<VP> (VP ) (. .)))))	1.77698800533e-05
 (UCP|<CC> (CC ) (UCP|<RB> ))	0.000454545454545
 (NP (NP (DT the) (NP|<NNP> )) (PP (IN ) (NP )))	2.22632148082e-06
-(NP|<JJ> (JJ personal) (NNS ))	8.41750841751e-06
 (VP (VBD ) (PP (IN on) (NP )))	2.20685596587e-06
 (S|<,> (, ,) (S|<NP> (NP (NNP ) (NNP )) (S|<VP> (VP ) (. .))))	2.99914310197e-05
 (NNS coverings)	7.36377025037e-06
@@ -11416,7 +11403,6 @@
 (VP (VBZ is) (VP (VBG ) (VP|<NP> )))	1.47123731058e-06
 (PP (IN ) (S (VP (VBG ) (VP|<PP> ))))	1.34879956838e-06
 (NNP Conn.)	4.4964028777e-06
-(VBG laying)	2.34741784038e-05
 (TOP (S (NP (DT The) (NP|<NNP> (NNP ) (NNP ))) (S|<VP> (VP ) (. .))))	2.22123500666e-06
 (VP (TO to) (VP (VB ) (SBAR (IN that) (S (NP ) (VP )))))	2.20685596587e-06
 (NNP Gorbachev)	4.4964028777e-06
@@ -11481,6 +11467,7 @@
 (ADJP (JJ ) (ADJP|<,> ))	1.51057401813e-05
 (PP (IN at) (NP (NP (DT a) (NN time)) (SBAR (WHADVP (WRB when)) (S (NP ) (VP )))))	6.74399784192e-07
 (PP (IN ) (NP (NP (CD ) (NN %)) (PP (IN ) (NP ))))	2.02319935258e-06
+(NP (NP ) (PP (IN ) (NP (NP ) (PP ))))	1.68564340691e-05
 (IN up)	3.75657400451e-06
 (VP|<NP> (NP (NP ) (PP )) (PP (IN ) (NP (NP ) (PP (IN ) (NP )))))	1.28314798973e-05
 (PP (VBN ) (PP (IN ) (NP )))	1.34879956838e-06
@@ -11577,7 +11564,6 @@
 (VP (VBZ ) (NP (NP ) (VP )))	0.000182801032311
 (TOP (SINV (`` ) (SINV|<S> (S (NP (PRP I)) (VP )) (SINV|<,> (, ) (SINV|<''> )))))	0.000122019835
 (NP (NP ) (PP (IN ) (NP (NP (NNS )) (PP (IN ) (NP )))))	6.36091851663e-07
-(JJ market-research)	6.038647343e-06
 (ADVP (RB ) (ADVP|<RB> ))	9.19117647059e-06
 (VP (VBZ 's) (SBAR ))	1.47123731058e-06
 (NP|<NP> (NP (NP ) (PP (IN ) (NP (DT ) (NP|<JJ> (JJ ) (NNS ))))) (, ,))	2.7027027027e-05
@@ -11614,6 +11600,7 @@
 (SBAR (IN because) (S ))	1.73745173745e-05
 (NP (NN share) (NNS ))	3.18045925832e-07
 (S (NP ) (VP (MD ) (VP (VB ) (VP|<NP> ))))	0.00504875713696
+(NX (NNPS ))	0.000625
 (S|<,> (, ,) (S|<NP> (NP (NP ) (NP|<,> )) (S|<VP> (VP ) (. .))))	1.2853470437e-05
 (NP (NP (DT the) (NN )) (PP (IN of) (NP (DT the) (NP|<NN> ))))	6.36091851663e-07
 (NP (NP ) (NP|<PP> (PP (IN with) (NP )) (SBAR )))	3.18045925832e-07
@@ -11622,7 +11609,7 @@
 (JJ steep)	6.038647343e-06
 (PP (IN from) (NP (NP ) (VP )))	6.74399784192e-07
 (NP (NP ) (PP (IN for) (NP )))	9.85942370078e-06
-(NP (NP ) (NP|<,> (, ,) (NP|<NP> (NP (NNP )) (, ,))))	6.36091851663e-07
+(JJS worst)	0.000217391304348
 (TOP (S (PP (IN In) (NP (DT the) (NP|<JJ> (JJ ) (NN )))) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP ) (. .))))))	1.11061750333e-06
 (PP (IN in) (NP (NP ) (NP|<,> (, ,) (SBAR ))))	2.02319935258e-06
 (JJ eligible)	6.038647343e-06
@@ -11640,6 +11627,7 @@
 (JJ hidden)	6.038647343e-06
 (JJ ambitious)	6.038647343e-06
 (VP (VBP do) (VP|<RB> (RB n't) (VP (VB ) (NP ))))	2.20685596587e-06
+(VP|<ADVP> (ADVP ) (VP|<``> ))	1.79856115108e-05
 (ADJP (JJ unable) (S (VP (TO to) (VP ))))	3.02114803625e-05
 (VB affect)	1.37362637363e-05
 (NP (NP (NNS )) (VP ))	3.18045925832e-06
@@ -11868,6 +11856,7 @@
 (SINV|<VP> (VP ) (SINV|<NP> (NP (NP ) (NP|<,> )) (. .)))	0.000172413793103
 (VP (MD will) (VP|<ADVP> (ADVP (RB )) (VP )))	3.67809327645e-06
 (NP (NP ) (PRN (-LRB- ) (PRN|<NP> (NP ) (-RRB- ))))	1.27218370333e-06
+(NNP Mulford)	3.59712230216e-05
 (VP (VBZ is) (NP ))	1.91260850375e-05
 (NN girlfriend)	2.80583613917e-06
 (VP (VB ) (VP|<NP> (NP (NNS )) (PP )))	3.67809327645e-06
@@ -11888,7 +11877,6 @@
 (NP (DT the) (NNS changes))	3.18045925832e-07
 (NN demeanor)	2.80583613917e-06
 (S (NP (PRP )) (VP (MD ) (VP|<RB> (RB wo) (VP n't))))	0.0029996663
-(SBAR (S (VP (TO to) (VP (VB ) (PP (IN ) (NP ))))))	1.9305019305e-06
 (NP (DT ) (NP|<NN> (NN ) (NP|<NN> (NN ) (POS 's))))	3.18045925832e-07
 (S|<VP> (VP (VBD ) (SBAR (S (NP ) (VP (MD would) (VP ))))) (. .))	9.55109837631e-06
 (ADJP (ADJP ) (ADJP|<CC> (CC and) (ADJP )))	3.02114803625e-05
@@ -12108,7 +12096,6 @@
 (NP (NP (NNP ) (NNP )) (NP|<,> (, ,) (NP (NP (DT a) (NP|<JJ> (JJ ) (NP|<NN> ))) (PP (IN ) (NP )))))	3.18045925832e-07
 (NP (CD 10) (NN %))	3.18045925832e-07
 (VP (VBN ) (VP|<PRT> ))	2.94247462116e-06
-(TOP (S (NP (NP (CD )) (PP (IN of) (NP ))) (S|<VP> (VP ) (. .))))	3.33185251e-06
 (VP|<NP> (NP (NNS )) (VP|<PP> (PP ) (PP )))	4.27715996578e-06
 (NNP IFI)	2.69784172662e-05
 (S|<VP> (VP ) (S|<:> ))	2.38777459408e-06
@@ -12160,6 +12147,7 @@
 (NNP Bewkes)	4.4964028777e-06
 (CD 15)	1.44927536232e-05
 (WHNP (WDT ))	0.250410623144
+(VBG nursing)	2.34741784038e-05
 (TOP (S (NP (NP ) (PP (IN ) (NP ))) (S|<VP> (VP (VBD ) (VP )) (. .))))	1.11061750333e-06
 (TOP (S (NP (NP ) (PP (IN of) (NP (NP ) (NP|<,> )))) (S|<VP> (VP ) (. .))))	1.11061750333e-06
 (PP (IN for) (NP (DT the) (NP|<NN> (NN ) (NN ))))	6.74399784192e-07
@@ -12284,7 +12272,6 @@
 (NP|<NNP> (NNP ) (NP|<CC> (CC &) (NNP )))	4.71698113208e-05
 (VP|<PP> (PP (IN with) (NP )) (PP (IN ) (NP )))	6.20347394541e-06
 (JJ sure)	6.038647343e-06
-(NP (NP ) (PP (IN ) (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP (IN ) (NP )))))	6.36091851663e-07
 (VBG preserving)	2.34741784038e-05
 (NP|<JJ> (JJ ) (NN rate))	1.6835016835e-05
 (VP (MD will) (VP (VB ) (NP (NP ) (PP (IN of) (NP )))))	1.47123731058e-06
@@ -12319,7 +12306,6 @@
 (S (VP (TO to) (VP (VB ) (SBAR (IN ) (S (NP ) (VP ))))))	3.10366232154e-06
 (TOP (S (NP (DT ) (NP|<NN> )) (S|<VP> (VP ) (. .))))	5.55308751666e-06
 (VP|<,> (, ,) (PP (IN ) (NP )))	7.50750750751e-05
-(VP|<ADVP> (ADVP ) (VP|<``> ))	1.79856115108e-05
 (NP (NP ) (PP (IN of) (NP (NNP ) (NNP ))))	1.59022962916e-06
 (NNP World)	4.4964028777e-06
 (NP (QP ) (NP|<DT> ))	6.36091851663e-07
@@ -12333,6 +12319,7 @@
 (VP|<PP> (PP (IN on) (NP )) (VP|<,> (, ,) (PP )))	6.20347394541e-06
 (RB right)	2.20264317181e-05
 (NP (NP (NNP ) (NP|<NNPS> (NNPS ) (NNP ))) (NP|<CC> (CC and) (NP )))	3.18045925832e-07
+(NP (NP ) (PP (IN ) (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP (IN ) (NP )))))	6.36091851663e-07
 (NP (NP (DT the) (NN )) (NP|<PP> (PP (IN of) (NP )) (PP )))	3.18045925832e-07
 (SBAR (WHNP ) (S (VP (VBP ) (NP ))))	7.72200772201e-06
 (S (NP ) (VP (VBD received) (NP )))	2.06910821436e-06
@@ -12357,7 +12344,7 @@
 (JJ last-minute)	6.038647343e-06
 (NP (`` ``) (NP|<NP> (NP ) (NP|<''> )))	9.54137777495e-07
 (VP (VBD ) (VP|<NP> (NP ) (VP|<PP> (PP (IN in) (NP (NNP ))) (VP|<,> ))))	7.35618655289e-07
-(S|<,> (, ,) (S|<PP> ))	3.85604113111e-05
+(NP (NP ) (PP (IN of) (NP (NP (DT ) (NP|<JJ> )) (PP (IN for) (NP )))))	3.18045925832e-07
 (NP|<NNPS> (NNPS ) (NP|<NNP> ))	0.000294117647059
 (SBAR (WHADJP ) (S ))	1.9305019305e-06
 (NN blast)	2.80583613917e-06
@@ -12367,7 +12354,7 @@
 (NP (NP ) (NP|<CC> (CC ) (NP (DT ) (NN ))))	6.36091851663e-07
 (VP (VB be) (VP|<ADJP> ))	1.47123731058e-06
 (NNS papers)	7.36377025037e-06
-(SINV|<,> (, ,) (SINV|<''> ('' '') (SINV|<VP> (VP (VBD said)) (SINV|<NP> (NP ) (. .)))))	0.00030303030303
+(S (S (NP (NP ) (NP|<,> )) (VP )) (S|<,> ))	1.03455410718e-06
 (TOP (S (PP (IN For) (NP )) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP (VBD ) (NP )) (. .))))))	1.11061750333e-06
 (PP (IN ) (NP (NP ) (NP|<CC> (CC and) (NP (JJ ) (NP|<NN> )))))	1.34879956838e-06
 (NNP Treaty)	4.4964028777e-06
@@ -12413,9 +12400,9 @@
 (QP|<JJR> (JJR ) (QP|<IN> ))	0.005
 (VBD laughed)	1.0460251046e-05
 (VP (VBD told) (NP ))	1.47123731058e-06
+(VB amble)	1.37362637363e-05
 (PP (IN ) (NP (NP (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP )))) (PP (IN in) (NP (NNP )))))	6.74399784192e-07
 (NP (NP ) (NP|<,> (, ,) (NP|<NP> (NP ) (NP|<,> (, ,) (PP (IN ) (NP ))))))	3.18045925832e-07
-(NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP Association)))	9.43396226415e-06
 (TOP (S (NP (NNP ) (NNP )) (S|<VP> (VP (VP ) (VP|<CC> (CC ) (VP ))) (. .))))	1.11061750333e-06
 (VP (VBP ) (VP|<RB> (RB n't) (VP )))	6.6205678976e-06
 (NP (DT The) (NP|<JJ> (JJ ) (NP|<JJ> )))	3.18045925832e-07
@@ -12459,7 +12446,6 @@
 (PP (IN ) (NP (NP ) (PP (IN of) (NP (CD )))))	2.69759913677e-06
 (NP (NP (DT the) (NN )) (NP|<,> ))	1.90827555499e-06
 (NP (NP (DT the) (NN )) (SBAR (WHNP (WDT that)) (S )))	3.18045925832e-07
-(S (VP (TO to) (VP (VB ) (VP|<PRT> (PRT (RP )) (PP (IN for) (NP ))))))	1.03455410718e-06
 (NP|<NN> (NN ) (S (VP )))	0.0110017504368
 (NP (NP (DT the) (NN )) (NP|<PP> (PP (IN ) (NP )) (NP )))	3.18045925832e-07
 (NNP Regulatory)	4.4964028777e-06
@@ -12766,7 +12752,7 @@
 (NN inflation)	2.80583613917e-06
 (VP (VBG ) (NP (DT ) (NN )))	0.015113072856
 (NNS areas)	7.36377025037e-06
-(VP (VP ) (VP|<CC> (CC ) (VP (VBZ ) (VP|<``> ))))	7.35618655289e-07
+(NP (NP ) (PP (TO to) (NP )))	4.77068888748e-06
 (S (NP (PRP )) (VP (MD will) (VP (VB ) (VP|<NP> ))))	2.06910821436e-06
 (VP (VBD rose) (VP|<PP> (PP (TO to) (NP )) (VP|<PP> (PP (IN ) (NP )) (VP|<,> ))))	7.35618655289e-07
 (VP (MD ) (VP (VB ) (S (VP ))))	5.88494924231e-06
@@ -12938,6 +12924,7 @@
 (NN mud)	2.80583613917e-06
 (TOP (S (NP (DT ) (NNS )) (S|<VP> (VP ) (. .))))	2.22123500666e-06
 (NP (DT the) (NP|<ADJP> ))	2.54436740665e-06
+(S|<,> (, ,) (S|<NP> (NP (PRP )) (S|<VP> (VP (VBP ) (NP )) (. .))))	4.28449014567e-06
 (VP (VBG ) (VP|<ADVP> ))	0.000188132447898
 (WHADJP (WRB ) (JJ ))	0.002
 (TOP (S (NP (NP (NP ) (PP (IN of) (NP )))) (S|<VP> (VP ) (. .))))	1.11061750333e-06
@@ -13076,7 +13063,6 @@
 (VB compromise)	1.37362637363e-05
 (VBD led)	1.0460251046e-05
 (VP|<NP> (NP (NP ) (PP (IN ) (NP ))) (SBAR (IN because) (S (NP ) (VP ))))	4.27715996578e-06
-(NP (NP ) (PP (IN ) (NP (NP ) (PP ))))	1.68564340691e-05
 (JJ prior)	6.038647343e-06
 (VP|<ADVP> (ADVP (RB )) (S (VP )))	3.59712230216e-05
 (SBAR (IN ) (S (NP ) (VP (VBZ has) (VP ))))	7.72200772201e-06
@@ -13110,6 +13096,7 @@
 (S (NP ) (VP (VBD ) (NP (NP ) (SBAR (S )))))	1.03455410718e-06
 (S|<DT> (DT ) (VP ))	0.00166666666667
 (NP|<,> (, ,) (NP (NP ) (SBAR (WHNP ) (S (VP )))))	4.91573033708e-05
+(NP (PRP$ His) (NP|<JJ> ))	6.36091851663e-07
 (VP (VB be) (VP (VBN ) (VP|<PP> )))	2.94247462116e-06
 (NP|<CC> (CC ) (NP (JJ ) (NP|<JJ> )))	0.0099747755
 (NP|<NN> (NN loan) (NNS ))	9.02527075812e-06
@@ -13147,6 +13134,7 @@
 (NN fool)	2.80583613917e-06
 (SBAR (WHNP ) (S (NP (PRP )) (VP )))	9.65250965251e-06
 (TOP (S (PP (IN In) (NP )) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP (VBD ) (VP|<NP> )) (. .))))))	1.11061750333e-06
+(VP (MD ) (VP|<ADVP> ))	6.6205678976e-06
 (PRP myself)	4.91803278689e-05
 (CD five)	8.69565217391e-05
 (SBAR (WHNP ) (S (VP (MD ) (VP (VB ) (PP )))))	3.861003861e-06
@@ -13193,6 +13181,7 @@
 (PP (TO to) (NP (NP ) (VP (VBN ) (PP (IN ) (NP )))))	6.74399784192e-07
 (NP (NP ) (NP|<NN> ))	2.54436740665e-06
 (VBG leading)	9.3896713615e-05
+(VP (VBD had) (VP|<NP> ))	7.35618655289e-07
 (NP (NP (NN ) (NN )) (PP (IN in) (NP (NNP ))))	3.18045925832e-07
 (VP (TO to) (VP (VB ) (NP (NP (DT ) (NP|<JJ> )) (PP (IN ) (NP )))))	7.35618655289e-07
 (TOP (S (S (NP (DT ) (NP|<NNP> )) (VP )) (S|<,> )))	1.11061750333e-06
@@ -13226,7 +13215,7 @@
 (NN future)	5.61167227834e-06
 (TOP (S (PP ) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP ) (. .))))))	4.22034651266e-05
 (PP (IN ) (NP (NP ) (NP|<:> (: --) (SBAR (WHNP (WDT )) (S )))))	6.74399784192e-07
-(VP (MD ) (VP|<ADVP> ))	6.6205678976e-06
+(VP (MD would) (VP (VB be) (ADJP (JJ irresponsible))))	7.35618655289e-07
 (VP (VBZ ) (NP (DT ) (NP|<JJ> (JJ ) (NN ))))	2.94247462116e-06
 (NN total)	2.80583613917e-06
 (IN around)	3.75657400451e-06
@@ -13578,7 +13567,6 @@
 (S (NP (DT the) (NP|<JJ> )) (VP ))	6.20732464308e-06
 (PP (IN ) (NP (NP ) (NP|<JJ> (JJ ) (NP|<NN> (NN ) (NN )))))	2.02319935258e-06
 (VP (VBP ) (VP|<RB> (RB 'm) (VP not)))	9.36622355e-05
-(NNP Mulford)	3.59712230216e-05
 (PP|<CC> (CC ) (PP (IN ) (NP )))	0.001
 (PP (TO ) (NP (CD ) (NN )))	0.047726767
 (NN proof)	2.80583613917e-06
@@ -13600,7 +13588,7 @@
 (JJ crippling)	6.038647343e-06
 (SBAR (IN if) (S (NP ) (VP )))	1.5444015444e-05
 (SBAR (WHNP (WDT that)) (S (VP (VBZ ) (NP ))))	9.65250965251e-06
-(NP (NP ) (PP (IN on) (NP (DT the) (NN economy))))	3.18045925832e-07
+(VP (VBP have) (VP (VBN ) (S (VP (TO to) (VP )))))	1.47123731058e-06
 (TOP (S (NP (NP ) (NP|<,> (, ,) (NP|<NP> (NP ) (, ,)))) (S|<VP> (VP (VBD said) (SBAR )) (. .))))	2.22123500666e-06
 (VBN displaced)	1.87969924812e-05
 (PP (IN of) (NP (PRP$ ) (NP|<NN> )))	2.02319935258e-06
@@ -13689,7 +13677,6 @@
 (S (NP ) (VP (VBP ) (SBAR (S (NP ) (VP )))))	1.03455410718e-06
 (NP (JJ ) (NNS markets))	1.59022962916e-06
 (VP (TO to) (VP (VB ) (VP|<ADJP> )))	7.35618655289e-07
-(SINV (S ) (SINV|<,> ))	0.0005
 (UCP|<ADJP> (ADJP ) (UCP|<''> ))	0.005
 (S (NP (DT )) (VP ))	0.0787495914329
 (NNS naggings)	7.36377025037e-06
@@ -13740,7 +13727,7 @@
 (VB Attention)	1.37362637363e-05
 (NP (NP (DT the) (NP|<JJ> (JJ ) (NN ))) (PP (IN of) (NP (NP ) (PP (IN ) (NP )))))	3.18045925832e-07
 (VP (VBP have) (VP (VBN been) (VP (VBG ) (PP (IN ) (NP )))))	7.35618655289e-07
-(VP (VBZ is) (NP (NP ) (PP (IN ) (NP ))))	5.88494924231e-06
+(NP (DT the) (NP|<JJ> (JJ previous) (NN )))	3.18045925832e-07
 (ADJP (JJ ) (S (VP (TO to) (VP (VB ) (PP (IN for) (NP ))))))	1.51057401813e-05
 (JJ past)	1.8115942029e-05
 (JJ overseas)	6.038647343e-06
@@ -13814,6 +13801,7 @@
 (NP (NP (PRP$ ) (NNS )) (PP (IN ) (NP )))	9.54137777495e-07
 (VP (VBD ) (VP|<NP> (NP ) (VP|<PP> (PP ) (VP|<,> (, ,) (PP )))))	1.47123731058e-06
 (TOP (S (NP (NP ) (PP (IN ) (NP (NNP )))) (S|<VP> (VP ) (. .))))	1.11061750333e-06
+(SBAR (S (VP (TO to) (VP (VB ) (PP (IN ) (NP ))))))	1.9305019305e-06
 (S (VP (TO to) (VP (VB ) (VP|<ADVP> ))))	5.1727705359e-06
 (NP|<NNP> (NNP ) (NP|<CC> (CC ) (NP|<NNP> (NNP ) (NNP ))))	1.88679245283e-05
 (S (NP (NP (PRP ))) (VP (VBZ ) (VP|<ADJP> )))	1.03455410718e-06
@@ -13917,9 +13905,11 @@
 (VP (VBD ) (NP (NP (DT ) (NP|<JJ> (JJ ) (NN ))) (PP (IN ) (NP ))))	2.94247462116e-06
 (PP (IN ) (NP (NP ) (PP (IN ) (NP (DT the) (NN )))))	5.39519827354e-06
 (VP|<NP> (NP ) (VP|<PP> (PP (IN ) (NP (NNP ))) (PP (IN ) (NP (DT the) (NP|<JJ> (JJ ) (NN ))))))	4.27715996578e-06
+(PP (IN ) (NP (NP ) (PP (IN of) (NP (NP ) (SBAR (S (NP ) (VP )))))))	1.34879956838e-06
 (S|<VP> (VP (VBD ) (ADVP )) (. .))	2.38777459408e-06
 (PP (IN ) (NP (NP (NNP )) (NP|<,> (, ,) (NP|<NP> (NP ) (, ,)))))	1.34879956838e-06
 (NN training)	3.08641975309e-05
+(NNP Committee)	1.34892086331e-05
 (PP (IN ) (NP (NN )))	0.000121805681357
 (TOP (S (NP (NNP ) (NP|<NNP> )) (S|<VP> (VP ) (. ))))	6.13784655e-05
 (NP (DT the) (NP|<VBN> (VBN ) (NNS )))	6.36091851663e-07
@@ -13986,6 +13976,7 @@
 (JJ disposable)	6.038647343e-06
 (NNP Harriton)	4.4964028777e-06
 (NP (NP (DT the) (NP|<JJ> (JJ ) (NN power))) (PP (IN of) (NP )))	3.18045925832e-07
+(PP (IN ) (NP (NP ) (PP (IN of) (NP (NP ) (SBAR (WHNP ) (S (VP )))))))	2.02319935258e-06
 (NP (NP ) (SBAR (WHNP ) (S (VP (VBD ) (NP )))))	9.54137777495e-07
 (VP|<NP> (NP ) (VP|<PP> (PP (IN ) (NP )) (VP|<,> (, ,) (ADVP (RB up) (PP (IN from) (NP ))))))	4.27715996578e-06
 (NP (NP ) (PP (IN of) (NP (NN ) (NNS ))))	6.36091851663e-07
@@ -14006,15 +13997,16 @@
 (TOP (S (NP ) (S|<VP> (VP (VBD had) (NP (NP ) (PP ))) (. .))))	1.11061750333e-06
 (VP (VBN ) (PP (IN ) (NP (NNP ))))	2.20685596587e-06
 (PP (IN of) (NP (DT ) (NN )))	1.14647963313e-05
+(TOP (S (NP (NP (CD )) (PP (IN of) (NP ))) (S|<VP> (VP ) (. .))))	3.33185251e-06
 (NP (NP (DT ) (NN )) (SBAR (WHNP ) (S (VP (MD ) (VP )))))	3.18045925832e-07
 (CONJP (RB ) (CONJP|<RB> ))	0.000625
-(WP whom)	0.000116279069767
 (PP (IN ) (NP (DT ) (NP|<NN> (NN ) (NP|<NN> ))))	1.34879956838e-06
 (NP (NP ) (PP (IN ) (NP (NP (DT the) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> )))) (NP|<,> ))))	3.18045925832e-07
 (VB enter)	1.37362637363e-05
 (NP|<NNP> (NNP ) (NP|<NNP> ))	0.00255511019528
 (TOP (S (NP (NP ) (NP|<,> )) (S|<VP> (VP (VBD said) (SBAR (S (NP (PRP it)) (VP (VBD ) (VP|<NP> ))))) (. .))))	1.11061750333e-06
 (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP (VBP are) (VP )) (. .))))	4.28449014567e-06
+(NNS critics)	7.36377025037e-06
 (VP (VBN ) (VP|<PP> (PP (IN ) (NP )) (PP (IN in) (NP (NP ) (PP (IN of) (NP ))))))	7.35618655289e-07
 (VBN pre-approved)	1.87969924812e-05
 (VP (VBD ) (VP|<NP> (NP ) (PP (IN ) (S (VP )))))	2.20685596587e-06
@@ -14068,6 +14060,7 @@
 (NP|<JJS> (JJS ) (NN ))	0.00227272727273
 (VBG reneging)	2.34741784038e-05
 (IN toward)	7.51314800902e-06
+(NP (DT the) (NN press))	3.18045925832e-07
 (VP (VBP say) (SBAR (S (NP ) (VP (MD ) (VP )))))	7.35618655289e-07
 (NP (VBN ) (NNS ))	3.18045925832e-07
 (NP (NP (NP ) (NP|<CC> (CC and) (NP ))) (NP|<,> ))	6.36091851663e-07
@@ -14136,12 +14129,12 @@
 (NP (NP ) (PP (IN ) (NP (NP ) (NP|<:> (: -) (NP )))))	3.18045925832e-07
 (VP (TO to) (VP (VB be) (VP (VBN ) (PP (IN ) (NP )))))	3.67809327645e-06
 (S|<CC> (CC and) (S|<S> (S (NP ) (VP (VBP have) (VP ))) (. .)))	3.42465753425e-05
-(PP (IN ) (NP (NP ) (PP (IN of) (NP (DT ) (NN )))))	4.04639870515e-06
+(NP (CD five) (NP|<JJ> ))	3.18045925832e-07
 (VP|<PP> (PP (IN ) (NP )) (VP|<PP> ))	6.82382133995e-05
 (NP (NP ) (PP (IN of) (NP (DT ) (NP|<JJ> (JJ ) (NP|<NN> (NN ) (NN ))))))	6.36091851663e-07
 (PP (IN on) (NP (NNS )))	1.34879956838e-06
 (VP (VBP ) (VP|<:> ))	7.35618655289e-07
-(NP (NP ) (NP|<,> (, ,) (NP (NP ) (NP|<PP> (PP ) (PP (IN ) (NP ))))))	6.36091851663e-07
+(VP|<NP> (NP ) (VP|<:> ))	4.27715996578e-06
 (S|<,> (, ) (S|<PP> (PP (IN ,) (NP )) (S|<,> )))	0.0150801205
 (NP|<CC> (CC ) (NP|<JJ> ))	3.65853658537e-05
 (S|<,> (, ) (S|<NP> (NP (DT ) (NP|<NNP> )) (S|<VP> )))	0.0301603405
@@ -14172,6 +14165,7 @@
 (NP|<CC> (CC ) (NP (PRP$ ) (NNS )))	0.0030907685
 (S (NP (DT The) (NP|<NNP> )) (VP ))	1.03455410718e-06
 (NP (NP (NP ) (PP (IN of) (NP ))) (NP|<,> ))	2.54436740665e-06
+(NNP Congressional)	8.9928057554e-06
 (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> )))	0.0019548367
 (NN safety)	2.80583613917e-06
 (PP (IN from) (NP (NP ) (PP (IN ) (NP (PRP$ ) (NN )))))	6.74399784192e-07
@@ -14189,6 +14183,7 @@
 (S (VP (VBG ) (VP|<NP> (NP (NP ) (PP (IN ) (NP ))) (PP (IN ) (NP )))))	1.03455410718e-06
 (NN spring)	5.61167227834e-06
 (TOP (S (S (NP ) (VP )) (S|<,> (, ) (S|<CC> (CC ) (S|<S> (S ) (. ))))))	6.10101165e-05
+(NNP Murphy)	4.4964028777e-06
 (S|<VP> (VP (VBD ) (VP|<NP> (NP ) (SBAR ))) (. .))	1.19388729704e-05
 (SBAR (IN ) (S (NP (PRP$ his) (NN )) (VP )))	1.9305019305e-06
 (S (NP (PRP I)) (VP (VBP am) (VP|<RB> (RB not) (ADJP ))))	1.03455410718e-06
@@ -14227,7 +14222,6 @@
 (S (NP (DT The) (NN )) (VP ))	0.000638206952857
 (VP|<NP> (NP (PRP$ ) (NN )) (PP (IN ) (NP )))	4.27715996578e-06
 (NN factor)	2.80583613917e-06
-(NP (NP ) (PP (IN of) (NP (NP (DT ) (NP|<JJ> )) (PP (IN for) (NP )))))	3.18045925832e-07
 (JJ top-secret)	6.038647343e-06
 (NP (NP ) (PP (IN of) (NP (NP ) (NP|<JJ> ))))	1.27218370333e-06
 (ADVP (NP (CD ) (NNS years)) (RB ))	5.51470588235e-05
@@ -14246,6 +14240,7 @@
 (JJ third)	1.8115942029e-05
 (S (NP (NN )) (VP (VBZ ) (VP )))	1.03455410718e-06
 (NNS Bids)	1.47275405007e-05
+(VP (VBG ) (VP|<PP> (PP (IN ) (NP )) (S (VP ))))	7.35618655289e-07
 (S|<VP> (VP (VBD said) (SBAR (S (NP ) (VP )))) (S|<.> (. .) ('' '')))	7.16332378223e-06
 (TOP (S (NP ) (S|<VP> (VP (VBD said) (SBAR (S (NP (PRP )) (VP (MD will) (VP ))))) (. .))))	2.22123500666e-06
 (NP|<VBN> (VBN ) (NNS ))	0.00166666666667
@@ -14284,6 +14279,7 @@
 (NP (NP (DT ) (NP|<NN> (NN ) (POS ))) (NN ))	0.000152277785
 (PP (IN ) (NP (DT ) (NN year)))	6.74399784192e-07
 (PP (IN on) (NP (NN )))	6.74399784192e-07
+(VBG laying)	2.34741784038e-05
 (S|<,> (, ) (S|<``> ))	4.28449014567e-06
 (NNS currents)	7.36377025037e-06
 (VP (VBD ) (SBAR (S (NP ) (S|<``> (`` ``) (VP )))))	1.47123731058e-06
@@ -14292,7 +14288,7 @@
 (VP|<NP> (NP ) (VP|<PP> (PP ) (PP (IN in) (NP ))))	4.27715996578e-06
 (TOP (S (NP (NP ) (PP (IN of) (NP ))) (S|<VP> (VP ) (. .))))	9.99555752999e-06
 (VBD earned)	1.0460251046e-05
-(S (S (NP (NP ) (NP|<,> )) (VP )) (S|<,> ))	1.03455410718e-06
+(SINV|<,> (, ,) (SINV|<''> ('' '') (SINV|<VP> (VP (VBD said)) (SINV|<NP> (NP ) (. .)))))	0.00030303030303
 (NP (NP (JJ ) (NNS )) (PP (IN ) (NP )))	9.20222505358e-05
 (VP|<NP> (NP (DT ) (NP|<JJ> )) (SBAR ))	8.55431993157e-06
 (NN question)	2.80583613917e-06
@@ -14327,11 +14323,11 @@
 (NP (NP ) (PP (IN of) (NP (NP ) (SBAR (WHNP ) (S (VP ))))))	1.90827555499e-06
 (NNS exemptions)	7.36377025037e-06
 (NP (NP (NNS )) (VP (VBN ) (PP )))	3.18045925832e-07
-(TOP (S (S ) (S|<NP> (NP ) (S|<VP> (VP (VBD said)) (. .)))))	1.11061750333e-06
+(VP|<``> (`` ) (VP|<NP> ))	0.000217391304348
 (S (NP ) (VP (MD ) (VP (VB ) (VP|<NP> (NP ) (PP )))))	4.13821642872e-06
 (NP (DT ) (FW ))	3.18045925832e-07
 (VP (VBN ) (PP (IN in) (NP (DT ) (NN ))))	7.35618655289e-07
-(VP (VBD had) (VP|<NP> ))	7.35618655289e-07
+(SBAR (IN ) (S (NP ) (VP (MD ) (VP (VB ) (VP|<ADVP> )))))	1.9305019305e-06
 (VP (TO to) (VP (VB ) (VP|<NP> )))	2.2804178314e-05
 (S|<NP> (NP ) (S|<VP> (VP (MD would) (VP )) (. .)))	1.85873605948e-05
 (NP (PRP$ ) (NP|<JJ> (JJ ) (NP|<NN> (NN ) (NN ))))	3.18045925832e-07
@@ -14364,6 +14360,7 @@
 (NP (NP (NNP ) (NP|<NNP> (NNP ) (NP|<NNP> (NNP ) (NNP )))) (NP|<,> (, ,) (NP|<NP> (NP (NP ) (PP (IN of) (NP ))) (, ,))))	3.18045925832e-07
 (S (NP ) (VP (VBZ expects) (S (NP ) (VP (TO to) (VP )))))	1.03455410718e-06
 (VBN tended)	1.87969924812e-05
+(NNP Sunbird)	8.9928057554e-06
 (VB accept)	2.74725274725e-05
 (VP (VB ) (VP|<NP> (NP ) (PP (TO ) (NP ))))	0.000181329795
 (S (NP (PRP it)) (VP (VBZ ) (NP (NP ) (PP (IN ) (NP (NP (DT ) (NN )) (PP (IN ) (NP )))))))	1.03455410718e-06
@@ -14373,7 +14370,7 @@
 (NP (NP (DT ) (NP|<NN> (NN plant) (POS 's))) (NN ))	6.36091851663e-07
 (NN bar)	8.41750841751e-06
 (NNP Congress)	2.69784172662e-05
-(NP (NNS reports))	3.18045925832e-07
+(TOP (S (S ) (S|<,> )))	3.88716126166e-05
 (NN institutes)	2.80583613917e-06
 (PP (IN ) (NP (NP ) (SBAR (WHNP (WDT that)) (S (VP (MD ) (VP ))))))	6.74399784192e-07
 (PP (IN ) (NP (NP ) (PP (IN of) (NP (DT ) (NNS )))))	6.74399784192e-07
@@ -14410,7 +14407,6 @@
 (S|<,> (, ) (S|<NP> (NP (PRP )) (S|<VP> (VP ) (. ,))))	0.00315107545
 (NNP Control)	2.69784172662e-05
 (VP|<ADVP> (ADVP ) (ADJP ))	3.59712230216e-05
-(NP (DT ) (NP|<JJ> (JJ whole) (NN )))	3.18045925832e-07
 (JJ secret)	6.038647343e-06
 (NP (NN today))	6.36091851663e-07
 (VBD promised)	1.0460251046e-05
@@ -14420,6 +14416,7 @@
 (SINV|<,> (, ,) (SINV|<''> ('' '') (SINV|<VP> (VP (VBD said)) (SINV|<NP> (NP (NP (NNP ) (NNP )) (NP|<,> (, ,) (NP (NP ) (PP (IN at) (NP ))))) (. .)))))	0.00010101010101
 (PP (IN ) (NP (NP (DT another) (NN )) (PP (IN of) (NP ))))	6.74399784192e-07
 (ADVP (IN out) (PP (IN of) (NP )))	4.59558823529e-05
+(NP (NNS reports))	3.18045925832e-07
 (VP|<VP> (VP ) (VP|<CC> (CC or) (VP )))	0.000108695652174
 (VP (VP ) (VP|<CC> (CC and) (VP|<ADVP> (ADVP (RB )) (VP ))))	7.35618655289e-07
 (S (ADVP ) (S|<,> (, ,) (S|<NP> )))	1.86219739292e-05
@@ -14429,6 +14426,7 @@
 (PRN (, ,) (PRN|<PP> (PP (IN ) (NP )) (, ,)))	4.90196078431e-05
 (S (NP (NN ) (NNS )) (VP ))	2.06910821436e-06
 (S (VP (TO to) (VP (VB ) (VP|<NP> (NP ) (PP (IN on) (NP ))))))	2.06910821436e-06
+(NN disbelief)	2.80583613917e-06
 (TOP (S (ADVP (RB Meanwhile)) (S|<,> (, ,) (S|<NP> (NP ) (S|<VP> (VP ) (. .))))))	1.11061750333e-06
 (NNP Norway)	4.4964028777e-06
 (S (NP ) (VP (VBP )))	4.13821642872e-06
@@ -14436,7 +14434,7 @@
 (TOP (S (`` ``) (S|<ADVP> )))	1.11061750333e-06
 (VP (VB ) (VP|<NP> (NP (DT ) (NN )) (PP (IN with) (NP ))))	7.35618655289e-07
 (VP (VBD ) (VP|<ADVP> (ADVP (RB )) (PP (IN ) (NP ))))	2.20685596587e-06
-(JJ insolvent)	6.038647343e-06
+(SBAR (WHNP (WDT )) (S (VP (VBZ has) (VP (VBN ) (VP|<NP> (NP ) (PP (IN ) (NP )))))))	1.9305019305e-06
 (NP (NP ) (PP (IN by) (NP (NNP ))))	3.18045925832e-07
 (VP (VBN ) (VP|<PP> (PP (IN by) (NP )) (PP (IN ) (NP ))))	2.94247462116e-06
 (VP|<,> (, ) (ADVP (RB ) (NP (CD ) (NNS ))))	0.225750575
@@ -14513,6 +14511,7 @@
 (NP (NP ) (PP (IN ) (NP (ADJP ) (NNS ))))	3.18045925832e-07
 (NNS savings)	7.36377025037e-06
 (NN mine)	2.80583613917e-06
+(WP whom)	0.000116279069767
 (SBAR (WHNP ) (S (VP (VBZ has) (NP ))))	1.9305019305e-06
 (JJ routine)	6.038647343e-06
 (NP (NP (DT ) (NN )) (PP (IN ) (NP (NP a) (NP|<,> ))))	0.0054819923
@@ -14572,7 +14571,7 @@
 (TOP (S (NP (PRP They)) (S|<VP> (VP ) (. ))))	0.000726311195
 (NP (CD 10) (NNS ))	3.18045925832e-07
 (JJ forbidding-looking)	6.038647343e-06
-(VP (TO to) (VP (VB ) (NP (DT ) (NN ))))	3.67809327645e-06
+(S (VP (TO to) (VP (VB ) (VP|<PRT> (PRT (RP )) (PP (IN for) (NP ))))))	1.03455410718e-06
 (PRN|<S> (S (NP (PRP )) (VP )) (, ,))	0.000769230769231
 (S|<NP> (NP ) (VP (VBZ ) (NP )))	1.39405204461e-05
 (PP (IN at) (NP (DT ) (NN )))	1.34879956838e-06
@@ -14632,7 +14631,6 @@
 (NNP Moody)	1.79856115108e-05
 (JJ first-quarter)	6.038647343e-06
 (TOP (S (NP (DT The) (NN )) (S|<ADVP> (ADVP (RB also)) (S|<VP> ))))	0.000554637875
-(NP|<NNP> (NNP Stock) (NNP Exchange))	9.43396226415e-06
 (VP|<NP> (NP ) (PRT ))	8.55431993157e-06
 (TOP (S (NP ) (S|<VP> (VP (VBZ has) (VP|<RB> (RB n't) (VP ))) (. .))))	1.11061750333e-06
 (NNS cases)	7.36377025037e-06
@@ -14738,7 +14736,7 @@
 (PP (IN ) (S (VP (VBG ) (S (NP ) (VP (TO to) (VP ))))))	1.34879956838e-06
 (ADJP (ADVP ) (ADJP|<NP> ))	1.51057401813e-05
 (VP|<S> (S ) (VP|<,> (, ,) (S (VP ))))	0.000288461538462
-(NP (PRP$ His) (NP|<JJ> ))	6.36091851663e-07
+(TOP (S (PP (IN ) (NP )) (S|<,> (, ,) (S|<NP> (NP (NNP ) (NNP )) (S|<VP> )))))	3.33185251e-06
 (NNPS Sands)	9.43396226415e-05
 (NP (NN ) (SBAR ))	6.36091851663e-07
 (PP (IN like) (NP (DT ) (NP|<NN> )))	6.74399784192e-07
@@ -14763,6 +14761,7 @@
 (VB mount)	1.37362637363e-05
 (S (NP (NN )) (VP (MD ) (VP )))	1.03455410718e-06
 (VP (VB ) (NP (NP ) (PP (IN ) (NP (DT the) (NN )))))	1.47123731058e-06
+(S (VP (VBG raising) (NP )))	1.03455410718e-06
 (PP (IN of) (NP (NP ) (PP (IN on) (NP ))))	1.34879956838e-06
 (S|<VP> (VP (VBD ) (NP (NP ) (PP ))) (. .))	2.14899713467e-05
 (NNP Giovanni)	3.59712230216e-05
@@ -15045,6 +15044,7 @@
 (PP (IN In) (NP ))	1.14647963313e-05
 (NP|<PP> (PP ) (SBAR ))	0.000263157894737
 (VP (VBN ) (S (VP (TO ) (VP ))))	0.000363022765
+(NP (DT the) (NN end))	9.54137777495e-07
 (NP (NP ) (NNP ))	3.18045925832e-07
 (NP (NP ) (NP|<CC> (CC and) (NP (JJ ) (NP|<JJ> ))))	6.36091851663e-07
 (PP (IN in) (NP (DT the) (NP|<JJ> )))	8.0927974103e-06

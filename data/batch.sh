@@ -4,16 +4,19 @@ FILE=$1
 OUT=$2
 NUM=$3
 HALF=$(( $NUM / 2 ))
-SPLITS=$4
+START=$4
+SPLITS=$5
+END=$(( $START + $SPLITS ))
+NUMCORES=$6
 
 # preprocess
 discodop treetransforms binarize $FILE $OUT.$NUM.bin --inputfmt=bracket --outputfmt=bracket --ensureroot=TOP --functions=remove -h 1 -v 1 --slice=0:$NUM
 
 # Split in $SPLITS random ways
-for i in `seq 1 $SPLITS`;
+for i in `seq $START $END`;
 do
 	# Random sort and split
-	cat $OUT.$NUM.bin | gsort -R | split -l $HALF - $OUT.split$HALF.$i.
+	cat $OUT.$NUM.bin | sort -R | split -l $HALF - $OUT.split$HALF.$i.
 
 	# aa = HC, ab = EC
 

@@ -71,8 +71,8 @@ We use the \emph{Wall Street Journal}~(WSJ) section of the Penn Treebank for our
 The corpus was preprocessed by removing functions and binarizing the trees by Markovization (h=1, v=1). 
 
 \paragraph{Algorithm}
-First of all, we find the maximally overlapping fragments of all trees in the corpus, which corresponds to \ddop, and we call the \emph{full-MO} approach.
-Then, we randomly split the corpus ten times in two equally-sized parts, called $EC$ and $HC$. For each split, build a DOP-reduction grammar from $EC$ and use it to find the shortest derivations (\emph{split-SD}) of the trees in $HC$, which corresponds to \dops{}. Additionally, we find the maximally overlapping fragments and estimate their weights from the $EC$. We'll call this \emph{split-MO}.
+First, we find the maximally overlapping fragments of all trees in the corpus, which corresponds to \ddop, and we call the \emph{Full Maximum Overlap} approach.
+Then, we randomly split the corpus ten times in two equally-sized parts, called $EC$ and $HC$. For each split, build a DOP-reduction grammar from $EC$ and use it to find the shortest derivations (\emph{Split Shortest Derivations}) of the trees in $HC$, which corresponds to \dops{}. Additionally, we find the maximally overlapping fragments and estimate their weights from the $EC$. We'll call this \emph{Split Maximum Overlap}.
 
 The results for the different splits were interpolated and the resulting grammars were smoothed as described above. For finding the weight of unparsable sentences in the \dops{} estimation, we needed to find the trees that had not been derived in any split. This was done by comparing each set of underived trees with the $HC$ sets of every split.
 
@@ -84,10 +84,10 @@ The input for the parser consisted of sentences of word and POS tag pairs. The p
 
 % Estimating all grammars took 45 hours on 16 CPU cores.
 
-\paragraph{Questions}
-Comparing \dops{} and \ddop{}: Which estimator gives more weight to large fragments? Is this related to consistency?
+% \paragraph{Questions}
+% Comparing \dops{} and \ddop{}: Which estimator gives more weight to large fragments? Is this related to consistency?
 
-Comparing \ddop{} and Split Double-DOP: What influence does a split have on performance and size of a grammar? How do the fragment weight distributions differ?
+% Comparing \ddop{} and Split Double-DOP: What influence does a split have on performance and size of a grammar? How do the fragment weight distributions differ?
 
-Comparing Split Double-DOP and \dops{}: Assuming that a larger weight in \dops{} corresponds to `usefulness' in parsing, what determines whether a fragment is useful?
+% Comparing Split Double-DOP and \dops{}: Assuming that a larger weight in \dops{} corresponds to `usefulness' in parsing, what determines whether a fragment is useful?
 
