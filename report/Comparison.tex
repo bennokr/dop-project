@@ -3,33 +3,25 @@
 %The theoretical properties of \dops{} and \ddop{} differ:  
 \dops{} and \ddop{} differ both in the set of fragments they extract and their estimation of the weights. To investigate the exact differences, we will view both steps separately.
 
-%Note that the \dops{} extraction needs another decision: in many cases, there are several shortest derivations possible. From now on, we add all fragments that occur in one of these shortest derivations to the symbolic grammar. Of course we need to adjust the weights (e.g. divide the frequency counts by the number of shortest derivations) so that no full tree gets a higher impact on the PTSG. We will keep to the original formulation of \dops{} in case no derivation is possible, i.e. not including any fragments for this tree.
-
 \paragraph{Extraction}
 \ddop{} uses a tree kernel approach to find the maximal overlapping fragments of pairs of trees, which are added to the symbolic grammar. We will call this the \emph{maximal-overlap} method. \dops{} iteratively finds the shortest derivation of one tree given all the fragments of a set of trees, hereafter the \emph{shortest-derivation} method. 
 
 It is easy to see that the \emph{shortest-derivation} extraction in itself does not depend on the corpus split: we can also find the shortest possible derivation using fragments from all the other trees. Likewise \ddop{} could be implemented using a split, comparing all trees in the $HC$ to all trees in the $EC$.
 We will refer to these methods as \emph{full} and \emph{split} estimation.
 
-%Whether the corpus is split in two does only influence the size of the symbolic grammar and
-
-%Therefore, w
-%We will implement both extraction methods in a 1 vs the rest manner. In this way, we can analyse how the resulting symbolic grammars differ. The analysis will comprise the size of the resulting symbolic grammar and the relative number of fragments of certain depth. Furthermore, we might be able to find interesting patterns by manually looking at the fragments that were extracted by one of the systems only.
-
 \paragraph{Estimation}
 
 Both approaches use the relative frequencies of the fragments for the weights:
 \begin{align}p(f)=\frac{count(f)}{\sum_{f'\in F_{root}(f)} count(f')}\end{align} 
+Where $F_{root}(f)$ denotes the fragments in the grammar that have the same root as $f$.
 However, in the \ddop{} case these values refer to exact counts of the fragments in the treebank, whereas in \dops{} they refer to occurrence of fragments in shortest derivations.
 
 
 \ddop{} determines the weights of the fragments in the symbolic grammar in a separate run over the treebank, to obtain exact counts. We use the relative frequency estimate to assign weights to the fragments. \dops{} on the other hand counts the occurrence in shortest derivations of the fragments, and normalizes relative to counts of fragments with the same root.
 
-To maximize coverage of the grammar, both \ddop{} and \dops{} apply smoothing that slightly alters the weights. Next to extracting maximally overlapping fragments, \ddop{} extracts all CFG rules and estimates their weight. \dops{} is smoothed by calculating the weight of the unparsed sentences, and distributes this over the CFG rules.
+\paragraph{Smoothing}
+To maximize coverage of the grammar, both \ddop{} and \dops{} add PCFG rules to the grammar. In \ddop{} this is done before the estimation, such that the CFG rules are treated as if they were extracted as maximal overlapping fragments. \dops{} is smoothed by calculating the weight of the unparsed sentences: $p_{unkn}$, and distributes this probability mass over the PCFG grammar.
 
- %Furthermore, infrequent words are replaced by a lexical description.
-
-%HIER
 
 
 
@@ -40,7 +32,7 @@ Applying the maximal overlap extraction and shortest derivation extraction with 
 
 Note the remarkable differences in the weight distributions. For example, $f_1$ gets a weight of 0.5 in the maximal overlap approach, and zero in the shortest derivation case. Of course, the sparsity of the data contributes much to these extreme variations. However, the observed differences encourage us to investigate these two approaches into more depth.
 
-
+%TODO: smoothing weghalen uit DOUBLE-DOP
 
 \begin{table}[h!]
 \center
@@ -57,29 +49,25 @@ Note the remarkable differences in the weight distributions. For example, $f_1$ 
 \subsection{Experiments}
 %Description of our implementation, how does it resemble Double-DOP and DOP*? What are the differences? What are the theoretical capabilities? 
 
+We compare the original formulation of \ddop{} and \dops{}, i.e. maximal overlap with full estimation and shortest derivation with split estimation. Furthermore, we add a new estimator that is a hybrid of the two: maximal overlap with split estimation. We have not been able to provide an efficient  implementation of shortest derivation extraction with full estimation.
 
 
+Estimation and parsing were done with the {\tt disco-dop} framework \footnote{http://staff.science.uva.nl/~acranenb/discodop/}.
 
-
-We compare the maximal overlap and shortest derivation extraction by using either a split or the whole set of trees for both estimators. We will plot the fragments according to the weights assigned by the estimators, such that the differences can stand out. In the same way, we compare the split and full estimation for the same estimator.
-
-Furthermore, we can compare the grammars by having them parse a test set and determine their performance, e.g. the F1-score for correctly predicted parses.
 
 \paragraph{Data}
 We use the \emph{Wall Street Journal}~(WSJ) section of the Penn Treebank for our experiments. \dops{} has only been applied to the Dutch OVIS corpus in \cite{zollmann2005}, which contains relatively small and (therefore) easy sentences. Therefore we are curious about its performance on the WSJ.
 
-The corpus was preprocessed by removing functions and binarizing the trees by Markovization (h=1, v=1). 
+The corpus was preprocessed in {\tt disco-dop} by removing functions and binarizing the trees by Markovization (h=1, v=1). %\footcite{klein2003}. 
 
 \paragraph{Algorithm}
 First, we find the maximally overlapping fragments of all trees in the corpus, which corresponds to \ddop, and we call the \emph{Full Maximum Overlap} approach.
 Then, we randomly split the corpus ten times in two equally-sized parts, called $EC$ and $HC$. For each split, build a DOP-reduction grammar from $EC$ and use it to find the shortest derivations (\emph{Split Shortest Derivations}) of the trees in $HC$, which corresponds to \dops{}. Additionally, we find the maximally overlapping fragments and estimate their weights from the $EC$. We'll call this \emph{Split Maximum Overlap}.
 
-The results for the different splits were interpolated and the resulting grammars were smoothed as described above. For finding the weight of unparsable sentences in the \dops{} estimation, we needed to find the trees that had not been derived in any split. This was done by comparing each set of underived trees with the $HC$ sets of every split.
-
-Estimation and parsing were done with the {\tt disco-dop} framework \footnote{http://staff.science.uva.nl/~acranenb/discodop/}.
+The results for the different splits were interpolated and the resulting grammars were smoothed as described above. For finding $p_{Unkn}$, the weight of unparsable sentences in the \dops{} estimation, we needed to find the trees that had not been derived in any split. This was done by comparing each set of underived trees with the $HC$ sets of every split.
 
 \paragraph{Parsing}
-The input for the parser consisted of sentences of word and POS tag pairs. The parser matches fragments to the whole pair when the word is known, but only uses the POS tag when the word is unknown.
+The input for the parser consisted of sentences with a POS-tag attached to each word. The parser matches fragments to the whole pair (word and POS-tag) when the word is known, but only uses the POS tag in case the word is unknown.
 
 
 % Estimating all grammars took 45 hours on 16 CPU cores.

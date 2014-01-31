@@ -211,7 +211,6 @@ child { node {VP}
 $\rightarrow$ expected \emph{loss} should decline
 \item {\bf Consistency}: Expected loss becomes 0 when the sample size approaches $\infty$
 \end{itemize}
-
 \end{frame}
 
 
@@ -228,7 +227,6 @@ $\rightarrow$ expected \emph{loss} should decline
 \item What about unseen data?
 \item Bias is {\bf good}
 \end{itemize}
-
 \end{frame}
 
 \section{\ddop{} and \dops{}: a comparison}
@@ -262,7 +260,21 @@ $\rightarrow$ expected \emph{loss} should decline
 \subsection{Experiments}
 
 
+
 \section{Results}
+\begin{frame}
+\begin{figure}[h!]
+\begin{tikzpicture}[node distance = 1cm]
+\node (MOS) [rectangle,rounded corners,draw, align=center]{Maximal Overlap\\ Split\\1159479 fragments};
+\node (MOF) [right = of MOS, rectangle,rounded corners,draw, align=center]{Maximal Overlap\\ Full\\1160117 fragments};
+\node (SDS) [below right= 1 cm and -1 cm of MOS, rectangle,rounded corners,draw, align=center]{Shortest Derivation\\ Split\\491533 fragments};
+\draw[dashed](MOS)--(MOF)--(SDS)--(MOS);
+\end{tikzpicture}
+\caption{The grammars and their size}
+\label{f:grammars}
+\end{figure}
+\end{frame}
+
 
 \subsection{Analyzing grammars}
 
