@@ -37,8 +37,9 @@
 \usepackage{tikz-qtree}
 
 
-\title{Doubling \dops}
-\subtitle{ A comparison of \ddop{} and \dops{}}
+
+\title{ A comparison of \ddop{} and \dops{}}
+\subtitle{Reconsidering non-trivial DOP estimators}
 \author[Kruit, Veldhoen]{Benno Kruit\and Sara Veldhoen{\\\vspace{.6cm}\small Supervised by: \\Andreas van Cranenburg \and Khalil Sima'an}}
 
 \institute{University of Amsterdam (UvA)}
@@ -350,7 +351,7 @@ $t_3=f_4\circ f_8$(a) or $f_3\circ f_7$(b), $t_4=f_5\circ f_7$(a) or $f_4\circ f
 
 
 \subsection{Experiments}
-<<<<<<< HEAD
+
 \begin{frame}{Experiments}
 Estimation and Parsing with the {\tt Disco-Dop} framework.
 
@@ -358,7 +359,7 @@ Three grammars:
 \begin{itemize}
 \item Maximal Overlap Full (\ddop{})
 \item Maximal Overlap Split
-\item Shortest Derivtion Split (\dops{})
+\item Shortest Derivation Split (\dops{})
 \end{itemize}
 \end{frame}
 \begin{frame}{Data}
@@ -366,13 +367,7 @@ Wall Street Journal (WSJ) section of the Penn Treebank
 Preprocessing:\begin{itemize}
 \item Removing functions
 \item Binarizing by Markovization (h=1 v=1)
-=======
-\begin{frame}{Three grammars}
-\begin{itemize}
-\item Shortest derivations (split)
-\item Maximal overlap (full)
-\item Maximal overlap (split)
->>>>>>> a4a538f9df18e499f49291fecce3b05c4b5f36d1
+
 \end{itemize}
 \end{frame}
 
@@ -422,12 +417,6 @@ $p_{unkn}$= $1.41\times 10^{-3}$
 
 \subsection{Analyzing grammars}
 
-<<<<<<< HEAD
-=======
-\begin{frame}{Maximal overlap $\leftrightarrow$ shortest derivation}
-\includegraphics[width=\linewidth,trim=0.5cm 0cm 2.5cm 0.5cm, clip=true]{../data/plots/0.png}
-\end{frame}
->>>>>>> a4a538f9df18e499f49291fecce3b05c4b5f36d1
 
 \begin{frame}{Split $\leftrightarrow$ Full}
 \begin{figure}
@@ -435,16 +424,25 @@ $p_{unkn}$= $1.41\times 10^{-3}$
 \end{figure}
 \end{frame}
 
-
 \begin{frame}{Maximal overlap $\leftrightarrow$ shortest derivation}
-
 \begin{figure}
-\includegraphics[width=\textwidth,trim=0.5cm 0cm 2.5cm 0.5cm, clip=true]{../data/plots/0.png}
+\includegraphics[width=\linewidth,trim=0.5cm 0cm 2.5cm 0.5cm, clip=true]{../data/plots/0.png}
 \end{figure}
 \end{frame}
 
-
-
+\begin{frame}{Width}
+\begin{figure}
+\includegraphics[width=\linewidth,trim=0.5cm 0cm 2.5cm 0.5cm, clip=true]{../data/plots/6.png}
+\end{figure}
+\end{frame}
+%
+%
+\begin{frame}{Width}
+\begin{figure}
+\includegraphics[width=\linewidth,trim=0.5cm 0cm 2.5cm 0.5cm, clip=true]{../data/plots/9.png}
+\caption{Only fragments of depth 2 and deeper}
+\end{figure}
+\end{frame}
 
 \section*{Summary}
 
