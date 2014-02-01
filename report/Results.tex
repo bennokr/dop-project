@@ -49,7 +49,7 @@ The color corresponds to some feature, e.g. the depth of the fragment. The color
 % SDS MOS depth (both split)
 % SDS MOF depth (original DDOP en DOP*)
 % MOS MOF depth (split vs full)
-\begin{figure*}
+\begin{figure*}[t]
 \center
 \begin{subfigure}{0.32\textwidth}
 \includegraphics[width=\linewidth,trim=0.5cm 0cm 2.5cm 0.5cm, clip=true]{../data/plots/0.png}
@@ -80,11 +80,11 @@ In plots \ref{f:SDS-MOS} and \ref{f:SDS-MOF}, the shortest derivation extraction
 
 
 \paragraph{Width of the fragments}
-The width of the fragments is another measure of their size. It is defined as the number of substitution sites plus the number of terminals.As an example, in figure \ref{f:width1a} both extraction methods are compared with split estimation.  The dark peak on the right corresponds to the smoothing: PCFG fragments have low width by definition. In figure \ref{f:width1b} only fragments of depth 2 and deeper are shown, and the dark peak is gone.
+The width of the fragments is another measure of their size. It is defined as the number of substitution sites plus the number of terminals.As an example, in figure \ref{f:width1a} both extraction methods are compared with split estimation.  The dark peak on the right corresponds to the smoothing: PCFG fragments have width one or two. We see that the Maximal Overlap approach has stronger smoothing, i.e. it assigns larger weights to PCFG fragments. In figure \ref{f:width1b} only fragments of depth 2 and deeper are shown, and the dark peak is gone.
 
 The way the fragments with certain width are distributed does not differ much from the depth, of course width and depth are strongly correlated themselves. We have also looked at the number of substitution sites and the number of terminals of isolation, but this did not reveal much more than the total width. 
 
-\begin{figure*}
+\begin{figure*}[t]
 \center
 \begin{subfigure}{0.45\textwidth}
 \includegraphics[width=\linewidth,trim=0.5cm 0cm 2.5cm 0.5cm, clip=true]{../data/plots/6.png}
