@@ -93,7 +93,7 @@ def plot(toPlotX,Xdescription,toPlotY,Ydescription,colors,title):
 
     plt.title(title)
     global plotn
-    plt.savefig('plots/'+str(plotn), dpi=300)
+    plt.savefig('plots/'+str(plotn), dpi=300)#, format='PDF')
     plotn+=1
     #plt.show()
 
@@ -153,12 +153,12 @@ def main():
 
 
     global plotn
-#    plotn = 0
-#    readFragsSmall()
-    readFragsLarge()
-#    fragmentsToPlottable()
-#    goPlot()
-    fragsToArff()
+    plotn = 45
+    readFragsSmall()
+#    readFragsLarge()
+    fragmentsToPlottable()
+    goPlot()
+#    fragsToArff()
 
 
 if __name__ == '__main__':

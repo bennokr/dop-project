@@ -1,24 +1,20 @@
 \section{Results and analysis}\label{sec:Results}
 \begin{figure}[h!]
 \begin{tikzpicture}[node distance = 1cm]
-\node (MOS) [rectangle,rounded corners,draw, align=center]{Maximal Overlap\\ Split\\1159479 fragments};
-\node (MOF) [right = of MOS, rectangle,rounded corners,draw, align=center]{Maximal Overlap\\ Full\\1160117 fragments};
-\node (SDS) [below right= 1 cm and -1 cm of MOS, rectangle,rounded corners,draw, align=center]{Shortest Derivation\\ Split\\491533 fragments};
+\node (MOS) [rectangle,rounded corners,draw, align=center]{Maximal Overlap\\ Split\\1,159,479 fragments};
+\node (MOF) [right = of MOS, rectangle,rounded corners,draw, align=center]{Maximal Overlap\\ Full\\1,160,117 fragments};
+\node (SDS) [below right= 1 cm and -1 cm of MOS, rectangle,rounded corners,draw, align=center]{Shortest Derivation\\ Split\\491,533 fragments};
 \draw[dashed](MOS)--(MOF)--(SDS)--(MOS);
 \end{tikzpicture}
 \caption{The grammars and their size}
 \label{f:grammars}
 \end{figure}
-%SIZE OF THE GRAMMARs
 
-Figure \ref{f:grammars} summarizes the three grammars we investigate. 
-%There are three grammars we analyze: maximal overlap extraction with both split and full estimation, and shortest derivation with split estimation.
-
-Estimating all grammars took 45 hours on 16 CPU cores.
+Figure \ref{f:grammars} summarizes the three grammars we investigate. Estimating all grammars took 45 hours on 32 CPU cores.
 
 
 
-$p_{unkn}$ was found to be $1.41\times 10^{-3}$ for our dataset.%0.00140590480016
+$p_{unkn}$ was found to be $1.41\times 10^{-3}$ for our dataset: across 10 splits 28 sentences were underivable.
 
 \subsection{Parsing performance}
 
@@ -28,7 +24,10 @@ $p_{unkn}$ was found to be $1.41\times 10^{-3}$ for our dataset.%0.0014059048001
 \label{t:performance}
 \end{table*}
 
-Table \ref{t:performance} shows the parsing performance for the three grammars we constructed. Note that the POS-tags were passed to the parser in all cases, so tagging accuracy was 100\% and is omitted from this table. 
+Table \ref{t:performance} shows the parsing performance for the three grammars we constructed. The evaluation is on labeled bracketings, the {\tt COLLINS.prm} evaluation parameters are used.
+%MOET HIER NOG COMMENTAAR BIJ?
+
+ Note that the POS-tags were passed to the parser in all cases, so tagging accuracy was 100\% and is omitted from this table. 
 Note that we did only one run on a predefined train/ test split.
 
 Both Maximal Overlap grammars perform much better than the Shortest Derivation one, in spite of the latter being consistent. 
@@ -41,9 +40,9 @@ Furthermore, we observe that the performance of Maximal Overlap with Full estima
 
 
 \subsection{Pairwise comparison of the grammars}
-In each plot, two grammars are compared to each other. The fragments are presented in a scatter plot, with the weights assigned by the two grammars along the axes. The weights are best visualized on a logarithmic scale. However, it is also informative to see those fragments with value zero. Therefore, the first interval ($[0,10^{-6}]$) is linear, while the rest of the plot is logarithmic. 
+Figures \ref{f:depth3} and \ref{f:width1} show several plots for comparing the grammars. The fragments are presented in a scatter plot, with the weights assigned by the two grammars along the axes. The weights are best visualized on a logarithmic scale. However, it is also informative to see those fragments with value zero. Therefore, the first interval ($[0,10^{-6}]$) is linear, while the rest of the plot is logarithmic. 
 The difference between grammars is represented by the distance of the points to the \emph{identity line} $x=y$.
-The color corresponds to some feature, e.g. the depth of the fragment. The color mapping is also logarithmic. 
+The color corresponds to some feature, e.g. the depth of the fragment. The color mapping is also logarithmic, because the feature values had some large outliers. 
 
 % 1 figuur:
 % SDS MOS depth (both split)
@@ -80,9 +79,9 @@ In plots \ref{f:SDS-MOS} and \ref{f:SDS-MOF}, the shortest derivation extraction
 
 
 \paragraph{Width of the fragments}
-The width of the fragments is another measure of their size. It is defined as the number of substitution sites plus the number of terminals.As an example, in figure \ref{f:width1a} both extraction methods are compared with split estimation.  The dark peak on the right corresponds to the smoothing: PCFG fragments have width one or two. We see that the Maximal Overlap approach has stronger smoothing, i.e. it assigns larger weights to PCFG fragments. In figure \ref{f:width1b} only fragments of depth 2 and deeper are shown, and the dark peak is gone.
+The width of the fragments is another measure of their size. It is defined as the number of substitution sites plus the number of terminals. As an example, in figure \ref{f:width1a} both extraction methods are compared with split estimation.  The dark peak on the right corresponds to the smoothing: PCFG fragments have width one or two. We see that the Maximal Overlap approach has stronger smoothing, i.e. it assigns larger weights to PCFG fragments. In figure \ref{f:width1b} only fragments of depth 2 and deeper are shown, and the dark peak is gone.
 
-The way the fragments with certain width are distributed does not differ much from the depth, of course width and depth are strongly correlated themselves. We have also looked at the number of substitution sites and the number of terminals of isolation, but this did not reveal much more than the total width. 
+The way the fragments with certain width are distributed does not differ much from the depth, of course width and depth are strongly correlated themselves. We have also looked at the number of substitution sites and the number of terminals in isolation, but this did not reveal much more than the total width. 
 
 \begin{figure*}[t]
 \center

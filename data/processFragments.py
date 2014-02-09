@@ -267,7 +267,7 @@ def computePunkn():
 
 
         unparsed = unparsed.union(NPm)
-#        print m, len(unparsed)
+    print 'unparsed:', len(unparsed), 'hcSize:',hcSize
     return float(len(unparsed))/float(hcSize)
 
 
@@ -287,10 +287,10 @@ def processFrags():
 
     global prefix
     prefix = 'bigRun/wsj-02-21.mrg.split19916.'
-#    print computePunkn()
+    print computePunkn()
 #    processDOPS()
 #    processDDOPS()
-    processDDOP()
+#    processDDOP()
 
 
 
