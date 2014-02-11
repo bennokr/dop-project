@@ -5,7 +5,7 @@
 
 \paragraph{Extraction}
 
-\ddop{} iterates over pairs of trees to find their maximal overlapping fragments, which are added to the symbolic grammar. We will call this the \emph{maximal-overlap} method. \dops{} iteratively finds the shortest derivation of one tree given all the fragments of a set of trees, hereafter the \emph{shortest-derivation} method. 
+\ddop{} iterates over pairs of trees to find their maximal overlapping fragments, which are added to the symbolic grammar. We will call this the \emph{maximal-overlap} method. \dops{} finds the shortest derivation of one tree given all the fragments of a set of trees, hereafter the \emph{shortest-derivation} method. 
 
 It is easy to see that the \emph{shortest-derivation} extraction in itself does not depend on the corpus split: we can also find the shortest possible derivation using fragments from all the other trees. Likewise \ddop{} could be implemented using a split, comparing all trees in the $HC$ to all trees in the $EC$.
 We will refer to these methods as \emph{full} and \emph{split} estimation.
@@ -62,7 +62,7 @@ Estimation and parsing were done with the {\tt disco-dop} framework
 \paragraph{Data}
 We use the \emph{Wall Street Journal}~(WSJ) section of the Penn Treebank for our experiments. \dops{} has only been applied to the Dutch OVIS corpus in \cite{zollmann2005}, which contains relatively small and (therefore) easy sentences. Therefore we are curious about its performance on the WSJ.
 
-The commonly used training section of the WSJ treebank (section 2-21) was preprocessed in {\tt disco-dop} by removing functions and binarizing the trees by Markovization (h=1, v=1). %\footcite{klein2003}. 
+The commonly used training section of the WSJ treebank (section 2-21) was preprocessed in {\tt disco-dop} by removing functions and binarizing the trees with Markovization (h=1, v=1, that is, a singular horizontal and vertical context). %\footcite{klein2003}. 
 %UITLEG/ CITATIE
 
 

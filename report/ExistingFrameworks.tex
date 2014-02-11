@@ -3,6 +3,7 @@
 %A description and comparison of Double-DOP and DOP*
 
 %Iets met Goodman? Die behoudt alleen kleine stukjes en speciale regels, maar daardoor geen expliciete representatie van 'productive units' (Sangati, einde van sectie 2)
+%B  goodman erbij betrekken wordt toch te ingewikkeld
 
 In this section, we outline two approaches to constrain the extraction of fragments: \ddop{} and \dops{}. 
 
@@ -21,10 +22,10 @@ Of course, a tree could have several equally short derivations. The probability 
 
 To maximize coverage of the grammar, \dops{} comes with a smoothing method. The relative frequency of underivable trees in $HC$ is denoted by $p_{unkn}$. This value is uniformly discounted from the weight of all the fragments in the grammar. Then $p_{unkn}$ is distributed over the weights assigned by a classical PCFG estimation, which yields a grammar containing all the depth one fragments in the entire treebank ($HC\cup EC$). The resulting two grammars are merged, the weight of fragments that occur in both are added together.
 
-The held-out estimation must be performed in several folds over the training data, i.e. the data is randomly split in $EC$ and $HC$ a couple of times. We follow \cite{zollman2005} in using 10 splits. The 10 resulting grammars are then interpolated.
+The held-out estimation must be performed in several folds over the training data, i.e. the data is randomly split in $EC$ and $HC$ a couple of times. We follow \cite{zollmann2005} in using 10 splits. The 10 resulting grammars are then interpolated.
 
 \paragraph{Consistency and bias}
-\dops{} was introduced as the first consistent (non-trivial) DOP-estimator. Zollmann and Sima'an provide a consistency proof in \shortcite{zollmann2005}. On the other hand, \dops{} is  biased, but Zollmann shows how bias actually arises from generalization: no non-overfitting DOP estimator could be unbiased. Bias is therefore not problematic but a desirable property of an estimator.
+\dops{} was introduced as the first consistent (non-trivial) DOP-estimator. Zollmann and Sima'an provide a consistency proof in \shortcite{zollmann2005}. On the other hand, \dops{} is  biased, but they show how bias actually arises from generalization: no non-overfitting DOP estimator could be unbiased. Bias is therefore not problematic but a desirable property of an estimator.
 
 The consistency of \dops{} is fundamentally tied to the extraction of fragments in the shortest derivations. As the treebank size increases, the expected loss of the estimate will diminish, as described above. One of the goals of this project is to describe what influence this has on the distribution of weight over the fragments in the grammar.
 
