@@ -13,6 +13,8 @@ We introduced the corpus splitting from \dops{} into the \ddop{} approach. Estim
 
 \paragraph{Concerns}
 While all grammars were trained on the same data set, the grammar from the shortest derivation with split was significantly smaller than the others. This could in itself explain the lower performance of this grammar, instead of the estimation method, because larger tree substitution grammars simply describe more data. It is therefore impossible to be completely certain in blaming the lower performance on the shortest-derivation approach.
+Furthermore, while \cite{zollman2005} chose to perform 10 splits, their dataset was considerably smaller than the WSJ corpus. Raising the number of splits would likely improve performance for this treebank as well.
+Lastly, because we enforced an upper limit on the number of shortest derivations to find for each parse tree, the estimates were sometimes done on incomplete information. This factor also influenced the lower score.
 
 
 \paragraph{Future work}

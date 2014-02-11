@@ -3,7 +3,8 @@
 % TODO: Cite Dop*!
 
 % Distribution, sampling, estimation, corpus.
-Linguistic studies of syntax mostly concern \emph{competence} models, which describe the structures that appear in a language. In contrast, a \emph{performance} model of language is an estimate of the probability of observing a parse tree in language use. It treats language as a statistical distribution over syntactic structures.
+% /Linguistic studies of syntax mostly concern \emph{competence} models, which describe the structures that appear in a language. In contrast, a \emph{performance} model of language is an estimate of the probability of observing a parse tree in language use. It treats language as a statistical distribution over syntactic structures.
+To be able to reliably parse sentences, it's most effective to model language as a statistical distribution over syntactic structures. This means we'll have to estimate the probability of observing a parse tree in language use.
 
 Let $\Omega$ be the set of all possible parse trees. The distribution $P_\Omega: \Omega\rightarrow [0,1]$ then describes the language, where $P_\Omega(t)$ is the probability of observing a tree $t \in \Omega$. Using a sample of parse trees from the language, an \emph{estimator} $\textsc{est}$ builds a statistical model. A parser then uses that statistical model to predict the correct parse tree of sentences.
 A sample $X \in \Omega^n$ from the language is called a \emph{corpus} or \emph{treebank} of size $n$, which makes $\textsc{est}(X)$ an estimator trained on a sample. If $\mathcal{M}$ is the set of probability distributions over $\Omega$, then $P_\Omega \in \mathcal{M}$ and $\textsc{est}(X) \in \mathcal{M}$.
@@ -26,13 +27,10 @@ $$\lim_{n \to \infty} \mathbf{E}[\mathcal{L}(\textsc{est}(X), P_\Omega)] = 0 $$
 In its original formulation, DOP was defined using a \emph{relative frequency estimate}, by counting how often it occurs in the treebank compared to others with the same root. However, it has been shown \cite{johnson2002} that in this case, the RF estimator is inconsistent.
 
 % Bias
-Another property of an estimator is its \emph{bias}, which is defined as the difference between the true probability distribution and the expected estimate for a language. If such a language exists, the estimator is biased in general.
-It has been proven that any unbiased DOP estimator will overfit a treebank by assigning zero-probabilites to trees outside the corpus.
-To prevent overfitting, it is therefore necessary to introduce a bias that assigns a non-zero probability to unseen trees.
-By maximizing the probability of a corpus different from the one from which the fragments are extracted, we will see that it is possible to minimize overfitting.
+Another property of an estimator is its \emph{bias}, which is defined as the difference between the true probability distribution and the expected estimate for a language. If a language exists for which this difference is nonzero, the estimator is biased in general. We will see that bias is a desirable property for the DOP model.
+% It has been proven \cite{zollman2005} that any unbiased DOP estimator will overfit a treebank by assigning zero-probabilites to trees outside the corpus.
+% To prevent overfitting, it is therefore necessary to introduce a bias that assigns a non-zero probability to unseen trees.
+% By maximizing the probability of a corpus different from the one from which the fragments are extracted, we will see that it is possible to minimize overfitting.
 
-%- How do we prevent overfitting?
-
-
-%- Why DOP*?
+% Add this to 3.2.2 ??
 
