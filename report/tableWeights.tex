@@ -1,16 +1,18 @@
-\begin{tabular}{c|p{.10\textwidth}c|p{.08\textwidth}c|}
-&Maximal overlap&weight&Shortest deriv.\footnotemark&weight\\\hline
-f1&(t1,t3),(t2,t4)&4/12&-&0\\
-f2&(t1,t2)&2/12&1b, 2a&1/4\\
-f3&(t2,t3)&2/12&2b, 3b&1/4\\
-f4&(t3,t4)&2/12&3a, 4b&1/4\\
-f5&(t1,t4)&2/12&1a, 4a&1/4\\
-f6&(t1,t3),(t1,t4), (t2,t3),(t2,t4)&4/6&1a, 2b&1/2\\
-f7&-&0&3b, 4a&1/2\\
-f8&CFG rule&2/6&-&0\\
-f9&(t2,t3),(t2,t4), (t3,t4)&4/6&2a, 3a&1/2\\
-f10&-&0&1b, 4b&1/2\\
-f11&CFG rule&2/6&-&0\\
-f12&CFG rule&2/2&-&0\\
-f13&CFG rule&2/2&-&0\\
+\begin{tabular}{c|p{.30\textwidth}c|p{.2\textwidth}l c}
+&Maximal overlap$^*$&weight&Shortest deriv.$^{**}$&\multicolumn{2}{c}{weight$^{***}$}\\\hline
+f1&(t1,t3), (t2,t4)	&4/12		&- 		&				&$p_u\times$	1/1\\     %P
+f2&(t1,t2)		&2/12		&1b, 2a 	&$p_k\times$	2/8	&\\	 
+f3&(t2,t3)		&2/12		&2b, 3b 	&$p_k\times$	2/8	&\\
+f4&(t3,t4)		&2/12		&3a, 4b 	&$p_k\times$	2/8	&\\
+f5&(t1,t4)		&2/12		&1a, 4a 	&$p_k\times$	2/8	&\\
+f6&(t1,t3), (t1,t4), 
+(t2,t3), (t2,t4)	&4/6		&1a, 2b 	&$p_k\times$	2/4	+& $p_u\times$	1/2\\	%P
+f7&- 			&0		&3b, 4a 	&$p_k\times$	2/4	&\\
+f8&CFG rule		&2/6		&- 		&				&$p_u\times$	1/2\\	%P
+f9&(t2,t3), (t2,t4), 
+(t3,t4)		&4/6		&2a, 3a 	&$p_k\times$	2/4	+&$p_u\times$	1/2\\	%P
+f10&- 			&0		&1b, 4b 	&$p_k\times$	2/4	&\\
+f11&CFG rule	&2/6		&- 		&				&$p_u\times$1/2\\	%P
+f12&CFG rule	&2/2		&- 		&				&$p_u\times$1/1\\	%P
+f13&CFG rule	&2/2		&- 		&				&$p_u\times$1/1\\	%P
 \end{tabular}

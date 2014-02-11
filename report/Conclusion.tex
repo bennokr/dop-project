@@ -6,20 +6,23 @@ We have investigated two existing estimators in the Data Oriented Parsing approa
 %Double-DOP: best performance
 %Performance not correlated with consistency of the method
 %Shortest derivation, very short grammar. But not as useful as it would seem: bad performance
-We compared the theoretically attractive shortest-derivation fragment extraction from \dops{} with the practical \ddop{} approach. Is proved impossible to match its performance. Because the consistent grammar performed poorer, it seems that consistency might be a less interesting property in practice.
+We compared the theoretically attractive shortest-derivation fragment extraction from \dops{} with the practical \ddop{} approach. 
+We observed that the latter performed substantially better. Because the consistent grammar performed poorer, it seems that consistency might be a less interesting property in practice.
 
 %Split (held-out est) decreases bias towards large fragments
-We introduced the corpus splitting from \dops{} into the \ddop{} approach. Estimating on a random split did not give us the expected overfitting avoidance. The split does seem to make the grammar less biased towards large fragments. 
+We introduced the corpus splitting from \dops{} into the \ddop{} approach.  We have showed that the held-out estimation makes the grammar less biased towards large fragments. However, interpolating the results of random splits did not give us the expected overfitting avoidance. 
 
 \paragraph{Concerns}
-While all grammars were trained on the same data set, the grammar from the shortest derivation with split was significantly smaller than the others. This could in itself explain the lower performance of this grammar, instead of the estimation method, because larger tree substitution grammars simply describe more data. It is therefore impossible to be completely certain in blaming the lower performance on the shortest-derivation approach.
+<<<<<<< HEAD
+While all grammars were trained on the same data set, the grammar from the shortest derivation with split was significantly smaller than the others. This could in itself explain the lower performance of this grammar, instead of the estimation method, because larger tree substitution grammars simply describe more data. It is therefore impossible to be completely certain in blaming the lower performance on the shortest-derivation approach. 
+Other factors that might play a role are the usage of relative frequency (other estimates could be applied) and the smoothing method: the PCFG rules got heigher weight assignment in the \ddop{} approach.
 Furthermore, while \cite{zollman2005} chose to perform 10 splits, their dataset was considerably smaller than the WSJ corpus. Raising the number of splits would likely improve performance for this treebank as well.
 Lastly, because we enforced an upper limit on the number of shortest derivations to find for each parse tree, the estimates were sometimes done on incomplete information. This factor also influenced the lower score.
 
 
 \paragraph{Future work}
 % analysis of other DOP grammars,
-Our analysis concerned only two existing DOP estimators: \ddop{} and \dops{}. Others have been proposed with one or more of the same desirable properties or comparable performance, of which the comparitive analysis is future work.
+Our analysis concerned only two existing DOP estimators: \ddop{} and \dops{}. Others have been proposed with one or more of the same desirable properties or comparable performance, of which the comparative analysis is future work.
 
 %more elaborate analysis: possibly clustering on features such as depth, number of substitution sites and terminals
 Additionally, the fragment weight comparision in this paper is exploratory and rough. It would be very interesting to perform clustering on features such as depth, number of substitution sites and terminals to build a model of the difference in weight distribution.
